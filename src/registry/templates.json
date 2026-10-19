@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "homeguardian",
+    "name": "HomeGuardian",
+    "category": "landing-page",
+    "description": "Halaman pendarat jasa keamanan rumah: perbandingan paket berbentuk tabel, daftar industri yang dilayani, dan deretan logo klien.",
+    "sections": [
+      "Navbar",
+      "Hero",
+      "Deretan Logo",
+      "Kenapa Kami",
+      "Perbandingan Fitur",
+      "Industri",
+      "Testimoni",
+      "Tanya Jawab",
+      "Ajakan Bertindak",
+      "Footer"
+    ],
+    "repo": "akash3444/homeguardian-shadcn-landing-page",
+    "url": "https://homeguardian-shadcn-landing-page.vercel.app/",
+    "license": {
+      "type": "MIT",
+      "copyright": "Copyright (c) 2025 HomeGuardian",
+      "file": "LICENSE"
+    }
+  },
+  {
+    "slug": "minimalist-landing-page",
+    "name": "Minimalist Landing Page",
+    "category": "landing-page",
+    "description": "Halaman pendarat paling polos di antara keempatnya: hero berdampingan gambar, empat fitur, tanya jawab, testimoni berkorsel, dan tabel harga.",
+    "sections": [
+      "Navbar",
+      "Hero",
+      "Fitur",
+      "Tanya Jawab",
+      "Testimoni",
+      "Harga",
+      "Footer"
+    ],
+    "repo": "akash3444/shadcn-ui-landing-page",
+    "url": "https://shadcn-ui-landing-page.vercel.app/",
+    "license": {
+      "type": "not stated",
+      "copyright": "akash3444",
+      "file": null
+    }
+  },
+  {
+    "slug": "pure-landing",
+    "name": "PureLanding",
+    "category": "landing-page",
+    "description": "Halaman pendarat berlatar petak beranimasi, dengan testimoni yang berjalan sendiri dan tabel harga bertab bulanan-tahunan.",
+    "sections": [
+      "Navbar",
+      "Hero",
+      "Deretan Logo",
+      "Fitur",
+      "Harga",
+      "Testimoni",
+      "Tanya Jawab",
+      "Ajakan Bertindak",
+      "Footer"
+    ],
+    "repo": "akash3444/pure-landing-shadcnui-template",
+    "url": "https://pure-landing-shadcnui-template.vercel.app/",
+    "license": {
+      "type": "not stated",
+      "copyright": "akash3444",
+      "file": null
+    }
+  },
+  {
+    "slug": "minimal-portfolio",
+    "name": "Minimal Portfolio",
+    "category": "portfolio",
+    "description": "Portofolio pengembang satu halaman: perkenalan, riwayat kerja bergaris waktu, dan petak proyek berlencana teknologi.",
+    "sections": [
+      "Navbar",
+      "Hero",
+      "Tentang",
+      "Pengalaman",
+      "Proyek",
+      "Footer"
+    ],
+    "repo": "akash3444/portfolio-template",
+    "url": "https://shadcn-portfolio-template.vercel.app/",
+    "license": {
+      "type": "not stated",
+      "copyright": "akash3444",
+      "file": null
+    }
+  }
+]

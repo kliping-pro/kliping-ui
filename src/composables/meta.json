@@ -1,0 +1,104 @@
+{
+  "note": "Urutan dan pengelompokan halaman /hooks. Dibaca docs/.vitepress/config.ts untuk menyusun sidebar, dan HooksList.vue untuk menyusun daftarnya. Satu sumber, bukan dua yang harus dijaga tetap sama. Composable yang di Vue sudah dijawab bahasanya tetap ditaruh di kategori sesuai perannya, bukan dipisahkan ke keranjang sendiri: orang yang mencari useMount ingin menemukannya di Siklus Hidup, lalu membaca di sana bahwa onMounted sudah cukup.",
+  "categories": [
+    {
+      "name": "Getting Started",
+      "description": "Pengenalan dan cara memasangnya.",
+      "pages": [
+        { "name": "introduction", "title": "Introduction" },
+        { "name": "installation", "title": "Installation" },
+        { "name": "credits", "title": "Credits" }
+      ],
+      "items": []
+    },
+    {
+      "name": "State",
+      "description": "Menyimpan dan mengubah nilai.",
+      "items": [
+        "use-boolean",
+        "use-controllable-value",
+        "use-counter",
+        "use-debounce",
+        "use-reset-state",
+        "use-throttle",
+        "use-toggle"
+      ]
+    },
+    {
+      "name": "Advanced",
+      "description": "Pola yang lebih jarang. Tiga di antaranya sudah dijawab Vue sendiri.",
+      "items": [
+        "use-creation",
+        "use-custom-compare-effect",
+        "use-latest",
+        "use-lock-fn",
+        "use-memoized-fn",
+        "use-previous"
+      ]
+    },
+    {
+      "name": "Lifecycle",
+      "description": "Menjadwalkan, menunda, dan bereaksi pada perubahan.",
+      "items": [
+        "use-debounce-effect",
+        "use-debounce-fn",
+        "use-deep-compare-effect",
+        "use-deep-compare-layout-effect",
+        "use-effect-event",
+        "use-effect-with-target",
+        "use-interval",
+        "use-is-hydrated",
+        "use-isomorphic-layout-effect",
+        "use-mount",
+        "use-throttle-effect",
+        "use-throttle-fn",
+        "use-timeout",
+        "use-unmount",
+        "use-update",
+        "use-update-effect"
+      ]
+    },
+    {
+      "name": "Browser",
+      "description": "Membaca dan mengikuti keadaan peramban.",
+      "items": [
+        "use-active-element",
+        "use-battery",
+        "use-click-any-where",
+        "use-click-away",
+        "use-clipboard",
+        "use-document-visibility",
+        "use-element-size",
+        "use-event-listener",
+        "use-fps",
+        "use-fullscreen",
+        "use-hash",
+        "use-hover",
+        "use-in-viewport",
+        "use-is-match-media",
+        "use-is-online",
+        "use-mouse",
+        "use-network",
+        "use-os",
+        "use-scroll-lock",
+        "use-text-selection",
+        "use-title"
+      ]
+    },
+    {
+      "name": "Development",
+      "description": "Alat bantu saat mencari sebab, bukan untuk produksi.",
+      "items": ["use-why-did-you-update"]
+    },
+    {
+      "name": "Third-Party",
+      "description": "Tiga di antaranya sudah punya paket Vue sendiri yang lebih baik dari apa pun yang bisa ditulis di sini. Satu ditulis sendiri.",
+      "items": ["use-mcp", "use-query", "use-stick-to-bottom", "use-swr"]
+    },
+    {
+      "name": "Libraries",
+      "description": "Helper bersama. Ikut terpasang sendiri saat dibutuhkan composable lain.",
+      "items": ["is-browser", "create-context", "target", "try-on-mounted"]
+    }
+  ]
+}

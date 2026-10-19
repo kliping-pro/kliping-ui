@@ -1,0 +1,1002 @@
+/*
+ * Jembatan token: nama lama VitePress diarahkan ke token Kliping.
+ *
+ * Penataan prosa dan blok kode dari tema bawaan masih dipakai, dan seluruh
+ * warnanya diambil dari variabel `--vp-*`. Dipetakan di sini, jadi yang
+ * menentukan warna tetap satu palet — token shadcn di `src/assets/main.css` —
+ * dan `--vp-*` cuma jadi nama lain untuknya.
+ *
+ * Tidak perlu ada blok terpisah untuk mode gelap: nilainya sendiri sudah
+ * variabel yang berubah di dalam `.dark`. Selektor `.dark` tetap disertakan
+ * karena vars.css bawaan mendeklarasikan ulang nama-nama ini di sana, dan pada
+ * spesifisitas yang sama, yang menang adalah yang dimuat belakangan.
+ */
+:root,
+.dark {
+  --vp-c-bg: var(--background);
+  --vp-c-bg-alt: var(--surface);
+  --vp-c-bg-soft: var(--muted);
+  --vp-c-bg-elv: var(--popover);
+
+  --vp-c-text-1: var(--foreground);
+  --vp-c-text-2: var(--muted-foreground);
+  --vp-c-text-3: var(--muted-foreground);
+
+  --vp-c-divider: var(--border);
+  --vp-c-border: var(--border);
+  --vp-c-gutter: var(--border);
+
+  --vp-c-brand-1: var(--primary);
+  --vp-c-brand-2: var(--primary);
+  --vp-c-brand-3: var(--primary);
+  --vp-c-brand-soft: color-mix(in oklab, var(--primary) 14%, transparent);
+
+  --vp-c-default-1: var(--muted-foreground);
+  --vp-c-default-2: var(--muted-foreground);
+  --vp-c-default-3: var(--border);
+  --vp-c-default-soft: var(--muted);
+
+  --vp-c-tip-1: var(--primary);
+  --vp-c-tip-2: var(--primary);
+  --vp-c-tip-3: var(--primary);
+  --vp-c-tip-soft: color-mix(in oklab, var(--primary) 12%, transparent);
+  /* Kode di dalam callout sama dengan kode inline di luar: hijau di atas latar
+     hijau muda hanya ± 4,3:1 (di bawah WCAG AA 4,5:1). */
+  --vp-custom-block-tip-code-bg: var(--vp-code-bg);
+
+  --vp-font-family-base: var(--default-font-family, ui-sans-serif, system-ui, sans-serif);
+  --vp-font-family-mono: var(--default-mono-font-family, ui-monospace, monospace);
+
+  --vp-code-bg: color-mix(in oklab, var(--muted) 70%, transparent);
+  --vp-code-color: var(--foreground);
+  --vp-code-block-bg: var(--code);
+  --vp-code-block-color: var(--code-foreground);
+  --vp-code-block-divider-color: var(--border);
+  --vp-code-line-number-color: var(--code-number);
+  --vp-code-line-highlight-color: var(--code-highlight);
+  --vp-code-copy-code-bg: var(--muted);
+  --vp-code-copy-code-hover-bg: var(--accent);
+  --vp-code-copy-code-border-color: var(--border);
+  --vp-code-copy-code-hover-border-color: var(--border);
+  --vp-code-copy-code-active-text: var(--muted-foreground);
+  --vp-code-lang-color: var(--muted-foreground);
+  --vp-code-tab-bg: var(--code);
+  --vp-code-tab-text-color: var(--muted-foreground);
+  --vp-code-tab-active-text-color: var(--foreground);
+  --vp-code-tab-hover-text-color: var(--foreground);
+  --vp-code-tab-active-bar-color: var(--primary);
+  --vp-code-tab-divider: var(--border);
+
+  --vp-backdrop-bg-color: rgb(0 0 0 / 80%);
+  --vp-local-search-bg: var(--popover);
+  --vp-local-search-result-bg: var(--popover);
+  --vp-local-search-result-border: transparent;
+  --vp-local-search-result-selected-bg: var(--pill);
+  --vp-local-search-result-selected-border: transparent;
+  --vp-local-search-highlight-bg: color-mix(in oklab, var(--primary) 25%, transparent);
+  --vp-local-search-highlight-text: var(--foreground);
+}
+
+/*
+ * Pembungkus lebar untuk kerangka situs.
+ *
+ * Di repo asalnya ini sebuah utility Tailwind. Di sini ditulis sebagai CSS
+ * biasa: `@utility` hanya dikenali di berkas yang jadi pintu masuk Tailwind,
+ * dan berkas ini bukan itu — ia dimuat setelahnya, justru supaya bisa menimpa.
+ */
+/*
+ * Bingkai situs: satu jarak tepi untuk header dan sidebar mengambang.
+ *
+ *   --frame-gap        jarak panel sidebar dari tepi layar (Doras: m-3)
+ *   --frame-inset  padding di dalam panel, sampai ke tepi pill-nya
+ *
+ * Header memakai jumlah keduanya di kiri dan kanan, jadi tombol paling kanan
+ * berjarak sama dari tepi layar dengan pill sidebar dari tepi kiri — header
+ * dan sidebar terbaca sebagai satu bingkai, tidak ada sisi yang menempel.
+ */
+:root {
+  --frame-gap: 0.75rem;
+  --frame-inset: 0.5rem;
+  --wrapper-padding: 0.5rem;
+
+  /* Radius menurut peran, untuk yang tidak boleh ikut skala --radius:
+     kontrol bersegmen selalu kapsul penuh, tabel selalu bersudut tegas. */
+  --radius-capsule: 9999px;
+  --radius-table: var(--radius-lg);
+}
+
+/*
+ * Kontrol bersegmen di chrome situs — Preview/Code, CLI/Manual,
+ * pnpm/npm/yarn/bun, Desktop/Tablet/Mobile — berbentuk kapsul, wadahnya
+ * maupun tiap pilihannya. Satu kelas di wadahnya; tidak ada radius yang
+ * ditulis di pilihan satu per satu.
+ */
+.kliping-segmented,
+.kliping-segmented > * {
+  border-radius: var(--radius-capsule);
+}
+
+/*
+ * Kartu tautan — kartu block, hook, template, direktori, Previous/Next.
+ *
+ * Satu bentuk untuk semua yang bisa diklik sebagai kartu: sudut `--radius-lg`,
+ * garis tepi, dan saat disorot garisnya menebal ke warna teks dan kartunya
+ * terangkat. Ditulis sekali di sini, bukan diulang sebagai deretan utility di
+ * tiap komponen, supaya mengubah satu mengubah semuanya.
+ */
+:root {
+  --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.kliping-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  color: var(--card-foreground);
+  transition: border-color 150ms, box-shadow 150ms;
+}
+
+.kliping-card:hover {
+  border-color: color-mix(in oklab, var(--foreground) 25%, transparent);
+  box-shadow: var(--shadow-card);
+}
+
+/* Kartu yang menunjuk halaman yang sedang dibuka (kartu mega menu). */
+.kliping-card[data-active] {
+  border-color: color-mix(in oklab, var(--foreground) 25%, transparent);
+}
+
+.kliping-card:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/*
+ * Komponen bersegmen di demo dan block — Tabs, Toggle, Toggle Group — ikut
+ * kapsul, lewat data-slot-nya. Kode komponennya tidak diubah: bentuk ini milik
+ * tema situs, sama seperti --radius, bukan bagian dari yang dipasang pemakai.
+ *
+ * Toggle Group tanpa jarak (data-spacing="0") adalah satu kapsul yang dibelah:
+ * hanya ujung luar item pertama dan terakhir yang membulat, sambungan di
+ * tengahnya tetap lurus.
+ */
+[data-slot="tabs-list"],
+[data-slot="tabs-trigger"],
+[data-slot="toggle"],
+[data-slot="toggle-group"],
+[data-slot="toggle-group-item"]:not([data-spacing="0"]) {
+  border-radius: var(--radius-capsule);
+}
+
+[data-slot="toggle-group-item"][data-spacing="0"]:first-child {
+  border-start-start-radius: var(--radius-capsule);
+  border-end-start-radius: var(--radius-capsule);
+}
+
+[data-slot="toggle-group-item"][data-spacing="0"]:last-child {
+  border-start-end-radius: var(--radius-capsule);
+  border-end-end-radius: var(--radius-capsule);
+}
+
+/*
+ * Tabel membulat seperti kartu dan panel (`--radius-table` = `--radius-lg`).
+ * Berlaku untuk pembungkus yang langsung memuat tabel — di demo, block,
+ * maupun dokumentasi — tanpa menyentuh berkasnya satu per satu. `overflow:
+ * clip` memotong latar baris kepala dan baris bergaris di pojoknya, supaya
+ * tidak menyembul keluar lengkungan; `clip`, bukan `hidden`, supaya tidak
+ * menjadi wadah gulir yang memutus `sticky` di dalamnya.
+ */
+/* Tabel markdown (`[tabindex]`) dikecualikan: pembungkusnya adalah seluruh
+   isi halaman dokumentasi, dan tabelnya sendiri sudah membulat di bawah. */
+:where(*):has(> [data-slot="table-container"], > table:not([tabindex])) {
+  border-radius: var(--radius-table);
+  overflow: clip;
+}
+
+/*
+ * Tabel prosa dokumentasi (markdown). Bawaan VitePress menggaris tiap sel
+ * dengan `border-collapse`, dan tabel yang selnya bergaris sendiri tidak bisa
+ * dibulatkan sudutnya. Di sini garisnya pindah: satu bingkai membulat di
+ * tabelnya, garis tipis di antara baris dan kolom — bentuk Table shadcn.
+ * `[tabindex]`: VitePress memberikannya ke setiap tabel markdown, dan tidak
+ * ke tabel milik demo di dalam pratinjau — yang terakhir tetap milik
+ * komponennya.
+ */
+.vp-doc table[tabindex] {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-table);
+}
+
+/* VitePress menjadikan tabel `display: block` (supaya bisa digulir ke samping).
+   Akibatnya baris-barisnya menyusut ke lebar isi sementara bingkainya selebar
+   halaman — latar baris kepala berhenti di tengah. Di layar lebar tabel kembali
+   jadi tabel selebar wadahnya; di layar sempit tetap blok yang bisa digulir. */
+@media (min-width: 640px) {
+  .vp-doc table[tabindex] {
+    display: table;
+    width: 100%;
+  }
+}
+
+.vp-doc table[tabindex] tr {
+  border-top: 0;
+}
+
+.vp-doc table[tabindex] :is(th, td) {
+  border: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.vp-doc table[tabindex] :is(th, td) + :is(th, td) {
+  border-left: 1px solid var(--border);
+}
+
+.vp-doc table[tabindex] tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.vp-doc table[tabindex] thead th:first-child {
+  border-top-left-radius: calc(var(--radius-table) - 1px);
+}
+
+.vp-doc table[tabindex] thead th:last-child {
+  border-top-right-radius: calc(var(--radius-table) - 1px);
+}
+
+.vp-doc table[tabindex] tbody tr:last-child td:first-child {
+  border-bottom-left-radius: calc(var(--radius-table) - 1px);
+}
+
+.vp-doc table[tabindex] tbody tr:last-child td:last-child {
+  border-bottom-right-radius: calc(var(--radius-table) - 1px);
+}
+
+.container-wrapper {
+  margin-inline: auto;
+  width: 100%;
+  padding-inline: var(--wrapper-padding);
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 1400px;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
+/* Latar halaman lepas: gradasi tipis yang memisahkannya dari kepala halaman
+   tanpa menarik perhatian. */
+.section-soft {
+  background-image: linear-gradient(to bottom, var(--background), color-mix(in oklab, var(--surface) 40%, transparent));
+}
+
+/*
+ * Blok kode di dalam pratinjau block.
+ *
+ * Seluruh berkas block ditumpuk di satu tab, masing-masing dengan nama
+ * berkasnya. Bingkai dan sudut membulat bawaan dilepas supaya tumpukannya
+ * terbaca sebagai satu daftar, bukan deretan kartu.
+ */
+.kliping-block-code [class*="language-"] {
+  margin: 0;
+  border-radius: 0;
+  min-height: 100%;
+}
+
+/* Tombol salinnya pindah ke judul berkas, seperti di shadcn-vue. */
+.kliping-block-code .vp-doc [class*="language-"] > button.copy {
+  display: none;
+}
+
+/*
+ * Prosa dokumentasi.
+ *
+ * Kolomnya sudah dibatasi kerangka halaman, jadi pembatas milik tema bawaan
+ * dilepas — kalau tidak, keduanya bertumpuk dan kolomnya menyempit dua kali.
+ */
+.vp-doc {
+  max-width: none;
+}
+
+.vp-doc > div > :first-child {
+  margin-top: 0;
+}
+
+/*
+ * Kartu tautan.
+ *
+ * Warna tautan bawaan dokumentasi dilepas: kartunya sendiri yang jadi tautan,
+ * dan isinya — logo framework, nama, keterangan — harus terbaca sebagai isi
+ * kartu, bukan sebagai teks yang bisa diklik.
+ */
+.vp-doc a[data-slot="linked-card"],
+.vp-doc a[data-slot="linked-card"]:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Daftar komponen: nama komponen, bukan deretan tautan hijau bergaris. */
+.vp-doc a[data-slot="components-list-item"] {
+  color: var(--foreground);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.vp-doc a[data-slot="components-list-item"]:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/*
+ * Callout.
+ *
+ * Di upstream ini komponen Alert: satu permukaan tenang, sudut membulat, dan
+ * judul hanya kalau penulisnya menuliskannya. VitePress menggambarnya sebagai
+ * "custom block" dengan garis tebal di kiri dan label besar di atas. Bentuknya
+ * disamakan di sini, dan paragraf judul yang kosong — karena labelnya sengaja
+ * dikosongkan di config — disembunyikan.
+ */
+.vp-doc .custom-block {
+  margin: 1.5rem 0;
+  border: 1px solid var(--surface);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  padding: 1rem;
+  color: var(--surface-foreground);
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.vp-doc .custom-block-title:empty {
+  display: none;
+}
+
+.vp-doc .custom-block-title {
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.vp-doc .custom-block > :last-child {
+  margin-bottom: 0;
+}
+
+.vp-doc .custom-block code {
+  border: 1px solid var(--border);
+  color: var(--vp-code-color);
+  font-size: 0.875em;
+}
+
+.vp-doc .custom-block.warning {
+  border-color: color-mix(in oklab, var(--color-amber-500, oklch(0.77 0.16 70)) 40%, transparent);
+}
+
+.vp-doc .custom-block.danger {
+  border-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+}
+
+.vp-doc details.custom-block {
+  padding: 0.75rem 1rem;
+}
+
+.vp-doc details.custom-block summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Pratinjau memakai token tema Kliping, sementara sisa halaman memakai token
+   bawaan VitePress. Keduanya hidup berdampingan tanpa saling menimpa. */
+.kliping-preview {
+  border-color: var(--vp-c-divider);
+}
+
+/* Kode dipotong pendek dan dipudarkan sampai pembaca memintanya. */
+.kliping-preview-code [class*="language-"] {
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.kliping-preview-fade {
+  background: linear-gradient(
+    to top,
+    var(--code),
+    color-mix(in oklab, var(--code) 60%, transparent),
+    transparent
+  );
+}
+
+/* Blok kode di dalam pratinjau sudah dibingkai wadahnya, jadi bingkai dan jarak
+   bawaan VitePress dilepas supaya tidak ada kotak di dalam kotak. */
+.kliping-preview-code [class*="language-"],
+.kliping-source-code [class*="language-"] {
+  margin: 0;
+  border-radius: 0;
+  max-height: 32rem;
+  overflow-y: auto;
+}
+
+/* Di dalam pratinjau, setinggi kotak pratinjaunya — `max-h-72` di hulu. */
+.kliping-preview-code [class*="language-"] {
+  max-height: 18rem;
+}
+
+/* Label bahasa tidak berguna di sini: isinya selalu SFC. */
+.kliping-preview-code [class*="language-"] > span.lang {
+  display: none;
+}
+
+/* Isi pratinjau memakai latar halaman, bukan latar kode. */
+.kliping-preview > .w-full {
+  background: var(--vp-c-bg);
+}
+
+/*
+ * Tab isi markdown.
+ *
+ * Deretan pemicunya meniru TabsList shadcn: satu alur di atas permukaan tenang,
+ * yang aktif diangkat jadi kartu kecil. Isinya tidak diberi bingkai — yang di
+ * dalam sudah punya bingkainya sendiri, blok kode maupun daftar langkah.
+ */
+.kliping-tabs-list {
+  display: inline-flex;
+  /* Di layar sempit deretnya patah ke baris berikut, bukan mendorong halaman
+     melebar — semua pilihan tetap terlihat tanpa harus digeser. */
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 0.25rem;
+  border-radius: var(--radius-capsule);
+  background: var(--muted);
+  padding: 0.2rem;
+}
+
+.kliping-tabs-list button {
+  white-space: nowrap;
+  border-radius: var(--radius-capsule);
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  transition: background 0.15s, color 0.15s;
+}
+
+.kliping-tabs-list button:hover {
+  color: var(--foreground);
+}
+
+.kliping-tabs-list button.active {
+  background: var(--background);
+  color: var(--foreground);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+/* Jarak atas milik anak pertama dilepas: yang mengatur jaraknya wadah tab. */
+.kliping-tabs-content > .kliping-tab > :first-child {
+  margin-top: 0.75rem;
+}
+
+/* Kode sumber tanpa pratinjau */
+.kliping-source {
+  border-color: var(--vp-c-divider);
+}
+
+.kliping-source-title {
+  border-bottom: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  padding: 0.5rem 0.9rem;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.8125rem;
+  color: var(--vp-c-text-2);
+}
+
+/* Galeri block */
+.kliping-block-gallery {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  margin: 1.5rem 0;
+}
+
+.kliping-block-card {
+  display: block;
+  font-weight: 400;
+  text-decoration: none !important;
+}
+
+.kliping-block-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: var(--radius-lg);
+  background: var(--vp-c-bg);
+  transition: border-color 150ms, box-shadow 150ms;
+}
+
+.kliping-block-card:hover .kliping-block-frame {
+  border-color: color-mix(in oklab, var(--foreground) 25%, transparent);
+  box-shadow: var(--shadow-card);
+}
+
+.kliping-block-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  border: 0;
+  /* Kartunya sendiri yang jadi tautan; iframe cuma gambar hidup di belakangnya. */
+  pointer-events: none;
+}
+
+.kliping-block-name {
+  display: block;
+  margin-top: 0.5rem;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.8125rem;
+  color: var(--vp-c-text-2);
+}
+
+.kliping-block-card:hover .kliping-block-name {
+  color: var(--foreground);
+}
+
+/* HomePage memakai seluruh lebar layar: petak kartunya memang dirancang melebar
+   sampai ujung, bukan mengikuti kolom teks dokumentasi. */
+.kliping-home .bg-muted {
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* Netralkan reset elemen global VitePress.
+ *
+ * `base.css` bawaan tema menyetel ulang elemen polos tanpa layer: `h1..h6` jadi
+ * 16 piksel, `p` dan `ol/ul` kehilangan margin lalu diberi ulang, `button` dan
+ * `input` kehilangan padding dan bingkainya. Aturan tanpa layer selalu menang
+ * atas aturan di dalam layer, jadi selama utility Tailwind duduk di layernya,
+ * `text-5xl` pada sebuah `h1` dan `px-4` pada sebuah `button` tidak pernah
+ * kelihatan.
+ *
+ * `revert-layer` membatalkan aturan ini lalu menyerahkan nilainya ke layer di
+ * bawahnya: kalau ada utility yang menyebut properti itu, utility yang dipakai;
+ * kalau tidak, jatuh ke preflight Tailwind — reset modern yang isinya nyaris
+ * sama dengan milik VitePress. Yang tidak disentuh: `.vp-doc h1` dan
+ * kerabatnya, karena itu tipografi prosa dokumentasi dan memang harus tetap
+ * berlaku.
+ */
+h1, h2, h3, h4, h5, h6 {
+  margin: revert-layer;
+  line-height: revert-layer;
+  font-size: revert-layer;
+  font-weight: revert-layer;
+}
+
+p, blockquote, figure, fieldset {
+  margin: revert-layer;
+}
+
+fieldset {
+  padding: revert-layer;
+}
+
+a {
+  color: revert-layer;
+  text-decoration: revert-layer;
+}
+
+ol, ul {
+  list-style: revert-layer;
+  margin: revert-layer;
+  padding: revert-layer;
+}
+
+strong, b {
+  font-weight: revert-layer;
+}
+
+/* Kbd mengikuti kelasnya (`font-sans` di komponen Kbd), bukan mono bawaan. */
+kbd {
+  font-family: revert-layer;
+}
+
+img, video {
+  max-width: revert-layer;
+  height: revert-layer;
+}
+
+/* `display: block` pada svg termasuk yang disetel VitePress tanpa layer, dan
+   itu mengalahkan `hidden` milik Tailwind. Akibatnya sakelar tema menampilkan
+   matahari dan bulan sekaligus: yang seharusnya disembunyikan tetap tergambar. */
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: revert-layer;
+}
+
+table {
+  border-collapse: revert-layer;
+}
+
+button, input, optgroup, select, textarea {
+  border: revert-layer;
+  padding: revert-layer;
+  line-height: revert-layer;
+  color: revert-layer;
+}
+
+button {
+  font-family: revert-layer;
+  background-color: revert-layer;
+  background-image: revert-layer;
+}
+
+input {
+  background-color: revert-layer;
+}
+
+textarea {
+  resize: revert-layer;
+}
+
+/* Isi pratinjau bukan prosa.
+ *
+ * Contoh komponen hidup di dalam `.vp-doc`, dan VitePress menata isi `.vp-doc`
+ * sebagai artikel: setiap `<p>` diberi margin 16 piksel dan tinggi baris 28,
+ * setiap daftar diberi padding kiri dan butir, setiap `<a>` diberi warna dan
+ * garis bawah. Untuk paragraf dokumentasi itu benar. Untuk `<p>` di dalam kartu
+ * atau alert, itu jarak yang tidak pernah diminta siapa pun — dan menumpuk
+ * sampai isinya melewati kotak pratinjau. Demo Alert terukur 341 piksel di
+ * kotak 288.
+ *
+ * Sama seperti di atas, yang dipakai `revert-layer`, bukan nilai mati. Bedanya
+ * penting: nilai mati di sini akan menang atas kelas yang ditulis demonya
+ * sendiri, sehingga `<p class="mt-2">` kehilangan delapan piksel yang diminta.
+ * Dengan `revert-layer`, nilainya jatuh ke layer utility dulu — kelas demo yang
+ * dipakai kalau ada, dan preflight Tailwind kalau tidak.
+ */
+.vp-doc [data-slot="preview"] :is(p, summary),
+.vp-doc [data-slot="preview"] :is(ul, ol),
+.vp-doc [data-slot="preview"] li,
+.vp-doc [data-slot="preview"] :is(h1, h2, h3, h4, h5, h6),
+.vp-doc [data-slot="preview"] a,
+.vp-doc [data-slot="preview"] :not(pre) > code,
+.vp-doc [data-slot="preview"] :is(table, tr, th, td),
+.vp-doc [data-slot="preview"] :is(hr, blockquote, figure, img) {
+  margin: revert-layer;
+  padding: revert-layer;
+  border: revert-layer;
+  background: revert-layer;
+  color: revert-layer;
+  font-size: revert-layer;
+  font-weight: revert-layer;
+  line-height: revert-layer;
+  letter-spacing: revert-layer;
+  list-style: revert-layer;
+  text-decoration: revert-layer;
+  text-underline-offset: revert-layer;
+  border-radius: revert-layer;
+  transition: revert-layer;
+}
+
+/* Tabel di dalam pratinjau: VitePress menjadikannya blok yang bisa digeser
+   sendiri, sementara komponen Table menatanya sebagai tabel biasa. */
+.vp-doc [data-slot="preview"] table {
+  display: table;
+  width: 100%;
+  overflow-x: visible;
+}
+
+/* Nomor baris tanpa garis pemisah, seperti blok kode shadcn. */
+.kliping-preview-code .line-numbers-wrapper,
+.kliping-source-code .line-numbers-wrapper,
+.kliping-block-code .line-numbers-wrapper {
+  border-right: 0;
+}
+
+/*
+ * Tombol salin blok kode selalu terlihat, seperti di shadcn-vue — bukan
+ * baru muncul saat kursor lewat, yang di layar sentuh berarti tidak pernah.
+ * Label bahasanya disembunyikan karena duduk di pojok yang sama.
+ */
+.vp-doc [class*="language-"] > button.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: var(--radius-capsule);
+  color: var(--foreground);
+  background-color: transparent;
+  background-image: none;
+}
+
+/* Ikonnya `Copy` dan `Check` dari lucide — persis tombol salin shadcn-vue —
+   digambar lewat mask supaya warnanya mengikuti tema, bukan abu-abu tetap. */
+.vp-doc [class*="language-"] > button.copy::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='14' height='14' x='8' y='8' rx='2' ry='2'/%3E%3Cpath d='M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.vp-doc [class*="language-"] > button.copy.copied::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+/* Label "Copied" bawaan VitePress dibuang: shadcn cukup mengganti ikonnya. */
+.vp-doc [class*="language-"] > button.copy.copied::before,
+.vp-doc [class*="language-"] > button.copy:hover.copied::before {
+  display: none;
+}
+
+.vp-doc [class*="language-"] > button.copy:hover,
+.vp-doc [class*="language-"] > button.copy:focus-visible,
+.vp-doc [class*="language-"] > button.copy.copied,
+.vp-doc [class*="language-"] > button.copy:hover.copied {
+  opacity: 1;
+  border-radius: var(--radius-capsule);
+  background-color: var(--accent);
+  background-image: none;
+}
+
+/* Sebelum "Lihat Kode" ditekan, tombol salin di pratinjau disembunyikan —
+   yang terlihat baru potongan kodenya, belum kodenya. */
+.kliping-preview-code:not([data-open="true"]) [class*="language-"] > button.copy {
+  display: none;
+}
+
+/* Bilah gulir kode setipis mungkin, tidak bersaing dengan kodenya. */
+.kliping-preview-code [class*="language-"],
+.kliping-source-code [class*="language-"],
+.kliping-block-code [class*="language-"] {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--muted-foreground) 35%, transparent) transparent;
+}
+
+.vp-doc [class*="language-"] > span.lang {
+  display: none;
+}
+
+/*
+ * Di blok yang tingginya dibatasi dan isinya digulir, tombol salin menempel di
+ * pojok kanan atas alih-alih ikut tergulir pergi. Margin bawah negatif membuat
+ * tombolnya tidak memakan tempat, jadi baris pertama kode tetap di posisinya.
+ */
+.kliping-preview-code [class*="language-"] > button.copy,
+.kliping-source-code [class*="language-"] > button.copy {
+  position: sticky;
+  top: 8px;
+  margin: 8px 8px -36px auto;
+}
+
+/*
+ * Kotak pencarian situs (Ctrl K) — VPLocalSearchBox bawaan VitePress.
+ *
+ * Komponennya dipakai apa adanya; bentuknya disamakan dengan dialog pencarian
+ * di halaman berkategori (CommandDialog): permukaan popover bersudut
+ * `--radius-lg`, isian tanpa kotak yang dipisah garis dari daftar hasilnya,
+ * hasil yang dipilih berlatar pill, dan petunjuk tombolnya Kbd. Gaya bawaannya
+ * ber-scope (`.shell[data-v-…]`), jadi tiap aturan di sini diawali
+ * `.VPLocalSearchBox[aria-haspopup]` supaya lebih spesifik tanpa `!important`.
+ */
+.VPLocalSearchBox[aria-haspopup] .shell {
+  padding: 0;
+  gap: 0;
+  width: min(100vw - 2rem, 32rem);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--popover-foreground);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-bar {
+  height: 3rem;
+  flex-shrink: 0;
+  padding: 0 0.5rem 0 0.75rem;
+  gap: 0.5rem;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+}
+
+/* Tanpa garis hijau saat difokus: isian ini tidak berkotak, sama seperti
+   CommandInput. */
+.VPLocalSearchBox[aria-haspopup] .search-bar:focus-within {
+  border-color: var(--border);
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-icon {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--muted-foreground);
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-input {
+  padding: 0;
+  font-size: 0.875rem;
+  color: var(--foreground);
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-input::placeholder {
+  color: var(--muted-foreground);
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-actions {
+  gap: 0.125rem;
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: var(--radius-lg);
+  color: var(--muted-foreground);
+  transition: background-color 150ms, color 150ms;
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-actions button:not([disabled]):hover,
+.VPLocalSearchBox[aria-haspopup] .toggle-layout-button.detailed-list {
+  background: var(--pill);
+  color: var(--foreground);
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-actions button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-actions .local-search-icon {
+  font-size: 1rem;
+}
+
+/* Daftar hasil: jarak dan sudutnya sama dengan CommandList dan CommandItem. */
+.VPLocalSearchBox[aria-haspopup] .results {
+  gap: 0;
+  padding: 0.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--muted-foreground) 35%, transparent) transparent;
+}
+
+.VPLocalSearchBox[aria-haspopup] .result {
+  background: var(--vp-local-search-result-bg);
+  transition: background-color 150ms;
+  border: 0;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--foreground);
+}
+
+.VPLocalSearchBox[aria-haspopup] .result > div {
+  margin: 0.3125rem 0.5rem;
+}
+
+.VPLocalSearchBox[aria-haspopup] .title-icon,
+.VPLocalSearchBox[aria-haspopup] .result.selected .title-icon {
+  color: var(--muted-foreground) !important;
+}
+
+.VPLocalSearchBox[aria-haspopup] .result.selected .titles {
+  color: var(--foreground) !important;
+}
+
+.VPLocalSearchBox[aria-haspopup] .titles mark,
+.VPLocalSearchBox[aria-haspopup] .excerpt mark {
+  border-radius: 0.25rem;
+}
+
+.VPLocalSearchBox[aria-haspopup] .no-results {
+  padding: 1.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-keyboard-shortcuts {
+  flex-shrink: 0;
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid var(--border);
+  gap: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: var(--muted-foreground);
+  opacity: 1;
+}
+
+.VPLocalSearchBox[aria-haspopup] .search-keyboard-shortcuts kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  padding: 0 0.25rem;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--muted);
+  box-shadow: none;
+  font-family: var(--font-sans);
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .VPLocalSearchBox[aria-haspopup] .shell {
+    width: 100vw;
+    border: 0;
+    border-radius: 0;
+  }
+}
+
+/* Dialog pencarian di halaman berkategori: isiannya setinggi 3rem, seperti
+   CommandDialog di shadcn — dan seperti kotak Ctrl K di atas. */
+[data-slot="dialog-content"] [data-slot="command-input-wrapper"] {
+  height: 3rem;
+}
+
+/*
+ * Mega menu header: panelnya selebar header, bukan selebar deret nav.
+ *
+ * reka-ui membungkus daftar nav dengan `<div style="position: relative">`.
+ * Gaya sebaris itu tidak bisa diganti kelas, padahal selama ia `relative`
+ * panel yang `absolute` di dalamnya terkurung selebar nav. Di nav utama saja
+ * bungkus itu dijadikan `static`, jadi panelnya mengacu ke header yang sticky.
+ */
+.kliping-main-nav > div {
+  position: static !important;
+}
+
+/*
+ * Kanvas demo Hooks: kisi titik halus selebar jendela yang memudar ke tengah —
+ * demonya duduk di area bersih seperti di bawah lampu sorot, dan titiknya
+ * cuma terlihat ke arah tepi. Titiknya digambar di lapisan `::before` yang
+ * di-mask, jadi panel demo yang semi-transparan tidak pernah tertembus titik.
+ * Warnanya turunan `--foreground`, jadi ikut tema terang dan gelap.
+ */
+.kliping-canvas-dots {
+  position: relative;
+  isolation: isolate;
+}
+
+.kliping-canvas-dots::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(color-mix(in oklab, var(--foreground) 16%, transparent) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center;
+  mask-image: radial-gradient(ellipse 60% 55% at center, transparent 30%, black 80%);
+  pointer-events: none;
+}
+
+/*
+ * Baris yang bisa digeser ke samping (blok perintah): tepi yang masih
+ * menyimpan isi dipudarkan, ditandai `data-fade` oleh `useFadeSlide()`.
+ * Pudarnya masker, bukan lapisan warna, jadi ikut latar apa pun di bawahnya.
+ */
+.kliping-fade-slide {
+  --fade-size: 2.5rem;
+}
+
+.kliping-fade-slide[data-fade="right"] {
+  mask-image: linear-gradient(to right, black calc(100% - var(--fade-size)), transparent);
+}
+
+.kliping-fade-slide[data-fade="left"] {
+  mask-image: linear-gradient(to left, black calc(100% - var(--fade-size)), transparent);
+}
+
+.kliping-fade-slide[data-fade="both"] {
+  mask-image: linear-gradient(to right, transparent, black var(--fade-size), black calc(100% - var(--fade-size)), transparent);
+}

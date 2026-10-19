@@ -1,0 +1,30 @@
+{
+  // Pemeriksaan tipe untuk berkas yang ikut terkirim lewat registry.
+  //
+  // tsconfig.app.json mematikan noUnusedLocals dan noUnusedParameters untuk
+  // repo ini. Tapi item registry disalin ke project orang, dan template Vite
+  // menyalakan keduanya di `vue-tsc -b` sebelum `vite build` — satu variabel
+  // sisa di sebuah block membuat build orang itu gagal. Jadi semua yang
+  // diterbitkan registry diperiksa dengan aturan project orang, bukan aturan
+  // repo ini.
+  //
+  // Jalankan: npm run check:strict
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmit": true,
+    "tsBuildInfoFile": null
+  },
+  "include": [
+    "src/components/**/*.ts",
+    "src/components/**/*.vue",
+    "src/blocks/**/*",
+    "src/charts/**/*",
+    "src/variants/**/*",
+    "src/composables/**/*.ts",
+    "src/lib/**/*.ts",
+    "src/*.d.ts"
+  ],
+  "exclude": ["**/*.test.ts", "**/*.spec.ts"]
+}

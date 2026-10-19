@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <title>Kliping</title>
+  <!--
+    Huruf K dengan lengan yang terpisah dari batangnya.
+
+    Celah itu yang membawa namanya: sebuah kliping adalah potongan yang sudah
+    dilepas dari halamannya. Bentuknya dijaga tetap geometris supaya masih
+    terbaca di 16 piksel, ukuran yang sebenarnya dipakai tab peramban.
+  -->
+  <rect width="32" height="32" rx="7" fill="#009966" />
+  <g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M11.6 9.6v12.8" />
+    <path d="M22.4 9.6 16.2 16l6.2 6.4" />
+  </g>
+</svg>

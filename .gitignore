@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# env lokal — .env.example yang di-commit, bukan ini
+.env
+.env.local
+.env.*.local
+
+# hasil build, cache, dan bundel sementara VitePress
+docs/.vitepress/dist
+docs/.vitepress/cache
+docs/.vitepress/.temp
+
+# registry terbitan — disusun scripts/generate-registry.mjs di tiap build; yang
+# di-commit manifesnya, registry.json di akar
+docs/public/r
+docs/public/llms.txt
+docs/public/llms
+docs/components/_api
+docs/blocks/docs/_api
+docs/variants/docs/_api
+docs/charts/docs/_api
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# potret hasil uji visual — bukti pemeriksaan, bukan sumber
+scripts/screenshots/
+
+# Sorotan kode yang disusun `scripts/generate-code.mjs` saat build. Dihasilkan, bukan
+# ditulis — 13 MB HTML yang berubah setiap kali sumbernya berubah.
+docs/public/code/
+

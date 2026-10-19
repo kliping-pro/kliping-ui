@@ -1,0 +1,6 @@
+export { default as CheckboxGroup } from './CheckboxGroup.vue'
+export { default as CheckboxGroupDescription } from './CheckboxGroupDescription.vue'
+export { default as CheckboxGroupItem } from './CheckboxGroupItem.vue'
+export { default as CheckboxGroupLabel } from './CheckboxGroupLabel.vue'
+export { default as CheckboxGroupList } from './CheckboxGroupList.vue'
+export { default as CheckboxGroupMessage } from './CheckboxGroupMessage.vue'

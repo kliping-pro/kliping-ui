@@ -1,0 +1,83 @@
+<script lang="ts">
+export const description = "Fitur berikon dengan badge dan penilaian bintang."
+</script>
+
+<script setup lang="ts">
+import {
+  Cable,
+  Code,
+  Contrast,
+  MonitorSmartphone,
+  SquareDashedMousePointer,
+  Zap,
+} from '@lucide/vue'
+import { Badge } from '@/components/ui/badge'
+
+const features = [
+  {
+    title: "Blazing Fast Performance",
+    description:
+      "Optimized for speed with minimal loading times and instant interactions, ensuring a smooth experience across devices.",
+    icon: Zap,
+  },
+  {
+    title: "Fully Customizable",
+    description:
+      "Tailor every component to match your brand or workflow — with built-in support for themes, layouts, and configurations.",
+    icon: SquareDashedMousePointer,
+  },
+  {
+    title: "Developer-Friendly",
+    description:
+      "Built with clean, modern code and best practices in mind, making it easy to integrate, extend, and scale.",
+    icon: Code,
+  },
+  {
+    title: "Responsive by Default",
+    description:
+      "Every component is designed to look great on all screen sizes — no extra work needed to make things mobile-friendly.",
+    icon: MonitorSmartphone,
+  },
+  {
+    title: "Accessible for Everyone",
+    description:
+      "Built with accessibility best practices in mind to ensure an inclusive experience for all users, regardless of ability.",
+    icon: Contrast,
+  },
+  {
+    title: "Seamless Integration",
+    description:
+      "Easily connect with your favorite tools, APIs, and services — whether it's authentication, databases, or third-party libraries.",
+    icon: Cable,
+  },
+]
+</script>
+
+<template>
+  <div class="mx-auto flex max-w-7xl flex-col px-6 py-20">
+    <h2 class="text-pretty text-center font-medium text-4xl tracking-[-0.04em] sm:text-[2.75rem]">
+      Simplify your stack
+    </h2>
+    <p class="-tracking[0.01em] mt-3 text-pretty text-center text-muted-foreground text-xl sm:text-2xl">
+      Reduce dependencies and keep things easy
+    </p>
+
+    <div class="mt-16 grid grid-cols-1 gap-1.5 border bg-muted p-1.5 sm:mt-20 sm:grid-cols-2 lg:grid-cols-3">
+      <div v-for="(feature, index) in features" class="relative -m-px border bg-card px-5 py-7" :key="index">
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-primary/10">
+          <component :is="feature.icon" />
+        </div>
+        <h3 class="mt-5 font-medium text-lg tracking-[-0.005em]">
+          {{ feature.title }}
+        </h3>
+        <p class="mt-2 text-foreground/80">{{ feature.description }}</p>
+        <Badge
+          class="absolute top-0 right-0 rounded-none border-t-0 border-r-0 bg-muted/30 font-mono dark:border-foreground/15 dark:bg-background"
+          variant="outline"
+        >
+          {{ (index + 1).toString().padStart(2, "0") }}
+        </Badge>
+      </div>
+    </div>
+  </div>
+</template>

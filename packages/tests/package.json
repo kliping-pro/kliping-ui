@@ -1,0 +1,10 @@
+{
+  "name": "@kliping/tests",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Integration tests for the kliping CLI against real projects and a local registry",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  }
+}

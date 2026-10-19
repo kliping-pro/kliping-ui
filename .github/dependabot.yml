@@ -1,0 +1,38 @@
+# Pembaruan dependensi lewat PR yang diuji CI (job `check` + `build`), bukan
+# langsung ke main. Dikelompokkan supaya satu kerangka = satu PR: Vue, Reka
+# UI, Tailwind, VitePress, assistant-ui. Mingguan, paling banyak 5 PR terbuka.
+#
+# Lockfile dari Dependabot diperiksa `npm run check:lockfile` (paket khusus
+# platform harus tetap opsional — kalau tidak, Cloudflare gagal EBADPLATFORM).
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: deps
+    groups:
+      vue:
+        patterns: ['vue', '@vue/*', 'vue-tsc', '@vitejs/plugin-vue']
+      reka-ui:
+        patterns: ['reka-ui']
+      tailwind:
+        patterns: ['tailwindcss', '@tailwindcss/*', 'tailwind-merge', 'tw-animate-css']
+      vitepress:
+        patterns: ['vitepress']
+      assistant-ui:
+        patterns: ['@assistant-ui/*']
+    ignore:
+      # Major baru dinilai manual (catatan perubahan, uji di laptop).
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: ci

@@ -1,0 +1,10 @@
+---
+title: "carousel-01"
+layout: false
+---
+
+<script setup>
+import Variant from '@/variants/carousel/carousel-01.vue'
+</script>
+
+<BlockCanvas layout="component"><Variant /></BlockCanvas>

@@ -1,0 +1,59 @@
+<script lang="ts">
+export const description = "Tegak tanpa latar, cuma tulisannya."
+</script>
+
+<script setup lang="ts">
+import { Bot, Home, Settings, User } from '@lucide/vue'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+
+const tabs = [
+  {
+    name: "Home",
+    value: "home",
+    icon: Home,
+  },
+  {
+    name: "Profile",
+    value: "profile",
+    icon: User,
+  },
+  {
+    name: "Messages",
+    value: "messages",
+    icon: Bot,
+  },
+  {
+    name: "Settings",
+    value: "settings",
+    icon: Settings,
+  },
+]
+</script>
+
+<template>
+  <Tabs
+    class="flex w-full max-w-md flex-row items-start justify-center gap-4"
+    :default-value="tabs[0].value"
+    orientation="vertical"
+  >
+    <TabsList class="grid min-w-28 shrink-0 grid-cols-1 bg-background p-0">
+      <TabsTrigger v-for="tab in tabs"
+        class="justify-start rounded-none border-0 border-transparent border-l-2 py-1.5 ps-2.5 data-[state=active]:border-primary data-[state=active]:bg-primary/5 data-[state=active]:shadow-none group-data-[variant=default]/tabs-list:data-active:shadow-none"
+        :key="tab.value"
+        :value="tab.value"
+      >
+        <component :is="tab.icon" class="me-2 size-5" /> {{ tab.name }}
+      </TabsTrigger>
+    </TabsList>
+
+    <div class="flex h-40 w-full max-w-xs items-center justify-center rounded-md border font-medium text-muted-foreground">
+      <TabsContent v-for="tab in tabs"
+        class="flex h-full items-center justify-center"
+        :key="tab.value"
+        :value="tab.value"
+      >
+        {{ tab.name }} Content
+      </TabsContent>
+    </div>
+  </Tabs>
+</template>

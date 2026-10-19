@@ -1,0 +1,11 @@
+<script lang="ts">
+export const description = "Bergaris tepi saja, tanpa latar."
+</script>
+
+<script setup lang="ts">
+import { Button } from '@/components/ui/button'
+</script>
+
+<template>
+  <Button variant="outline">Outline</Button>
+</template>

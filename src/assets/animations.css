@@ -1,0 +1,232 @@
+/*
+ * Animasi untuk primitif dekoratif (marquee, border-beam, dot-pattern,
+ * animated-grid-pattern).
+ *
+ * Semuanya CSS murni, dan itu keputusan — bukan kebetulan.
+ *
+ * Di sumbernya keempat animasi ini digerakkan pustaka animasi JavaScript:
+ * satu nilai dihitung tiap frame, lalu ditulis ke gaya elemen. Untuk animasi
+ * yang jalannya lurus dan berulang selamanya, compositor peramban sudah
+ * melakukannya sendiri — tanpa satu byte pun JavaScript, dan tanpa membangunkan
+ * main thread tiap frame.
+ *
+ * Bedanya bukan sepele di `dot-pattern`: satu halaman bisa memuat ratusan titik.
+ * Digerakkan JavaScript, itu ratusan nilai yang ditulis ulang enam puluh kali
+ * per detik. Digerakkan CSS, nol.
+ *
+ * `--duration` dan `--gap` sengaja dibaca dari variabel, bukan ditanam, supaya
+ * komponennya bisa mengaturnya lewat `style` seperti di sumbernya.
+ */
+
+@theme {
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+
+  /* Sinar yang berjalan mengelilingi tepi kartu.
+     `offset-distance` adalah properti CSS yang bisa dianimasikan, jadi jalurnya
+     ditempuh compositor. Posisi awalnya diatur lewat animation-delay negatif —
+     cara yang sama dipakai sumbernya untuk `delay`. */
+  @keyframes border-beam {
+    to {
+      offset-distance: 100%;
+    }
+  }
+
+  /* Titik yang berdenyut di `dot-pattern`, dipakai hanya saat `glow`.
+     Tiap titik memakai delay dan durasi acaknya sendiri, jadi denyutnya tidak
+     pernah serempak — persis seperti di sumbernya. */
+  @keyframes dot-glow {
+    0%,
+    100% {
+      opacity: 0.4;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+  }
+
+  /* Getaran "glitch" untuk teks 404 di not-found-07.
+     Dua salinan teks yang sama digeser ke kiri dan kanan, masing-masing dipotong
+     `clip-path` yang berpindah-pindah dengan durasi berbeda. Karena durasinya
+     tidak kelipatan satu sama lain, potongannya tidak pernah bertemu di pola
+     yang sama — itu yang membuatnya terlihat acak padahal keduanya berulang. */
+  --animate-glitch-after: glitch var(--after-duration) infinite linear alternate-reverse;
+  --animate-glitch-before: glitch var(--before-duration) infinite linear alternate-reverse;
+
+  @keyframes glitch {
+    0%   { clip-path: inset(20% 0 50% 0); }
+    5%   { clip-path: inset(10% 0 60% 0); }
+    10%  { clip-path: inset(15% 0 55% 0); }
+    15%  { clip-path: inset(25% 0 35% 0); }
+    20%  { clip-path: inset(30% 0 40% 0); }
+    25%  { clip-path: inset(40% 0 20% 0); }
+    30%  { clip-path: inset(10% 0 60% 0); }
+    35%  { clip-path: inset(15% 0 55% 0); }
+    40%  { clip-path: inset(25% 0 35% 0); }
+    45%  { clip-path: inset(30% 0 40% 0); }
+    50%  { clip-path: inset(20% 0 50% 0); }
+    55%  { clip-path: inset(10% 0 60% 0); }
+    60%  { clip-path: inset(15% 0 55% 0); }
+    65%  { clip-path: inset(25% 0 35% 0); }
+    70%  { clip-path: inset(30% 0 40% 0); }
+    75%  { clip-path: inset(40% 0 20% 0); }
+    80%  { clip-path: inset(20% 0 50% 0); }
+    85%  { clip-path: inset(10% 0 60% 0); }
+    90%  { clip-path: inset(15% 0 55% 0); }
+    95%  { clip-path: inset(25% 0 35% 0); }
+    100% { clip-path: inset(30% 0 40% 0); }
+  }
+
+  /* Gradien yang bergeser di belakang teks `gradient-text`.
+     Dua keyframes, bukan satu: arah mendatar dan diagonal menggeser sumbu X,
+     arah tegak menggeser sumbu Y. `alternate` yang membuatnya bolak-balik —
+     itulah `yoyo` di sumbernya, tanpa satu pun nilai dihitung di JavaScript. */
+  @keyframes gradient-text-x {
+    from {
+      background-position: 0% 50%;
+    }
+    to {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes gradient-text-y {
+    from {
+      background-position: 50% 0%;
+    }
+    to {
+      background-position: 50% 100%;
+    }
+  }
+
+  /* Kotak yang muncul lalu menghilang di `animated-grid-pattern`.
+     Dijalankan dua kali dengan arah bolak-balik: sekali masuk, sekali keluar —
+     sama dengan `repeat: 1` + `repeatType: "reverse"` di sumbernya. Setelah
+     keduanya selesai, komponennya memindahkan kotak itu ke petak lain. */
+  @keyframes grid-square-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: var(--grid-square-opacity, 0.5);
+    }
+  }
+}
+
+/* `scale` pada elemen SVG berputar di titik asal kanvas, bukan di pusat
+   bentuknya sendiri — titiknya akan melesat ke sudut kiri atas alih-alih
+   membesar di tempat. `fill-box` memindahkan acuannya ke kotak bentuk itu.
+   Pustaka animasi JavaScript menyetel keduanya diam-diam; di sini disetel
+   terang-terangan. */
+@utility dot-glow-animate {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: dot-glow var(--dot-duration) ease-in-out var(--dot-delay) infinite;
+}
+
+/*
+ * Animasi milik komponen berkategori (`src/components/`).
+ *
+ * Dipisah dari blok di atas karena asalnya berbeda: yang di atas dari primitif
+ * magicui, yang di sini dari registry komponen berkategori. Nama peubahnya sengaja
+ * dipertahankan persis — `--animate-spin-around`, `--marquee-duration`, dan
+ * kawan-kawannya dipakai langsung di kelas Tailwind di dalam komponennya, jadi
+ * mengganti namanya berarti menyunting belasan berkas untuk keuntungan nol.
+ */
+@theme {
+  --animate-spin-around: spin-around 0.8s linear infinite;
+
+  --animate-marquee-left: marquee-left var(--marquee-duration) linear var(--marquee-loop-count);
+  --animate-marquee-right: marquee-right var(--marquee-duration) linear var(--marquee-loop-count);
+  --animate-marquee-left-rtl: marquee-left-rtl var(--marquee-duration) linear var(--marquee-loop-count);
+  --animate-marquee-right-rtl: marquee-right-rtl var(--marquee-duration) linear var(--marquee-loop-count);
+  --animate-marquee-up: marquee-up var(--marquee-duration) linear var(--marquee-loop-count);
+  --animate-marquee-down: marquee-down var(--marquee-duration) linear var(--marquee-loop-count);
+
+  /*
+   * Mulai dari -90° karena lingkaran kemajuan digambar sudah diputar -90°:
+   * awal busurnya harus di atas, bukan di kanan.
+   */
+  @keyframes spin-around {
+    0% {
+      transform: rotate(-90deg);
+    }
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+
+  @keyframes marquee-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(calc(-100% - var(--marquee-gap)));
+    }
+  }
+
+  @keyframes marquee-right {
+    0% {
+      transform: translateX(calc(-100% - var(--marquee-gap)));
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes marquee-left-rtl {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(calc(100% + var(--marquee-gap)));
+    }
+  }
+
+  @keyframes marquee-right-rtl {
+    0% {
+      transform: translateX(calc(100% + var(--marquee-gap)));
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes marquee-up {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(calc(-100% - var(--marquee-gap)));
+    }
+  }
+
+  @keyframes marquee-down {
+    0% {
+      transform: translateY(calc(-100% - var(--marquee-gap)));
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+}

@@ -1,0 +1,93 @@
+<script lang="ts">
+export const description = "Dua kartu fitur lebar berdampingan dengan tombol."
+</script>
+
+<script setup lang="ts">
+import { ArrowRight, Blocks, Settings2 } from '@lucide/vue'
+import { Button } from '@/components/ui/button'
+</script>
+
+<template>
+  <div class="mx-auto w-full max-w-(--breakpoint-lg) px-6 py-20">
+    <h2 class="font-medium text-3xl leading-10 tracking-[-0.04em] sm:text-4xl md:text-[40px] md:leading-13">
+      Design and engage: <br />
+      <span class="text-muted-foreground/80">
+        Build smarter spaces and strategies
+      </span>
+    </h2>
+    <div class="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-3">
+      <!-- Card 1 -->
+      <div class="col-span-1 rounded-xl bg-muted p-6 md:col-span-2 lg:col-span-1">
+        <!-- Media 1 Mobile -->
+        <div class="mb-6 aspect-video w-full rounded-xl bg-background md:hidden" />
+
+        <span class="font-medium text-xl tracking-[-0.01em]">
+          Plan Smarter
+        </span>
+
+        <ul class="mt-6 space-y-5">
+          <li>
+            <div class="flex items-start gap-3">
+              <Settings2 class="shrink-0" />
+              <p class="-mt-0.5">
+                Design your space with drag-and-drop simplicity—create grids,
+                lists, or galleries in seconds.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-start gap-3">
+              <Blocks class="shrink-0" />
+              <p class="-mt-0.5">
+                Embed polls, quizzes, or forms to keep your audience engaged.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <Button class="mt-8 w-full">
+          Build your strategy <ArrowRight />
+        </Button>
+      </div>
+      <!-- Media 1 Desktop -->
+      <div class="col-span-1 hidden rounded-xl bg-muted md:col-span-3 md:block lg:col-span-2" />
+
+      <!-- Media 2 Desktop -->
+      <div class="col-span-1 hidden rounded-xl bg-muted md:col-span-3 md:block lg:col-span-2" />
+
+      <!-- Card 2 -->
+      <div class="col-span-1 rounded-xl bg-muted p-6 md:col-span-2 lg:col-span-1">
+        <!-- Media 2 Mobile -->
+        <div class="mb-6 aspect-video w-full rounded-xl bg-background md:hidden" />
+
+        <span class="font-medium text-xl tracking-[-0.01em]">
+          Plan Smarter
+        </span>
+
+        <ul class="mt-6 space-y-4">
+          <li>
+            <div class="flex items-start gap-3">
+              <Settings2 class="shrink-0" />
+              <p class="-mt-0.5">
+                Design your space with drag-and-drop simplicity—create grids,
+                lists, or galleries in seconds.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-start gap-3">
+              <Blocks class="shrink-0" />
+              <p class="-mt-0.5">
+                Embed polls, quizzes, or forms to keep your audience engaged.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <Button class="mt-8 w-full">
+          Build your strategy <ArrowRight />
+        </Button>
+      </div>
+    </div>
+  </div>
+</template>

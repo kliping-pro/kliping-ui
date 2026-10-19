@@ -1,0 +1,442 @@
+{
+  "galleries": [
+    {
+      "slug": "state",
+      "name": "State",
+      "items": [
+        "use-boolean",
+        "use-controllable-value",
+        "use-counter",
+        "use-debounce",
+        "use-reset-state",
+        "use-throttle",
+        "use-toggle"
+      ]
+    },
+    {
+      "slug": "advanced",
+      "name": "Advanced",
+      "items": [
+        "use-creation",
+        "use-custom-compare-effect",
+        "use-latest",
+        "use-lock-fn",
+        "use-memoized-fn",
+        "use-previous"
+      ]
+    },
+    {
+      "slug": "lifecycle",
+      "name": "Lifecycle",
+      "items": [
+        "use-debounce-effect",
+        "use-debounce-fn",
+        "use-deep-compare-effect",
+        "use-deep-compare-layout-effect",
+        "use-effect-event",
+        "use-effect-with-target",
+        "use-interval",
+        "use-is-hydrated",
+        "use-isomorphic-layout-effect",
+        "use-mount",
+        "use-throttle-effect",
+        "use-throttle-fn",
+        "use-timeout",
+        "use-unmount",
+        "use-update",
+        "use-update-effect"
+      ]
+    },
+    {
+      "slug": "browser",
+      "name": "Browser",
+      "items": [
+        "use-active-element",
+        "use-battery",
+        "use-click-any-where",
+        "use-click-away",
+        "use-clipboard",
+        "use-document-visibility",
+        "use-element-size",
+        "use-event-listener",
+        "use-fps",
+        "use-fullscreen",
+        "use-hash",
+        "use-hover",
+        "use-in-viewport",
+        "use-is-match-media",
+        "use-is-online",
+        "use-mouse",
+        "use-network",
+        "use-os",
+        "use-scroll-lock",
+        "use-text-selection",
+        "use-title"
+      ]
+    },
+    {
+      "slug": "development",
+      "name": "Development",
+      "items": [
+        "use-why-did-you-update"
+      ]
+    },
+    {
+      "slug": "third-party",
+      "name": "Third-Party",
+      "items": [
+        "use-stick-to-bottom"
+      ]
+    },
+    {
+      "slug": "libraries",
+      "name": "Libraries",
+      "items": [
+        "is-browser",
+        "create-context",
+        "target",
+        "try-on-mounted"
+      ]
+    }
+  ],
+  "demo": {
+    "use-boolean": "UseBooleanDemo",
+    "use-controllable-value": "UseControllableValueDemo",
+    "use-counter": "UseCounterDemo",
+    "use-debounce": "UseDebounceDemo",
+    "use-reset-state": "UseResetStateDemo",
+    "use-throttle": "UseThrottleDemo",
+    "use-toggle": "UseToggleDemo",
+    "use-creation": "UseCreationDemo",
+    "use-custom-compare-effect": "UseCustomCompareEffectDemo",
+    "use-latest": "UseLatestDemo",
+    "use-lock-fn": "UseLockFnDemo",
+    "use-memoized-fn": "UseMemoizedFnDemo",
+    "use-previous": "UsePreviousDemo",
+    "use-debounce-effect": "UseDebounceEffectDemo",
+    "use-debounce-fn": "UseDebounceFnDemo",
+    "use-deep-compare-effect": "UseDeepCompareEffectDemo",
+    "use-deep-compare-layout-effect": "UseDeepCompareLayoutEffectDemo",
+    "use-effect-event": "UseEffectEventDemo",
+    "use-effect-with-target": "UseEffectWithTargetDemo",
+    "use-interval": "UseIntervalDemo",
+    "use-is-hydrated": "UseIsHydratedDemo",
+    "use-isomorphic-layout-effect": "UseIsomorphicLayoutEffectDemo",
+    "use-mount": "UseMountDemo",
+    "use-throttle-effect": "UseThrottleEffectDemo",
+    "use-throttle-fn": "UseThrottleFnDemo",
+    "use-timeout": "UseTimeoutDemo",
+    "use-unmount": "UseUnmountDemo",
+    "use-update": "UseUpdateDemo",
+    "use-update-effect": "UseUpdateEffectDemo",
+    "use-active-element": "UseActiveElementDemo",
+    "use-battery": "UseBatteryDemo",
+    "use-click-any-where": "UseClickAnyWhereDemo",
+    "use-click-away": "UseClickAwayDemo",
+    "use-clipboard": "UseClipboardDemo",
+    "use-document-visibility": "UseDocumentVisibilityDemo",
+    "use-element-size": "UseElementSizeDemo",
+    "use-event-listener": "UseEventListenerDemo",
+    "use-fps": "UseFpsDemo",
+    "use-fullscreen": "UseFullscreenDemo",
+    "use-hash": "UseHashDemo",
+    "use-hover": "UseHoverDemo",
+    "use-in-viewport": "UseInViewportDemo",
+    "use-is-match-media": "UseIsMatchMediaDemo",
+    "use-is-online": "UseIsOnlineDemo",
+    "use-mouse": "UseMouseDemo",
+    "use-network": "UseNetworkDemo",
+    "use-os": "UseOsDemo",
+    "use-scroll-lock": "UseScrollLockDemo",
+    "use-text-selection": "UseTextSelectionDemo",
+    "use-title": "UseTitleDemo",
+    "use-why-did-you-update": "UseWhyDidYouUpdateDemo",
+    "use-stick-to-bottom": "UseStickToBottomDemo",
+    "is-browser": "IsBrowserDemo",
+    "create-context": "CreateContextDemo",
+    "target": "TargetDemo",
+    "try-on-mounted": "TryOnMountedDemo"
+  },
+  "info": {
+    "use-boolean": {
+      "title": "useBoolean",
+      "description": "Membalik nilai boolean, dengan nama aksi yang menyebut maksudnya.",
+      "installable": true
+    },
+    "use-controllable-value": {
+      "title": "useControllableValue",
+      "description": "Satu nilai yang bisa dikendalikan dari luar, atau mengurus dirinya sendiri.",
+      "installable": true
+    },
+    "use-counter": {
+      "title": "useCounter",
+      "description": "Pencacah dengan aksi yang menyebut maksudnya.",
+      "installable": true
+    },
+    "use-debounce": {
+      "title": "useDebounce",
+      "description": "Salinan sebuah nilai yang tertinggal beberapa saat di belakangnya.",
+      "installable": true
+    },
+    "use-reset-state": {
+      "title": "useResetState",
+      "description": "State yang bisa dikembalikan ke nilai awalnya.",
+      "installable": true
+    },
+    "use-throttle": {
+      "title": "useThrottle",
+      "description": "Salinan sebuah nilai yang diperbarui paling sering sekali per jeda.",
+      "installable": true
+    },
+    "use-toggle": {
+      "title": "useToggle",
+      "description": "Membalik sebuah nilai bolak-balik antara dua kemungkinan.",
+      "installable": true
+    },
+    "use-creation": {
+      "title": "useCreation",
+      "description": "Objek yang dibuat sekali. Di Vue itu perilaku bawaan setup().",
+      "installable": false
+    },
+    "use-custom-compare-effect": {
+      "title": "useCustomCompareEffect",
+      "description": "Bereaksi hanya pada bagian yang Anda pedulikan.",
+      "installable": false
+    },
+    "use-latest": {
+      "title": "useLatest",
+      "description": "Nilai terbaru di dalam closure. Di Vue tidak perlu apa pun \\u2014 setup() berjalan sekali.",
+      "installable": false
+    },
+    "use-lock-fn": {
+      "title": "useLockFn",
+      "description": "Membungkus fungsi async supaya tidak bisa jalan dua kali bersamaan.",
+      "installable": true
+    },
+    "use-memoized-fn": {
+      "title": "useMemoizedFn",
+      "description": "Identitas fungsi yang stabil. Di Vue sudah begitu sejak awal.",
+      "installable": false
+    },
+    "use-previous": {
+      "title": "usePrevious",
+      "description": "Nilai sebelumnya dari sesuatu yang berubah.",
+      "installable": true
+    },
+    "use-debounce-effect": {
+      "title": "useDebounceEffect",
+      "description": "Efek yang menunggu perubahannya berhenti.",
+      "installable": false
+    },
+    "use-debounce-fn": {
+      "title": "useDebounceFn",
+      "description": "Menunda sebuah fungsi sampai pemanggilannya berhenti sejenak.",
+      "installable": true
+    },
+    "use-deep-compare-effect": {
+      "title": "useDeepCompareEffect",
+      "description": "Bereaksi pada perubahan isi objek, bukan penggantian referensinya.",
+      "installable": false
+    },
+    "use-deep-compare-layout-effect": {
+      "title": "useDeepCompareLayoutEffect",
+      "description": "Perubahan isi objek yang ditangani sebelum peramban menggambar.",
+      "installable": false
+    },
+    "use-effect-event": {
+      "title": "useEffectEvent",
+      "description": "Membaca nilai terbaru dari dalam efek tanpa memasang ulang efeknya.",
+      "installable": false
+    },
+    "use-effect-with-target": {
+      "title": "useEffectWithTarget",
+      "description": "Menjalankan sesuatu terhadap elemen DOM yang boleh berganti.",
+      "installable": false
+    },
+    "use-interval": {
+      "title": "useInterval",
+      "description": "Menjalankan sesuatu berulang kali, dengan jeda yang boleh berubah.",
+      "installable": true
+    },
+    "use-is-hydrated": {
+      "title": "useIsHydrated",
+      "description": "Apakah halamannya sudah dihidrasi di peramban.",
+      "installable": true
+    },
+    "use-isomorphic-layout-effect": {
+      "title": "useIsomorphicLayoutEffect",
+      "description": "Efek yang aman saat dirender di server. Di Vue tidak ada yang perlu dipilih.",
+      "installable": false
+    },
+    "use-mount": {
+      "title": "useMount",
+      "description": "Menjalankan sesuatu setelah komponennya terpasang.",
+      "installable": false
+    },
+    "use-throttle-effect": {
+      "title": "useThrottleEffect",
+      "description": "Efek yang dijatah paling sering sekali per jeda.",
+      "installable": false
+    },
+    "use-throttle-fn": {
+      "title": "useThrottleFn",
+      "description": "Membatasi sebuah fungsi agar tidak jalan lebih sering dari sekali per jeda.",
+      "installable": true
+    },
+    "use-timeout": {
+      "title": "useTimeout",
+      "description": "Menjalankan sesuatu sekali, setelah jeda.",
+      "installable": true
+    },
+    "use-unmount": {
+      "title": "useUnmount",
+      "description": "Membersihkan saat komponennya dilepas.",
+      "installable": false
+    },
+    "use-update": {
+      "title": "useUpdate",
+      "description": "Memaksa gambar ulang. Di Vue hampir tidak pernah dibutuhkan.",
+      "installable": false
+    },
+    "use-update-effect": {
+      "title": "useUpdateEffect",
+      "description": "Efek yang melewatkan jalan pertamanya. Itu perilaku bawaan watch().",
+      "installable": false
+    },
+    "use-active-element": {
+      "title": "useActiveElement",
+      "description": "Elemen yang sedang menerima fokus.",
+      "installable": true
+    },
+    "use-battery": {
+      "title": "useBattery",
+      "description": "Keadaan baterai perangkat.",
+      "installable": true
+    },
+    "use-click-any-where": {
+      "title": "useClickAnyWhere",
+      "description": "Menjalankan sesuatu setiap kali ada klik di mana pun di halaman.",
+      "installable": true
+    },
+    "use-click-away": {
+      "title": "useClickAway",
+      "description": "Menjalankan sesuatu ketika kliknya jatuh di luar sekumpulan elemen.",
+      "installable": true
+    },
+    "use-clipboard": {
+      "title": "useClipboard",
+      "description": "Menyalin ke papan klip, dengan penanda tersalin yang padam sendiri.",
+      "installable": true
+    },
+    "use-document-visibility": {
+      "title": "useDocumentVisibility",
+      "description": "Apakah tab-nya sedang dilihat.",
+      "installable": true
+    },
+    "use-element-size": {
+      "title": "useElementSize",
+      "description": "Ukuran sebuah elemen, diikuti lewat ResizeObserver.",
+      "installable": true
+    },
+    "use-event-listener": {
+      "title": "useEventListener",
+      "description": "Memasang pendengar peristiwa yang ikut hidup dan mati bersama scope-nya.",
+      "installable": true
+    },
+    "use-fps": {
+      "title": "useFps",
+      "description": "Berapa bingkai per detik yang sedang digambar peramban.",
+      "installable": true
+    },
+    "use-fullscreen": {
+      "title": "useFullscreen",
+      "description": "Layar penuh, dengan seluruh awalan vendor yang masih dibutuhkan.",
+      "installable": true
+    },
+    "use-hash": {
+      "title": "useHash",
+      "description": "Bagian # dari alamat halaman, yang bisa dibaca dan ditulis.",
+      "installable": true
+    },
+    "use-hover": {
+      "title": "useHover",
+      "description": "Apakah penunjuk sedang berada di atas sebuah elemen.",
+      "installable": true
+    },
+    "use-in-viewport": {
+      "title": "useInViewport",
+      "description": "Apakah sebuah elemen sedang terlihat di layar.",
+      "installable": true
+    },
+    "use-is-match-media": {
+      "title": "useIsMatchMedia",
+      "description": "Apakah sebuah kueri media sedang cocok.",
+      "installable": true
+    },
+    "use-is-online": {
+      "title": "useIsOnline",
+      "description": "Apakah peramban merasa sedang tersambung.",
+      "installable": true
+    },
+    "use-mouse": {
+      "title": "useMouse",
+      "description": "Posisi penunjuk, dengan dukungan sentuh.",
+      "installable": true
+    },
+    "use-network": {
+      "title": "useNetwork",
+      "description": "Keadaan jaringan, selengkap yang mau diberitahu peramban.",
+      "installable": true
+    },
+    "use-os": {
+      "title": "useOs",
+      "description": "Sistem operasi yang sedang dipakai, ditebak dari navigator.",
+      "installable": true
+    },
+    "use-scroll-lock": {
+      "title": "useScrollLock",
+      "description": "Mengunci gulungan halaman untuk dialog, drawer, dan menu layar penuh.",
+      "installable": true
+    },
+    "use-text-selection": {
+      "title": "useTextSelection",
+      "description": "Teks yang sedang disorot, beserta letaknya di layar.",
+      "installable": true
+    },
+    "use-title": {
+      "title": "useTitle",
+      "description": "Judul halaman, yang bisa dibaca dan ditulis.",
+      "installable": true
+    },
+    "use-why-did-you-update": {
+      "title": "useWhyDidYouUpdate",
+      "description": "Mencetak prop mana yang berubah setiap kali komponennya digambar ulang.",
+      "installable": true
+    },
+    "use-stick-to-bottom": {
+      "title": "useStickToBottom",
+      "description": "Menahan sebuah wadah gulung tetap menempel di dasarnya saat isinya bertambah.",
+      "installable": true
+    },
+    "is-browser": {
+      "title": "isBrowser",
+      "description": "Penjaga agar kode yang menyentuh window tidak ikut dijalankan di server.",
+      "installable": false
+    },
+    "create-context": {
+      "title": "createContext",
+      "description": "Membagi nilai ke seluruh pohon komponen tanpa mengoper prop.",
+      "installable": false
+    },
+    "target": {
+      "title": "getTargetElement",
+      "description": "Membaca elemen DOM dari ref, getter, elemen, atau instance komponen.",
+      "installable": false
+    },
+    "try-on-mounted": {
+      "title": "tryOnMounted",
+      "description": "Jalankan sesuatu setelah komponennya terpasang, atau sekarang juga kalau tidak ada komponennya.",
+      "installable": false
+    }
+  }
+}

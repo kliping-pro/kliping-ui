@@ -1,0 +1,15 @@
+# Konfigurasi Cloudflare Pages.
+#
+# Yang diunggah cuma hasil `vitepress build` — folder berisi HTML, CSS, JS, dan
+# gambar. Tidak ada Worker, tidak ada Function, tidak ada binding ke database.
+# Itu memang inti keputusannya sejak awal: situs statis, tanpa server.
+#
+# Deploy manual, sekali jalan:
+#   npm run docs:build
+#   npx wrangler pages deploy
+#
+# Kalau reponya sudah disambungkan ke Cloudflare Pages lewat Git, berkas ini
+# yang jadi pegangan — folder keluarannya tidak perlu diisi lagi di dashboard.
+
+name = "kliping"
+pages_build_output_dir = "docs/.vitepress/dist"

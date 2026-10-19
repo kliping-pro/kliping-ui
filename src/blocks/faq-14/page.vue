@@ -1,0 +1,103 @@
+<script lang="ts">
+export const description = "Akordeon bergaris pemisah dengan judul percakapan."
+</script>
+
+<script setup lang="ts">
+import {
+  CircleDollarSign,
+  Clock,
+  Package,
+  PackageX,
+  Plane,
+  Waypoints,
+} from '@lucide/vue'
+import { cn } from "@/lib/utils"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
+
+const faqs = [
+  {
+    question: "What is your return policy?",
+    answer:
+      "We offer a 30-day return policy on all unused products. Please ensure the item is in original packaging when returning.",
+    icon: Package,
+  },
+  {
+    question: "How long does shipping take?",
+    answer:
+      "Shipping typically takes 3-7 business days depending on your location.",
+    icon: Clock,
+  },
+  {
+    question: "Do you ship internationally?",
+    answer:
+      "Yes, we ship to most countries worldwide. Shipping fees and delivery times vary by destination.",
+    icon: Plane,
+  },
+  {
+    question: "How can I track my order?",
+    answer:
+      "After your order is shipped, you'll receive an email with a tracking link. You can also track your order in your account dashboard.",
+    icon: Waypoints,
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: "We accept all major credit cards, PayPal, UPI, and net banking.",
+    icon: CircleDollarSign,
+  },
+  {
+    question: "Can I cancel or change my order?",
+    answer:
+      "Yes, you can cancel or modify your order within 2 hours of placing it. After that, the order may already be processed for shipment.",
+    icon: PackageX,
+  },
+]
+</script>
+
+<template>
+  <div class="mx-auto max-w-2xl px-6 py-12 sm:py-14">
+    <h2 class="text-balance font-medium text-4xl/[1.3] tracking-[-0.04em]">
+      Got Questions? We've Got Answers
+    </h2>
+    <p class="mt-2.5 text-balance text-lg text-muted-foreground tracking-normal">
+      Everything you need to know about ordering, shipping, and returns.
+    </p>
+
+    <div class="mx-auto mt-8 max-w-2xl">
+      <Accordion collapsible :default-value="faqs[0].question" type="single">
+        <AccordionItem v-for="(faq, index) in faqs"
+          class="border not-last:border-b-0 bg-muted/35 last:border-b"
+          :key="`${faq.question}-${index}`"
+          :value="faq.question"
+        >
+          <AccordionTrigger class="rounded-none px-5 py-0 ps-0 text-base data-[state=open]:border-b">
+            <div class="flex gap-2 divide-x">
+              <div
+                :class="cn(
+                  'flex items-center justify-center bg-muted/40 bg-size-[10px_10px] bg-fixed px-4',
+                  {
+                    'bg-[repeating-linear-gradient(315deg,color-mix(in_srgb,var(--border)_30%,transparent)_0,color-mix(in_srgb,var(--border)_30%,transparent)_1px,transparent_0,transparent_50%)]':
+                      index % 2 === 0,
+                    'bg-[repeating-linear-gradient(45deg,color-mix(in_srgb,var(--border)_30%,transparent)_0,color-mix(in_srgb,var(--border)_30%,transparent)_1px,transparent_0,transparent_50%)]':
+                      index % 2 !== 0,
+                  }
+                )"
+              >
+                <component :is="faq.icon" class="size-5 fill-foreground/7" />
+              </div>
+              <span class="py-3.5 pl-2.5">{{ faq.question }}</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent class="relative bg-background px-5 py-5 pl-18 text-base text-foreground/75">
+            {{ faq.answer }}
+            <div class="absolute inset-y-0 left-13 border-foreground/10 border-s border-dashed" />
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,35 @@
+# shadcn-vue dan kliping-vue menaruh dokumentasinya di bawah /docs. Kliping
+# tidak — halamannya duduk di akar. Siapa pun yang datang membawa tautan
+# berpola lama diantar ke tempat yang benar, bukan ke halaman 404.
+
+/docs                 /introduction    301
+/docs/*               /:splat          301
+/hooks/saat-terpasang  /hooks/try-on-mounted  301
+
+# Komponen "-lanjutan" berganti nama jadi "-advanced": nama item registry dan
+# folder yang mendarat di project orang memakai bahasa Inggris.
+/components/combobox-lanjutan     /components/combobox-advanced     301
+/components/data-table-lanjutan   /components/data-table-advanced   301
+/components/kbd-lanjutan          /components/kbd-advanced          301
+/components/stepper-lanjutan      /components/stepper-advanced      301
+/components/tags-input-lanjutan   /components/tags-input-advanced   301
+
+# Galeri varian pindah dari /variasi ke /variants (penamaan teknis berbahasa
+# Inggris, sama dengan folder src/variants dan registry).
+/variasi              /variants              301
+/variasi/*            /variants/:splat       301
+/view/variasi/*       /view/variants/:splat  301
+/thumbs/variasi/*     /thumbs/variants/:splat  301
+/kredit               /credits                 301
+/thumbs/blok/*        /thumbs/blocks/:splat    301
+/thumbs/chart/*       /thumbs/charts/:splat    301
+
+# Halaman pembuka Hooks berganti slug Inggris.
+/hooks/pengenalan     /hooks/introduction    301
+/hooks/instalasi      /hooks/installation    301
+/hooks/kredit         /credits               301
+/hooks/credits        /credits               301
+/blocks/docs/credits  /credits               301
+/variants/docs/credits /credits              301
+/charts/docs/credits  /credits               301
+/templates/docs/credits /credits             301

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Gambar contoh untuk pemotong">
+  <defs>
+    <linearGradient id="langit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="55%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="bukit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#langit)"/>
+  <circle cx="960" cy="180" r="70" fill="#fef3c7"/>
+  <path d="M0 620 L240 430 L430 600 L640 380 L860 620 L1050 470 L1200 610 L1200 800 L0 800 Z" fill="url(#bukit)"/>
+  <path d="M0 700 L180 640 L420 720 L700 650 L960 730 L1200 670 L1200 800 L0 800 Z" fill="#052e16" opacity="0.75"/>
+
+  <g stroke="#ffffff" stroke-width="2" opacity="0.35">
+    <path d="M400 0 V800 M800 0 V800 M0 267 H1200 M0 533 H1200"/>
+  </g>
+
+  <g fill="#ffffff" font-family="system-ui, sans-serif" font-size="34" font-weight="600" opacity="0.9">
+    <text x="30" y="60">kiri atas</text>
+    <text x="1170" y="60" text-anchor="end">kanan atas</text>
+    <text x="30" y="775">kiri bawah</text>
+    <text x="1170" y="775" text-anchor="end">kanan bawah</text>
+  </g>
+
+  <text x="600" y="285" fill="#ffffff" font-family="system-ui, sans-serif" font-size="72" font-weight="700" text-anchor="middle" opacity="0.95">1200 &#215; 800</text>
+  <circle cx="600" cy="400" r="14" fill="#ffffff"/>
+</svg>

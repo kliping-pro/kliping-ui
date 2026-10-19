@@ -1,0 +1,1542 @@
+[
+  {
+    "name": "accordion-01",
+    "component": "accordion",
+    "description": "Akordeon polos, satu butir terbuka pada satu waktu."
+  },
+  {
+    "name": "accordion-02",
+    "component": "accordion",
+    "description": "Tiap butir berkotak sendiri, dipisahkan jarak."
+  },
+  {
+    "name": "accordion-03",
+    "component": "accordion",
+    "description": "Butirnya menyatu jadi satu kotak bergaris pemisah."
+  },
+  {
+    "name": "accordion-04",
+    "component": "accordion",
+    "description": "Butir berlatar abu tanpa garis, dipisahkan jarak."
+  },
+  {
+    "name": "accordion-05",
+    "component": "accordion",
+    "description": "Butir berlatar abu yang menyatu jadi satu blok."
+  },
+  {
+    "name": "accordion-06",
+    "component": "accordion",
+    "description": "Latar butirnya baru muncul saat terbuka."
+  },
+  {
+    "name": "accordion-07",
+    "component": "accordion",
+    "description": "Garis bawah dan judulnya berubah nila saat terbuka."
+  },
+  {
+    "name": "accordion-08",
+    "component": "accordion",
+    "description": "Beberapa butir boleh terbuka bersamaan."
+  },
+  {
+    "name": "accordion-09",
+    "component": "accordion",
+    "description": "Tanda tambah yang berputar jadi silang saat dibuka."
+  },
+  {
+    "name": "accordion-10",
+    "component": "accordion",
+    "description": "Judul berikon, isinya sejajar di bawah ikonnya."
+  },
+  {
+    "name": "accordion-11",
+    "component": "accordion",
+    "description": "Isinya bergaris putus-putus yang menyambung ke ikonnya."
+  },
+  {
+    "name": "accordion-12",
+    "component": "accordion",
+    "description": "Satu butirnya dimatikan dan tidak bisa dibuka."
+  },
+  {
+    "name": "alert-01",
+    "component": "alert",
+    "description": "Peringatan bawaan: ikon, judul, dan satu baris keterangan."
+  },
+  {
+    "name": "alert-02",
+    "component": "alert",
+    "description": "Nada merusak, untuk kabar yang gagal."
+  },
+  {
+    "name": "alert-03",
+    "component": "alert",
+    "description": "Nada hijau, untuk yang berhasil."
+  },
+  {
+    "name": "alert-04",
+    "component": "alert",
+    "description": "Nada kuning, untuk yang perlu dipertimbangkan dulu."
+  },
+  {
+    "name": "alert-05",
+    "component": "alert",
+    "description": "Nada biru langit, untuk kabar yang sekadar memberi tahu."
+  },
+  {
+    "name": "alert-06",
+    "component": "alert",
+    "description": "Berlatar abu, tanpa warna nada apa pun."
+  },
+  {
+    "name": "alert-07",
+    "component": "alert",
+    "description": "Latar berwarna tanpa garis tepi, empat nada sekaligus."
+  },
+  {
+    "name": "alert-08",
+    "component": "alert",
+    "description": "Latar berwarna beserta garis tepi senadanya."
+  },
+  {
+    "name": "alert-09",
+    "component": "alert",
+    "description": "Garis tebal di tepi kiri, tanpa sudut membulat."
+  },
+  {
+    "name": "alert-10",
+    "component": "alert",
+    "description": "Ada tombol silang; menutupnya menyisakan tautan untuk membukanya lagi."
+  },
+  {
+    "name": "alert-dialog-01",
+    "component": "alert-dialog",
+    "description": "Dialog konfirmasi bawaan, dua tombol di kanan bawah."
+  },
+  {
+    "name": "alert-dialog-02",
+    "component": "alert-dialog",
+    "description": "Ikon bahaya di samping judulnya."
+  },
+  {
+    "name": "alert-dialog-03",
+    "component": "alert-dialog",
+    "description": "Ikon besar dan seluruh isinya rata tengah."
+  },
+  {
+    "name": "alert-dialog-04",
+    "component": "alert-dialog",
+    "description": "Kabar pembaruan: daftar fitur baru berikon dan lencana versi."
+  },
+  {
+    "name": "alert-dialog-05",
+    "component": "alert-dialog",
+    "description": "Judul dan tombol tutupnya sebaris, dipisahkan garis."
+  },
+  {
+    "name": "alert-dialog-06",
+    "component": "alert-dialog",
+    "description": "Keterangan panjang dengan tautan pelajari lebih lanjut."
+  },
+  {
+    "name": "avatar-01",
+    "component": "avatar",
+    "description": "Avatar bawaan: foto, dengan inisial sebagai cadangannya."
+  },
+  {
+    "name": "avatar-02",
+    "component": "avatar",
+    "description": "Avatar yang bisa diklik, menuju profilnya."
+  },
+  {
+    "name": "avatar-03",
+    "component": "avatar",
+    "description": "Namanya muncul sebagai tooltip saat disentuh kursor."
+  },
+  {
+    "name": "avatar-04",
+    "component": "avatar",
+    "description": "Nama dan lencana terverifikasi di sampingnya."
+  },
+  {
+    "name": "avatar-05",
+    "component": "avatar",
+    "description": "Kartu profil singkat muncul saat kursor berhenti di atasnya."
+  },
+  {
+    "name": "avatar-06",
+    "component": "avatar",
+    "description": "Empat ukuran, dari kecil sampai besar."
+  },
+  {
+    "name": "avatar-07",
+    "component": "avatar",
+    "description": "Inisial berlatar warna, empat warna berbeda."
+  },
+  {
+    "name": "avatar-08",
+    "component": "avatar",
+    "description": "Empat bentuk sudut, dari persegi sampai bulat penuh."
+  },
+  {
+    "name": "avatar-09",
+    "component": "avatar",
+    "description": "Ikon sebagai cadangan, bukan inisial."
+  },
+  {
+    "name": "avatar-10",
+    "component": "avatar",
+    "description": "Bercincin, dengan jarak antara cincin dan fotonya."
+  },
+  {
+    "name": "avatar-11",
+    "component": "avatar",
+    "description": "Titik status di pojok: online, sibuk, dan offline."
+  },
+  {
+    "name": "avatar-12",
+    "component": "avatar",
+    "description": "Tumpukan avatar yang saling menindih."
+  },
+  {
+    "name": "avatar-13",
+    "component": "avatar",
+    "description": "Tumpukan yang dipotong, sisanya diringkas jadi angka."
+  },
+  {
+    "name": "avatar-14",
+    "component": "avatar",
+    "description": "Lencana kecil di pojok kanan bawah, tiga keadaan."
+  },
+  {
+    "name": "avatar-15",
+    "component": "avatar",
+    "description": "Avatar di samping nama dan satu baris pesannya."
+  },
+  {
+    "name": "avatar-16",
+    "component": "avatar",
+    "description": "Avatar sebagai pemicu menu akun."
+  },
+  {
+    "name": "badge-01",
+    "component": "badge",
+    "description": "Lencana bawaan, berlatar warna utama."
+  },
+  {
+    "name": "badge-02",
+    "component": "badge",
+    "description": "Nada sekunder, lebih tenang dari yang bawaan."
+  },
+  {
+    "name": "badge-03",
+    "component": "badge",
+    "description": "Bergaris tepi saja, tanpa latar."
+  },
+  {
+    "name": "badge-04",
+    "component": "badge",
+    "description": "Nada merusak, untuk yang harus diperhatikan."
+  },
+  {
+    "name": "badge-05",
+    "component": "badge",
+    "description": "Tiga bentuk sudut, dari persegi sampai bulat penuh."
+  },
+  {
+    "name": "badge-06",
+    "component": "badge",
+    "description": "Latar bergradasi biru ke nila."
+  },
+  {
+    "name": "badge-07",
+    "component": "badge",
+    "description": "Garis tepinya yang bergradasi, bukan latarnya."
+  },
+  {
+    "name": "badge-08",
+    "component": "badge",
+    "description": "Titik status berwarna di depan tulisannya."
+  },
+  {
+    "name": "badge-09",
+    "component": "badge",
+    "description": "Titik status, dengan garis tepi senada latarnya."
+  },
+  {
+    "name": "badge-10",
+    "component": "badge",
+    "description": "Foto bulat di dalam lencananya, di kiri atau di kanan."
+  },
+  {
+    "name": "badge-11",
+    "component": "badge",
+    "description": "Berikon panah dan silang, di kiri maupun di kanan."
+  },
+  {
+    "name": "badge-12",
+    "component": "badge",
+    "description": "Lencana yang bisa diklik, digambar sebagai tombol."
+  },
+  {
+    "name": "badge-13",
+    "component": "badge",
+    "description": "Lencana sebagai tautan, lengkap dengan foto profilnya."
+  },
+  {
+    "name": "badge-14",
+    "component": "badge",
+    "description": "Angka hitungan di dalam lencananya sendiri."
+  },
+  {
+    "name": "badge-15",
+    "component": "badge",
+    "description": "Menempel di baris menu, menandai yang baru dan yang percobaan."
+  },
+  {
+    "name": "badge-16",
+    "component": "badge",
+    "description": "Angka di samping judul tab."
+  },
+  {
+    "name": "badge-17",
+    "component": "badge",
+    "description": "Menempel di pojok tombol ikon, sebagai penghitung pemberitahuan."
+  },
+  {
+    "name": "breadcrumb-01",
+    "component": "breadcrumb",
+    "description": "Remah roti bawaan, dipisahkan tanda panah."
+  },
+  {
+    "name": "breadcrumb-02",
+    "component": "breadcrumb",
+    "description": "Dipisahkan garis miring."
+  },
+  {
+    "name": "breadcrumb-03",
+    "component": "breadcrumb",
+    "description": "Dipisahkan panah ganda."
+  },
+  {
+    "name": "breadcrumb-04",
+    "component": "breadcrumb",
+    "description": "Dipisahkan titik bulat."
+  },
+  {
+    "name": "breadcrumb-05",
+    "component": "breadcrumb",
+    "description": "Ikon rumah menggantikan kata pertamanya."
+  },
+  {
+    "name": "breadcrumb-06",
+    "component": "breadcrumb",
+    "description": "Seluruh jenjangnya ikon, kecuali yang terakhir."
+  },
+  {
+    "name": "breadcrumb-07",
+    "component": "breadcrumb",
+    "description": "Ikon di depan tiap namanya."
+  },
+  {
+    "name": "breadcrumb-08",
+    "component": "breadcrumb",
+    "description": "Ikon di atas namanya, tersusun ke bawah."
+  },
+  {
+    "name": "breadcrumb-09",
+    "component": "breadcrumb",
+    "description": "Seluruh jalurnya berlatar abu di dalam satu kotak."
+  },
+  {
+    "name": "breadcrumb-10",
+    "component": "breadcrumb",
+    "description": "Halaman yang sedang dibuka ditandai lencana."
+  },
+  {
+    "name": "breadcrumb-11",
+    "component": "breadcrumb",
+    "description": "Tiap jenjangnya berbentuk lencana."
+  },
+  {
+    "name": "breadcrumb-12",
+    "component": "breadcrumb",
+    "description": "Lencana bergaris tepi, yang aktif diisi penuh."
+  },
+  {
+    "name": "breadcrumb-13",
+    "component": "breadcrumb",
+    "description": "Satu jenjangnya menu turun berisi cabang lain."
+  },
+  {
+    "name": "breadcrumb-14",
+    "component": "breadcrumb",
+    "description": "Jalur yang panjang diringkas jadi titik tiga yang bisa dibuka."
+  },
+  {
+    "name": "breadcrumb-15",
+    "component": "breadcrumb",
+    "description": "Penanda langkah: ikon bulat dihubungkan garis mendatar."
+  },
+  {
+    "name": "button-01",
+    "component": "button",
+    "description": "Tombol bawaan, berlatar warna utama."
+  },
+  {
+    "name": "button-02",
+    "component": "button",
+    "description": "Nada sekunder, lebih tenang dari yang bawaan."
+  },
+  {
+    "name": "button-03",
+    "component": "button",
+    "description": "Nada merusak, untuk tindakan yang sulit ditarik kembali."
+  },
+  {
+    "name": "button-04",
+    "component": "button",
+    "description": "Bergaris tepi saja, tanpa latar."
+  },
+  {
+    "name": "button-05",
+    "component": "button",
+    "description": "Berikon, di kiri maupun di kanan tulisannya."
+  },
+  {
+    "name": "button-06",
+    "component": "button",
+    "description": "Sedang memuat: pemintal menggantikan ikonnya."
+  },
+  {
+    "name": "button-07",
+    "component": "button",
+    "description": "Tombol terbelah — aksi utamanya di kiri, menu turun di kanan."
+  },
+  {
+    "name": "button-08",
+    "component": "button",
+    "description": "Tanpa latar dan tanpa garis, sampai kursor menyentuhnya."
+  },
+  {
+    "name": "button-09",
+    "component": "button",
+    "description": "Latar bergradasi biru ke nila."
+  },
+  {
+    "name": "button-10",
+    "component": "button",
+    "description": "Tombol yang tampil seperti tautan, termasuk yang dimatikan."
+  },
+  {
+    "name": "button-11",
+    "component": "button",
+    "description": "Tombol ikon bulat untuk tiga jejaring sosial."
+  },
+  {
+    "name": "button-12",
+    "component": "button",
+    "description": "Tombol masuk selebar kolom, satu baris per layanan."
+  },
+  {
+    "name": "button-13",
+    "component": "button",
+    "description": "Bercahaya nila, dengan bayangan berwarna di bawahnya."
+  },
+  {
+    "name": "button-14",
+    "component": "button",
+    "description": "Sudut bulat penuh."
+  },
+  {
+    "name": "button-15",
+    "component": "button",
+    "description": "Tombol suka yang berubah warna saat ditekan."
+  },
+  {
+    "name": "button-16",
+    "component": "button",
+    "description": "Pengalih tema terang dan gelap."
+  },
+  {
+    "name": "button-17",
+    "component": "button",
+    "description": "Selebar kolom yang menampungnya."
+  },
+  {
+    "name": "button-18",
+    "component": "button",
+    "description": "Tiga tombol yang menyatu jadi satu kelompok."
+  },
+  {
+    "name": "button-19",
+    "component": "button",
+    "description": "Kelompok tombol menaik-menurun, tersusun ke bawah."
+  },
+  {
+    "name": "button-20",
+    "component": "button",
+    "description": "Tombol salin yang berganti jadi centang sesudah disalin."
+  },
+  {
+    "name": "button-21",
+    "component": "button",
+    "description": "Angka pemberitahuan menempel di pojok tombol ikon."
+  },
+  {
+    "name": "button-22",
+    "component": "button",
+    "description": "Tooltip di keempat sisinya."
+  },
+  {
+    "name": "button-23",
+    "component": "button",
+    "description": "Sedikit mengecil saat ditekan."
+  },
+  {
+    "name": "card-01",
+    "component": "card",
+    "description": "Kartu formulir: judul, keterangan, isian, dan dua tombol di kakinya."
+  },
+  {
+    "name": "card-02",
+    "component": "card",
+    "description": "Berlatar abu tanpa bayangan."
+  },
+  {
+    "name": "card-03",
+    "component": "card",
+    "description": "Kartu daftar akun, dengan pemisah dan tombol masuk lewat Google."
+  },
+  {
+    "name": "card-04",
+    "component": "card",
+    "description": "Kartu ajakan bertindak selebar dua kolom, rata tengah."
+  },
+  {
+    "name": "card-05",
+    "component": "card",
+    "description": "Kartu paket harga, dengan tooltip penjelas di sampingnya."
+  },
+  {
+    "name": "card-06",
+    "component": "card",
+    "description": "Kartu post media sosial: avatar, gambar, dan tombol suka-komentar-bagikan."
+  },
+  {
+    "name": "card-07",
+    "component": "card",
+    "description": "Kartu ringkas berikon dengan satu tombol di kakinya."
+  },
+  {
+    "name": "card-08",
+    "component": "card",
+    "description": "Kartu testimoni dengan tanda kutip besar di latarnya."
+  },
+  {
+    "name": "card-09",
+    "component": "card",
+    "description": "Kartu polos berisi satu paragraf, tanpa judul dan tombol."
+  },
+  {
+    "name": "card-10",
+    "component": "card",
+    "description": "Kartu berjudul dengan deskripsi, isi, dan satu tombol di kakinya."
+  },
+  {
+    "name": "card-11",
+    "component": "card",
+    "description": "Kartu artikel blog: sampul gradasi, tanggal, lama baca, dan tautan Read More."
+  },
+  {
+    "name": "card-12",
+    "component": "card",
+    "description": "Kartu produk: lencana New, rating bintang, harga, tombol keranjang dan favorit."
+  },
+  {
+    "name": "card-13",
+    "component": "card",
+    "description": "Kartu formulir daftar akun: nama, Email, Password, dan tombol Sign Up selebar kartu."
+  },
+  {
+    "name": "carousel-01",
+    "component": "carousel",
+    "description": "Korsel bawaan, satu isi per geseran."
+  },
+  {
+    "name": "carousel-02",
+    "component": "carousel",
+    "description": "Beberapa isi terlihat sekaligus, jumlahnya ikut lebar layar."
+  },
+  {
+    "name": "carousel-03",
+    "component": "carousel",
+    "description": "Bergeser ke bawah, bukan ke samping."
+  },
+  {
+    "name": "carousel-04",
+    "component": "carousel",
+    "description": "Nomor geseran ditulis di bawahnya."
+  },
+  {
+    "name": "carousel-05",
+    "component": "carousel",
+    "description": "Nomor geseran dalam bentuk pecahan."
+  },
+  {
+    "name": "carousel-06",
+    "component": "carousel",
+    "description": "Titik penunjuk yang bisa diklik di bawahnya."
+  },
+  {
+    "name": "carousel-07",
+    "component": "carousel",
+    "description": "Tombol maju-mundur pindah ke bawah, di sisi kiri."
+  },
+  {
+    "name": "carousel-08",
+    "component": "carousel",
+    "description": "Bilah kemajuan di bawahnya, ikut bergerak tiap geseran."
+  },
+  {
+    "name": "carousel-09",
+    "component": "carousel",
+    "description": "Deretan gambar kecil di bawahnya sebagai penunjuk sekaligus pemilih."
+  },
+  {
+    "name": "carousel-10",
+    "component": "carousel",
+    "description": "Berputar tanpa ujung; yang bukan tengah dipudarkan."
+  },
+  {
+    "name": "carousel-11",
+    "component": "carousel",
+    "description": "Yang di tengah membesar, sisanya mengecil di kiri dan kanannya."
+  },
+  {
+    "name": "checkbox-01",
+    "component": "checkbox",
+    "description": "Kotak centang bawaan, dengan label di sampingnya."
+  },
+  {
+    "name": "checkbox-02",
+    "component": "checkbox",
+    "description": "Dimatikan, beserta labelnya yang ikut pudar."
+  },
+  {
+    "name": "checkbox-03",
+    "component": "checkbox",
+    "description": "Induk dan anak: induknya setengah tercentang saat anaknya berselisih."
+  },
+  {
+    "name": "checkbox-04",
+    "component": "checkbox",
+    "description": "Beberapa pilihan berjajar mendatar di bawah satu judul."
+  },
+  {
+    "name": "checkbox-05",
+    "component": "checkbox",
+    "description": "Pilihan berikon, tersusun ke bawah."
+  },
+  {
+    "name": "checkbox-06",
+    "component": "checkbox",
+    "description": "Nilainya dipegang halaman, bukan komponennya sendiri."
+  },
+  {
+    "name": "checkbox-07",
+    "component": "checkbox",
+    "description": "Tiga warna berbeda saat tercentang."
+  },
+  {
+    "name": "checkbox-08",
+    "component": "checkbox",
+    "description": "Tiga ukuran, dari kecil sampai besar."
+  },
+  {
+    "name": "checkbox-09",
+    "component": "checkbox",
+    "description": "Ikon pilihan sendiri menggantikan centangnya."
+  },
+  {
+    "name": "checkbox-10",
+    "component": "checkbox",
+    "description": "Kartu yang bisa dipilih, ditandai lingkaran centang."
+  },
+  {
+    "name": "checkbox-11",
+    "component": "checkbox",
+    "description": "Petak kartu bergaris putus-putus, centangnya di pojok kanan atas."
+  },
+  {
+    "name": "checkbox-12",
+    "component": "checkbox",
+    "description": "Di dalam formulir bervalidasi, lengkap dengan keterangannya."
+  },
+  {
+    "name": "checkbox-13",
+    "component": "checkbox",
+    "description": "Daftar peran dengan keterangan singkat di tiap barisnya."
+  },
+  {
+    "name": "checkbox-14",
+    "component": "checkbox",
+    "description": "Daftar panjang di dalam area yang bisa digulir."
+  },
+  {
+    "name": "checkbox-15",
+    "component": "checkbox",
+    "description": "Hari kerja sebagai lencana yang bisa dipilih."
+  },
+  {
+    "name": "checkbox-16",
+    "component": "checkbox",
+    "description": "Tabel pengaturan pemberitahuan, kepalanya menempel saat digulir."
+  },
+  {
+    "name": "collapsible-01",
+    "component": "collapsible",
+    "description": "Satu bagian yang bisa dilipat, dipicu tombol ikon di sampingnya."
+  },
+  {
+    "name": "collapsible-02",
+    "component": "collapsible",
+    "description": "Daftar yang dipotong, dengan tombol tampilkan lebih banyak."
+  },
+  {
+    "name": "collapsible-03",
+    "component": "collapsible",
+    "description": "Pohon berkas yang tiap foldernya bisa dilipat."
+  },
+  {
+    "name": "collapsible-04",
+    "component": "collapsible",
+    "description": "Panel penyaring toko: rentang harga, kategori, dan bintang."
+  },
+  {
+    "name": "dropdown-menu-01",
+    "component": "dropdown-menu",
+    "description": "Menu turun bawaan: judul, garis pemisah, dan daftar tindakan."
+  },
+  {
+    "name": "dropdown-menu-02",
+    "component": "dropdown-menu",
+    "description": "Dipicu avatar, dengan ikon di tiap barisnya."
+  },
+  {
+    "name": "dropdown-menu-03",
+    "component": "dropdown-menu",
+    "description": "Berisi kotak centang; memilih tidak menutup menunya."
+  },
+  {
+    "name": "dropdown-menu-04",
+    "component": "dropdown-menu",
+    "description": "Pilihan tunggal berikon prioritas berwarna."
+  },
+  {
+    "name": "dropdown-menu-05",
+    "component": "dropdown-menu",
+    "description": "Ada submenu yang terbuka ke samping."
+  },
+  {
+    "name": "dropdown-menu-06",
+    "component": "dropdown-menu",
+    "description": "Pintasan papan tik ditulis di kanan tiap barisnya."
+  },
+  {
+    "name": "dropdown-menu-07",
+    "component": "dropdown-menu",
+    "description": "Menu ruang kerja: profil, kotak centang, submenu, dan tombol keluar."
+  },
+  {
+    "name": "dropdown-menu-08",
+    "component": "dropdown-menu",
+    "description": "Pemilih ruang kerja; yang sedang aktif ditandai centang."
+  },
+  {
+    "name": "input-01",
+    "component": "input",
+    "description": "Isian teks bawaan."
+  },
+  {
+    "name": "input-02",
+    "component": "input",
+    "description": "Cincin fokusnya biru, bukan warna bawaan."
+  },
+  {
+    "name": "input-03",
+    "component": "input",
+    "description": "Berlatar abu tanpa garis tepi."
+  },
+  {
+    "name": "input-04",
+    "component": "input",
+    "description": "Dimatikan, tidak bisa diisi."
+  },
+  {
+    "name": "input-05",
+    "component": "input",
+    "description": "Dengan label di atasnya."
+  },
+  {
+    "name": "input-06",
+    "component": "input",
+    "description": "Isian dan tombol berlangganan sebaris."
+  },
+  {
+    "name": "input-07",
+    "component": "input",
+    "description": "Kelompok isian berikon, dengan tombol lihat password."
+  },
+  {
+    "name": "input-08",
+    "component": "input",
+    "description": "Ada keterangan bantu di bawah isiannya."
+  },
+  {
+    "name": "input-09",
+    "component": "input",
+    "description": "Keadaan error: label, garis tepi, dan pesannya merah."
+  },
+  {
+    "name": "input-10",
+    "component": "input",
+    "description": "Di dalam formulir bervalidasi, galatnya muncul setelah ditinggalkan."
+  },
+  {
+    "name": "input-11",
+    "component": "input",
+    "description": "Pemilih berkas."
+  },
+  {
+    "name": "input-12",
+    "component": "input",
+    "description": "Kotak jatuhkan berkas, gambarnya langsung terlihat setelah dipilih."
+  },
+  {
+    "name": "input-otp-01",
+    "component": "input-otp",
+    "description": "Enam kotak, dibelah dua oleh tanda hubung di tengahnya."
+  },
+  {
+    "name": "input-otp-02",
+    "component": "input-otp",
+    "description": "Empat kotak yang menyatu, tanpa pemisah."
+  },
+  {
+    "name": "input-otp-03",
+    "component": "input-otp",
+    "description": "Tiap kotak berdiri sendiri, dipisahkan jarak."
+  },
+  {
+    "name": "input-otp-04",
+    "component": "input-otp",
+    "description": "Kotak terpisah, dibelah dua kelompok."
+  },
+  {
+    "name": "input-otp-05",
+    "component": "input-otp",
+    "description": "Kotak berlatar abu dengan angka tebal."
+  },
+  {
+    "name": "input-otp-06",
+    "component": "input-otp",
+    "description": "Dibelah titik bulat, bukan tanda hubung."
+  },
+  {
+    "name": "input-otp-07",
+    "component": "input-otp",
+    "description": "Kotak bercekung, bayangannya di dalam."
+  },
+  {
+    "name": "navigation-menu-01",
+    "component": "navigation-menu",
+    "description": "Menu navigasi mendatar, tulisan saja."
+  },
+  {
+    "name": "navigation-menu-02",
+    "component": "navigation-menu",
+    "description": "Ikon di samping tiap namanya."
+  },
+  {
+    "name": "navigation-menu-03",
+    "component": "navigation-menu",
+    "description": "Panel besar dua kolom, dengan kartu bermerek di kirinya."
+  },
+  {
+    "name": "navigation-menu-04",
+    "component": "navigation-menu",
+    "description": "Yang sedang dibuka ditandai latar."
+  },
+  {
+    "name": "navigation-menu-05",
+    "component": "navigation-menu",
+    "description": "Garis bawah yang melebar saat disentuh kursor."
+  },
+  {
+    "name": "navigation-menu-06",
+    "component": "navigation-menu",
+    "description": "Panel tiga kolom bergaris pemisah."
+  },
+  {
+    "name": "navigation-menu-07",
+    "component": "navigation-menu",
+    "description": "Menu ikon saja, tanpa tulisan."
+  },
+  {
+    "name": "navigation-menu-08",
+    "component": "navigation-menu",
+    "description": "Ikon di atas namanya, seperti bilah bawah ponsel."
+  },
+  {
+    "name": "pagination-01",
+    "component": "pagination",
+    "description": "Penomoran bawaan, halaman aktif bergaris tepi."
+  },
+  {
+    "name": "pagination-02",
+    "component": "pagination",
+    "description": "Halaman aktif diisi warna utama."
+  },
+  {
+    "name": "pagination-03",
+    "component": "pagination",
+    "description": "Halaman aktif berlatar abu tanpa garis."
+  },
+  {
+    "name": "pagination-04",
+    "component": "pagination",
+    "description": "Tombol halamannya bulat penuh."
+  },
+  {
+    "name": "pagination-05",
+    "component": "pagination",
+    "description": "Panah ganda untuk melompat ke ujung."
+  },
+  {
+    "name": "pagination-06",
+    "component": "pagination",
+    "description": "Empat arah sekaligus: ke awal, mundur, maju, dan ke akhir."
+  },
+  {
+    "name": "pagination-07",
+    "component": "pagination",
+    "description": "Semua tombolnya menyatu jadi satu bilah bergaris pemisah."
+  },
+  {
+    "name": "pagination-08",
+    "component": "pagination",
+    "description": "Tiap tombol bergaris tepi sendiri."
+  },
+  {
+    "name": "pagination-09",
+    "component": "pagination",
+    "description": "Tombol berlatar abu, yang aktif berwarna utama."
+  },
+  {
+    "name": "pagination-10",
+    "component": "pagination",
+    "description": "Tombol maju-mundur bertuliskan kata, bukan panah saja."
+  },
+  {
+    "name": "pagination-11",
+    "component": "pagination",
+    "description": "Cuma maju dan mundur, menyatu dalam satu bilah."
+  },
+  {
+    "name": "pagination-12",
+    "component": "pagination",
+    "description": "Maju-mundur di dua ujung, keterangan halaman di tengahnya."
+  },
+  {
+    "name": "pagination-13",
+    "component": "pagination",
+    "description": "Titik tiga menandai halaman yang tidak ditampilkan."
+  },
+  {
+    "name": "pagination-14",
+    "component": "pagination",
+    "description": "Pemilih jumlah baris di kiri, hitungan dan tombol di kanan."
+  },
+  {
+    "name": "pagination-15",
+    "component": "pagination",
+    "description": "Keterangan halaman di kiri, tombol maju-mundur di kanan."
+  },
+  {
+    "name": "progress-01",
+    "component": "progress",
+    "description": "Bilah kemajuan bawaan."
+  },
+  {
+    "name": "progress-02",
+    "component": "progress",
+    "description": "Angka persennya ditulis di samping bilahnya."
+  },
+  {
+    "name": "progress-03",
+    "component": "progress",
+    "description": "Tiga warna: hijau, nila, dan merah muda."
+  },
+  {
+    "name": "progress-04",
+    "component": "progress",
+    "description": "Ujung bilahnya membulat."
+  },
+  {
+    "name": "progress-05",
+    "component": "progress",
+    "description": "Isinya bergradasi biru muda ke nila."
+  },
+  {
+    "name": "progress-06",
+    "component": "progress",
+    "description": "Gradasi yang bergerak terus, untuk kemajuan tanpa angka pasti."
+  },
+  {
+    "name": "progress-07",
+    "component": "progress",
+    "description": "Lingkaran kemajuan, digeser dengan slider di bawahnya."
+  },
+  {
+    "name": "progress-08",
+    "component": "progress",
+    "description": "Lingkaran dengan angka di tengahnya."
+  },
+  {
+    "name": "progress-09",
+    "component": "progress",
+    "description": "Angka di tengahnya diberi tanda persen."
+  },
+  {
+    "name": "progress-10",
+    "component": "progress",
+    "description": "Dua lingkaran berwarna berbeda."
+  },
+  {
+    "name": "progress-11",
+    "component": "progress",
+    "description": "Ujung busurnya bulat atau tegak lurus."
+  },
+  {
+    "name": "progress-12",
+    "component": "progress",
+    "description": "Tebal busur dan tebal lingkarannya diatur terpisah."
+  },
+  {
+    "name": "radio-group-01",
+    "component": "radio-group",
+    "description": "Kelompok radio bawaan, tersusun ke bawah."
+  },
+  {
+    "name": "radio-group-02",
+    "component": "radio-group",
+    "description": "Berjajar mendatar."
+  },
+  {
+    "name": "radio-group-03",
+    "component": "radio-group",
+    "description": "Salah satu pilihannya dimatikan."
+  },
+  {
+    "name": "radio-group-04",
+    "component": "radio-group",
+    "description": "Tiga warna berbeda saat terpilih."
+  },
+  {
+    "name": "radio-group-05",
+    "component": "radio-group",
+    "description": "Tiga ukuran, dari kecil sampai besar."
+  },
+  {
+    "name": "radio-group-06",
+    "component": "radio-group",
+    "description": "Nada lembut: warnanya tetap, isinya lebih tipis."
+  },
+  {
+    "name": "radio-group-07",
+    "component": "radio-group",
+    "description": "Kartu yang bisa dipilih, ditandai cincin biru."
+  },
+  {
+    "name": "radio-group-08",
+    "component": "radio-group",
+    "description": "Kartu berikon, centang di pojok kanan atas."
+  },
+  {
+    "name": "radio-group-09",
+    "component": "radio-group",
+    "description": "Pilihan paket di dalam kartu, tiap baris berketerangan."
+  },
+  {
+    "name": "select-01",
+    "component": "select",
+    "description": "Pemilih bawaan, isinya dikelompokkan berjudul."
+  },
+  {
+    "name": "select-02",
+    "component": "select",
+    "description": "Berlatar warna utama tanpa garis tepi."
+  },
+  {
+    "name": "select-03",
+    "component": "select",
+    "description": "Tanpa garis dan tanpa latar, sampai kursor menyentuhnya."
+  },
+  {
+    "name": "select-04",
+    "component": "select",
+    "description": "Ikon panahnya diganti sendiri."
+  },
+  {
+    "name": "select-05",
+    "component": "select",
+    "description": "Dua bentuk sudut: persegi dan bulat penuh."
+  },
+  {
+    "name": "select-06",
+    "component": "select",
+    "description": "Tiap pilihannya berikon."
+  },
+  {
+    "name": "select-07",
+    "component": "select",
+    "description": "Di dalam formulir bervalidasi, wajib diisi."
+  },
+  {
+    "name": "select-08",
+    "component": "select",
+    "description": "Pemilih tema terang dan gelap."
+  },
+  {
+    "name": "select-09",
+    "component": "select",
+    "description": "Dua cara panel terbuka: mengikuti pemicunya, atau menimpanya."
+  },
+  {
+    "name": "select-10",
+    "component": "select",
+    "description": "Pilihan dikelompokkan per benua."
+  },
+  {
+    "name": "select-11",
+    "component": "select",
+    "description": "Nilainya dipegang halaman, bukan komponennya sendiri."
+  },
+  {
+    "name": "separator-01",
+    "component": "separator",
+    "description": "Pemisah mendatar dan tegak dalam satu contoh."
+  },
+  {
+    "name": "separator-02",
+    "component": "separator",
+    "description": "Tulisan OR di tengah garis pemisahnya."
+  },
+  {
+    "name": "separator-03",
+    "component": "separator",
+    "description": "Label pemisahnya berbentuk lencana bulat."
+  },
+  {
+    "name": "separator-04",
+    "component": "separator",
+    "description": "Garis putus-putus, bukan garis penuh."
+  },
+  {
+    "name": "separator-05",
+    "component": "separator",
+    "description": "Pemisah tegak antara dua kolom."
+  },
+  {
+    "name": "separator-06",
+    "component": "separator",
+    "description": "Pemisah tegak dengan label bulat di tengahnya."
+  },
+  {
+    "name": "with-label-vertical",
+    "component": "separator",
+    "description": "Pemisah tegak berlabel di dalam kartu."
+  },
+  {
+    "name": "slider-01",
+    "component": "slider",
+    "description": "Slider bawaan, satu tuas."
+  },
+  {
+    "name": "slider-02",
+    "component": "slider",
+    "description": "Dimatikan, tidak bisa digeser."
+  },
+  {
+    "name": "slider-03",
+    "component": "slider",
+    "description": "Tiga ukuran, dari tipis sampai tebal."
+  },
+  {
+    "name": "slider-04",
+    "component": "slider",
+    "description": "Tiga warna isian berbeda."
+  },
+  {
+    "name": "slider-05",
+    "component": "slider",
+    "description": "Jalur dan tuasnya persegi, tanpa sudut membulat."
+  },
+  {
+    "name": "slider-06",
+    "component": "slider",
+    "description": "Angkanya ditulis di samping, ikut berubah saat digeser."
+  },
+  {
+    "name": "slider-07",
+    "component": "slider",
+    "description": "Ikon pengaturan di dalam tuasnya."
+  },
+  {
+    "name": "slider-08",
+    "component": "slider",
+    "description": "Pemutar media: waktu berjalan di kiri, durasi di kanan."
+  },
+  {
+    "name": "slider-09",
+    "component": "slider",
+    "description": "Penanda nilai tertulis di bawah jalurnya."
+  },
+  {
+    "name": "slider-10",
+    "component": "slider",
+    "description": "Nilainya melayang di atas tuas, selalu terlihat."
+  },
+  {
+    "name": "slider-11",
+    "component": "slider",
+    "description": "Nilainya baru muncul saat kursor menyentuh tuasnya."
+  },
+  {
+    "name": "slider-12",
+    "component": "slider",
+    "description": "Nilainya melayang di dalam gelembung berekor."
+  },
+  {
+    "name": "slider-13",
+    "component": "slider",
+    "description": "Berdiri tegak, digeser ke atas dan ke bawah."
+  },
+  {
+    "name": "slider-14",
+    "component": "slider",
+    "description": "Dua tuas untuk memilih rentang, angkanya di bawah."
+  },
+  {
+    "name": "slider-15",
+    "component": "slider",
+    "description": "Rentang dengan batas bawah dan atas tertulis di kedua ujungnya."
+  },
+  {
+    "name": "spinner-01",
+    "component": "spinner",
+    "description": "Pemintal bawaan, ikon Lucide yang berputar."
+  },
+  {
+    "name": "spinner-02",
+    "component": "spinner",
+    "description": "Busur tunggal yang berputar."
+  },
+  {
+    "name": "spinner-03",
+    "component": "spinner",
+    "description": "Baling-baling berputar."
+  },
+  {
+    "name": "spinner-04",
+    "component": "spinner",
+    "description": "Empat warna berbeda."
+  },
+  {
+    "name": "spinner-05",
+    "component": "spinner",
+    "description": "Empat ukuran, dari kecil sampai besar."
+  },
+  {
+    "name": "spinner-06",
+    "component": "spinner",
+    "description": "Busur yang panjangnya berubah sambil berputar."
+  },
+  {
+    "name": "spinner-07",
+    "component": "spinner",
+    "description": "Cincin dengan seperempat busur berwarna."
+  },
+  {
+    "name": "spinner-08",
+    "component": "spinner",
+    "description": "Cincin dengan setengah busur berwarna."
+  },
+  {
+    "name": "spinner-09",
+    "component": "spinner",
+    "description": "Cincin abu penuh dengan satu busur berwarna."
+  },
+  {
+    "name": "spinner-10",
+    "component": "spinner",
+    "description": "Dua busur berhadapan di atas cincin pudar."
+  },
+  {
+    "name": "spinner-11",
+    "component": "spinner",
+    "description": "Dua busur berhadapan di atas cincin putih."
+  },
+  {
+    "name": "switch-01",
+    "component": "switch",
+    "description": "Sakelar bawaan."
+  },
+  {
+    "name": "switch-02",
+    "component": "switch",
+    "description": "Dengan label di sampingnya."
+  },
+  {
+    "name": "switch-03",
+    "component": "switch",
+    "description": "Dimatikan, beserta labelnya yang ikut pudar."
+  },
+  {
+    "name": "switch-04",
+    "component": "switch",
+    "description": "Tiga warna berbeda saat menyala."
+  },
+  {
+    "name": "switch-05",
+    "component": "switch",
+    "description": "Tiga ukuran, dari kecil sampai besar."
+  },
+  {
+    "name": "switch-06",
+    "component": "switch",
+    "description": "Nilainya dipegang halaman, bukan komponennya sendiri."
+  },
+  {
+    "name": "switch-07",
+    "component": "switch",
+    "description": "Ikon matahari dan bulan bergantian di dalam tuasnya."
+  },
+  {
+    "name": "table-01",
+    "component": "table",
+    "description": "Tabel bawaan, dengan keterangan dan baris jumlah di kakinya."
+  },
+  {
+    "name": "table-02",
+    "component": "table",
+    "description": "Bergaris tepi penuh, tiap selnya berkotak."
+  },
+  {
+    "name": "table-03",
+    "component": "table",
+    "description": "Baris berselang-seling warnanya, di dalam kotak bergaris."
+  },
+  {
+    "name": "table-04",
+    "component": "table",
+    "description": "Baris berselang-seling, tanpa garis tepi luar."
+  },
+  {
+    "name": "table-05",
+    "component": "table",
+    "description": "Dengan penomoran halaman di bawahnya."
+  },
+  {
+    "name": "table-06",
+    "component": "table",
+    "description": "Baris kepalanya menempel di atas saat digulir."
+  },
+  {
+    "name": "table-07",
+    "component": "table",
+    "description": "Dua kolom pertamanya menempel di kiri saat digulir mendatar."
+  },
+  {
+    "name": "table-08",
+    "component": "table",
+    "description": "Tinggi tetap; isinya digulir sementara kepalanya diam."
+  },
+  {
+    "name": "table-09",
+    "component": "table",
+    "description": "Tabel data: pilih baris, saring, sembunyikan kolom, dan halamani."
+  },
+  {
+    "name": "table-10",
+    "component": "table",
+    "description": "Kerapatan barisnya bisa diatur — rapat, sedang, atau longgar."
+  },
+  {
+    "name": "table-11",
+    "component": "table",
+    "description": "Pemilih kolom dengan kotak pencarian dan tombol setel ulang."
+  },
+  {
+    "name": "tabs-01",
+    "component": "tabs",
+    "description": "Tab bawaan, di dalam bilah berlatar abu."
+  },
+  {
+    "name": "tabs-02",
+    "component": "tabs",
+    "description": "Garis bawah menandai tab yang aktif."
+  },
+  {
+    "name": "tabs-03",
+    "component": "tabs",
+    "description": "Tab aktif diisi warna utama, tanpa bilah pembungkus."
+  },
+  {
+    "name": "tabs-04",
+    "component": "tabs",
+    "description": "Tab aktif bergaris tepi, sisanya polos."
+  },
+  {
+    "name": "tabs-05",
+    "component": "tabs",
+    "description": "Bilahnya bergaris tepi, tab aktif diisi warna utama."
+  },
+  {
+    "name": "tabs-06",
+    "component": "tabs",
+    "description": "Tab berbentuk map arsip yang menyatu dengan isinya."
+  },
+  {
+    "name": "tabs-07",
+    "component": "tabs",
+    "description": "Tab berikon logo pengelola paket."
+  },
+  {
+    "name": "tabs-08",
+    "component": "tabs",
+    "description": "Bilah bawah ponsel: ikon di atas namanya, empat kolom."
+  },
+  {
+    "name": "tabs-09",
+    "component": "tabs",
+    "description": "Angka hitungan sebagai lencana di samping nama tabnya."
+  },
+  {
+    "name": "tabs-10",
+    "component": "tabs",
+    "description": "Garis bawah tebal menandai tab yang aktif."
+  },
+  {
+    "name": "tabs-11",
+    "component": "tabs",
+    "description": "Tab aktif ditandai bayangan, bukan latar."
+  },
+  {
+    "name": "tabs-12",
+    "component": "tabs",
+    "description": "Tab miring, dipisahkan jarak."
+  },
+  {
+    "name": "tabs-13",
+    "component": "tabs",
+    "description": "Berdiri tegak di kiri, isinya di kanan."
+  },
+  {
+    "name": "tabs-14",
+    "component": "tabs",
+    "description": "Tegak tanpa latar, cuma tulisannya."
+  },
+  {
+    "name": "tabs-15",
+    "component": "tabs",
+    "description": "Tegak dengan tab aktif diisi warna utama."
+  },
+  {
+    "name": "tabs-16",
+    "component": "tabs",
+    "description": "Tegak dengan garis bawah tebal di tiap tabnya."
+  },
+  {
+    "name": "tabs-17",
+    "component": "tabs",
+    "description": "Tegak di dalam kotak bergaris, tiap tab dipisahkan garis."
+  },
+  {
+    "name": "tabs-18",
+    "component": "tabs",
+    "description": "Isi tabnya muncul satu per satu, bergantian dari atas."
+  },
+  {
+    "name": "textarea-01",
+    "component": "textarea",
+    "description": "Kotak teks bawaan."
+  },
+  {
+    "name": "textarea-02",
+    "component": "textarea",
+    "description": "Berlatar abu tanpa bayangan."
+  },
+  {
+    "name": "textarea-03",
+    "component": "textarea",
+    "description": "Dimatikan, tidak bisa diisi."
+  },
+  {
+    "name": "textarea-04",
+    "component": "textarea",
+    "description": "Dengan label di atasnya."
+  },
+  {
+    "name": "textarea-05",
+    "component": "textarea",
+    "description": "Delapan baris, lebih tinggi dari bawaannya."
+  },
+  {
+    "name": "textarea-06",
+    "component": "textarea",
+    "description": "Ada keterangan bantu di bawahnya."
+  },
+  {
+    "name": "textarea-07",
+    "component": "textarea",
+    "description": "Nilainya dipegang halaman, bukan komponennya sendiri."
+  },
+  {
+    "name": "tooltip-01",
+    "component": "tooltip",
+    "description": "Tooltip bawaan, muncul saat kursor berhenti di atasnya."
+  },
+  {
+    "name": "tooltip-02",
+    "component": "tooltip",
+    "description": "Dengan panah kecil yang menunjuk pemicunya."
+  },
+  {
+    "name": "tooltip-03",
+    "component": "tooltip",
+    "description": "Empat sisi: kiri, atas, bawah, dan kanan."
+  },
+  {
+    "name": "tooltip-04",
+    "component": "tooltip",
+    "description": "Pemicunya dimatikan, tooltipnya tetap muncul."
+  },
+  {
+    "name": "tooltip-05",
+    "component": "tooltip",
+    "description": "Jeda sebelum muncul bisa diatur sendiri."
+  },
+  {
+    "name": "tooltip-06",
+    "component": "tooltip",
+    "description": "Setelah satu tooltip terbuka, tetangganya muncul tanpa jeda."
+  },
+  {
+    "name": "tooltip-07",
+    "component": "tooltip",
+    "description": "Digambar di luar induknya, jadi tidak terpotong wadahnya."
+  }
+]

@@ -1,0 +1,189 @@
+{
+  "items": [
+    {
+      "name": "use-toggle",
+      "title": "useToggle",
+      "description": "Membalik sebuah nilai bolak-balik antara dua kemungkinan."
+    },
+    {
+      "name": "use-boolean",
+      "title": "useBoolean",
+      "description": "Membalik nilai boolean, dengan nama aksi yang menyebut maksudnya."
+    },
+    {
+      "name": "use-event-listener",
+      "title": "useEventListener",
+      "description": "Memasang pendengar peristiwa yang ikut hidup dan mati bersama scope-nya."
+    },
+    {
+      "name": "use-debounce-fn",
+      "title": "useDebounceFn",
+      "description": "Menunda sebuah fungsi sampai pemanggilannya berhenti sejenak."
+    },
+    {
+      "name": "use-throttle-fn",
+      "title": "useThrottleFn",
+      "description": "Membatasi sebuah fungsi agar tidak jalan lebih sering dari sekali per jeda."
+    },
+    {
+      "name": "use-debounce",
+      "title": "useDebounce",
+      "description": "Salinan sebuah nilai yang tertinggal beberapa saat di belakangnya."
+    },
+    {
+      "name": "use-throttle",
+      "title": "useThrottle",
+      "description": "Salinan sebuah nilai yang diperbarui paling sering sekali per jeda."
+    },
+    {
+      "name": "use-counter",
+      "title": "useCounter",
+      "description": "Pencacah dengan aksi yang menyebut maksudnya."
+    },
+    {
+      "name": "use-previous",
+      "title": "usePrevious",
+      "description": "Nilai sebelumnya dari sesuatu yang berubah."
+    },
+    {
+      "name": "use-lock-fn",
+      "title": "useLockFn",
+      "description": "Membungkus fungsi async supaya tidak bisa jalan dua kali bersamaan."
+    },
+    {
+      "name": "use-reset-state",
+      "title": "useResetState",
+      "description": "State yang bisa dikembalikan ke nilai awalnya."
+    },
+    {
+      "name": "use-controllable-value",
+      "title": "useControllableValue",
+      "description": "Satu nilai yang bisa dikendalikan dari luar, atau mengurus dirinya sendiri."
+    },
+    {
+      "name": "use-interval",
+      "title": "useInterval",
+      "description": "Menjalankan sesuatu berulang kali, dengan jeda yang boleh berubah."
+    },
+    {
+      "name": "use-timeout",
+      "title": "useTimeout",
+      "description": "Menjalankan sesuatu sekali, setelah jeda."
+    },
+    {
+      "name": "use-is-hydrated",
+      "title": "useIsHydrated",
+      "description": "Apakah halamannya sudah dihidrasi di peramban."
+    },
+    {
+      "name": "use-click-any-where",
+      "title": "useClickAnyWhere",
+      "description": "Menjalankan sesuatu setiap kali ada klik di mana pun di halaman."
+    },
+    {
+      "name": "use-click-away",
+      "title": "useClickAway",
+      "description": "Menjalankan sesuatu ketika kliknya jatuh di luar sekumpulan elemen."
+    },
+    {
+      "name": "use-hover",
+      "title": "useHover",
+      "description": "Apakah penunjuk sedang berada di atas sebuah elemen."
+    },
+    {
+      "name": "use-active-element",
+      "title": "useActiveElement",
+      "description": "Elemen yang sedang menerima fokus."
+    },
+    {
+      "name": "use-document-visibility",
+      "title": "useDocumentVisibility",
+      "description": "Apakah tab-nya sedang dilihat."
+    },
+    {
+      "name": "use-is-online",
+      "title": "useIsOnline",
+      "description": "Apakah peramban merasa sedang tersambung."
+    },
+    {
+      "name": "use-hash",
+      "title": "useHash",
+      "description": "Bagian # dari alamat halaman, yang bisa dibaca dan ditulis."
+    },
+    {
+      "name": "use-is-match-media",
+      "title": "useIsMatchMedia",
+      "description": "Apakah sebuah kueri media sedang cocok."
+    },
+    {
+      "name": "use-os",
+      "title": "useOs",
+      "description": "Sistem operasi yang sedang dipakai, ditebak dari navigator."
+    },
+    {
+      "name": "use-fps",
+      "title": "useFps",
+      "description": "Berapa bingkai per detik yang sedang digambar peramban."
+    },
+    {
+      "name": "use-why-did-you-update",
+      "title": "useWhyDidYouUpdate",
+      "description": "Mencetak prop mana yang berubah setiap kali komponennya digambar ulang."
+    },
+    {
+      "name": "use-title",
+      "title": "useTitle",
+      "description": "Judul halaman, yang bisa dibaca dan ditulis."
+    },
+    {
+      "name": "use-scroll-lock",
+      "title": "useScrollLock",
+      "description": "Mengunci gulungan halaman untuk dialog, drawer, dan menu layar penuh."
+    },
+    {
+      "name": "use-element-size",
+      "title": "useElementSize",
+      "description": "Ukuran sebuah elemen, diikuti lewat ResizeObserver."
+    },
+    {
+      "name": "use-in-viewport",
+      "title": "useInViewport",
+      "description": "Apakah sebuah elemen sedang terlihat di layar."
+    },
+    {
+      "name": "use-text-selection",
+      "title": "useTextSelection",
+      "description": "Teks yang sedang disorot, beserta letaknya di layar."
+    },
+    {
+      "name": "use-battery",
+      "title": "useBattery",
+      "description": "Keadaan baterai perangkat."
+    },
+    {
+      "name": "use-network",
+      "title": "useNetwork",
+      "description": "Keadaan jaringan, selengkap yang mau diberitahu peramban."
+    },
+    {
+      "name": "use-mouse",
+      "title": "useMouse",
+      "description": "Posisi penunjuk, dengan dukungan sentuh."
+    },
+    {
+      "name": "use-clipboard",
+      "title": "useClipboard",
+      "description": "Menyalin ke papan klip, dengan penanda tersalin yang padam sendiri."
+    },
+    {
+      "name": "use-fullscreen",
+      "title": "useFullscreen",
+      "description": "Layar penuh, dengan seluruh awalan vendor yang masih dibutuhkan."
+    },
+    {
+      "name": "use-stick-to-bottom",
+      "title": "useStickToBottom",
+      "description": "Menahan sebuah wadah gulung tetap menempel di dasarnya saat isinya bertambah."
+    }
+  ]
+}

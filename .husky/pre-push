@@ -1,0 +1,7 @@
+# Sebelum kode keluar dari laptop (± 1,5 menit). `npm run check` lengkap
+# (uji situs & CLI) tetap dijalankan CI.
+npm run -s typecheck
+npm run -s check:sfc
+npm run -s check:registry
+npm run -s check:counts
+npm run -s measure:bundle > /dev/null

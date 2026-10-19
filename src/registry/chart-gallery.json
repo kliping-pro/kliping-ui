@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "area",
+    "name": "Area",
+    "title": "Area Chart",
+    "description": "Grafik area untuk memperlihatkan volume sebuah nilai dan arahnya dari waktu ke waktu.",
+    "items": [
+      "ChartAreaAxes",
+      "ChartAreaGradient",
+      "ChartAreaIcons",
+      "ChartAreaInteractive"
+    ]
+  },
+  {
+    "slug": "bar",
+    "name": "Bar",
+    "title": "Bar Chart",
+    "description": "Grafik batang untuk membandingkan nilai antar kategori.",
+    "items": [
+      "ChartBarDefault",
+      "ChartBarHorizontal",
+      "ChartBarInteractive",
+      "ChartBarMultiple"
+    ]
+  },
+  {
+    "slug": "line",
+    "name": "Line",
+    "title": "Line Chart",
+    "description": "Grafik garis untuk mengikuti arah sebuah nilai dari waktu ke waktu.",
+    "items": [
+      "ChartLineDefault",
+      "ChartLineInteractive",
+      "ChartLineLinear",
+      "ChartLineStep"
+    ]
+  },
+  {
+    "slug": "pie",
+    "name": "Pie",
+    "title": "Pie Chart",
+    "description": "Grafik lingkaran untuk memperlihatkan komposisi sebuah keseluruhan.",
+    "items": [
+      "ChartPieDonut",
+      "ChartPieDonutText",
+      "ChartPieSimple",
+      "ChartPieStacked"
+    ]
+  },
+  {
+    "slug": "tooltip",
+    "name": "Tooltip",
+    "title": "Chart Tooltip",
+    "description": "Ragam tooltip: penanda, label, pemformat nilai, dan ikon.",
+    "items": [
+      "ChartTooltipDefault",
+      "ChartTooltipIcons",
+      "ChartTooltipIndicatorLine",
+      "ChartTooltipIndicatorNone",
+      "ChartTooltipLabelCustom",
+      "ChartTooltipLabelFormatter",
+      "ChartTooltipLabelNone"
+    ]
+  }
+]

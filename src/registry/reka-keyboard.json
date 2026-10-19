@@ -1,0 +1,1972 @@
+{
+  "source": {
+    "repo": "https://github.com/unovue/reka-ui",
+    "commit": "fc8d937",
+    "license": "MIT, Copyright (c) 2023 UnoVue"
+  },
+  "components": {
+    "accordion": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When focus is on an `AccordionTrigger` of a collapsed section, expands the section."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When focus is on an `AccordionTrigger` of a collapsed section, expands the section."
+      },
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next focusable element."
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous focusable element."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Moves focus to the next `AccordionTrigger` when `orientation` is `vertical`."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Moves focus to the previous `AccordionTrigger` when `orientation` is `vertical`."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Moves focus to the next `AccordionTrigger` when `orientation` is `horizontal`."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Moves focus to the previous `AccordionTrigger` when `orientation` is `horizontal`."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "When focus is on an `AccordionTrigger`, moves focus to the start `AccordionTrigger`."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "When focus is on an `AccordionTrigger`, moves focus to the last `AccordionTrigger`."
+      }
+    ],
+    "alert-dialog": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Opens/closes the dialog."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Opens/closes the dialog."
+      },
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next focusable element."
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous focusable element."
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes the dialog and moves focus to AlertDialogTrigger."
+      }
+    ],
+    "autocomplete": [
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When focus is on `AutocompleteItem`, selects the focused item and fills the input with its value."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "When focus is on `AutocompleteInput`, opens the autocomplete content. When focus is on an item, moves focus to the next item."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "When focus is on `AutocompleteInput`, opens the autocomplete content. When focus is on an item, moves focus to the previous item."
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes the autocomplete content and returns focus to `AutocompleteInput`."
+      }
+    ],
+    "calendar": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the calendar, focuses the first navigation button."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When the focus is on either `CalendarNext` or `CalendarPrev`, it navigates the calendar. Otherwise, it selects the date."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When the focus is on either `CalendarNext` or `CalendarPrev`, it navigates the calendar. Otherwise, it selects the date."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight",
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "When the focus is on `CalendarCellTrigger`, it navigates the dates, changing the month/year/decade if necessary."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "When the focus is on `CalendarCellTrigger`, it moves focus to the first day of the current week."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "When the focus is on `CalendarCellTrigger`, it moves focus to the last day of the current week."
+      },
+      {
+        "keys": [
+          "PageUp"
+        ],
+        "description": "When the focus is on `CalendarCellTrigger`, it moves to the previous month while preserving the day of the month when possible, or clamps to the last day of the month."
+      },
+      {
+        "keys": [
+          "PageDown"
+        ],
+        "description": "When the focus is on `CalendarCellTrigger`, it moves to the next month while preserving the day of the month when possible, or clamps to the last day of the month."
+      },
+      {
+        "keys": [
+          "Shift+PageUp"
+        ],
+        "description": "When the focus is on `CalendarCellTrigger`, it moves to the previous year while preserving the month and day when possible, or clamps to the last day of the month."
+      },
+      {
+        "keys": [
+          "Shift+PageDown"
+        ],
+        "description": "When the focus is on `CalendarCellTrigger`, it moves to the next year while preserving the month and day when possible, or clamps to the last day of the month."
+      }
+    ],
+    "checkbox": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Checks/unchecks the checkbox"
+      }
+    ],
+    "collapsible": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Opens/closes the collapsible"
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Opens/closes the collapsible"
+      }
+    ],
+    "color-area": [
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Decreases the x-axis channel value by one step."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Increases the x-axis channel value by one step."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Increases the y-axis channel value by one step."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Decreases the y-axis channel value by one step."
+      },
+      {
+        "keys": [
+          "Shift + ArrowKey"
+        ],
+        "description": "Changes values by 10 steps at a time."
+      },
+      {
+        "keys": [
+          "PageUp"
+        ],
+        "description": "Increases the y-axis channel value by a larger step."
+      },
+      {
+        "keys": [
+          "PageDown"
+        ],
+        "description": "Decreases the y-axis channel value by a larger step."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Jumps left (decreases x-axis value)."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Jumps right (increases x-axis value)."
+      }
+    ],
+    "color-field": [
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Increases the value by one step."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Decreases the value by one step."
+      },
+      {
+        "keys": [
+          "PageUp"
+        ],
+        "description": "Increases the value by 10 steps."
+      },
+      {
+        "keys": [
+          "PageDown"
+        ],
+        "description": "Decreases the value by 10 steps."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Sets the value to minimum."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Sets the value to maximum."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Commits the current input value."
+      }
+    ],
+    "color-slider": [
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Decreases the value in horizontal orientation."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Increases the value in horizontal orientation."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Increases the value in vertical orientation."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Decreases the value in vertical orientation."
+      },
+      {
+        "keys": [
+          "PageUp"
+        ],
+        "description": "Increases the value by a larger step."
+      },
+      {
+        "keys": [
+          "PageDown"
+        ],
+        "description": "Decreases the value by a larger step."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Sets the value to minimum."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Sets the value to maximum."
+      }
+    ],
+    "combobox": [
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When focus is on `ComboboxItem`, selects the focused item."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "When focus is on `ComboboxInput`, opens the combobox content. When focus is on an item, moves focus to the next item."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "When focus is on `ComboboxInput`, opens the combobox content. When focus is on an item, moves focus to the previous item."
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes combobox and restores the selected item in the `ComboboxInput` field."
+      }
+    ],
+    "context-menu": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Activates the focused item."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Activates the focused item."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Moves focus to the next item."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Moves focus to the previous item."
+      },
+      {
+        "keys": [
+          "ArrowRight",
+          "ArrowLeft"
+        ],
+        "description": "When focus is on `ContextMenu.SubTrigger`, opens or closes the submenu depending on reading direction."
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes the context menu"
+      }
+    ],
+    "date-field": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the date field, focuses the first segment."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight"
+        ],
+        "description": "Navigates between the date field segments."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "Increments/changes the value of the segment."
+      },
+      {
+        "keys": [
+          "0-9"
+        ],
+        "description": "When the focus is on a numeric `DateFieldInput`, it types in the number and focuses the next segment if the next input would result in an invalid value."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "Deletes a digit from the focused numeric segments."
+      },
+      {
+        "keys": [
+          "A",
+          "P"
+        ],
+        "description": "When the focus is on the day period, it sets it to AM or PM."
+      }
+    ],
+    "date-picker": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the date field, focuses the first segment."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When the focus is on either `DatePickerNext` or `DatePickerPrev`, it navigates the calendar. Otherwise, it selects the date. If the focus is on `DatePickerTrigger`, it opens/closes the popover."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When the focus is on either `DatePickerNext` or `DatePickerPrev`, it navigates the calendar. Otherwise, it selects the date. If the focus is on `DatePickerTrigger`, it opens/closes the popover."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight"
+        ],
+        "description": "Navigates between the date field segments. If the focus is on the `DatePickerCalendar`, it navigates between the dates."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "Increments/changes the value of the segment. If the focus is on the `DatePickerCalendar`, it navigates between the dates."
+      },
+      {
+        "keys": [
+          "0-9"
+        ],
+        "description": "When the focus is on a numeric `DatePickerInput`, it types in the number and focuses the next segment if the next input would result in an invalid value."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "Deletes a digit from the focused numeric segments."
+      },
+      {
+        "keys": [
+          "A",
+          "P"
+        ],
+        "description": "When the focus is on the day period, it sets it to AM or PM."
+      }
+    ],
+    "date-range-field": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the date field, focuses the first segment."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight"
+        ],
+        "description": "Navigates between the date field segments."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "Increments/changes the value of the segment."
+      },
+      {
+        "keys": [
+          "0-9"
+        ],
+        "description": "When the focus is on a numeric `DateFieldInput`, it types in the number and focuses the next segment if the next input would result in an invalid value."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "Deletes a digit from the focused numeric segments."
+      },
+      {
+        "keys": [
+          "A",
+          "P"
+        ],
+        "description": "When the focus is on the day period, it sets it to AM or PM."
+      }
+    ],
+    "date-range-picker": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the date field, focuses the first segment."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When the focus is on either `DateRangePickerNext` or `DateRangePickerPrev`, it navigates the calendar. Otherwise, it selects the date. If the focus is on `DateRangePickerTrigger`, it opens/closes the popover."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When the focus is on either `DateRangePickerNext` or `DateRangePickerPrev`, it navigates the calendar. Otherwise, it selects the date. If the focus is on `DateRangePickerTrigger`, it opens/closes the popover."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight"
+        ],
+        "description": "Navigates between the date field segments. If the focus is on the `DateRangePickerCalendar`, it navigates between the dates."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "Increments/changes the value of the segment. If the focus is on the `DateRangePickerCalendar`, it navigates between the dates."
+      },
+      {
+        "keys": [
+          "0-9"
+        ],
+        "description": "When the focus is on a numeric `DateRangePickerInput`, it types in the number and focuses the next segment if the next input would result in an invalid value."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "Deletes a digit from the focused numeric segments."
+      },
+      {
+        "keys": [
+          "A",
+          "P"
+        ],
+        "description": "When the focus is on the day period, it sets it to AM or PM."
+      }
+    ],
+    "dialog": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Opens/closes the dialog"
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Opens/closes the dialog"
+      },
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next focusable element."
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous focusable element."
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes the dialog and moves focus to `DialogTrigger`."
+      }
+    ],
+    "drawer": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Opens/closes the drawer."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Opens/closes the drawer."
+      },
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next focusable element."
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous focusable element."
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes the drawer and moves focus to `DrawerTrigger`."
+      }
+    ],
+    "dropdown-menu": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When focus is on `DropdownMenuTrigger`, opens the dropdown menu and focuses the first item. When focus is on an item, activates the focused item."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When focus is on `DropdownMenuTrigger`, opens the dropdown menu and focuses the first item. When focus is on an item, activates the focused item."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "When focus is on `DropdownMenuTrigger`, opens the dropdown menu. When focus is on an item, moves focus to the next item."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "When focus is on an item, moves focus to the previous item."
+      },
+      {
+        "keys": [
+          "ArrowRight",
+          "ArrowLeft"
+        ],
+        "description": "When focus is on `DropdownMenuSubTrigger`, opens or closes the submenu depending on reading direction."
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes the dropdown menu and moves focus to{' '} `DropdownMenuTrigger`."
+      }
+    ],
+    "editable": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the editable field, switches into the editable mode if the `activation-mode` is set to focus."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "If the `submit-mode` is set to `enter` or `both`, it submits the changes."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "When the focus is on the editable field, it cancels the changes."
+      }
+    ],
+    "hover-card": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Opens/closes the hover card."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Opens the hover card link"
+      }
+    ],
+    "listbox": [
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When highlight on `ListboxItem`, selects the focused item."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "When focus is on `ListboxItem`, moves focus to the next item."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "When focus is on `ListboxItem`, moves focus to the previous item."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Moves focus and highlight to the first item."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Moves focus and highlight to the last item."
+      },
+      {
+        "keys": [
+          "Ctrl/Cmd + A"
+        ],
+        "description": "Select all the items."
+      }
+    ],
+    "menubar": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When focus is on `MenubarTrigger`, opens the menubar and focuses the first item. When focus is on an item, activates the focused item."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When focus is on `MenubarTrigger`, opens the associated menu. When focus is on an item, activates the focused item."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "When focus is on `MenubarTrigger`, opens the associated menu. When focus is on an item, moves focus to the next item."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "When focus is on an item, moves focus to the previous item."
+      },
+      {
+        "keys": [
+          "ArrowRight",
+          "ArrowLeft"
+        ],
+        "description": "When focus is on a `MenubarTrigger`, moves focus to the next or previous item. When focus is on a `MenubarSubTrigger`, opens or closes the submenu depending on reading direction. When focus is within a `MenubarContent`, opens the next menu in the menubar"
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes the currently open menu and moves focus to its `MenubarTrigger`."
+      }
+    ],
+    "month-picker": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the month picker, focuses the first navigation button."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When the focus is on either `MonthPickerNext` or `MonthPickerPrev`, it navigates the calendar. Otherwise, it selects the month."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When the focus is on either `MonthPickerNext` or `MonthPickerPrev`, it navigates the calendar. Otherwise, it selects the month."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight",
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "When the focus is on `MonthPickerCellTrigger`, it navigates the months, changing the year if necessary."
+      },
+      {
+        "keys": [
+          "PageUp"
+        ],
+        "description": "When the focus is on `MonthPickerCellTrigger`, it navigates to the same month in the previous year."
+      },
+      {
+        "keys": [
+          "PageDown"
+        ],
+        "description": "When the focus is on `MonthPickerCellTrigger`, it navigates to the same month in the next year."
+      }
+    ],
+    "month-range-picker": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the month range picker, focuses the first navigation button."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When the focus is on either `MonthRangePickerNext` or `MonthRangePickerPrev`, it navigates the calendar. Otherwise, it selects the month."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When the focus is on either `MonthRangePickerNext` or `MonthRangePickerPrev`, it navigates the calendar. Otherwise, it selects the month."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight",
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "When the focus is on `MonthRangePickerCellTrigger`, it navigates the months, changing the year if necessary."
+      },
+      {
+        "keys": [
+          "PageUp"
+        ],
+        "description": "When the focus is on `MonthRangePickerCellTrigger`, it navigates to the same month in the previous year."
+      },
+      {
+        "keys": [
+          "PageDown"
+        ],
+        "description": "When the focus is on `MonthRangePickerCellTrigger`, it navigates to the same month in the next year."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Cancels the current range selection and restores the previous valid range."
+      }
+    ],
+    "navigation-menu": [
+      {
+        "keys": [
+          "Space",
+          "Enter"
+        ],
+        "description": "When focus is on `NavigationMenuTrigger`, opens the content."
+      },
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next focusable element."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "When `horizontal` and focus is on an open `NavigationMenuTrigger`, moves focus into `NavigationMenuContent`. Moves focus to the next `NavigationMenuTrigger` or `NavigationMenuLink`."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Moves focus to the previous `NavigationMenuTrigger` or `NavigationMenuLink`."
+      },
+      {
+        "keys": [
+          "ArrowRight",
+          "ArrowLeft"
+        ],
+        "description": "When `vertical` and focus is on an open `NavigationMenuTrigger`, moves focus into its `NavigationMenuContent`. Moves focus to the next / previous ` NavigationMenuTrigger ` or `NavigationMenuLink`."
+      },
+      {
+        "keys": [
+          "Home",
+          "End"
+        ],
+        "description": "Moves focus to the first/last `NavigationMenu.Trigger` or `NavigationMenu.Link`."
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes open `NavigationMenu.Content` and moves focus to its `NavigationMenu.Trigger`."
+      }
+    ],
+    "number-field": [
+      {
+        "keys": [
+          "Arrow Up"
+        ],
+        "description": "Increase the value"
+      },
+      {
+        "keys": [
+          "Arrow Down"
+        ],
+        "description": "Decrease the value"
+      },
+      {
+        "keys": [
+          "Page Up"
+        ],
+        "description": "Increase the value by scale of 10"
+      },
+      {
+        "keys": [
+          "Page Down"
+        ],
+        "description": "Decrease the value by scale of 10"
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Set value to minimum (if `min` is provided)"
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Set value to maximum (if `max` is provided)"
+      }
+    ],
+    "pagination": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next focusable element."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When focus is on a any trigger, trigger selected page or arrow navigation"
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When focus is on a any trigger, trigger selected page or arrow navigation"
+      }
+    ],
+    "pin-input": [
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Focus on previous input."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Focus on next input."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Focus on the first input."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Focus on the last input."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "Deletes the value of the current input. If the input is empty, moves to the previous input and deletes that value as well."
+      },
+      {
+        "keys": [
+          "Delete"
+        ],
+        "description": "Deletes the value of the current input."
+      },
+      {
+        "keys": [
+          "Ctrl + V"
+        ],
+        "description": "Pastes the contents of the clipboard into the pin input. If the number of characters in the clipboard equals exceeds the number of inputs, the contents are pasted from the first input. Otherwise, the contents are pasted from the current input onwards."
+      }
+    ],
+    "popover": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Opens/closes the popover."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Opens/closes the popover."
+      },
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next focusable element"
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous focusable element"
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes the popover and moves focus to `PopoverTrigger`."
+      }
+    ],
+    "radio-group": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to either the checked radio item or the first radio item in the group."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When focus is on an unchecked radio item, checks it."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Moves focus and checks the next radio item in the group."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Moves focus and checks the next radio item in the group."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Moves focus to the previous radio item in the group."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Moves focus to the previous radio item in the group."
+      }
+    ],
+    "range-calendar": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the calendar, focuses the first navigation button."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When the focus is on either `RangeCalendarNext` or `RangeCalendarPrev`, it navigates the calendar. Otherwise, it selects the date."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When the focus is on either `RangeCalendarNext` or `RangeCalendarPrev`, it navigates the calendar. Otherwise, it selects the date."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight",
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "When the focus is on `RangeCalendarCellTrigger`, it navigates the dates, changing the month/year/decade if necessary."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "When the focus is on `RangeCalendarCellTrigger`, it moves focus to the first day of the current week."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "When the focus is on `RangeCalendarCellTrigger`, it moves focus to the last day of the current week."
+      },
+      {
+        "keys": [
+          "PageUp"
+        ],
+        "description": "When the focus is on `RangeCalendarCellTrigger`, it moves to the previous month while preserving the day of the month when possible, or clamps to the last day of the month."
+      },
+      {
+        "keys": [
+          "PageDown"
+        ],
+        "description": "When the focus is on `RangeCalendarCellTrigger`, it moves to the next month while preserving the day of the month when possible, or clamps to the last day of the month."
+      },
+      {
+        "keys": [
+          "Shift+PageUp"
+        ],
+        "description": "When the focus is on `RangeCalendarCellTrigger`, it moves to the previous year while preserving the month and day when possible, or clamps to the last day of the month."
+      },
+      {
+        "keys": [
+          "Shift+PageDown"
+        ],
+        "description": "When the focus is on `RangeCalendarCellTrigger`, it moves to the next year while preserving the month and day when possible, or clamps to the last day of the month."
+      }
+    ],
+    "rating": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to either the checked item or the first item in the rating."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When focus is on an unchecked item, selects that value."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Moves focus and selection to the next item."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Moves focus and selection to the next item."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Moves focus and selection to the previous item."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Moves focus and selection to the previous item."
+      }
+    ],
+    "select": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When focus is on `SelectTrigger`, opens the select and focuses the selected item. When focus is on an item, selects the focused item."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When focus is on `SelectTrigger`, opens the select and focuses the first item. When focus is on an item, selects the focused item."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "When focus is on `SelectTrigger`, opens the Select When focus is on an item, moves focus to the next item."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "When focus is on `SelectTrigger`, opens the Select When focus is on an item, moves focus to the previous item."
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "Closes the select and moves focus to `SelectTrigger`."
+      }
+    ],
+    "slider": [
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Increases the value by the `step` amount."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Decreases the value by the `step` amount."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Increases the value by the `step` amount."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Decreases the value by the `step` amount."
+      },
+      {
+        "keys": [
+          "PageUp"
+        ],
+        "description": "Increases the value by a larger `step`."
+      },
+      {
+        "keys": [
+          "PageDown"
+        ],
+        "description": "Decreases the value by a larger `step`."
+      },
+      {
+        "keys": [
+          "Shift + ArrowUp"
+        ],
+        "description": "Increases the value by a larger `step`."
+      },
+      {
+        "keys": [
+          "Shift + ArrowDown"
+        ],
+        "description": "Decreases the value by a larger `step`."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Sets the value to its minimum."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Sets the value to its maximum."
+      }
+    ],
+    "splitter": [
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "If the primary pane is not collapsed, collapses the pane. If the pane is collapsed, restores the splitter to its previous position."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Moves a horizontal splitter down."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Moves a horizontal splitter up."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Moves a vertical splitter to the right."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Moves a vertical splitter to the left."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Moves splitter to the position that gives the primary pane its smallest allowed size."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Moves splitter to the position that gives the primary pane its largest allowed size."
+      }
+    ],
+    "stepper": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the steps, focuses the first step ."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Moves focus to the next step depending on `orientation`."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Moves focus to the next step depending on `orientation` ."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Moves focus to the previous step depending on `orientation` ."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Moves focus to the previous step depending on `orientation` ."
+      },
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "Selects the focused step."
+      }
+    ],
+    "switch": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Toggles the component's state."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Toggles the component's state."
+      }
+    ],
+    "tabs": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the tabs, focuses the active trigger. When a trigger is focused, moves focus to the active content."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Moves focus to the next trigger depending on `orientation` and activates its associated content."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Moves focus to the next trigger depending on `orientation` and activates its associated content."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Moves focus to the previous trigger depending on `orientation` and activates its associated content."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Moves focus to the previous trigger depending on `orientation` and activates its associated content."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Moves focus to the first trigger and activates its associated content."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Moves focus to the last trigger and activates its associated content."
+      }
+    ],
+    "tag-group": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus into the tag group, to the focused tag's delete button, then out of the tag group."
+      },
+      {
+        "keys": [
+          "ArrowRight",
+          "ArrowDown"
+        ],
+        "description": "Moves focus to the next tag."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowUp"
+        ],
+        "description": "Moves focus to the previous tag."
+      },
+      {
+        "keys": [
+          "Home",
+          "End"
+        ],
+        "description": "Moves focus to the first or last tag."
+      },
+      {
+        "keys": [
+          "Space",
+          "Enter"
+        ],
+        "description": "When selectable, toggles the focused tag's selection."
+      },
+      {
+        "keys": [
+          "Delete",
+          "Backspace"
+        ],
+        "description": "Removes the focused tag, or every selected tag when the focused tag is selected."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Clears the selection."
+      }
+    ],
+    "tags-input": [
+      {
+        "keys": [
+          "Delete"
+        ],
+        "description": "When tag is active, remove it and set the tag on right active."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "When tag is active, remove it and set the tag on left active. If there are no tags to the left, either the next tags gets focus, or the input."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Set the next tag active."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Set the previous tag active."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Set the first tag active"
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Set the last tag active"
+      }
+    ],
+    "time-field": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the time field, focuses the first segment."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight"
+        ],
+        "description": "Navigates between the time field segments."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "Increments/changes the value of the segment."
+      },
+      {
+        "keys": [
+          "0-9"
+        ],
+        "description": "When the focus is on a numeric `TimeFieldInput`, it types in the number and focuses the next segment if the next input would result in an invalid value."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "Deletes a digit from the focused numeric segments."
+      },
+      {
+        "keys": [
+          "A",
+          "P"
+        ],
+        "description": "When the focus is on the day period, it sets it to AM or PM."
+      }
+    ],
+    "time-range-field": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the time field, focuses the first segment."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight"
+        ],
+        "description": "Navigates between the time field segments."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "Increments/changes the value of the segment."
+      },
+      {
+        "keys": [
+          "0-9"
+        ],
+        "description": "When the focus is on a numeric `TimeRangeFieldInput`, it types in the number and focuses the next segment if the next input would result in an invalid value."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "Deletes a digit from the focused numeric segments."
+      },
+      {
+        "keys": [
+          "A",
+          "P"
+        ],
+        "description": "When the focus is on the day period, it sets it to AM or PM."
+      }
+    ],
+    "toast": [
+      {
+        "keys": [
+          "F8"
+        ],
+        "description": "Focuses toasts viewport."
+      },
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next focusable element."
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous focusable element."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When focus is on a `ToastAction`, closes the toast when `closeOnClick` is `true`. When focus is on `ToastClose`, closes the toast."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When focus is on a `ToastAction`, closes the toast when `closeOnClick` is `true`. When focus is on `ToastClose`, closes the toast."
+      },
+      {
+        "keys": [
+          "Esc"
+        ],
+        "description": "When focus is on a `Toast`, closes the toast"
+      }
+    ],
+    "toggle-group": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to either the pressed item or the first item in the group."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Activates/deactivates the item."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Activates/deactivates the item."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Moves focus to the next item in the group."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Moves focus to the next item in the group."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Moves focus to the previous item in the group."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Moves focus to the previous item in the group."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Moves focus to the first item."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Moves focus to the last item."
+      }
+    ],
+    "toggle": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Activates/deactivates the toggle."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Activates/deactivates the toggle."
+      }
+    ],
+    "toolbar": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the first item in the group."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Activates/deactivates the item."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Activates/deactivates the item."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Moves focus to the next item depending on `orientation`."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Moves focus to the next item depending on `orientation`."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Moves focus to the previous item depending on `orientation` ."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Moves focus to the previous item depending on `orientation` ."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Moves focus to the first item."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Moves focus to the last item."
+      }
+    ],
+    "tooltip": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Opens/closes the tooltip without delay."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "If open, closes the tooltip without delay."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "If open, closes the tooltip without delay."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "If open, closes the tooltip without delay."
+      }
+    ],
+    "tree": [
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "When highlight on `TreeItem`, selects the focused item."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "When focus is on `TreeItem`, moves focus to the next item."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "When focus is on `TreeItem`, moves focus to the previous item."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "When focus is on a closed `TreeItem` (node), it opens the node without moving focus. When on an open node, it moves focus to the first child node. When on an end node, it does nothing."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "When focus is on an open `TreeItem` (node), closes the node. When focus is on a child node that is also either an end node or a closed node, moves focus to its parent node. When focus is on a root node that is also either an end node or a closed node, does nothing."
+      },
+      {
+        "keys": [
+          "Home",
+          "PageUp"
+        ],
+        "description": "Moves focus first `TreeItem`"
+      },
+      {
+        "keys": [
+          "End",
+          "PageDown"
+        ],
+        "description": "Moves focus last `TreeItem`"
+      }
+    ],
+    "year-picker": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the year picker, focuses the first navigation button."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When the focus is on either `YearPickerNext` or `YearPickerPrev`, it navigates the calendar. Otherwise, it selects the year."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When the focus is on either `YearPickerNext` or `YearPickerPrev`, it navigates the calendar. Otherwise, it selects the year."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight",
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "When the focus is on `YearPickerCellTrigger`, it navigates the years, changing the page if necessary."
+      },
+      {
+        "keys": [
+          "PageUp"
+        ],
+        "description": "When the focus is on `YearPickerCellTrigger`, it navigates to the previous page of years."
+      },
+      {
+        "keys": [
+          "PageDown"
+        ],
+        "description": "When the focus is on `YearPickerCellTrigger`, it navigates to the next page of years."
+      }
+    ],
+    "year-range-picker": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "When focus moves onto the year range picker, focuses the first navigation button."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "When the focus is on either `YearRangePickerNext` or `YearRangePickerPrev`, it navigates the calendar. Otherwise, it selects the year."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When the focus is on either `YearRangePickerNext` or `YearRangePickerPrev`, it navigates the calendar. Otherwise, it selects the year."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight",
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "When the focus is on `YearRangePickerCellTrigger`, it navigates the years, changing the page if necessary."
+      },
+      {
+        "keys": [
+          "PageUp"
+        ],
+        "description": "When the focus is on `YearRangePickerCellTrigger`, it navigates to the previous page of years."
+      },
+      {
+        "keys": [
+          "PageDown"
+        ],
+        "description": "When the focus is on `YearRangePickerCellTrigger`, it navigates to the next page of years."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Cancels the current range selection and restores the previous valid range."
+      }
+    ]
+  }
+}

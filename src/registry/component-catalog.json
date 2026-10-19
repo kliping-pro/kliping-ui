@@ -1,0 +1,895 @@
+[
+  {
+    "slug": "action-bar",
+    "name": "Action Bar",
+    "category": "navigasi",
+    "description": "Bilah aksi mengambang yang muncul di tepi layar begitu ada yang terpilih, membawa tombol-tombol yang berlaku untuk pilihan itu.",
+    "weight": "berat",
+    "path": "src/components/action-bar",
+    "parts": [
+      "ActionBar",
+      "ActionBarClose",
+      "ActionBarGroup",
+      "ActionBarItem",
+      "ActionBarSelection",
+      "ActionBarSeparator"
+    ]
+  },
+  {
+    "slug": "angle-slider",
+    "name": "Angle Slider",
+    "category": "masukan",
+    "description": "Penggeser melingkar untuk memilih sudut — satu nilai atau rentang — lengkap dengan gagang yang bisa ditarik dan dikemudikan papan ketik.",
+    "weight": "berat",
+    "path": "src/components/angle-slider",
+    "parts": [
+      "AngleSlider",
+      "AngleSliderRange",
+      "AngleSliderThumb",
+      "AngleSliderTrack",
+      "AngleSliderValue"
+    ]
+  },
+  {
+    "slug": "avatar-group",
+    "name": "Avatar Group",
+    "category": "tampilan",
+    "description": "Deretan avatar yang saling menumpuk, dengan penghitung sisa di ujungnya saat jumlahnya melebihi batas.",
+    "weight": "ringan",
+    "path": "src/components/avatar-group",
+    "parts": [
+      "AvatarGroup",
+      "AvatarGroupItem"
+    ]
+  },
+  {
+    "slug": "badge-overflow",
+    "name": "Badge Overflow",
+    "category": "tampilan",
+    "description": "Deretan lencana yang mengukur ruang yang tersedia lalu menampilkan sebanyak yang muat saja, sisanya diringkas jadi satu penanda.",
+    "weight": "sedang",
+    "path": "src/components/badge-overflow",
+    "parts": [
+      "BadgeOverflow"
+    ]
+  },
+  {
+    "slug": "banner",
+    "name": "Banner",
+    "category": "umpan-balik",
+    "description": "Pita pemberitahuan di tepi atas atau bawah layar, dengan antrean, prioritas, dan penutupan otomatis.",
+    "weight": "berat",
+    "path": "src/components/banner",
+    "parts": [
+      "Banner",
+      "BannerActions",
+      "BannerClose",
+      "BannerContent",
+      "BannerDescription",
+      "BannerIcon",
+      "Banners",
+      "BannerTitle"
+    ]
+  },
+  {
+    "slug": "checkbox-group",
+    "name": "Checkbox Group",
+    "category": "masukan",
+    "description": "Sekelompok kotak centang yang dikelola bersama: satu nilai jamak, satu pesan error, satu label.",
+    "weight": "sedang",
+    "path": "src/components/checkbox-group",
+    "parts": [
+      "CheckboxGroup",
+      "CheckboxGroupDescription",
+      "CheckboxGroupItem",
+      "CheckboxGroupLabel",
+      "CheckboxGroupList",
+      "CheckboxGroupMessage"
+    ]
+  },
+  {
+    "slug": "circular-progress",
+    "name": "Circular Progress",
+    "category": "tampilan",
+    "description": "Penunjuk kemajuan berbentuk cincin, termasuk keadaan tak tentu yang berputar terus.",
+    "weight": "ringan",
+    "path": "src/components/circular-progress",
+    "parts": [
+      "CircularProgress",
+      "CircularProgressCombined",
+      "CircularProgressIndicator",
+      "CircularProgressRange",
+      "CircularProgressTrack",
+      "CircularProgressValueText"
+    ]
+  },
+  {
+    "slug": "color-picker",
+    "name": "Color Picker",
+    "category": "masukan",
+    "description": "Pemilih warna dengan bidang saturasi, penggeser rona dan alfa, serta masukan teks dalam beberapa format.",
+    "weight": "berat",
+    "path": "src/components/color-picker",
+    "parts": [
+      "ColorPicker",
+      "ColorPickerAlphaSlider",
+      "ColorPickerArea",
+      "ColorPickerContent",
+      "ColorPickerEyeDropper",
+      "ColorPickerFormatSelect",
+      "ColorPickerHueSlider",
+      "ColorPickerInput",
+      "ColorPickerSwatch",
+      "ColorPickerSwatches",
+      "ColorPickerSwatchItem",
+      "ColorPickerTrigger"
+    ]
+  },
+  {
+    "slug": "color-swatch",
+    "name": "Color Swatch",
+    "category": "tampilan",
+    "description": "Petak warna yang menggambar papan catur di belakangnya supaya warna tembus pandang terbaca apa adanya.",
+    "weight": "ringan",
+    "path": "src/components/color-swatch",
+    "parts": [
+      "ColorSwatch"
+    ]
+  },
+  {
+    "slug": "combobox-advanced",
+    "name": "Combobox Advanced",
+    "category": "masukan",
+    "description": "Masukan teks bersandingan daftar pilihan yang menyaring sambil diketik.",
+    "weight": "berat",
+    "path": "src/components/combobox-advanced",
+    "parts": [
+      "Combobox",
+      "ComboboxAnchor",
+      "ComboboxBadgeItem",
+      "ComboboxBadgeList",
+      "ComboboxCancel",
+      "ComboboxContent",
+      "ComboboxEmpty",
+      "ComboboxGroup",
+      "ComboboxGroupLabel",
+      "ComboboxInput",
+      "ComboboxItem",
+      "ComboboxLabel",
+      "ComboboxLoading",
+      "ComboboxSeparator",
+      "ComboboxTrigger"
+    ]
+  },
+  {
+    "slug": "compare-slider",
+    "name": "Compare Slider",
+    "category": "tata-letak",
+    "description": "Penggeser pembanding sebelum-sesudah: dua lapisan bertumpuk, satu garis pemisah yang bisa ditarik.",
+    "weight": "sedang",
+    "path": "src/components/compare-slider",
+    "parts": [
+      "CompareSlider",
+      "CompareSliderAfter",
+      "CompareSliderBefore",
+      "CompareSliderHandle",
+      "CompareSliderLabel"
+    ]
+  },
+  {
+    "slug": "cropper",
+    "name": "Cropper",
+    "category": "media",
+    "description": "Pemotong gambar dan video dengan zum, putar, dan bingkai potong yang bisa dibentuk.",
+    "weight": "berat",
+    "path": "src/components/cropper",
+    "parts": [
+      "Cropper",
+      "CropperArea",
+      "CropperImage",
+      "CropperReset",
+      "CropperRotate",
+      "CropperRotateSlider",
+      "CropperVideo",
+      "CropperViewport",
+      "CropperZoom",
+      "CropperZoomSlider"
+    ]
+  },
+  {
+    "slug": "data-grid",
+    "name": "Data Grid",
+    "category": "data",
+    "description": "Petak data yang bisa disunting langsung di selnya, dengan kemudi papan ketik, tempel dari papan klip, dan virtualisasi baris.",
+    "weight": "berat",
+    "path": "src/components/data-grid",
+    "parts": [
+      "DataGrid",
+      "DataGridCell"
+    ]
+  },
+  {
+    "slug": "data-table-advanced",
+    "name": "Data Table Advanced",
+    "category": "data",
+    "description": "Tabel data lengkap: penyaringan, pengurutan, penghalaman, dan pemilihan kolom.",
+    "weight": "berat",
+    "path": "src/components/data-table-advanced",
+    "parts": [
+      "DataTable",
+      "DataTableColumnHeader",
+      "DataTableFacetedFilter",
+      "DataTablePagination",
+      "DataTableToolbar",
+      "DataTableViewOptions"
+    ]
+  },
+  {
+    "slug": "editable",
+    "name": "Editable",
+    "category": "masukan",
+    "description": "Teks yang disunting di tempat — sekali klik berubah jadi masukan, sekali Escape kembali seperti semula.",
+    "weight": "berat",
+    "path": "src/components/editable",
+    "parts": [
+      "Editable",
+      "EditableArea",
+      "EditableCancel",
+      "EditableInput",
+      "EditableLabel",
+      "EditablePreview",
+      "EditableSubmit",
+      "EditableToolbar",
+      "EditableTrigger"
+    ]
+  },
+  {
+    "slug": "file-upload",
+    "name": "File Upload",
+    "category": "masukan",
+    "description": "Pengunggah berkas dengan seret-dan-lepas, pratinjau, dan bilah kemajuan per berkas.",
+    "weight": "berat",
+    "path": "src/components/file-upload",
+    "parts": [
+      "FileUpload",
+      "FileUploadClear",
+      "FileUploadDropzone",
+      "FileUploadItem",
+      "FileUploadItemDelete",
+      "FileUploadItemMetadata",
+      "FileUploadItemPreview",
+      "FileUploadItemProgress",
+      "FileUploadList",
+      "FileUploadTrigger"
+    ]
+  },
+  {
+    "slug": "fps",
+    "name": "FPS",
+    "category": "tampilan",
+    "description": "Penghitung bingkai per detik yang berjalan langsung, untuk mengintip biaya render sambil mengembangkan.",
+    "weight": "ringan",
+    "path": "src/components/fps",
+    "parts": [
+      "Fps"
+    ]
+  },
+  {
+    "slug": "gauge",
+    "name": "Gauge",
+    "category": "tampilan",
+    "description": "Penunjuk nilai berbentuk busur — lingkaran penuh atau sepotong — untuk dashboard dan metrik.",
+    "weight": "sedang",
+    "path": "src/components/gauge",
+    "parts": [
+      "Gauge",
+      "GaugeCombined",
+      "GaugeIndicator",
+      "GaugeLabel",
+      "GaugeRange",
+      "GaugeTrack",
+      "GaugeValueText"
+    ]
+  },
+  {
+    "slug": "kanban",
+    "name": "Kanban",
+    "category": "data",
+    "description": "Papan kanban seret-dan-lepas: kartu berpindah antar kolom, kolomnya sendiri bisa diurutkan ulang.",
+    "weight": "berat",
+    "path": "src/components/kanban",
+    "parts": [
+      "Kanban",
+      "KanbanBoard",
+      "KanbanColumn",
+      "KanbanColumnHandle",
+      "KanbanItem",
+      "KanbanItemHandle"
+    ]
+  },
+  {
+    "slug": "kbd-advanced",
+    "name": "Kbd Advanced",
+    "category": "tampilan",
+    "description": "Penanda tombol papan ketik untuk menuliskan pintasan.",
+    "weight": "ringan",
+    "path": "src/components/kbd-advanced",
+    "parts": [
+      "Kbd",
+      "KbdGroup"
+    ]
+  },
+  {
+    "slug": "key-value",
+    "name": "Key Value",
+    "category": "masukan",
+    "description": "Masukan pasangan kunci-nilai yang tumbuh sendiri, mengerti tempelan berbaris banyak, dan memvalidasi kuncinya.",
+    "weight": "berat",
+    "path": "src/components/key-value",
+    "parts": [
+      "KeyValue",
+      "KeyValueAdd",
+      "KeyValueError",
+      "KeyValueItem",
+      "KeyValueKeyInput",
+      "KeyValueList",
+      "KeyValueRemove",
+      "KeyValueValueInput"
+    ]
+  },
+  {
+    "slug": "listbox",
+    "name": "Listbox",
+    "category": "masukan",
+    "description": "Daftar pilihan yang dikemudikan papan ketik, bisa berbentuk lajur maupun petak.",
+    "weight": "berat",
+    "path": "src/components/listbox",
+    "parts": [
+      "Listbox",
+      "ListboxGroup",
+      "ListboxGroupLabel",
+      "ListboxItem",
+      "ListboxItemIndicator"
+    ]
+  },
+  {
+    "slug": "marquee",
+    "name": "Marquee",
+    "category": "tata-letak",
+    "description": "Deretan isi yang berjalan sendiri tanpa henti, mendatar atau menegak.",
+    "weight": "sedang",
+    "path": "src/components/marquee",
+    "parts": [
+      "Marquee",
+      "MarqueeContent",
+      "MarqueeEdge",
+      "MarqueeItem"
+    ]
+  },
+  {
+    "slug": "mask-input",
+    "name": "Mask Input",
+    "category": "masukan",
+    "description": "Masukan berpola yang merapikan ketikan mengikuti bentuk yang ditentukan — nomor telepon, tanggal, kartu.",
+    "weight": "berat",
+    "path": "src/components/mask-input",
+    "parts": [
+      "MaskInput"
+    ]
+  },
+  {
+    "slug": "masonry",
+    "name": "Masonry",
+    "category": "tata-letak",
+    "description": "Tata letak batu bata: kolom-kolom yang tingginya tidak seragam, disusun rapat mengikuti lebar wadahnya.",
+    "weight": "berat",
+    "path": "src/components/masonry",
+    "parts": [
+      "Masonry",
+      "MasonryItem"
+    ]
+  },
+  {
+    "slug": "media-player",
+    "name": "Media Player",
+    "category": "media",
+    "description": "Pemutar video dan audio dengan kendali sendiri: putar, gulir waktu, volume, kecepatan, teks, dan layar penuh.",
+    "weight": "berat",
+    "path": "src/components/media-player",
+    "parts": [
+      "MediaPlayer",
+      "MediaPlayerAudio",
+      "MediaPlayerCaptions",
+      "MediaPlayerControls",
+      "MediaPlayerError",
+      "MediaPlayerFullscreen",
+      "MediaPlayerLoading",
+      "MediaPlayerOverlay",
+      "MediaPlayerPip",
+      "MediaPlayerPlay",
+      "MediaPlayerPlaybackSpeed",
+      "MediaPlayerSeek",
+      "MediaPlayerSeekButton",
+      "MediaPlayerTime",
+      "MediaPlayerVideo",
+      "MediaPlayerVolume"
+    ]
+  },
+  {
+    "slug": "mention",
+    "name": "Mention",
+    "category": "masukan",
+    "description": "Masukan yang membuka daftar saran begitu aksara pemicu diketik — pola @sebut.",
+    "weight": "berat",
+    "path": "src/components/mention",
+    "parts": [
+      "Mention",
+      "MentionContent",
+      "MentionInput",
+      "MentionItem",
+      "MentionLabel"
+    ]
+  },
+  {
+    "slug": "phone-input",
+    "name": "Phone Input",
+    "category": "masukan",
+    "description": "Masukan nomor telepon internasional dengan pemilih negara dan perapian nomor mengikuti negaranya.",
+    "weight": "berat",
+    "path": "src/components/phone-input",
+    "parts": [
+      "PhoneInput",
+      "PhoneInputCountrySelect",
+      "PhoneInputField"
+    ]
+  },
+  {
+    "slug": "qr-code",
+    "name": "QR Code",
+    "category": "tampilan",
+    "description": "Penggambar kode QR, dengan tingkat koreksi error, ukuran modul, dan sisipan logo di tengahnya.",
+    "weight": "sedang",
+    "path": "src/components/qr-code",
+    "parts": [
+      "QRCode",
+      "QRCodeCanvas",
+      "QRCodeDownload",
+      "QRCodeImage",
+      "QRCodeOverlay",
+      "QRCodeSkeleton",
+      "QRCodeSvg"
+    ]
+  },
+  {
+    "slug": "rating",
+    "name": "Rating",
+    "category": "masukan",
+    "description": "Penilaian berbintang yang mengerti nilai separuh, bisa dikemudikan papan ketik, dan ikut terkirim dalam formulir.",
+    "weight": "berat",
+    "path": "src/components/rating",
+    "parts": [
+      "Rating",
+      "RatingItem"
+    ]
+  },
+  {
+    "slug": "relative-time-card",
+    "name": "Relative Time Card",
+    "category": "tampilan",
+    "description": "Waktu relatif — “3 jam lalu” — yang saat di-hover membuka kartu berisi waktu persisnya di beberapa zona.",
+    "weight": "sedang",
+    "path": "src/components/relative-time-card",
+    "parts": [
+      "RelativeTimeCard",
+      "TimezoneCard"
+    ]
+  },
+  {
+    "slug": "responsive-dialog",
+    "name": "Responsive Dialog",
+    "category": "umpan-balik",
+    "description": "Dialog yang berubah bentuk mengikuti lebar layar: kotak di tengah pada desktop, laci dari bawah pada ponsel.",
+    "weight": "sedang",
+    "path": "src/components/responsive-dialog",
+    "parts": [
+      "ResponsiveDialog",
+      "ResponsiveDialogClose",
+      "ResponsiveDialogContent",
+      "ResponsiveDialogDescription",
+      "ResponsiveDialogFooter",
+      "ResponsiveDialogHeader",
+      "ResponsiveDialogOverlay",
+      "ResponsiveDialogTitle",
+      "ResponsiveDialogTrigger"
+    ]
+  },
+  {
+    "slug": "scroll-spy",
+    "name": "Scroll Spy",
+    "category": "navigasi",
+    "description": "Tautan navigasi yang menyorot bagian yang sedang terlihat, termasuk bagian bersarang.",
+    "weight": "berat",
+    "path": "src/components/scroll-spy",
+    "parts": [
+      "ScrollSpy",
+      "ScrollSpyLink",
+      "ScrollSpyNav",
+      "ScrollSpySection",
+      "ScrollSpyViewport"
+    ]
+  },
+  {
+    "slug": "scroller",
+    "name": "Scroller",
+    "category": "tata-letak",
+    "description": "Wadah bergulir dengan bayangan di tepi yang muncul-hilang sendiri dan tombol gulir di kedua ujungnya.",
+    "weight": "sedang",
+    "path": "src/components/scroller",
+    "parts": [
+      "Scroller",
+      "ScrollButton"
+    ]
+  },
+  {
+    "slug": "segmented-input",
+    "name": "Segmented Input",
+    "category": "masukan",
+    "description": "Beberapa kotak masukan yang tampak menyatu jadi satu — kode OTP, tanggal, nomor bersegmen.",
+    "weight": "ringan",
+    "path": "src/components/segmented-input",
+    "parts": [
+      "SegmentedInput",
+      "SegmentedInputItem"
+    ]
+  },
+  {
+    "slug": "selection-toolbar",
+    "name": "Selection Toolbar",
+    "category": "navigasi",
+    "description": "Bilah alat mengambang yang muncul di atas teks yang sedang disorot.",
+    "weight": "berat",
+    "path": "src/components/selection-toolbar",
+    "parts": [
+      "SelectionToolbar",
+      "SelectionToolbarItem",
+      "SelectionToolbarSeparator"
+    ]
+  },
+  {
+    "slug": "sortable",
+    "name": "Sortable",
+    "category": "data",
+    "description": "Daftar yang bisa diurutkan ulang dengan seret-dan-lepas, mendatar maupun menegak.",
+    "weight": "berat",
+    "path": "src/components/sortable",
+    "parts": [
+      "Sortable",
+      "SortableContent",
+      "SortableItem",
+      "SortableItemHandle"
+    ]
+  },
+  {
+    "slug": "speed-dial",
+    "name": "Speed Dial",
+    "category": "navigasi",
+    "description": "Tombol aksi mengambang yang membuka kipas aksi saat disentuh.",
+    "weight": "berat",
+    "path": "src/components/speed-dial",
+    "parts": [
+      "SpeedDial",
+      "SpeedDialAction",
+      "SpeedDialContent",
+      "SpeedDialItem",
+      "SpeedDialLabel",
+      "SpeedDialTrigger"
+    ]
+  },
+  {
+    "slug": "stack",
+    "name": "Stack",
+    "category": "tata-letak",
+    "description": "Tumpukan kartu yang merapat saat diam dan merenggang saat disinggahi, seperti tumpukan toast Sonner.",
+    "weight": "sedang",
+    "path": "src/components/stack",
+    "parts": [
+      "Stack",
+      "StackItem",
+      "StackItemWrapper"
+    ]
+  },
+  {
+    "slug": "stat",
+    "name": "Stat",
+    "category": "tampilan",
+    "description": "Angka utama beserta label, keterangan, dan penanda naik-turunnya.",
+    "weight": "ringan",
+    "path": "src/components/stat",
+    "parts": [
+      "Stat",
+      "StatDescription",
+      "StatIndicator",
+      "StatLabel",
+      "StatSeparator",
+      "StatTrend",
+      "StatValue"
+    ]
+  },
+  {
+    "slug": "status",
+    "name": "Status",
+    "category": "tampilan",
+    "description": "Penanda keadaan bertitik berdenyut — online, error, menunggu — dengan ragam warna.",
+    "weight": "ringan",
+    "path": "src/components/status",
+    "parts": [
+      "Status",
+      "StatusIndicator",
+      "StatusLabel"
+    ]
+  },
+  {
+    "slug": "stepper-advanced",
+    "name": "Stepper Advanced",
+    "category": "navigasi",
+    "description": "Penuntun proses berlangkah dengan penanda kemajuan, langkah yang bisa dilompati, dan keadaan error per langkah.",
+    "weight": "berat",
+    "path": "src/components/stepper-advanced",
+    "parts": [
+      "Stepper",
+      "StepperDescription",
+      "StepperIndicator",
+      "StepperItem",
+      "StepperList",
+      "StepperSeparator",
+      "StepperTitle",
+      "StepperTrigger"
+    ]
+  },
+  {
+    "slug": "swap",
+    "name": "Swap",
+    "category": "tata-letak",
+    "description": "Dua isi yang bertukar tempat saat diklik atau disinggahi, dengan peralihan yang bisa dipilih.",
+    "weight": "sedang",
+    "path": "src/components/swap",
+    "parts": [
+      "Swap",
+      "SwapOff",
+      "SwapOn"
+    ]
+  },
+  {
+    "slug": "tags-input-advanced",
+    "name": "Tags Input Advanced",
+    "category": "masukan",
+    "description": "Masukan tag: mengetik lalu Enter menambahkan, Backspace menghapus, dan tiap tag bisa disunting ulang.",
+    "weight": "berat",
+    "path": "src/components/tags-input-advanced",
+    "parts": [
+      "TagsInput",
+      "TagsInputClear",
+      "TagsInputInput",
+      "TagsInputItem",
+      "TagsInputLabel",
+      "TagsInputList"
+    ]
+  },
+  {
+    "slug": "time-picker",
+    "name": "Time Picker",
+    "category": "masukan",
+    "description": "Pemilih waktu yang bisa diketik langsung maupun dipilih dari daftar, dan mengikuti format 12 atau 24 jam sesuai lokal.",
+    "weight": "berat",
+    "path": "src/components/time-picker",
+    "parts": [
+      "TimePicker",
+      "TimePickerClear",
+      "TimePickerColumn",
+      "TimePickerColumnItem",
+      "TimePickerContent",
+      "TimePickerHour",
+      "TimePickerInput",
+      "TimePickerInputGroup",
+      "TimePickerLabel",
+      "TimePickerMinute",
+      "TimePickerPeriod",
+      "TimePickerSecond",
+      "TimePickerSeparator",
+      "TimePickerTrigger"
+    ]
+  },
+  {
+    "slug": "timeline",
+    "name": "Timeline",
+    "category": "tampilan",
+    "description": "Garis waktu peristiwa, mendatar maupun menegak, dengan keadaan per simpul.",
+    "weight": "berat",
+    "path": "src/components/timeline",
+    "parts": [
+      "Timeline",
+      "TimelineConnector",
+      "TimelineContent",
+      "TimelineDescription",
+      "TimelineDot",
+      "TimelineHeader",
+      "TimelineItem",
+      "TimelineTime",
+      "TimelineTitle"
+    ]
+  },
+  {
+    "slug": "tour",
+    "name": "Tour",
+    "category": "navigasi",
+    "description": "Tur berpandu yang menyorot elemen satu per satu sambil menerangkan kegunaannya.",
+    "weight": "berat",
+    "path": "src/components/tour",
+    "parts": [
+      "Tour",
+      "TourClose",
+      "TourContent",
+      "TourDescription",
+      "TourNext",
+      "TourOverlay",
+      "TourPrevious",
+      "TourProgress",
+      "TourSkip",
+      "TourTitle",
+      "TourTrigger"
+    ]
+  },
+  {
+    "slug": "chip",
+    "name": "Chip",
+    "category": "tampilan",
+    "description": "Penanda bulat untuk tag, filter, atau pilihan, dalam tiga ukuran dan enam varian.",
+    "weight": "ringan",
+    "path": "src/components/chip",
+    "parts": [
+      "Chip"
+    ]
+  },
+  {
+    "slug": "list",
+    "name": "List",
+    "category": "data",
+    "description": "Daftar baris dengan slot awal dan akhir, penanda terpilih, dan baris nonaktif.",
+    "weight": "ringan",
+    "path": "src/components/list",
+    "parts": [
+      "List",
+      "ListItem",
+      "ListItemEnd",
+      "ListItemStart"
+    ]
+  },
+  {
+    "slug": "map",
+    "name": "Map",
+    "category": "media",
+    "description": "Peta interaktif MapLibre dengan marker, popup, tooltip, rute, cluster, dan kontrol zoom.",
+    "weight": "berat",
+    "path": "src/components/map",
+    "parts": [
+      "Map",
+      "MapClusterLayer",
+      "MapControls",
+      "MapMarker",
+      "MapPopup",
+      "MapRoute",
+      "MarkerContent",
+      "MarkerLabel",
+      "MarkerPopup",
+      "MarkerTooltip"
+    ]
+  },
+  {
+    "slug": "software-purchase-card",
+    "name": "Software Purchase Card",
+    "category": "tampilan",
+    "description": "Card persetujuan pembelian software: tanggal mulai, jumlah seat, harga, dan tombol Approve/Discard.",
+    "weight": "ringan",
+    "path": "src/components/software-purchase-card",
+    "parts": [
+      "SoftwarePurchaseCard"
+    ]
+  },
+  {
+    "slug": "client-only",
+    "name": "Client Only",
+    "category": "utilitas",
+    "description": "Menahan isinya sampai hidrasi selesai, dengan cadangan yang digambar server.",
+    "weight": "ringan",
+    "path": "src/components/client-only",
+    "parts": [
+      "ClientOnly"
+    ]
+  },
+  {
+    "slug": "composition",
+    "name": "Composition",
+    "category": "utilitas",
+    "description": "Kumpulan pembantu untuk menggabungkan penangan peristiwa dan ref jadi satu.",
+    "weight": "ringan",
+    "path": "src/lib/composition",
+    "parts": []
+  },
+  {
+    "slug": "direction-provider",
+    "name": "Direction Provider",
+    "category": "utilitas",
+    "description": "Menyediakan arah baca — kiri-ke-kanan atau kanan-ke-kiri — untuk seluruh pohon di bawahnya.",
+    "weight": "ringan",
+    "path": "src/components/direction-provider",
+    "parts": [
+      "DirectionProvider"
+    ]
+  },
+  {
+    "slug": "hitbox",
+    "name": "Hitbox",
+    "category": "utilitas",
+    "description": "Melebarkan daerah yang bisa disentuh sebuah elemen tanpa mengubah tampilannya.",
+    "weight": "ringan",
+    "path": "src/components/hitbox",
+    "parts": [
+      "Hitbox"
+    ]
+  },
+  {
+    "slug": "pending",
+    "name": "Pending",
+    "category": "utilitas",
+    "description": "Menahan interaksi selama sesuatu sedang berjalan, tanpa membuang fokus papan ketik dan tanpa menghilangkan elemennya dari pembaca layar.",
+    "weight": "sedang",
+    "path": "src/composables/pending",
+    "parts": [
+      "Pending"
+    ]
+  },
+  {
+    "slug": "portal",
+    "name": "Portal",
+    "category": "utilitas",
+    "description": "Menggambar isinya di tempat lain dalam pohon DOM.",
+    "weight": "ringan",
+    "path": "src/components/portal",
+    "parts": [
+      "Portal"
+    ]
+  },
+  {
+    "slug": "presence",
+    "name": "Presence",
+    "category": "utilitas",
+    "description": "Menahan elemen tetap ada sampai animasi keluarnya selesai.",
+    "weight": "sedang",
+    "path": "src/components/presence",
+    "parts": [
+      "Presence"
+    ]
+  },
+  {
+    "slug": "visually-hidden",
+    "name": "Visually Hidden",
+    "category": "utilitas",
+    "description": "Menyembunyikan isi dari mata tapi tidak dari pembaca layar.",
+    "weight": "ringan",
+    "path": "src/components/visually-hidden",
+    "parts": [
+      "VisuallyHidden"
+    ]
+  },
+  {
+    "slug": "visually-hidden-input",
+    "name": "Visually Hidden Input",
+    "category": "utilitas",
+    "description": "Masukan tersembunyi yang tetap terbaca teknologi bantu dan tetap ikut terkirim dalam formulir.",
+    "weight": "sedang",
+    "path": "src/components/visually-hidden-input",
+    "parts": [
+      "VisuallyHiddenInput"
+    ]
+  }
+]

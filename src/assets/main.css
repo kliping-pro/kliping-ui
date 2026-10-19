@@ -1,0 +1,241 @@
+/*
+ * `@import "tailwindcss"` apa adanya — utility tetap di layernya sendiri.
+ *
+ * Yang membuat susunan ini sempat diutak-atik: CSS bawaan VitePress tidak berada
+ * di layer mana pun, dan aturan tanpa layer selalu menang atas aturan di dalam
+ * layer, berapa pun spesifisitasnya. Reset globalnya menyetel `h1..h6` ke 16
+ * piksel dan `button` ke padding nol, jadi judul yang sudah diberi `text-5xl`
+ * keluar seukuran teks biasa dan tombol kehilangan paddingnya.
+ *
+ * Dua jalan sudah dicoba dan dibuang. Mengeluarkan utility dari layer cuma
+ * menyamakan kedudukan; setelah itu spesifisitas yang menentukan, dan `.vp-doc p`
+ * tetap menang atas `.mt-2`. Menandai semua utility penting menyelesaikan itu,
+ * tapi merusak hal lain: tanda `!` pada satu utility jadi tidak berarti apa-apa
+ * kalau semuanya penting, dan petak kartu beranda — yang mengandalkan
+ * `min-[1400px]:grid-cols-4!` untuk mengalahkan `lg:grid-cols-3` — terkunci di
+ * tiga kolom.
+ *
+ * Yang dipakai sekarang: susunan layer bawaan Tailwind, dan reset global
+ * VitePress dinetralkan satu per satu di `theme/kliping.css` dengan
+ * `revert-layer`. Nilainya jatuh ke layer Tailwind, jadi utility menang di
+ * tempat kelasnya dipakai, `!` kembali punya arti, dan penataan `.vp-doc` untuk
+ * prosa dokumentasi tetap utuh.
+ */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@import "tw-animate-css";
+@import "./utilities.css";
+@import "./animations.css";
+
+/* VitePress menjalankan Vite dengan root di folder docs, jadi deteksi otomatis
+   Tailwind berhenti di situ dan kelas yang cuma dipakai komponen tidak pernah
+   dihasilkan — pratinjau tampil separuh jadi. Sumbernya ditunjuk eksplisit
+   supaya kedua build menghasilkan CSS yang sama. */
+@source "../";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Urutan fon sistem yang sama dengan Doras UI: San Francisco di Apple,
+     Segoe UI di Windows, Roboto di Android, lalu fon desktop Linux. */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --color-pill: var(--pill);
+  /* Petak kartu di beranda menambah kolom di layar sangat lebar; Tailwind tidak
+     punya breakpoint sebesar ini secara bawaan. */
+  --breakpoint-3xl: 1600px;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
+  --color-code: var(--code);
+  --color-code-foreground: var(--code-foreground);
+  --color-code-highlight: var(--code-highlight);
+  --color-code-number: var(--code-number);
+  --color-selection: var(--selection);
+  --color-selection-foreground: var(--selection-foreground);
+  /* Skala Doras UI: selisih tetap dari --radius, bukan perkalian. Dengan
+     --radius 1rem, tombol dan input (md) jadi 14px — nyaris pill pada tinggi
+     32–36px — dan pill sidebar (lg) 16px. */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+:root {
+  /* Satu token untuk seluruh bentuk situs — pola Doras UI. Seluruh skala
+     rounded-* di atas diturunkan dari sini, jadi mengubah angka ini mengubah
+     tombol, input, kotak cari, tab, kartu, dan pill sidebar sekaligus. */
+  --radius: 1rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0% 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0% 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0% 0 0);
+  /* emerald-700, bukan emerald-600: teks putih di atas tombol primer dan
+     tautan hijau di atas latar putih butuh kontras ≥ 4,5:1 (WCAG AA).
+     emerald-600 hanya 3,5:1, emerald-700 → 5,1:1. */
+  --primary: oklch(0.508 0.118 165.612);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  /* 0.52, bukan 0.556 bawaan shadcn: teks redup juga duduk di atas --muted
+     dan --accent (kbd, tab, pill aktif, badge) dan butuh kontras ≥ 4,5:1
+     (WCAG AA). Di atas --accent: 0.556 → 3,9:1, 0.54 → 4,1:1, 0.52 → 4,7:1. */
+  --muted-foreground: oklch(0.52 0 0);
+  /* Sorotan saat disorot dan saat aktif — pill sidebar dan nav, item menu,
+     item command, tombol ghost dan outline — semuanya satu warna ini. Lebih
+     tegas dari 0.97 bawaan shadcn: di atas --sidebar (0.985), 0.97 nyaris tak
+     terbedakan. */
+  --accent: oklch(0.935 0 0);
+  /* Nama lain `--accent` untuk chrome situs, bukan warna kedua. */
+  --pill: var(--accent);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.97 0.01 17);
+  /* Peringatan (mendekati batas, perlu perhatian) — di antara primary dan
+     destructive. Untuk isian, indikator, dan garis (kontras grafis ≥ 3:1 di
+     atas latar); teks di atas latar warning memakai --warning-foreground. */
+  --warning: oklch(0.666 0.179 58.318);
+  --warning-foreground: oklch(0.279 0.077 45.635);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: var(--color-emerald-300);
+  --chart-2: var(--color-emerald-500);
+  --chart-3: var(--color-emerald-600);
+  --chart-4: var(--color-emerald-700);
+  --chart-5: var(--color-emerald-800);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0% 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  --surface: oklch(0.98 0 0);
+  --surface-foreground: var(--foreground);
+  --code: var(--surface);
+  --code-foreground: var(--surface-foreground);
+  --code-highlight: oklch(0.96 0 0);
+  /* 0.53: nomor baris di atas --code butuh ≥ 4,5:1 (0.56 hanya 4,4:1). */
+  --code-number: oklch(0.53 0 0);
+  --selection: oklch(0% 0 0);
+  --selection-foreground: oklch(1 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.696 0.17 162.48);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.371 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.58 0.22 27);
+  --warning: oklch(0.828 0.189 84.429);
+  --warning-foreground: oklch(0.279 0.077 45.635);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: var(--color-emerald-300);
+  --chart-2: var(--color-emerald-500);
+  --chart-3: var(--color-emerald-600);
+  --chart-4: var(--color-emerald-700);
+  --chart-5: var(--color-emerald-800);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.696 0.17 162.48);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.439 0 0);
+  --surface: oklch(0.2 0 0);
+  --surface-foreground: oklch(0.708 0 0);
+  --code: var(--surface);
+  --code-foreground: var(--surface-foreground);
+  --code-highlight: oklch(0.27 0 0);
+  --code-number: oklch(0.72 0 0);
+  --selection: oklch(0.922 0 0);
+  --selection-foreground: oklch(0.205 0 0);
+}
+
+/* Aksen hijau untuk membingkai sebagian demo. Token primer ditimpa pada
+   dirinya sendiri, jadi seluruh isinya ikut memakai aksen itu. */
+
+.theme-green {
+  --primary: oklch(0.723 0.219 149.579);
+  --primary-foreground: oklch(0.982 0.018 155.826);
+  --ring: oklch(0.723 0.219 149.579);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-ring: var(--ring);
+}
+
+.dark .theme-green {
+  --primary: oklch(0.696 0.17 162.48);
+  --primary-foreground: oklch(0.393 0.095 152.535);
+  --ring: oklch(0.527 0.154 150.069);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+

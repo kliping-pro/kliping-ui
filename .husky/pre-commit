@@ -1,0 +1,5 @@
+# Pagar cepat (± 3 detik). Yang berat ada di pre-push dan CI.
+node scripts/check-staged-secrets.mjs
+npm run -s check:language
+npm run -s check:commands
+npm run -s check:lockfile

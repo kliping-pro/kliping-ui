@@ -1,0 +1,16 @@
+name: Feature or item request
+description: Suggest a component, block, variant or CLI feature.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you need?
+      description: The problem or the page you are building, not only the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference
+      description: Links or screenshots. Only share designs you are allowed to share.

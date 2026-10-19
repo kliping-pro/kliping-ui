@@ -1,0 +1,2881 @@
+[
+  {
+    "name": "account-01",
+    "description": "Pengaturan autentikasi dua faktor dengan daftar metode dan kode pemulihan.",
+    "categories": [
+      "account"
+    ]
+  },
+  {
+    "name": "account-02",
+    "description": "Unggah foto profil dengan pratinjau avatar dan switch status ketersediaan.",
+    "categories": [
+      "account"
+    ]
+  },
+  {
+    "name": "account-03",
+    "description": "Form informasi pribadi berseksi dengan select, date picker, dan kontak.",
+    "categories": [
+      "account"
+    ]
+  },
+  {
+    "name": "account-04",
+    "description": "Form ganti Password dua kolom dengan daftar syarat yang tervalidasi langsung.",
+    "categories": [
+      "account"
+    ]
+  },
+  {
+    "name": "account-05",
+    "description": "Daftar integrasi pihak ketiga dalam accordion dengan switch dan kode verifikasi.",
+    "categories": [
+      "account"
+    ]
+  },
+  {
+    "name": "account-06",
+    "description": "Tabel preferensi notifikasi dengan switch Email, Push, dan SMS per aktivitas.",
+    "categories": [
+      "account"
+    ]
+  },
+  {
+    "name": "account-07",
+    "description": "Daftar sesi aktif per perangkat dengan lokasi, waktu, dan tombol hapus.",
+    "categories": [
+      "account"
+    ]
+  },
+  {
+    "name": "ai-agents-01",
+    "description": "Chat AI dengan pilihan provider, API key, respons streaming, dan proses berpikir.",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "name": "ai-agents-02",
+    "description": "Generator gambar AI dengan tab Generate dan editor brightness, contrast, saturation.",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "name": "ai-agents-03",
+    "description": "Agen pembuat video AI dengan progress, preview pemutar, dan daftar video terbuat.",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "name": "banner-01",
+    "description": "Bilah pengumuman setipis satu baris di puncak halaman.",
+    "categories": [
+      "banner"
+    ]
+  },
+  {
+    "name": "banner-02",
+    "description": "Bilah pengumuman berkartu dengan tombol tutup di pojoknya.",
+    "categories": [
+      "banner"
+    ]
+  },
+  {
+    "name": "banner-03",
+    "description": "Bilah pengumuman berikon dengan tombol tutup yang berpindah di layar sempit.",
+    "categories": [
+      "banner"
+    ]
+  },
+  {
+    "name": "banner-04",
+    "description": "Bilah ajakan mendaftar berbingkai ganda dengan dua tombol.",
+    "categories": [
+      "banner"
+    ]
+  },
+  {
+    "name": "billing-01",
+    "description": "Daftar card informasi tagihan perusahaan dengan tombol edit dan hapus.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-02",
+    "description": "Dua kartu kredit berdampingan, varian gelap dan terang, dengan chip emas.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-03",
+    "description": "Daftar invoice dengan lencana status jatuh tempo, nominal, dan tombol unduh.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-04",
+    "description": "Grid metode pembayaran kartu Visa/Mastercard dengan label default dan tooltip aksi.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-05",
+    "description": "Riwayat transaksi per bulan dengan ikon tren naik/turun dan date picker.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "blog-01",
+    "description": "Kartu tulisan bergambar tiga kolom dengan badge kategori.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-02",
+    "description": "Kartu tulisan bergambar dengan tombol baca selengkapnya.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-03",
+    "description": "Satu tulisan utama besar diikuti kartu yang lebih kecil.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-04",
+    "description": "Daftar tulisan bergaris pemisah dengan gambar di samping.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-05",
+    "description": "Daftar tulisan dua kolom dengan gambar besar.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-06",
+    "description": "Daftar tulisan tiga kolom dengan tag di tiap tulisan.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-07",
+    "description": "Grid enam card blog bergambar dengan badge, penulis, dan tombol View More.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-08",
+    "description": "Tiga pratinjau blog bergambar dengan nama penulis, deretan tag, dan tombol View More.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-09",
+    "description": "Empat pos blog dua kolom, gambar persegi panjang di samping teks dan penulis.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-10",
+    "description": "Card sorotan berwarna primary di samping empat card bergambar berikon.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-11",
+    "description": "Satu pratinjau blog besar: gambar di kiri, judul, ringkasan, dan penulis di kanan.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-12",
+    "description": "Tiga card blog sederhana bergambar dengan badge kategori dan tanggal posting.",
+    "categories": [
+      "blog"
+    ]
+  },
+  {
+    "name": "carousel-block-01",
+    "description": "Korsel gambar dengan tombol maju mundur.",
+    "categories": [
+      "carousel-block"
+    ]
+  },
+  {
+    "name": "carousel-block-02",
+    "description": "Korsel gambar tanpa tombol, digeser langsung.",
+    "categories": [
+      "carousel-block"
+    ]
+  },
+  {
+    "name": "changelog-01",
+    "description": "Catatan perubahan bergaris pemisah dengan penanda rilis besar.",
+    "categories": [
+      "changelog"
+    ]
+  },
+  {
+    "name": "changelog-02",
+    "description": "Catatan perubahan dengan titik penanda di garis waktunya.",
+    "categories": [
+      "changelog"
+    ]
+  },
+  {
+    "name": "changelog-03",
+    "description": "Catatan perubahan ringkas tanpa pengelompokan fitur.",
+    "categories": [
+      "changelog"
+    ]
+  },
+  {
+    "name": "ChartAreaAxes",
+    "description": "Grafik area dengan sumbu X dan Y.",
+    "categories": [
+      "chart",
+      "chart-area"
+    ]
+  },
+  {
+    "name": "ChartAreaGradient",
+    "description": "Grafik area dengan isian gradasi.",
+    "categories": [
+      "chart",
+      "chart-area"
+    ]
+  },
+  {
+    "name": "ChartAreaIcons",
+    "description": "Grafik area dengan ikon di legendanya.",
+    "categories": [
+      "chart",
+      "chart-area"
+    ]
+  },
+  {
+    "name": "ChartAreaInteractive",
+    "description": "Grafik area dengan penyaring rentang waktu.",
+    "categories": [
+      "chart",
+      "chart-area"
+    ]
+  },
+  {
+    "name": "ChartBarDefault",
+    "description": "Grafik batang dasar.",
+    "categories": [
+      "chart",
+      "chart-bar"
+    ]
+  },
+  {
+    "name": "ChartBarHorizontal",
+    "description": "Grafik batang mendatar.",
+    "categories": [
+      "chart",
+      "chart-bar"
+    ]
+  },
+  {
+    "name": "ChartBarInteractive",
+    "description": "Grafik batang dengan pemilih deret data.",
+    "categories": [
+      "chart",
+      "chart-bar"
+    ]
+  },
+  {
+    "name": "ChartBarMultiple",
+    "description": "Grafik batang dengan beberapa deret data.",
+    "categories": [
+      "chart",
+      "chart-bar"
+    ]
+  },
+  {
+    "name": "ChartLineDefault",
+    "description": "Grafik garis dasar.",
+    "categories": [
+      "chart",
+      "chart-line"
+    ]
+  },
+  {
+    "name": "ChartLineInteractive",
+    "description": "Grafik garis dengan pemilih deret data.",
+    "categories": [
+      "chart",
+      "chart-line"
+    ]
+  },
+  {
+    "name": "ChartLineLinear",
+    "description": "Grafik garis dengan interpolasi lurus.",
+    "categories": [
+      "chart",
+      "chart-line"
+    ]
+  },
+  {
+    "name": "ChartLineStep",
+    "description": "Grafik garis berbentuk tangga.",
+    "categories": [
+      "chart",
+      "chart-line"
+    ]
+  },
+  {
+    "name": "ChartPieDonut",
+    "description": "Grafik lingkaran berlubang.",
+    "categories": [
+      "chart",
+      "chart-pie"
+    ]
+  },
+  {
+    "name": "ChartPieDonutText",
+    "description": "Grafik lingkaran berlubang dengan angka di tengahnya.",
+    "categories": [
+      "chart",
+      "chart-pie"
+    ]
+  },
+  {
+    "name": "ChartPieSimple",
+    "description": "Grafik lingkaran dasar.",
+    "categories": [
+      "chart",
+      "chart-pie"
+    ]
+  },
+  {
+    "name": "ChartPieStacked",
+    "description": "Grafik lingkaran bertumpuk.",
+    "categories": [
+      "chart",
+      "chart-pie"
+    ]
+  },
+  {
+    "name": "ChartTooltipDefault",
+    "description": "Tooltip grafik bawaan.",
+    "categories": [
+      "chart",
+      "chart-tooltip"
+    ]
+  },
+  {
+    "name": "ChartTooltipIcons",
+    "description": "Tooltip grafik dengan ikon.",
+    "categories": [
+      "chart",
+      "chart-tooltip"
+    ]
+  },
+  {
+    "name": "ChartTooltipIndicatorLine",
+    "description": "Tooltip grafik dengan penanda berupa garis.",
+    "categories": [
+      "chart",
+      "chart-tooltip"
+    ]
+  },
+  {
+    "name": "ChartTooltipIndicatorNone",
+    "description": "Tooltip grafik tanpa penanda.",
+    "categories": [
+      "chart",
+      "chart-tooltip"
+    ]
+  },
+  {
+    "name": "ChartTooltipLabelCustom",
+    "description": "Tooltip grafik dengan label buatan sendiri.",
+    "categories": [
+      "chart",
+      "chart-tooltip"
+    ]
+  },
+  {
+    "name": "ChartTooltipLabelFormatter",
+    "description": "Tooltip grafik dengan pemformat label.",
+    "categories": [
+      "chart",
+      "chart-tooltip"
+    ]
+  },
+  {
+    "name": "ChartTooltipLabelNone",
+    "description": "Tooltip grafik tanpa label.",
+    "categories": [
+      "chart",
+      "chart-tooltip"
+    ]
+  },
+  {
+    "name": "code-block-01",
+    "description": "Potongan kode tersorot, satu blok polos di tengah halaman.",
+    "categories": [
+      "code-block"
+    ]
+  },
+  {
+    "name": "code-block-02",
+    "description": "Blok kode berkepala dengan nama berkas dan tombol salin.",
+    "categories": [
+      "code-block"
+    ]
+  },
+  {
+    "name": "code-block-03",
+    "description": "Blok kode bertab, satu tab per berkas.",
+    "categories": [
+      "code-block"
+    ]
+  },
+  {
+    "name": "contact-01",
+    "description": "Tiga kartu kontak berikon tanpa formulir.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-02",
+    "description": "Formulir kontak berdampingan dengan keterangan alamat.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-03",
+    "description": "Empat kartu kontak dengan tautan langsung.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-04",
+    "description": "Formulir kontak dalam card di kiri, judul dan tiga info kontak berikon di kanan.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-05",
+    "description": "Formulir kontak dengan nomor telepon di kiri, foto penuh di kanan.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-06",
+    "description": "Card besar berisi formulir dan panel gelap info kontak dengan ikon sosial.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-07",
+    "description": "Foto latar bergelap dengan judul dan empat info kontak berikon tanpa formulir.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-08",
+    "description": "Foto di kiri, formulir dengan tombol pilihan topik di kanan, lencana di atas judul.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-09",
+    "description": "Tiga info kontak berikon dalam lingkaran, dengan subjudul, tanpa formulir.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-10",
+    "description": "Formulir kontak dalam card di kiri, alamat kantor dan telepon berikon di kanan.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-11",
+    "description": "Panel hitam info kontak dengan ikon sosial di kiri, formulir dengan radio minat di kanan.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-12",
+    "description": "Panel hitam berisi info kontak di kiri dan formulir dalam card di kanan.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-13",
+    "description": "Formulir dengan nomor telepon dalam card di kiri, tiga info kontak berikon di kanan.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-14",
+    "description": "Formulir kaca buram di atas latar gradasi gelap, telepon dan email di bawah.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-15",
+    "description": "Formulir rata tengah berisi nama perusahaan di atas foto latar samar.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-16",
+    "description": "Empat card info kontak berikon di atas, formulir dalam card di bawah.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-17",
+    "description": "Formulir lebar tanpa card dengan kolom wajib dan tombol kirim berikon di tengah.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "contact-18",
+    "description": "Tiga opsi kontak berikon dengan tautan aksi di kiri, card formulir singkat di kanan.",
+    "categories": [
+      "contact"
+    ]
+  },
+  {
+    "name": "cruds-01",
+    "description": "Form edit produk pakaian dengan nama, merek, harga, kategori, dan detail.",
+    "categories": [
+      "cruds"
+    ]
+  },
+  {
+    "name": "cruds-02",
+    "description": "Form perbarui profil staf dengan username, Email kerja, dan Password baru.",
+    "categories": [
+      "cruds"
+    ]
+  },
+  {
+    "name": "cruds-03",
+    "description": "Pengaturan akun stylist dengan unggah foto profil, peran, dan izin akses.",
+    "categories": [
+      "cruds"
+    ]
+  },
+  {
+    "name": "cta-01",
+    "description": "Ajakan bertindak polos di tengah, tanpa latar.",
+    "categories": [
+      "cta"
+    ]
+  },
+  {
+    "name": "cta-02",
+    "description": "Ajakan bertindak di atas gambar gelap dengan gradien.",
+    "categories": [
+      "cta"
+    ]
+  },
+  {
+    "name": "cta-03",
+    "description": "Ajakan bertindak dua kolom dengan gambar ponsel di sebelah kanan.",
+    "categories": [
+      "cta"
+    ]
+  },
+  {
+    "name": "cta-04",
+    "description": "Ajakan bertindak berbingkai dengan latar papan sirkuit dan gambar ponsel.",
+    "categories": [
+      "cta"
+    ]
+  },
+  {
+    "name": "cta-05",
+    "description": "Ajakan bertindak berlatar aurora dengan deretan ubin ikon.",
+    "categories": [
+      "cta"
+    ]
+  },
+  {
+    "name": "cta-07",
+    "description": "Ajakan bertindak di kartu gelap membulat dengan lambang di atasnya.",
+    "categories": [
+      "cta"
+    ]
+  },
+  {
+    "name": "dashboard-01",
+    "description": "Dashboard lengkap dengan sidebar, grafik, dan tabel data.",
+    "categories": [
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "ecommerce-01",
+    "description": "Checkout dua kolom: formulir kontak, alamat, pembayaran, dan ringkasan pesanan sticky.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-02",
+    "description": "Detail produk mantel dengan thumbnail vertikal, pilihan warna dan ukuran, serta accordion info.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-03",
+    "description": "Ikhtisar produk berlatar gelap dengan harga diskon, tab info, dan foto di kanan.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-04",
+    "description": "Produk digital dengan breadcrumb, statistik ulasan, dan pilihan versi radio.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-05",
+    "description": "Video runway YouTube layar lebar dengan tombol putar dan tiga kartu produk di bawah.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-06",
+    "description": "Halaman detail tas mewah tiga kolom: thumbnail, gambar utama, dan info dengan panel lipat.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-07",
+    "description": "Keranjang belanja kosong dengan ilustrasi di tengah dan tombol kembali ke toko.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-08",
+    "description": "Grid tiga kartu promo bergambar dengan satu banner lebar di bawahnya.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-09",
+    "description": "Foto ruangan besar dengan hotspot produk dan card vas berpengatur jumlah di kanan.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-10",
+    "description": "Detail pesanan dengan info produk, alamat, timeline status vertikal, dan ringkasan biaya.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-11",
+    "description": "Riwayat pesanan dengan card info order dan tabel produk berstatus Delivered.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-12",
+    "description": "Deskripsi produk dengan breadcrumb, galeri thumbnail, Select warna dan ukuran, serta fitur.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-13",
+    "description": "Detail produk dengan carousel gambar berpanah dan info rata tengah berpilihan ukuran.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-14",
+    "description": "Daftar produk empat kolom dengan deretan Select filter, urutan, dan tombol favorit.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-15",
+    "description": "Kartu promo dua panel: showcase produk berganti via titik dan foto hero bertajuk.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-16",
+    "description": "Keranjang belanja dalam card besar: daftar item berpilihan jumlah dan ringkasan pesanan sticky.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "ecommerce-17",
+    "description": "Detail produk sederhana dua kolom, accordion info tambahan, dan dua kartu item serupa.",
+    "categories": [
+      "ecommerce"
+    ]
+  },
+  {
+    "name": "empty-state-01",
+    "description": "Kartu kosong dengan ikon dan tombol tambah.",
+    "categories": [
+      "empty-state"
+    ]
+  },
+  {
+    "name": "empty-state-02",
+    "description": "Keadaan kosong berbingkai putus-putus.",
+    "categories": [
+      "empty-state"
+    ]
+  },
+  {
+    "name": "empty-state-03",
+    "description": "Keadaan kosong bertab dengan saran isi.",
+    "categories": [
+      "empty-state"
+    ]
+  },
+  {
+    "name": "empty-state-04",
+    "description": "Keadaan kosong dengan jalur contoh yang bergulir.",
+    "categories": [
+      "empty-state"
+    ]
+  },
+  {
+    "name": "faq-01",
+    "description": "Akordeon tanya jawab polos, satu kolom penuh.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-02",
+    "description": "Akordeon ringkas dengan judul pendek di atasnya.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-03",
+    "description": "Judul di kiri, akordeon bertanda tambah di kanan.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-04",
+    "description": "Petak kartu berikon, bukan akordeon — semua jawaban terbuka.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-05",
+    "description": "Petak kartu berikon dua kolom dengan badge di atasnya.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-06",
+    "description": "Akordeon berbingkai dengan tanda tambah sebagai pemicunya.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-07",
+    "description": "Akordeon berbingkai rapat, tiap butir jadi kartunya sendiri.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-08",
+    "description": "Akordeon di tengah halaman dengan judul besar.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-09",
+    "description": "Akordeon berikon di tengah, tiap pertanyaan punya lambangnya.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-10",
+    "description": "Judul dan ajakan di kiri, akordeon berikon di kanan.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-11",
+    "description": "Akordeon bergaris pemisah dengan ajakan hubungi kami di bawahnya.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-12",
+    "description": "Petak kartu tanya jawab berikon dua kolom, semua terbuka.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-13",
+    "description": "Kartu tanya jawab dua kolom dengan penilaian bintang.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-14",
+    "description": "Akordeon bergaris pemisah dengan judul percakapan.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-15",
+    "description": "Judul FAQ di kolom kiri, empat card pertanyaan grid dua kolom di kanan.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-16",
+    "description": "Tiga card FAQ berikon kotak primary dengan CTA bantuan di bawah.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-17",
+    "description": "Grid enam card FAQ dengan ikon bulat primary, tanpa CTA.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-18",
+    "description": "Grid enam card FAQ tanpa ikon dengan CTA bantuan di bawah.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-19",
+    "description": "Daftar lima pertanyaan dalam accordion satu kolom rata tengah.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "faq-20",
+    "description": "Dua pertanyaan FAQ statis dengan garis pemisah di bawah judulnya.",
+    "categories": [
+      "faq"
+    ]
+  },
+  {
+    "name": "features-01",
+    "description": "Enam fitur berikon dalam petak berbingkai tiga kolom.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-02",
+    "description": "Fitur bergambar tanpa ikon, ditaruh di tengah.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-03",
+    "description": "Dua kartu fitur lebar berdampingan dengan tombol.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-04",
+    "description": "Daftar fitur akordeon di sebelah panel gambar.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-05",
+    "description": "Enam kartu fitur berikon, tiga kolom.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-06",
+    "description": "Dua kolom fitur polos tanpa bingkai maupun ikon.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-07",
+    "description": "Fitur berikon dengan gambar pendukung di tiap sel.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-08",
+    "description": "Enam fitur berikon dalam petak bergaris pemisah.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-09",
+    "description": "Enam fitur berikon dengan bingkai rapat tanpa jarak.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-10",
+    "description": "Kartu fitur berikon lengkap dengan tombol di tiap kartu.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-11",
+    "description": "Fitur berikon dengan tautan panah di tiap selnya.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-12",
+    "description": "Petak fitur berikon dengan sel yang tidak seragam ukurannya.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-13",
+    "description": "Enam fitur berikon rapat, bingkainya menyatu jadi satu petak.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-14",
+    "description": "Fitur satu kolom dengan judul panjang dan tombol ajakan.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-15",
+    "description": "Fitur bergambar berselang-seling kiri dan kanan.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-16",
+    "description": "Fitur bergambar dalam kartu berbingkai tiga kolom.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-17",
+    "description": "Fitur berikon dengan badge dan penilaian bintang.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "features-18",
+    "description": "Fitur berikon untuk halaman produk, dengan tombol di bawahnya.",
+    "categories": [
+      "features"
+    ]
+  },
+  {
+    "name": "footer-01",
+    "description": "Enam kolom tautan dengan logo dan hak cipta di bawahnya.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-02",
+    "description": "Tujuh kolom tautan dengan pemisah sebelum baris hak cipta.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-03",
+    "description": "Kolom tautan dengan kotak langganan email.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-04",
+    "description": "Footer ringkas dengan langganan email dan ikon media sosial.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-05",
+    "description": "Footer dua baris: tautan di atas, hak cipta di bawah.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-06",
+    "description": "Footer satu baris paling ringkas.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-07",
+    "description": "Footer dengan logo besar dan tautan berjajar di bawahnya.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-08",
+    "description": "Footer satu baris berisi hak cipta dan empat ikon sosial kecil.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-09",
+    "description": "Tiga kolom tautan di kiri, form langganan Email dan checkbox di kanan.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-10",
+    "description": "Footer bergaris atas dengan hak cipta, empat tautan, dan tombol Sign in.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-11",
+    "description": "Card newsletter berlatar primary di atas baris tautan dan ikon sosial.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-12",
+    "description": "Footer gelap empat kolom tautan dengan Select bahasa, mata uang, dan newsletter.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-13",
+    "description": "Brand, tagline, dan ikon sosial di kiri; empat kolom tautan di kanan.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-14",
+    "description": "Tautan dan hak cipta di kiri, ikon pengaturan dan Select negara berbendera di kanan.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-15",
+    "description": "Footer ringkas dengan hak cipta, badge versi, dan tombol ikon pengaturan.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-16",
+    "description": "Pengumuman fitur baru dengan tombol Upgrade di kiri, tautan dan hak cipta di kanan.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-17",
+    "description": "Enam tautan tebal rata tengah dengan hak cipta di bawahnya.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-18",
+    "description": "Brand dan tagline di kiri, tiga kolom tautan, lalu kutipan dan hak cipta bergaris atas.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-19",
+    "description": "Satu baris berisi lima tautan tebal dan teks hak cipta.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-20",
+    "description": "Tautan, ikon sosial, dan hak cipta tersusun rata tengah bertumpuk.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-21",
+    "description": "Footer gelap dengan tombol unduh Google Play dan App Store serta ikon sosial.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "footer-22",
+    "description": "Brand dan tautan di kiri, dua baris kutipan dan ikon sosial rata kanan.",
+    "categories": [
+      "footer"
+    ]
+  },
+  {
+    "name": "hero-01",
+    "description": "Hero di tengah layar dengan latar gradien yang dikaburkan.",
+    "categories": [
+      "hero"
+    ]
+  },
+  {
+    "name": "hero-02",
+    "description": "Hero dua kolom dengan tempat media di sebelah kanan.",
+    "categories": [
+      "hero"
+    ]
+  },
+  {
+    "name": "hero-03",
+    "description": "Hero dengan navbar pil, judul bergradien, dan pratinjau produk bergaris.",
+    "categories": [
+      "hero"
+    ]
+  },
+  {
+    "name": "hero-04",
+    "description": "Hero dua kolom dengan media setinggi layar di sebelah kanan.",
+    "categories": [
+      "hero"
+    ]
+  },
+  {
+    "name": "hero-05",
+    "description": "Hero dua kolom dengan media menempel penuh ke tepi layar.",
+    "categories": [
+      "hero"
+    ]
+  },
+  {
+    "name": "hero-06",
+    "description": "Hero di tengah layar dengan latar titik dan partikel yang menghindari kursor.",
+    "categories": [
+      "hero"
+    ]
+  },
+  {
+    "name": "hero-07",
+    "description": "Hero di tengah layar dengan petak kotak yang menyala bergantian.",
+    "categories": [
+      "hero"
+    ]
+  },
+  {
+    "name": "hero-08",
+    "description": "Hero dengan navbar bergaris bawah dan deretan logo pelanggan.",
+    "categories": [
+      "hero"
+    ]
+  },
+  {
+    "name": "integrations-01",
+    "description": "Petak kartu integrasi berlogo dengan tombol sambungkan.",
+    "categories": [
+      "integrations"
+    ]
+  },
+  {
+    "name": "integrations-02",
+    "description": "Daftar integrasi dengan penanda mana yang sudah tersambung.",
+    "categories": [
+      "integrations"
+    ]
+  },
+  {
+    "name": "integrations-03",
+    "description": "Petak kartu integrasi dengan badge status di tiap kartu.",
+    "categories": [
+      "integrations"
+    ]
+  },
+  {
+    "name": "integrations-04",
+    "description": "Petak logo integrasi tanpa tombol, hanya tampilan.",
+    "categories": [
+      "integrations"
+    ]
+  },
+  {
+    "name": "integrations-05",
+    "description": "Petak logo integrasi berbingkai rapat.",
+    "categories": [
+      "integrations"
+    ]
+  },
+  {
+    "name": "invite-member-01",
+    "description": "Dialog undang anggota dengan isian email dan pilihan peran.",
+    "categories": [
+      "invite-member"
+    ]
+  },
+  {
+    "name": "invite-member-02",
+    "description": "Panel undang dengan daftar anggota yang sudah masuk.",
+    "categories": [
+      "invite-member"
+    ]
+  },
+  {
+    "name": "invite-member-03",
+    "description": "Undangan lewat tautan berbagi, bukan email.",
+    "categories": [
+      "invite-member"
+    ]
+  },
+  {
+    "name": "keyboard-shortcuts-01",
+    "description": "Daftar pintasan dalam kartu bergaris pemisah.",
+    "categories": [
+      "keyboard-shortcuts"
+    ]
+  },
+  {
+    "name": "keyboard-shortcuts-02",
+    "description": "Pintasan dikelompokkan per bagian dalam kartu berbingkai.",
+    "categories": [
+      "keyboard-shortcuts"
+    ]
+  },
+  {
+    "name": "keyboard-shortcuts-03",
+    "description": "Pintasan dalam kolom masonry.",
+    "categories": [
+      "keyboard-shortcuts"
+    ]
+  },
+  {
+    "name": "keyboard-shortcuts-04",
+    "description": "Pintasan dua kolom berbingkai rapat.",
+    "categories": [
+      "keyboard-shortcuts"
+    ]
+  },
+  {
+    "name": "login-01",
+    "description": "Form masuk yang sederhana.",
+    "categories": [
+      "authentication",
+      "login"
+    ]
+  },
+  {
+    "name": "login-02",
+    "description": "Halaman masuk dua kolom dengan gambar sampul.",
+    "categories": [
+      "authentication",
+      "login"
+    ]
+  },
+  {
+    "name": "login-03",
+    "description": "Halaman masuk dengan latar warna redup.",
+    "categories": [
+      "authentication",
+      "login"
+    ]
+  },
+  {
+    "name": "login-04",
+    "description": "Halaman masuk dengan form dan gambar.",
+    "categories": [
+      "authentication",
+      "login"
+    ]
+  },
+  {
+    "name": "login-05",
+    "description": "Halaman masuk sederhana, cukup dengan email.",
+    "categories": [
+      "authentication",
+      "login"
+    ]
+  },
+  {
+    "name": "login-06",
+    "description": "Kartu masuk berlatar petak dengan tombol Google.",
+    "categories": [
+      "login"
+    ]
+  },
+  {
+    "name": "login-07",
+    "description": "Kartu masuk berbingkai dengan pemisah antar cara masuk.",
+    "categories": [
+      "login"
+    ]
+  },
+  {
+    "name": "login-08",
+    "description": "Halaman masuk dua kolom dengan gambar di sebelah kanan.",
+    "categories": [
+      "login"
+    ]
+  },
+  {
+    "name": "login-09",
+    "description": "Halaman masuk dengan gambar penuh di belakang formnya.",
+    "categories": [
+      "login"
+    ]
+  },
+  {
+    "name": "login-10",
+    "description": "Halaman masuk dua kolom dengan keterangan produk di sampingnya.",
+    "categories": [
+      "login"
+    ]
+  },
+  {
+    "name": "login-11",
+    "description": "Halaman masuk lengkap dengan bilah navigasi di atasnya.",
+    "categories": [
+      "login"
+    ]
+  },
+  {
+    "name": "login-12",
+    "description": "Halaman masuk dua kolom dengan testimoni di sisi gambarnya.",
+    "categories": [
+      "login"
+    ]
+  },
+  {
+    "name": "login-13",
+    "description": "Halaman masuk dengan navigasi dan footer, satu halaman utuh.",
+    "categories": [
+      "login"
+    ]
+  },
+  {
+    "name": "logo-cloud-01",
+    "description": "Deret logo satu baris dengan judul pendek di atasnya.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-02",
+    "description": "Deret logo tanpa judul, rapat di tengah halaman.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-03",
+    "description": "Logo dalam petak berbingkai dengan ajakan bertindak di sampingnya.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-04",
+    "description": "Logo dalam petak empat kolom yang lega.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-05",
+    "description": "Logo dalam petak berbingkai, tiap sel punya kotaknya sendiri.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-06",
+    "description": "Logo bergulir tanpa henti dalam satu jalur.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-07",
+    "description": "Dua jalur logo bergulir berlawanan arah.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-08",
+    "description": "Logo dalam petak dengan judul dan keterangan di atasnya.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-09",
+    "description": "Logo dalam petak rapat tanpa jarak antar sel.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-10",
+    "description": "Logo bergulir dengan tepi yang memudar ke kiri dan kanan.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-11",
+    "description": "Logo dalam petak berbingkai yang menyatu jadi satu papan.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-12",
+    "description": "Logo dalam petak dengan judul di sebelah kiri.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-13",
+    "description": "Logo bergulir rapat tanpa jarak, satu jalur penuh.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-14",
+    "description": "Logo dengan ajakan bertindak dan tautan panah di bawahnya.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "logo-cloud-15",
+    "description": "Logo bergulir di dalam kartu bersinar tepi.",
+    "categories": [
+      "logo-cloud"
+    ]
+  },
+  {
+    "name": "members-01",
+    "description": "Tabel anggota dengan ikon peran di tiap baris.",
+    "categories": [
+      "members"
+    ]
+  },
+  {
+    "name": "members-02",
+    "description": "Tabel anggota dengan tombol kelola di tiap baris.",
+    "categories": [
+      "members"
+    ]
+  },
+  {
+    "name": "members-03",
+    "description": "Petak kartu anggota bergambar.",
+    "categories": [
+      "members"
+    ]
+  },
+  {
+    "name": "modals-01",
+    "description": "Modal peringatan reset pengaturan dengan input konfirmasi teks.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "modals-02",
+    "description": "Modal edit profil dengan input, select profesi, checkbox, dan radio notifikasi.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "modals-03",
+    "description": "Modal undang anggota tim lewat Email, dengan daftar anggota dan hak akses.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "modals-04",
+    "description": "Modal update produk dengan galeri tiga gambar, form, select, dan textarea.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "modals-05",
+    "description": "Modal unggah file dengan area drag and drop dan daftar file terunggah.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "modals-06",
+    "description": "Modal publikasi koleksi dengan ikon gembok terbuka dan card metadata.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "modals-07",
+    "description": "Modal ringkas pengaturan visibilitas koleksi dengan tombol destructive.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "modals-08",
+    "description": "Modal nonaktifkan aturan kunci dengan card peringatan dan daftar dampak.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "modals-09",
+    "description": "Modal transfer kepemilikan dengan select pemilik, input handle, dan peringatan kuning.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "modals-10",
+    "description": "Modal hapus arsip permanen dengan card tinjauan dan daftar efek tindakan.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "modals-11",
+    "description": "Modal hapus vault dengan satu input pengenal koleksi sebagai verifikasi.",
+    "categories": [
+      "modals"
+    ]
+  },
+  {
+    "name": "navbar-01",
+    "description": "Bilah navigasi lebar penuh dengan menu tarik di layar sempit.",
+    "categories": [
+      "navbar"
+    ]
+  },
+  {
+    "name": "navbar-02",
+    "description": "Bilah navigasi dengan logo di tengah.",
+    "categories": [
+      "navbar"
+    ]
+  },
+  {
+    "name": "navbar-03",
+    "description": "Bilah navigasi dengan menu turun bertingkat.",
+    "categories": [
+      "navbar"
+    ]
+  },
+  {
+    "name": "navbar-04",
+    "description": "Bilah navigasi mengambang berbentuk pil.",
+    "categories": [
+      "navbar"
+    ]
+  },
+  {
+    "name": "navbar-05",
+    "description": "Bilah navigasi berbingkai dengan tombol ganda di kanan.",
+    "categories": [
+      "navbar"
+    ]
+  },
+  {
+    "name": "not-found-01",
+    "description": "Halaman 404 polos di tengah layar dengan dua tombol.",
+    "categories": [
+      "not-found"
+    ]
+  },
+  {
+    "name": "not-found-02",
+    "description": "Halaman 404 dengan daftar halaman yang mungkin dicari.",
+    "categories": [
+      "not-found"
+    ]
+  },
+  {
+    "name": "not-found-03",
+    "description": "Halaman 404 dua kolom dengan panel gelap berisi angka berwarna.",
+    "categories": [
+      "not-found"
+    ]
+  },
+  {
+    "name": "not-found-04",
+    "description": "Halaman 404 dengan kotak pencarian.",
+    "categories": [
+      "not-found"
+    ]
+  },
+  {
+    "name": "not-found-05",
+    "description": "Halaman 404 paling ringkas: satu ikon, satu judul, satu tombol.",
+    "categories": [
+      "not-found"
+    ]
+  },
+  {
+    "name": "not-found-06",
+    "description": "Halaman 404 dengan petak kartu tujuan yang mungkin dicari.",
+    "categories": [
+      "not-found"
+    ]
+  },
+  {
+    "name": "not-found-07",
+    "description": "Halaman 404 dengan angka yang bergetar seperti sinyal rusak.",
+    "categories": [
+      "not-found"
+    ]
+  },
+  {
+    "name": "not-found-08",
+    "description": "Halaman 404 dengan angka raksasa samar sebagai latar.",
+    "categories": [
+      "not-found"
+    ]
+  },
+  {
+    "name": "order-confirmation-01",
+    "description": "Konfirmasi ringkas dengan nomor pesanan dan tombol lacak.",
+    "categories": [
+      "order-confirmation"
+    ]
+  },
+  {
+    "name": "order-confirmation-02",
+    "description": "Konfirmasi lengkap dengan rincian barang dan gambar.",
+    "categories": [
+      "order-confirmation"
+    ]
+  },
+  {
+    "name": "otp-01",
+    "description": "Form verifikasi kode sekali pakai yang sederhana.",
+    "categories": [
+      "authentication",
+      "otp"
+    ]
+  },
+  {
+    "name": "otp-02",
+    "description": "Halaman kode sekali pakai dua kolom dengan gambar sampul.",
+    "categories": [
+      "authentication",
+      "otp"
+    ]
+  },
+  {
+    "name": "otp-03",
+    "description": "Halaman kode sekali pakai dengan latar warna redup.",
+    "categories": [
+      "authentication",
+      "otp"
+    ]
+  },
+  {
+    "name": "otp-04",
+    "description": "Halaman kode sekali pakai dengan form dan gambar.",
+    "categories": [
+      "authentication",
+      "otp"
+    ]
+  },
+  {
+    "name": "otp-05",
+    "description": "Form kode sekali pakai dengan pilihan masuk lewat akun lain.",
+    "categories": [
+      "authentication",
+      "otp"
+    ]
+  },
+  {
+    "name": "pricing-01",
+    "description": "Tiga paket berdampingan dengan daftar centang.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-02",
+    "description": "Tiga paket dengan badge penanda paket terpopuler.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-03",
+    "description": "Tiga paket dengan tab bulanan/tahunan; angkanya berubah beranimasi.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-04",
+    "description": "Tiga paket bertab dengan penjelasan tiap fitur saat disentuh.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-05",
+    "description": "Tiga paket dengan paket tengah ditinggikan.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-06",
+    "description": "Tiga paket berbingkai rapat yang menyatu jadi satu papan.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-07",
+    "description": "Kartu paket berikon dengan tab dan angka beranimasi.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-08",
+    "description": "Kartu paket dengan penilaian bintang di bawahnya.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-09",
+    "description": "Kartu paket dengan sinar berjalan di tepi paket unggulan.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-10",
+    "description": "Satu paket tunggal untuk produk berharga tetap.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "products-01",
+    "description": "Halaman daftar produk dengan tabel, penyaring, dan aksi massal."
+  },
+  {
+    "name": "profile-01",
+    "description": "Kartu profil ringkas dengan avatar dan tombol sunting.",
+    "categories": [
+      "profile"
+    ]
+  },
+  {
+    "name": "profile-02",
+    "description": "Profil dengan sampul gambar di atas avatar.",
+    "categories": [
+      "profile"
+    ]
+  },
+  {
+    "name": "profile-03",
+    "description": "Profil bertab untuk memisahkan data dan pengaturan.",
+    "categories": [
+      "profile"
+    ]
+  },
+  {
+    "name": "profile-04",
+    "description": "Profil dua kolom bertab dengan formulir di sebelahnya.",
+    "categories": [
+      "profile"
+    ]
+  },
+  {
+    "name": "setup-guide-01",
+    "description": "Daftar langkah bergaris pemisah dengan badge selesai.",
+    "categories": [
+      "setup-guide"
+    ]
+  },
+  {
+    "name": "setup-guide-02",
+    "description": "Langkah dalam kartu terpisah, satu kartu per langkah.",
+    "categories": [
+      "setup-guide"
+    ]
+  },
+  {
+    "name": "setup-guide-03",
+    "description": "Daftar langkah bernomor dengan centang saat selesai.",
+    "categories": [
+      "setup-guide"
+    ]
+  },
+  {
+    "name": "setup-guide-04",
+    "description": "Daftar langkah ringkas tanpa tombol, hanya penanda status.",
+    "categories": [
+      "setup-guide"
+    ]
+  },
+  {
+    "name": "sidebar-01",
+    "description": "Sidebar sederhana dengan navigasi yang dikelompokkan per bagian.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-02",
+    "description": "Sidebar dengan bagian yang bisa dilipat.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-03",
+    "description": "Sidebar dengan submenu.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-04",
+    "description": "Sidebar mengambang dengan submenu.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-05",
+    "description": "Sidebar dengan submenu yang bisa dilipat.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-06",
+    "description": "Sidebar dengan submenu berupa menu turun.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-07",
+    "description": "Sidebar yang menyusut jadi deretan ikon.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-08",
+    "description": "Sidebar menjorok dengan navigasi kedua.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-09",
+    "description": "Sidebar bersarang yang bisa dilipat.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-10",
+    "description": "Sidebar di dalam popover.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-11",
+    "description": "Sidebar dengan pohon berkas yang bisa dilipat.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-12",
+    "description": "Sidebar dengan kalender.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-13",
+    "description": "Sidebar di dalam dialog.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-14",
+    "description": "Sidebar di sebelah kanan.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-15",
+    "description": "Sidebar di kiri dan di kanan sekaligus.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-16",
+    "description": "Sidebar dengan header situs yang menempel di atas.",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "iframeHeight": "800px"
+  },
+  {
+    "name": "sidebar-demo",
+    "description": "Contoh sidebar lengkap yang memperlihatkan seluruh bagiannya sekaligus."
+  },
+  {
+    "name": "signup-01",
+    "description": "Form pendaftaran yang sederhana.",
+    "categories": [
+      "authentication",
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-02",
+    "description": "Halaman pendaftaran dua kolom dengan gambar sampul.",
+    "categories": [
+      "authentication",
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-03",
+    "description": "Halaman pendaftaran dengan latar warna redup.",
+    "categories": [
+      "authentication",
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-04",
+    "description": "Halaman pendaftaran dengan form dan gambar.",
+    "categories": [
+      "authentication",
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-05",
+    "description": "Form pendaftaran dengan pilihan daftar lewat akun lain.",
+    "categories": [
+      "authentication",
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-06",
+    "description": "Kartu pendaftaran berlatar petak dengan tombol Google.",
+    "categories": [
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-07",
+    "description": "Kartu pendaftaran berbingkai dengan pemisah antar cara daftar.",
+    "categories": [
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-08",
+    "description": "Halaman pendaftaran dua kolom dengan gambar di sebelah kanan.",
+    "categories": [
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-09",
+    "description": "Halaman pendaftaran dengan gambar penuh di belakang formnya.",
+    "categories": [
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-10",
+    "description": "Halaman pendaftaran dua kolom dengan keterangan produk di sampingnya.",
+    "categories": [
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-11",
+    "description": "Halaman pendaftaran lengkap dengan bilah navigasi di atasnya.",
+    "categories": [
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-12",
+    "description": "Halaman pendaftaran dua kolom dengan testimoni di sisi gambarnya.",
+    "categories": [
+      "signup"
+    ]
+  },
+  {
+    "name": "signup-13",
+    "description": "Halaman pendaftaran dengan navigasi dan footer, satu halaman utuh.",
+    "categories": [
+      "signup"
+    ]
+  },
+  {
+    "name": "software-purchase-01",
+    "description": "Detail permintaan pembelian software dua kolom dengan card persetujuan Approve/Discard.",
+    "categories": [
+      "forms"
+    ]
+  },
+  {
+    "name": "stats-01",
+    "description": "Tiga angka besar di tengah halaman, tanpa bingkai apa pun.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "stats-02",
+    "description": "Empat angka rapat dalam satu baris, tanpa judul di atasnya.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "stats-03",
+    "description": "Tiga angka dalam kartu berbingkai terpisah.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "stats-04",
+    "description": "Tiga angka dalam satu petak berbingkai yang menyatu.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "stats-05",
+    "description": "Tiga angka berikon warna dalam kartu berlatar abu.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "stats-06",
+    "description": "Lima angka berikon dalam petak kartu yang tidak seragam.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "stats-07",
+    "description": "Tiga angka di tengah dengan latar blok warna.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "stats-08",
+    "description": "Tiga angka setinggi layar penuh, ditaruh di tengah.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "stats-09",
+    "description": "Tiga angka dipisah garis tipis di antaranya.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "stats-10",
+    "description": "Angka berdampingan dengan ajakan bertindak di sebelahnya.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "stats-11",
+    "description": "Tiga angka di dalam panel membulat berlatar abu.",
+    "categories": [
+      "stats"
+    ]
+  },
+  {
+    "name": "team-01",
+    "description": "Petak foto bulat empat kolom dengan nama dan jabatan.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-02",
+    "description": "Petak foto persegi dengan judul di sebelah kiri.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-03",
+    "description": "Kartu tim dengan tautan media sosial di tiap orang.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-04",
+    "description": "Petak empat kolom di tengah dengan tautan media sosial.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-05",
+    "description": "Foto besar empat kolom dengan tautan media sosial di bawahnya.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-06",
+    "description": "Petak foto bulat tanpa tautan, ringkas dan lega.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-07",
+    "description": "Petak empat kolom dengan ikon media sosial berjajar.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-08",
+    "description": "Kartu berbingkai dengan foto dan ikon media sosial.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-09",
+    "description": "Kartu berbingkai rapat, bingkainya menyatu jadi satu petak.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-10",
+    "description": "Satu baris foto memanjang dengan keterangan di sampingnya.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-11",
+    "description": "Petak tiga kolom dengan foto persegi panjang.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-12",
+    "description": "Petak dengan sel kosong sebagai penampung anggota berikutnya.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "team-13",
+    "description": "Petak empat kolom paling rapat, foto kecil dan nama saja.",
+    "categories": [
+      "team"
+    ]
+  },
+  {
+    "name": "testimonials-01",
+    "description": "Kolom masonry beravatar dengan tombol muat lagi.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-02",
+    "description": "Kolom masonry berbingkai dengan tepi yang memudar.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-03",
+    "description": "Kolom masonry polos tanpa bingkai maupun tombol.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-04",
+    "description": "Dua jalur testimoni bergulir berlawanan arah.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-05",
+    "description": "Petak tiga kolom dengan penilaian bintang di tiap sel.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-06",
+    "description": "Kartu tunggal besar dengan bintang dan avatar.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-07",
+    "description": "Testimoni bergambar dengan garis pemisah antar sel.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-08",
+    "description": "Testimoni bergambar dua kolom dengan bingkai rapat.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-09",
+    "description": "Kolom masonry bergambar dengan bintang.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-10",
+    "description": "Kolom masonry bergambar dengan bingkai lebih tebal.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-11",
+    "description": "Testimoni dalam korsel yang bisa digeser.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-12",
+    "description": "Kolom masonry bergambar paling rapat.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-13",
+    "description": "Jalur testimoni bergulir dalam kartu berbingkai.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-14",
+    "description": "Tiga testimoni berfoto bundar, rata tengah, dengan lencana di atas judul.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-15",
+    "description": "Grid enam kartu testimoni bergaya tweet dengan centang verifikasi dan tanggal.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-16",
+    "description": "Testimoni tiga kolom dengan baris statistik, bintang, dan ikon kutipan.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-17",
+    "description": "Tiga kartu testimoni rata tengah dengan foto besar berlencana kutipan dan bintang.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-18",
+    "description": "Tiga kartu testimoni transparan di latar hitam dengan avatar dan bintang.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-19",
+    "description": "Kisah sukses klien dengan logo perusahaan di kiri dan kutipan besar.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-20",
+    "description": "Testimoni interaktif dengan deretan avatar pengganti profil dan foto besar.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-21",
+    "description": "Tiga testimoni tanpa kartu dengan avatar besar berlencana kutipan dan bintang.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-22",
+    "description": "Kisah pelanggan ringkas dengan foto di kiri, judul, kutipan, dan logo avatar.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-23",
+    "description": "Tiga testimoni berlogo perusahaan dengan lencana di atas judul dan tautan Read More.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-24",
+    "description": "Tiga kartu testimoni dengan kartu tengah disorot warna primary dan bintang.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-25",
+    "description": "Grid testimoni dua kolom plus satu lebar dengan logo perusahaan grayscale.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-26",
+    "description": "Satu testimoni dalam kartu hitam dengan logo, kutipan besar, dan avatar bundar.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-27",
+    "description": "Tiga kartu testimoni rata tengah dengan avatar besar, nama, dan jabatan.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-28",
+    "description": "Empat kolom: tiga kartu testimoni berbintang dan satu kartu putus-putus Add Testimonial.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-29",
+    "description": "Carousel testimoni latar hitam dengan logo perusahaan, thumbnail, dan panah navigasi.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-30",
+    "description": "Slider testimoni di kartu berlatar foto gelap dengan logo, titik, dan panah.",
+    "categories": [
+      "testimonials"
+    ]
+  },
+  {
+    "name": "timeline-01",
+    "description": "Lini masa satu sisi dengan badge tanggal di tiap butir.",
+    "categories": [
+      "timeline"
+    ]
+  },
+  {
+    "name": "timeline-02",
+    "description": "Lini masa berbingkai dengan kartu di tiap butir.",
+    "categories": [
+      "timeline"
+    ]
+  },
+  {
+    "name": "timeline-03",
+    "description": "Riwayat pekerjaan berikon dengan daftar teknologi.",
+    "categories": [
+      "timeline"
+    ]
+  },
+  {
+    "name": "timeline-04",
+    "description": "Riwayat pekerjaan tanpa bingkai, garisnya tipis.",
+    "categories": [
+      "timeline"
+    ]
+  },
+  {
+    "name": "timeline-05",
+    "description": "Lini masa berselang-seling kiri dan kanan.",
+    "categories": [
+      "timeline"
+    ]
+  },
+  {
+    "name": "timeline-06",
+    "description": "Lini masa bertahap dengan penanda langkah yang sudah selesai.",
+    "categories": [
+      "timeline"
+    ]
+  },
+  {
+    "name": "timeline-07",
+    "description": "Catatan rilis berversi, terbaru di atas.",
+    "categories": [
+      "timeline"
+    ]
+  },
+  {
+    "name": "verification-01",
+    "description": "Halaman verifikasi email dengan tombol kirim ulang.",
+    "categories": [
+      "verification"
+    ]
+  },
+  {
+    "name": "web3-01",
+    "description": "Card koleksi NFT pixel art dengan tiga kartu karya, avatar pemilik, dan peran.",
+    "categories": [
+      "web3"
+    ]
+  },
+  {
+    "name": "web3-02",
+    "description": "Profil kreator NFT dengan tombol Follow dan galeri lelang berlencana waktu.",
+    "categories": [
+      "web3"
+    ]
+  },
+  {
+    "name": "web3-03",
+    "description": "Grid lelang kripto teratas dengan filter Select, tawaran BTC, dan sisa waktu.",
+    "categories": [
+      "web3"
+    ]
+  },
+  {
+    "name": "web3-04",
+    "description": "Koleksi NFT trending berlatar gambar penuh dengan overlay gradien gelap.",
+    "categories": [
+      "web3"
+    ]
+  },
+  {
+    "name": "web3-05",
+    "description": "Kreator NFT teratas dengan tombol filter waktu dan tiga thumbnail koleksi.",
+    "categories": [
+      "web3"
+    ]
+  },
+  {
+    "name": "pricing-11",
+    "description": "Tiga paket dengan tab bulanan/tahunan, lencana hemat 20%, dan paket tengah yang disorot.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-12",
+    "description": "Tabel perbandingan fitur antarpaket dengan tanda centang dan baris kepala paket yang menempel saat digulir.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-13",
+    "description": "Harga per kursi dengan slider jumlah anggota tim dan total yang dihitung langsung.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-14",
+    "description": "Satu kartu paket utama dengan daftar fitur, catatan ala FAQ, dan pita kontak untuk perusahaan.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-15",
+    "description": "Pemilih paket berupa baris radio dengan panel ringkasan dan tombol checkout.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-16",
+    "description": "Harga berjenjang sesuai volume pemakaian dengan tabel tingkat kecil dan isian perkiraan biaya.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-17",
+    "description": "Empat paket ringkas dalam kisi dengan pilihan mata uang USD/EUR/IDR yang langsung mengubah harga.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "pricing-18",
+    "description": "Dua paket berdampingan, Gratis dan Pro, dengan pita paling populer dan deretan testimoni.",
+    "categories": [
+      "pricing"
+    ]
+  },
+  {
+    "name": "billing-06",
+    "description": "Riwayat invoice dalam tabel dengan ringkasan saldo, filter status, lencana Paid/Open/Overdue, tombol unduh, dan paginasi.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-07",
+    "description": "Pemilih metode pembayaran berupa kartu radio untuk kartu tersimpan, lengkap dengan dialog tambah kartu baru.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-08",
+    "description": "Form detail pembayaran dengan format nomor kartu, masa berlaku, dan CVC otomatis, ringkasan pesanan, serta tombol bayar sesuai nominal.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-09",
+    "description": "Form alamat penagihan perusahaan dengan NPWP/Tax ID, pilihan negara dan provinsi, serta pratinjau alamat pada invoice.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-10",
+    "description": "Galeri kartu pembayaran tersimpan berbentuk kartu kredit bergradasi token tema, bisa dibalik untuk melihat CVC, dengan aksi jadikan default dan hapus.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-11",
+    "description": "Tampilan pembayaran gagal dengan ringkasan galat, alasan penolakan, tombol coba lagi, ganti metode pembayaran, hubungi support, dan linimasa percobaan.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-12",
+    "description": "Pengaturan penagihan: switch notifikasi email kuitansi, daftar penerima invoice, pembayaran otomatis, dan batas pengeluaran bulanan.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-13",
+    "description": "Pengaturan penagihan lanjutan: mata uang, pajak, prefiks nomor invoice, nomor PO, dan zona bahaya penutupan akun dengan dialog konfirmasi.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "billing-14",
+    "description": "Halaman penagihan lengkap: ringkasan paket, cuplikan pemakaian, metode pembayaran, dan invoice terbaru dalam satu layar.",
+    "categories": [
+      "billing"
+    ]
+  },
+  {
+    "name": "subscription-01",
+    "description": "Dialog pembatalan langganan bertahap: pilihan alasan, masukan opsional, tawaran diskon untuk bertahan, lalu konfirmasi akhir.",
+    "categories": [
+      "subscription"
+    ]
+  },
+  {
+    "name": "subscription-02",
+    "description": "Kartu pembatalan langganan di halaman pengaturan dengan daftar fitur yang hilang dan opsi jeda sebagai alternatif.",
+    "categories": [
+      "subscription"
+    ]
+  },
+  {
+    "name": "subscription-03",
+    "description": "Dialog ganti paket langganan dengan daftar paket, penanda paket aktif, pilihan bulanan atau tahunan, dan ringkasan selisih harga.",
+    "categories": [
+      "subscription"
+    ]
+  },
+  {
+    "name": "subscription-04",
+    "description": "Kartu pengalih paket langsung di halaman dengan lencana naik atau turun paket dan ringkasan kapan perubahan berlaku.",
+    "categories": [
+      "subscription"
+    ]
+  },
+  {
+    "name": "subscription-05",
+    "description": "Halaman kelola langganan: kartu paket aktif dengan pemakaian, tagihan berikutnya, metode pembayaran, riwayat invoice, serta aksi ganti paket dan batalkan.",
+    "categories": [
+      "subscription"
+    ]
+  },
+  {
+    "name": "subscription-06",
+    "description": "Kartu masa uji coba yang hampir habis dengan progres hari tersisa, hitung mundur, tombol upgrade, dan daftar data yang tetap tersimpan.",
+    "categories": [
+      "subscription"
+    ]
+  },
+  {
+    "name": "subscription-07",
+    "description": "Pratinjau prorata saat ganti paket: paket lama dan baru, kredit sisa periode, tagihan hari ini dibanding siklus berikutnya, dan linimasa periode.",
+    "categories": [
+      "subscription"
+    ]
+  },
+  {
+    "name": "subscription-08",
+    "description": "Dialog promo waktu terbatas dengan sorotan diskon, hitung mundur, dan tabel perbandingan paket singkat.",
+    "categories": [
+      "subscription"
+    ]
+  },
+  {
+    "name": "usage-01",
+    "description": "Meteran pemakaian linear untuk beberapa sumber daya dengan status peringatan 80%, batas 100%, dan tanggal reset.",
+    "categories": [
+      "usage"
+    ]
+  },
+  {
+    "name": "usage-02",
+    "description": "Grid meteran pemakaian melingkar berbentuk cincin SVG dengan persentase, batas paket, dan pilihan siklus.",
+    "categories": [
+      "usage"
+    ]
+  },
+  {
+    "name": "usage-03",
+    "description": "Kalkulator harga berbasis pemakaian dengan slider volume, rincian biaya per tingkat, dan estimasi bulanan langsung.",
+    "categories": [
+      "usage"
+    ]
+  },
+  {
+    "name": "usage-04",
+    "description": "Tabel pemakaian ringkas berisi sumber daya, terpakai, batas, persentase dengan bar mini, dan lencana status.",
+    "categories": [
+      "usage"
+    ]
+  },
+  {
+    "name": "usage-05",
+    "description": "Tabel pemakaian terperinci per hari dan per proyek dengan pengelompokan yang bisa dilipat, baris total, pilihan periode, dan tombol ekspor CSV.",
+    "categories": [
+      "usage"
+    ]
+  },
+  {
+    "name": "usage-06",
+    "description": "Rincian tagihan mendatang berisi item biaya, pajak, kredit, total, tanggal jatuh tempo, dan linimasa siklus tagihan.",
+    "categories": [
+      "usage"
+    ]
+  },
+  {
+    "name": "usage-07",
+    "description": "Saldo kredit prabayar dengan pilihan nominal top-up, isi ulang otomatis, dan riwayat transaksi kredit terbaru.",
+    "categories": [
+      "usage"
+    ]
+  }
+]

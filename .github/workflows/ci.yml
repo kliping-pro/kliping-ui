@@ -1,0 +1,273 @@
+# Membangun situs dokumentasi di GitHub Actions.
+#
+# STATUSNYA: JARING PENGAMAN, BUKAN JALUR UTAMA.
+#
+# Cloudflare Pages membangunnya sendiri langsung dari git, dan sekarang muat.
+# Workflow ini tetap ada untuk dua hal: menjalankan pagar mutunya di tiap pull
+# request, dan menerbitkan secara manual kalau build di Cloudflare bermasalah.
+#
+# KENAPA PERNAH JADI JALUR UTAMA, DAN KENAPA TIDAK LAGI
+#
+# Setelah 202 block masuk, `docs:build` kehabisan memori. Lantainya diukur
+# dengan menaikkan atap heap sampai buildnya berhenti gagal:
+#
+#     8 GB   OOM        <- sebesar container Cloudflare Pages
+#    10 GB   lolos, puncak RSS 11,39 GB
+#
+# Sebabnya ditemukan dengan satu percobaan lagi: build yang sama tanpa
+# penyisipan sumber kode lolos di bawah 6 GB. Selisihnya sekitar empat gigabyte,
+# dan bukan Shiki penyebabnya — melainkan hasil sorotannya yang ikut jadi bagian
+# modul JavaScript tiap halaman, ditahan Rollup sampai build selesai, dua kali,
+# karena varian `.lean` tidak bisa membuang isi statis di dalam slot komponen.
+#
+# Sorotannya sekarang ditulis `scripts/generate-code.mjs` ke berkas statis, dan
+# halamannya mengambilnya saat dibutuhkan. Sesudah itu:
+#
+#     4 GB   lolos, puncak RSS 4,74 GB
+#     6 GB   lolos, puncak RSS 5,56 GB   <- atap yang dipakai sekarang
+#
+# Dari 11,4 GB jadi 4,7 GB, dan buildnya 132 detik dari 220. Container
+# Cloudflare sekitar 8 GB, jadi sekarang muat dengan kelonggaran lega.
+#
+# 18 Okt 2026 — angkanya sempat naik lagi (heap hidup 5,9 GB, gagal di 5 GB,
+# nyaris 6 GB). Diukur per fase dengan `--trace-gc` (heap hidup sesudah
+# mark-compact, bukan RSS — di bawah atap yang longgar RSS selalu mendekati
+# atapnya). Dua penyebab:
+#
+#   - 842 berkas markdown di `docs/public/llms/` dianggap halaman oleh
+#     VitePress → `srcExclude: ['public/**']`                      5,9 → 5,5 GB
+#   - plugin @tailwindcss/vite menahan compiler dan hasil pindaiannya
+#     sepanjang build → CSS disusun `scripts/build-tailwind.mjs` di proses
+#     sendiri, hasilnya identik byte per byte                     5,5 → 3,3 GB
+#
+#     4 GB   lolos, heap hidup 3,3 GB, 166 detik
+#     5 GB   atap yang dipakai sekarang (cadangan ± 1,7 GB)
+#
+# Pelajaran: blok kode bersorotan di ratusan halaman hasil generator langsung
+# membuat build kehabisan memori — halaman generator memakai kode sebaris.
+#
+# Workflow ini tidak dihapus justru karena itu: kalau suatu hari angkanya naik
+# lagi, yang dibutuhkan sudah ada di sini dan tinggal dijalankan.
+
+name: CI
+
+on:
+  # Tiap push ke main: hanya job `check` (± 5 menit). Job `build` yang berat
+  # (uji integrasi ± 12 menit + build situs) tidak ikut, supaya kuota menit
+  # GitHub Actions repo privat tidak habis — Cloudflare sudah membangun main.
+  push:
+    branches: [main]
+  # Pull request: pagar mutunya jalan, hasilnya tidak diterbitkan.
+  pull_request:
+  # Sekali seminggu semuanya, termasuk seluruh registry dipasang & di-build:
+  # menangkap kerusakan dari luar (npm, Vue, Tailwind) walau repo diam.
+  schedule:
+    - cron: '17 3 * * 1'
+  # Penerbitan manual — inilah bagian "jaring pengaman"-nya.
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Deploy to Cloudflare Pages, not just build'
+        type: boolean
+        default: false
+
+# Push beruntun ke branch yang sama tidak perlu antre — yang lama dibatalkan.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Pagar cepat — sama persis dengan `npm run check` di laptop: typecheck,
+  # SFC, registry, bahasa, perintah CLI, typecheck ketat item registry, angka
+  # README, uji unit situs, typecheck & uji unit CLI (registry lokal dari
+  # scripts/registry-base, tanpa jaringan).
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Quality gates
+        run: npm run check
+
+  build:
+    needs: check
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Uji integrasi CLI (packages/tests, pola packages/tests shadcn): `init`
+      # di folder kosong, Vite TS/JS, Nuxt 4, Tailwind v3, tanpa framework,
+      # components.json yang sudah ada; `add`/`diff`; dan SELURUH item registry
+      # dipasang ke satu project Vite lalu di-build. ± 12 menit.
+      - name: CLI integration tests
+        run: |
+          npm install -g pnpm@10
+          npm run cli:build
+          node scripts/generate-registry.mjs
+          npm run test:e2e
+
+      # `predocs:build` menyusun sorotan kodenya lebih dulu, di prosesnya sendiri.
+      - name: Build docs
+        run: npm run docs:build
+
+      - name: Check links
+        run: npm run check:links
+
+      # Aksesibilitas (axe, WCAG 2.1 AA) atas situs hasil build: gagal hanya
+      # bila masalah serius/kritis bertambah dari scripts/a11y-baseline.json.
+      - name: Check accessibility
+        run: |
+          npx playwright install --with-deps chromium
+          npm run check:a11y
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: docs/.vitepress/dist
+          retention-days: 7
+
+  # Uji integrasi CLI di Windows dan macOS — pengguna Kliping banyak memakai
+  # Windows (Git Bash, PowerShell), dan jalur berkas, `npm.cmd`, serta CRLF
+  # hanya ketahuan di sana. Ubuntu sudah diuji penuh di job `build`; di sini
+  # yang dijalankan init/add/create saja, tanpa uji "seluruh registry" (± 12
+  # menit). Menit repo privat: Windows dihitung 2×, macOS 10× — karena itu
+  # hanya mingguan dan manual, tidak di tiap push atau PR.
+  cli-os:
+    needs: check
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 40
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: CLI integration tests (init, add, create)
+        shell: bash
+        run: |
+          npm install -g pnpm@10
+          npm run cli:build
+          node scripts/generate-registry.mjs
+          npm run test -w @kliping/tests -- src/tests/init.test.ts src/tests/add.test.ts src/tests/create.test.ts
+
+  # Regresi visual (scripts/check-visual.mjs): potret build base branch jadi
+  # baseline, lalu potret build PR dan bandingkan — di runner yang sama, jadi
+  # render huruf identik dan tidak ada baseline yang perlu di-commit. Skrip
+  # dari PR dipakai untuk kedua potret (base branch belum tentu punya skripnya).
+  # Perubahan tampilan yang disengaja juga membuat job ini merah: periksa
+  # artifact `visual-diff` (merah = piksel berubah) sebelum merge.
+  visual:
+    needs: check
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: pr
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            pr/package-lock.json
+            base/package-lock.json
+
+      - name: Build base branch
+        working-directory: base
+        run: |
+          npm ci
+          npm run docs:build
+
+      - name: Install dependencies
+        working-directory: pr
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Screenshot base branch
+        working-directory: pr
+        run: VISUAL_DIST=../base/docs/.vitepress/dist node scripts/check-visual.mjs --update
+
+      - name: Build pull request
+        working-directory: pr
+        run: npm run docs:build
+
+      - name: Compare
+        working-directory: pr
+        run: npm run check:visual
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: visual-diff
+          path: |
+            pr/docs/.vitepress/cache/visual/diff
+            pr/docs/.vitepress/cache/visual/report.json
+          retention-days: 7
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    # Hanya jalan kalau diminta terang-terangan. Cloudflare yang menerbitkan
+    # sehari-hari; dua penerbit untuk satu situs cuma saling menimpa.
+    if: github.event_name == 'workflow_dispatch' && inputs.deploy
+
+    steps:
+      # Reponya ikut di-checkout, bukan cuma artefaknya. Nama proyeknya hidup di
+      # `wrangler.toml`, dan menuliskannya lagi di sini berarti dua tempat yang
+      # harus dijaga sama — sempat tidak sama (`kliping` di sana, `kliping-ui`
+      # di sini), dan deploy pertama akan menyerahkan situsnya ke proyek yang
+      # tidak pernah ada.
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: docs/.vitepress/dist
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy

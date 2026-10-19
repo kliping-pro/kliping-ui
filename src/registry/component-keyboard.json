@@ -1,0 +1,1010 @@
+{
+  "action-bar": {
+    "note": "Ditulis dari kode Kliping: navigasi panah datang dari `RovingFocusGroup` Reka UI di `ActionBarGroup` (mengikuti `orientation`, berputar bila `loop`), Escape dari `ActionBar`.",
+    "noteEn": "Written from Kliping's code: arrow navigation comes from Reka UI's `RovingFocusGroup` in `ActionBarGroup` (follows `orientation`, wraps when `loop`), Escape from `ActionBar`.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus into the action group, then to the next focusable element."
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous focusable element."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight"
+        ],
+        "description": "Moves focus to the previous or next item when `orientation` is `horizontal`."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "Moves focus to the previous or next item when `orientation` is `vertical`."
+      },
+      {
+        "keys": [
+          "Home",
+          "PageUp"
+        ],
+        "description": "Moves focus to the first item."
+      },
+      {
+        "keys": [
+          "End",
+          "PageDown"
+        ],
+        "description": "Moves focus to the last item."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Closes the action bar while it is open; emits `escape` first, call `preventDefault()` to keep it open."
+      }
+    ]
+  },
+  "angle-slider": {
+    "note": "Ditulis dari kode Kliping: `AngleSliderThumb`.",
+    "noteEn": "Written from Kliping's code: `AngleSliderThumb`.",
+    "rows": [
+      {
+        "keys": [
+          "ArrowRight",
+          "ArrowUp"
+        ],
+        "description": "Adds one step to the angle."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowDown"
+        ],
+        "description": "Subtracts one step from the angle."
+      },
+      {
+        "keys": [
+          "Shift + Arrow Keys"
+        ],
+        "description": "Moves ten steps at a time."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Jumps to the minimum."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Jumps to the maximum."
+      }
+    ]
+  },
+  "banner": {
+    "note": "Ditulis dari kode Kliping: banner tidak menangani tombol sendiri — tombol di dalamnya (mis. `BannerClose`) memakai perilaku `<button>` bawaan.",
+    "noteEn": "Written from Kliping's code: the banner handles no keys itself — buttons inside it (e.g. `BannerClose`) use native `<button>` behaviour.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next focusable element within the banner."
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous focusable element."
+      },
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "Activates the focused button, e.g. closes the banner."
+      }
+    ]
+  },
+  "checkbox-group": {
+    "note": "Ditulis dari kode Kliping: tiap kotak adalah tombol checkbox Reka UI; navigasi panah hanya aktif bila `rovingFocus` dinyalakan.",
+    "noteEn": "Written from Kliping's code: each box is a Reka UI checkbox button; arrow navigation is active only when `rovingFocus` is on.",
+    "rows": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Toggles the focused checkbox."
+      },
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next checkbox (or into the group when `rovingFocus` is on)."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown",
+          "ArrowLeft",
+          "ArrowRight"
+        ],
+        "description": "With `rovingFocus`, moves focus between checkboxes along `orientation`."
+      },
+      {
+        "keys": [
+          "Home",
+          "End"
+        ],
+        "description": "With `rovingFocus`, moves focus to the first or last checkbox."
+      }
+    ]
+  },
+  "color-picker": {
+    "note": "Ditulis dari kode Kliping: popover dan area/penggeser warna adalah primitif Reka UI.",
+    "noteEn": "Written from Kliping's code: the popover and the colour area/sliders are Reka UI primitives.",
+    "rows": [
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "On the trigger, opens the picker."
+      },
+      {
+        "keys": [
+          "Tab",
+          "Shift + Tab"
+        ],
+        "description": "Moves between the area, sliders, inputs, and swatches."
+      },
+      {
+        "keys": [
+          "Arrow Keys"
+        ],
+        "description": "On the area or a slider, nudges the colour."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Closes the picker and returns focus to the trigger."
+      }
+    ]
+  },
+  "combobox-advanced": {
+    "note": "Ditulis dari kode Kliping: perilaku keyboard datang dari `ComboboxRoot` Reka UI; badge di mode multiple tidak punya navigasi keyboard sendiri.",
+    "noteEn": "Written from Kliping's code: keyboard behaviour comes from Reka UI's `ComboboxRoot`; badges in multiple mode have no keyboard navigation of their own.",
+    "rows": [
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Opens the list when closed; otherwise highlights the next option."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Highlights the previous option."
+      },
+      {
+        "keys": [
+          "Home",
+          "End"
+        ],
+        "description": "When open, highlights the first or last option."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Selects the highlighted option."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Closes the list and returns focus to the input."
+      }
+    ]
+  },
+  "compare-slider": {
+    "note": "Ditulis dari kode Kliping: tombol bekerja saat penggeser difokuskan; langkahnya `step` persen.",
+    "noteEn": "Written from Kliping's code: keys work while the slider is focused; one step is `step` percent.",
+    "rows": [
+      {
+        "keys": [
+          "ArrowRight",
+          "ArrowUp"
+        ],
+        "description": "Horizontal: moves the divider right by `step`."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowDown"
+        ],
+        "description": "Horizontal: moves the divider left by `step`."
+      },
+      {
+        "keys": [
+          "ArrowDown",
+          "ArrowRight"
+        ],
+        "description": "Vertical: moves the divider down by `step`."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowLeft"
+        ],
+        "description": "Vertical: moves the divider up by `step`."
+      },
+      {
+        "keys": [
+          "PageUp",
+          "PageDown"
+        ],
+        "description": "Moves the divider ten steps: PageUp right (horizontal) or up (vertical), PageDown the other way."
+      },
+      {
+        "keys": [
+          "Shift + Arrow Keys"
+        ],
+        "description": "Moves the divider ten steps in the arrow's direction."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Moves the divider to 0% (left or top)."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Moves the divider to 100% (right or bottom)."
+      }
+    ]
+  },
+  "cropper": {
+    "note": "Ditulis dari kode Kliping: panah bekerja saat `CropperViewport` difokuskan; penggeser zoom dan rotasi memakai tombol slider Reka UI.",
+    "noteEn": "Written from Kliping's code: arrows work while `CropperViewport` is focused; the zoom and rotate sliders use Reka UI slider keys.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the crop viewport and the controls."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown",
+          "ArrowLeft",
+          "ArrowRight"
+        ],
+        "description": "Moves the crop area over the image by 5 px."
+      },
+      {
+        "keys": [
+          "Shift + Arrow Keys"
+        ],
+        "description": "Moves the crop area by 20 px."
+      }
+    ]
+  },
+  "data-table-advanced": {
+    "note": "Ditulis dari kode Kliping: tidak ada pintasan khusus — menu filter dan urut memakai keyboard menu & popover Reka UI.",
+    "noteEn": "Written from Kliping's code: no custom shortcuts — the filter and sort menus use Reka UI menu & popover keys.",
+    "rows": []
+  },
+  "editable": {
+    "note": "Ditulis dari kode Kliping: perilaku dari `EditableRoot` Reka UI; bawaannya mengedit saat difokuskan (`activationMode: focus`) dan menyimpan saat blur (`submitMode: blur`).",
+    "noteEn": "Written from Kliping's code: behaviour from Reka UI's `EditableRoot`; by default editing starts on focus (`activationMode: focus`) and saves on blur (`submitMode: blur`).",
+    "rows": [
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Saves the value when `submitMode` is `enter` or `both`."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Cancels editing and restores the previous value."
+      },
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus away; with the default `submitMode: blur` this saves the value."
+      }
+    ]
+  },
+  "file-upload": {
+    "note": "Ditulis dari kode Kliping: `FileUploadDropzone` dan tombol bawaan.",
+    "noteEn": "Written from Kliping's code: `FileUploadDropzone` and native buttons.",
+    "rows": [
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "On the dropzone or trigger, opens the file dialog."
+      },
+      {
+        "keys": [
+          "Tab",
+          "Shift + Tab"
+        ],
+        "description": "Moves between the dropzone, trigger, and each file's buttons."
+      }
+    ]
+  },
+  "kanban": {
+    "note": "Ditulis dari kode Kliping: sensor keyboard bawaan `dnd-kit-vue`.",
+    "noteEn": "Written from Kliping's code: the default keyboard sensor of `dnd-kit-vue`.",
+    "rows": [
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "Lifts the focused card or column; press again to drop it."
+      },
+      {
+        "keys": [
+          "Arrow Keys"
+        ],
+        "description": "While lifted, moves it toward the next slot in that direction."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Cancels the move and puts it back."
+      }
+    ]
+  },
+  "key-value": {
+    "note": "Ditulis dari kode Kliping: tidak ada pintasan khusus selain tempel; tombol tambah/hapus memakai perilaku `<button>` bawaan.",
+    "noteEn": "Written from Kliping's code: no custom shortcuts besides paste; the add/remove buttons use native `<button>` behaviour.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves between key inputs, value inputs, and buttons."
+      },
+      {
+        "keys": [
+          "Ctrl + V",
+          "Cmd + V"
+        ],
+        "description": "In a key field, pasting multi-line text adds one row per line (when `enablePaste` is on, the default)."
+      },
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "Activates the focused add or remove button."
+      }
+    ]
+  },
+  "listbox": {
+    "note": "Ditulis dari kode Kliping: perilaku dari `ListboxRoot` Reka UI, panah mengikuti `orientation`.",
+    "noteEn": "Written from Kliping's code: behaviour from Reka UI's `ListboxRoot`; arrows follow `orientation`.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus into the list, to the selected or first item."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "Highlights the previous or next item in a vertical list."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowRight"
+        ],
+        "description": "Highlights the previous or next item in a horizontal list."
+      },
+      {
+        "keys": [
+          "Home",
+          "End"
+        ],
+        "description": "Highlights the first or last item."
+      },
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "Selects the highlighted item."
+      }
+    ]
+  },
+  "marquee": {
+    "note": "Ditulis dari kode Kliping: hanya aktif dengan `pauseOnKeyboard`.",
+    "noteEn": "Written from Kliping's code: only with `pauseOnKeyboard`.",
+    "rows": [
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Pauses or resumes the scrolling."
+      }
+    ]
+  },
+  "mask-input": {
+    "note": "Ditulis dari kode Kliping: penyuntingannya bawaan `<input>`, lalu nilai dirapikan ulang ke pola mask dan kursor dijaga pada posisi isinya.",
+    "noteEn": "Written from Kliping's code: editing is native `<input>` behaviour; the value is then re-masked and the cursor kept at the same content position.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to or away from the input."
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous focusable element."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "Removes the character before the cursor, then re-applies the mask."
+      },
+      {
+        "keys": [
+          "Delete"
+        ],
+        "description": "Removes the character after the cursor, then re-applies the mask."
+      },
+      {
+        "keys": [
+          "Ctrl + V",
+          "Cmd + V"
+        ],
+        "description": "Pastes text; it is cleaned and formatted to the mask."
+      },
+      {
+        "keys": [
+          "Ctrl + A",
+          "Cmd + A"
+        ],
+        "description": "Selects all input content."
+      }
+    ]
+  },
+  "media-player": {
+    "note": "Pintasan bekerja saat pemutar (atau salah satu kendalinya) difokuskan dan `keyboardShortcuts` aktif; penggeser yang sedang difokuskan memakai panahnya sendiri. Ditulis dari kode `MediaPlayer.vue`.",
+    "rows": [
+      {
+        "keys": [
+          "Space",
+          "K"
+        ],
+        "description": "Toggles play/pause."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Seeks forward by `seekStep` seconds."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Seeks backward by `seekStep` seconds."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Increases volume by 10%."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Decreases volume by 10%."
+      },
+      {
+        "keys": [
+          "M"
+        ],
+        "description": "Toggles mute."
+      },
+      {
+        "keys": [
+          "F"
+        ],
+        "description": "Toggles fullscreen."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Seeks to the beginning."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Seeks to the end."
+      }
+    ],
+    "noteEn": "Shortcuts work while the player (or one of its controls) has focus and `keyboardShortcuts` is on; a focused slider keeps its own arrow keys. Written from Kliping's `MediaPlayer.vue`."
+  },
+  "mention": {
+    "note": "Ditulis dari kode Kliping: tombol navigasi hanya bekerja saat daftar saran terbuka; selain itu tombol bekerja seperti biasa di input.",
+    "noteEn": "Written from Kliping's code: navigation keys only apply while the suggestion list is open; otherwise keys behave as usual in the input.",
+    "rows": [
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "When open, highlights the next suggestion."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "When open, highlights the previous suggestion."
+      },
+      {
+        "keys": [
+          "Enter",
+          "Tab"
+        ],
+        "description": "When open with a highlighted suggestion, inserts that mention."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "When open, closes the suggestion list."
+      }
+    ]
+  },
+  "phone-input": {
+    "note": "Ditulis dari kode Kliping: pemilih negara adalah Popover + Command (Reka UI), jadi navigasi daftarnya mengikuti Listbox Reka.",
+    "noteEn": "Written from Kliping's code: the country picker is a Popover + Command (Reka UI), so list navigation follows Reka's Listbox.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus between the country button and the phone input."
+      },
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "Opens the country list when the country button is focused."
+      },
+      {
+        "keys": [
+          "Type to search"
+        ],
+        "description": "Filters countries in the search field of the open list."
+      },
+      {
+        "keys": [
+          "ArrowUp",
+          "ArrowDown"
+        ],
+        "description": "Moves through countries when the list is open."
+      },
+      {
+        "keys": [
+          "Home",
+          "End"
+        ],
+        "description": "Jumps to the first or last country in the list."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "Selects the highlighted country."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Closes the country list."
+      }
+    ]
+  },
+  "qr-code": {
+    "note": "Ditulis dari kode Kliping: `QRCodeDownload` adalah `<button>`.",
+    "noteEn": "Written from Kliping's code: `QRCodeDownload` is a `<button>`.",
+    "rows": [
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "On the download button, saves the QR code."
+      }
+    ]
+  },
+  "rating": {
+    "note": "Ditulis dari kode Kliping: `Rating` dibangun di atas `RatingRoot` Reka UI (pola radio group), jadi fokus dan pilihan bergerak bersama.",
+    "noteEn": "Written from Kliping's code: `Rating` is built on Reka UI's `RatingRoot` (radio group pattern), so focus and selection move together.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the selected item, or the first item when none is selected."
+      },
+      {
+        "keys": [
+          "Space"
+        ],
+        "description": "Selects the focused item."
+      },
+      {
+        "keys": [
+          "ArrowRight",
+          "ArrowDown"
+        ],
+        "description": "Moves focus and selection to the next item."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowUp"
+        ],
+        "description": "Moves focus and selection to the previous item."
+      }
+    ]
+  },
+  "relative-time-card": {
+    "note": "Ditulis dari kode Kliping: pemicunya `<button>` di atas HoverCard Reka UI — kartu terbuka saat pemicu difokuskan, bukan lewat Enter.",
+    "noteEn": "Written from Kliping's code: the trigger is a `<button>` on Reka UI's HoverCard — the card opens when the trigger gets focus, not on Enter.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Focusing the trigger opens the card; moving focus away closes it."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Closes the open card."
+      }
+    ]
+  },
+  "responsive-dialog": {
+    "note": "Ditulis dari kode Kliping: Dialog (layar lebar) dan Drawer (layar sempit), keduanya primitif Reka UI.",
+    "noteEn": "Written from Kliping's code: Dialog on wide screens and Drawer on narrow ones, both Reka UI primitives.",
+    "rows": [
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "On the trigger, opens the dialog or drawer."
+      },
+      {
+        "keys": [
+          "Tab",
+          "Shift + Tab"
+        ],
+        "description": "Cycles focus inside the open dialog."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Closes it and returns focus to the trigger."
+      }
+    ]
+  },
+  "segmented-input": {
+    "note": "Ditulis dari kode Kliping: tiap segmen adalah input biasa, jadi perpindahannya urutan fokus bawaan peramban.",
+    "noteEn": "Written from Kliping's code: each segment is a plain input, so moving between them is the browser's normal focus order.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next input in the segment."
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous input in the segment."
+      }
+    ]
+  },
+  "sortable": {
+    "note": "Ditulis dari kode Kliping: sensor keyboard bawaan `dnd-kit-vue`.",
+    "noteEn": "Written from Kliping's code: the default keyboard sensor of `dnd-kit-vue`.",
+    "rows": [
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "Lifts the focused item; press again to drop it."
+      },
+      {
+        "keys": [
+          "Arrow Keys"
+        ],
+        "description": "While lifted, moves it one position along the list."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Cancels the move and puts it back."
+      }
+    ]
+  },
+  "speed-dial": {
+    "note": "Ditulis dari kode Kliping: pemicu dan aksinya tombol biasa; tidak ada penanganan Escape atau penutupan saat fokus keluar.",
+    "noteEn": "Written from Kliping's code: the trigger and actions are plain buttons; there is no Escape handling or closing when focus leaves.",
+    "rows": [
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "When the trigger is focused and `activationMode` is 'click', toggles the speed dial."
+      },
+      {
+        "keys": [
+          "Tab",
+          "Shift + Tab"
+        ],
+        "description": "Moves focus between the trigger and the actions."
+      },
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "On an action, runs it and closes the speed dial unless `keepOpen` is set."
+      }
+    ]
+  },
+  "stepper-advanced": {
+    "note": "Ditulis dari kode Kliping: perilakunya dari `StepperTrigger` Reka UI; panah mengikuti `orientation`, dan `linear` menahan lompatan ke langkah yang belum boleh.",
+    "noteEn": "Written from Kliping's code: behaviour comes from Reka UI's `StepperTrigger`; arrows follow `orientation`, and `linear` blocks jumping to steps not yet allowed.",
+    "rows": [
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus to the next focusable element."
+      },
+      {
+        "keys": [
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the previous focusable element."
+      },
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "Activates the focused step, unless it is disabled or blocked by `linear`."
+      },
+      {
+        "keys": [
+          "ArrowRight",
+          "ArrowDown"
+        ],
+        "description": "Moves focus to the next step trigger (left/right when horizontal, up/down when vertical)."
+      },
+      {
+        "keys": [
+          "ArrowLeft",
+          "ArrowUp"
+        ],
+        "description": "Moves focus to the previous step trigger (left/right when horizontal, up/down when vertical)."
+      }
+    ]
+  },
+  "swap": {
+    "note": "Ditulis dari kode Kliping: hanya dengan `activationMode=\"click\"`.",
+    "noteEn": "Written from Kliping's code: only with `activationMode=\"click\"`.",
+    "rows": [
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "Switches between the two states."
+      }
+    ]
+  },
+  "tags-input-advanced": {
+    "note": "Ditulis dari kode Kliping: dibangun di atas `TagsInputRoot` Reka UI; tanpa mode sunting tag dan tanpa `addOnTab`.",
+    "noteEn": "Written from Kliping's code: built on Reka UI's `TagsInputRoot`; there is no tag edit mode and no `addOnTab`.",
+    "rows": [
+      {
+        "keys": [
+          "Delete"
+        ],
+        "description": "When a tag is highlighted, removes it."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "When a tag is highlighted, removes it; at the start of an empty input, highlights the last tag."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Highlights the previous tag; at the start of the input, moves to the last tag."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Highlights the next tag; past the last tag, returns to the input."
+      },
+      {
+        "keys": [
+          "Home"
+        ],
+        "description": "Highlights the first tag."
+      },
+      {
+        "keys": [
+          "End"
+        ],
+        "description": "Highlights the last tag."
+      },
+      {
+        "keys": [
+          "Enter"
+        ],
+        "description": "When the input has text, adds it as a tag."
+      },
+      {
+        "keys": [
+          "Tab"
+        ],
+        "description": "Moves focus out of the input as usual."
+      }
+    ]
+  },
+  "time-picker": {
+    "note": "Ditulis dari kode Kliping: field-nya `TimeField` Reka UI (segmen jam, menit, detik, AM/PM); kolom waktu di dalam Popover berisi tombol biasa.",
+    "noteEn": "Written from Kliping's code: the field is Reka UI's `TimeField` (hour, minute, second, AM/PM segments); the time columns in the Popover are plain buttons.",
+    "rows": [
+      {
+        "keys": [
+          "0-9"
+        ],
+        "description": "Types the value of the focused segment and moves on when the segment is complete."
+      },
+      {
+        "keys": [
+          "A",
+          "P"
+        ],
+        "description": "In the period segment, sets AM or PM."
+      },
+      {
+        "keys": [
+          "ArrowUp"
+        ],
+        "description": "Increments the focused segment."
+      },
+      {
+        "keys": [
+          "ArrowDown"
+        ],
+        "description": "Decrements the focused segment."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Moves to the next segment."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Moves to the previous segment."
+      },
+      {
+        "keys": [
+          "Tab",
+          "Shift + Tab"
+        ],
+        "description": "Moves focus to the next or previous segment or control."
+      },
+      {
+        "keys": [
+          "Backspace"
+        ],
+        "description": "Deletes the last digit of the focused segment."
+      },
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "On the trigger, opens or closes the time columns; on a column item, selects that value."
+      },
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Closes the open time columns."
+      }
+    ]
+  },
+  "tour": {
+    "note": "Ditulis dari kode Kliping: pintasan aktif selama tur terbuka, didengarkan di dokumen; fokus tidak dikurung di kartu tur.",
+    "noteEn": "Written from Kliping's code: shortcuts are active while the tour is open and listen on the document; focus is not trapped in the tour card.",
+    "rows": [
+      {
+        "keys": [
+          "Escape"
+        ],
+        "description": "Ends the tour when `closeOnEscape` is on (default)."
+      },
+      {
+        "keys": [
+          "ArrowRight"
+        ],
+        "description": "Goes to the next step."
+      },
+      {
+        "keys": [
+          "ArrowLeft"
+        ],
+        "description": "Goes to the previous step."
+      },
+      {
+        "keys": [
+          "Enter",
+          "Space"
+        ],
+        "description": "Activates the focused button (next, previous, skip, or close)."
+      }
+    ]
+  }
+}

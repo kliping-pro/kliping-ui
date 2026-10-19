@@ -1,0 +1,729 @@
+[
+  {
+    "slug": "featured",
+    "name": "Featured",
+    "title": "Building Blocks for the Web",
+    "description": "Halaman siap pakai yang disusun dari komponen Kliping. Salin, tempel, lalu ganti isinya. Berjalan di semua framework berbasis Vue.",
+    "items": [
+      "dashboard-01",
+      "sidebar-07",
+      "sidebar-03",
+      "login-03",
+      "signup-01"
+    ]
+  },
+  {
+    "slug": "hero",
+    "name": "Hero",
+    "title": "Hero",
+    "description": "Delapan susunan hero, dari yang polos di tengah layar sampai yang berlatar partikel dan petak beranimasi.",
+    "items": [
+      "hero-01",
+      "hero-02",
+      "hero-03",
+      "hero-04",
+      "hero-05",
+      "hero-06",
+      "hero-07",
+      "hero-08"
+    ]
+  },
+  {
+    "slug": "cta",
+    "name": "Call to Action",
+    "title": "Call to Action",
+    "description": "Enam susunan ajakan bertindak, dari yang polos di tengah sampai yang berlatar aurora dan papan sirkuit.",
+    "items": [
+      "cta-01",
+      "cta-02",
+      "cta-03",
+      "cta-04",
+      "cta-05",
+      "cta-07"
+    ]
+  },
+  {
+    "slug": "banner",
+    "name": "Banner",
+    "title": "Banner",
+    "description": "Empat bilah pengumuman, dari satu baris di puncak halaman sampai kartu ajakan mendaftar.",
+    "items": [
+      "banner-01",
+      "banner-02",
+      "banner-03",
+      "banner-04"
+    ]
+  },
+  {
+    "slug": "not-found",
+    "name": "404",
+    "title": "404",
+    "description": "Delapan halaman \"tidak ditemukan\", dari yang paling polos sampai yang angkanya bergetar seperti sinyal rusak.",
+    "items": [
+      "not-found-01",
+      "not-found-02",
+      "not-found-03",
+      "not-found-04",
+      "not-found-05",
+      "not-found-06",
+      "not-found-07",
+      "not-found-08"
+    ]
+  },
+  {
+    "slug": "stats",
+    "name": "Stats",
+    "title": "Stats",
+    "description": "Sebelas susunan angka capaian, dari tiga kolom polos sampai petak kartu berikon.",
+    "items": [
+      "stats-01",
+      "stats-02",
+      "stats-03",
+      "stats-04",
+      "stats-05",
+      "stats-06",
+      "stats-07",
+      "stats-08",
+      "stats-09",
+      "stats-10",
+      "stats-11"
+    ]
+  },
+  {
+    "slug": "features",
+    "name": "Features",
+    "title": "Features",
+    "description": "Delapan belas susunan daftar fitur, dari petak ikon polos sampai akordeon dan kartu bergambar.",
+    "items": [
+      "features-01",
+      "features-02",
+      "features-03",
+      "features-04",
+      "features-05",
+      "features-06",
+      "features-07",
+      "features-08",
+      "features-09",
+      "features-10",
+      "features-11",
+      "features-12",
+      "features-13",
+      "features-14",
+      "features-15",
+      "features-16",
+      "features-17",
+      "features-18"
+    ]
+  },
+  {
+    "slug": "faq",
+    "name": "FAQ",
+    "title": "FAQ",
+    "description": "Dua puluh susunan tanya jawab, dari akordeon polos sampai petak kartu berikon.",
+    "items": [
+      "faq-01",
+      "faq-02",
+      "faq-03",
+      "faq-04",
+      "faq-05",
+      "faq-06",
+      "faq-07",
+      "faq-08",
+      "faq-09",
+      "faq-10",
+      "faq-11",
+      "faq-12",
+      "faq-13",
+      "faq-14",
+      "faq-15",
+      "faq-16",
+      "faq-17",
+      "faq-18",
+      "faq-19",
+      "faq-20"
+    ]
+  },
+  {
+    "slug": "logo-cloud",
+    "name": "Logo Cloud",
+    "title": "Logo Cloud",
+    "description": "Lima belas susunan logo pelanggan, dari deret diam sampai yang bergulir tanpa henti.",
+    "items": [
+      "logo-cloud-01",
+      "logo-cloud-02",
+      "logo-cloud-03",
+      "logo-cloud-04",
+      "logo-cloud-05",
+      "logo-cloud-06",
+      "logo-cloud-07",
+      "logo-cloud-08",
+      "logo-cloud-09",
+      "logo-cloud-10",
+      "logo-cloud-11",
+      "logo-cloud-12",
+      "logo-cloud-13",
+      "logo-cloud-14",
+      "logo-cloud-15"
+    ]
+  },
+  {
+    "slug": "team",
+    "name": "Team",
+    "title": "Team",
+    "description": "Tiga belas susunan profil tim, dari petak foto polos sampai kartu bertaut media sosial.",
+    "items": [
+      "team-01",
+      "team-02",
+      "team-03",
+      "team-04",
+      "team-05",
+      "team-06",
+      "team-07",
+      "team-08",
+      "team-09",
+      "team-10",
+      "team-11",
+      "team-12",
+      "team-13"
+    ]
+  },
+  {
+    "slug": "pricing",
+    "name": "Pricing",
+    "title": "Pricing",
+    "description": "Sepuluh susunan tabel harga, dari tiga paket polos sampai yang angkanya berubah saat periode ditukar.",
+    "items": [
+      "pricing-01",
+      "pricing-02",
+      "pricing-03",
+      "pricing-04",
+      "pricing-05",
+      "pricing-06",
+      "pricing-07",
+      "pricing-08",
+      "pricing-09",
+      "pricing-10",
+      "pricing-11",
+      "pricing-12",
+      "pricing-13",
+      "pricing-14",
+      "pricing-15",
+      "pricing-16",
+      "pricing-17",
+      "pricing-18"
+    ]
+  },
+  {
+    "slug": "testimonials",
+    "name": "Testimonials",
+    "title": "Testimonials",
+    "description": "Tiga puluh susunan testimoni, dari kolom masonry sampai jalur yang bergulir sendiri.",
+    "items": [
+      "testimonials-01",
+      "testimonials-02",
+      "testimonials-03",
+      "testimonials-04",
+      "testimonials-05",
+      "testimonials-06",
+      "testimonials-07",
+      "testimonials-08",
+      "testimonials-09",
+      "testimonials-10",
+      "testimonials-11",
+      "testimonials-12",
+      "testimonials-13",
+      "testimonials-14",
+      "testimonials-15",
+      "testimonials-16",
+      "testimonials-17",
+      "testimonials-18",
+      "testimonials-19",
+      "testimonials-20",
+      "testimonials-21",
+      "testimonials-22",
+      "testimonials-23",
+      "testimonials-24",
+      "testimonials-25",
+      "testimonials-26",
+      "testimonials-27",
+      "testimonials-28",
+      "testimonials-29",
+      "testimonials-30"
+    ]
+  },
+  {
+    "slug": "timeline",
+    "name": "Timeline",
+    "title": "Timeline",
+    "description": "Tujuh susunan lini masa, dari garis lurus sederhana sampai catatan rilis berversi.",
+    "items": [
+      "timeline-01",
+      "timeline-02",
+      "timeline-03",
+      "timeline-04",
+      "timeline-05",
+      "timeline-06",
+      "timeline-07"
+    ]
+  },
+  {
+    "slug": "footer",
+    "name": "Footer",
+    "title": "Footer",
+    "description": "Dua puluh dua susunan footer, dari enam kolom tautan sampai satu baris ringkas.",
+    "items": [
+      "footer-01",
+      "footer-02",
+      "footer-03",
+      "footer-04",
+      "footer-05",
+      "footer-06",
+      "footer-07",
+      "footer-08",
+      "footer-09",
+      "footer-10",
+      "footer-11",
+      "footer-12",
+      "footer-13",
+      "footer-14",
+      "footer-15",
+      "footer-16",
+      "footer-17",
+      "footer-18",
+      "footer-19",
+      "footer-20",
+      "footer-21",
+      "footer-22"
+    ]
+  },
+  {
+    "slug": "blog",
+    "name": "Blog",
+    "title": "Blog",
+    "description": "Dua belas susunan daftar tulisan, dari kartu bergambar sampai daftar bergaris pemisah.",
+    "items": [
+      "blog-01",
+      "blog-02",
+      "blog-03",
+      "blog-04",
+      "blog-05",
+      "blog-06",
+      "blog-07",
+      "blog-08",
+      "blog-09",
+      "blog-10",
+      "blog-11",
+      "blog-12"
+    ]
+  },
+  {
+    "slug": "navbar",
+    "name": "Navbar",
+    "title": "Navbar",
+    "description": "Lima susunan bilah navigasi, semuanya lengkap dengan menu layar sempit.",
+    "items": [
+      "navbar-01",
+      "navbar-02",
+      "navbar-03",
+      "navbar-04",
+      "navbar-05"
+    ]
+  },
+  {
+    "slug": "integrations",
+    "name": "Integrations",
+    "title": "Integrations",
+    "description": "Lima susunan daftar integrasi, dari petak logo sampai daftar dengan penanda tersambung.",
+    "items": [
+      "integrations-01",
+      "integrations-02",
+      "integrations-03",
+      "integrations-04",
+      "integrations-05"
+    ]
+  },
+  {
+    "slug": "setup-guide",
+    "name": "Setup Guide",
+    "title": "Setup Guide",
+    "description": "Empat susunan panduan langkah awal, dengan penanda langkah yang sudah selesai.",
+    "items": [
+      "setup-guide-01",
+      "setup-guide-02",
+      "setup-guide-03",
+      "setup-guide-04"
+    ]
+  },
+  {
+    "slug": "profile",
+    "name": "Profile",
+    "title": "Profile",
+    "description": "Empat susunan halaman profil, dari kartu ringkas sampai yang bertab.",
+    "items": [
+      "profile-01",
+      "profile-02",
+      "profile-03",
+      "profile-04"
+    ]
+  },
+  {
+    "slug": "keyboard-shortcuts",
+    "name": "Keyboard Shortcuts",
+    "title": "Keyboard Shortcuts",
+    "description": "Empat susunan daftar pintasan papan ketik.",
+    "items": [
+      "keyboard-shortcuts-01",
+      "keyboard-shortcuts-02",
+      "keyboard-shortcuts-03",
+      "keyboard-shortcuts-04"
+    ]
+  },
+  {
+    "slug": "empty-state",
+    "name": "Empty State",
+    "title": "Empty State",
+    "description": "Empat susunan tampilan saat belum ada isi.",
+    "items": [
+      "empty-state-01",
+      "empty-state-02",
+      "empty-state-03",
+      "empty-state-04"
+    ]
+  },
+  {
+    "slug": "members",
+    "name": "Members",
+    "title": "Members",
+    "description": "Tiga susunan daftar anggota beserta perannya.",
+    "items": [
+      "members-01",
+      "members-02",
+      "members-03"
+    ]
+  },
+  {
+    "slug": "contact",
+    "name": "Contact",
+    "title": "Contact",
+    "description": "Delapan belas susunan halaman kontak, dari kartu alamat sampai formulir di atas foto latar.",
+    "items": [
+      "contact-01",
+      "contact-02",
+      "contact-03",
+      "contact-04",
+      "contact-05",
+      "contact-06",
+      "contact-07",
+      "contact-08",
+      "contact-09",
+      "contact-10",
+      "contact-11",
+      "contact-12",
+      "contact-13",
+      "contact-14",
+      "contact-15",
+      "contact-16",
+      "contact-17",
+      "contact-18"
+    ]
+  },
+  {
+    "slug": "changelog",
+    "name": "Changelog",
+    "title": "Changelog",
+    "description": "Tiga susunan catatan perubahan, dikelompokkan per rilis.",
+    "items": [
+      "changelog-01",
+      "changelog-02",
+      "changelog-03"
+    ]
+  },
+  {
+    "slug": "order-confirmation",
+    "name": "Order Confirmation",
+    "title": "Order Confirmation",
+    "description": "Dua susunan halaman konfirmasi pesanan.",
+    "items": [
+      "order-confirmation-01",
+      "order-confirmation-02"
+    ]
+  },
+  {
+    "slug": "carousel-block",
+    "name": "Carousel",
+    "title": "Carousel",
+    "description": "Dua susunan korsel gambar yang bisa digeser.",
+    "items": [
+      "carousel-block-01",
+      "carousel-block-02"
+    ]
+  },
+  {
+    "slug": "verification",
+    "name": "Verification",
+    "title": "Verification",
+    "description": "Halaman verifikasi email.",
+    "items": [
+      "verification-01"
+    ]
+  },
+  {
+    "slug": "invite-member",
+    "name": "Invite Member",
+    "title": "Invite Member",
+    "description": "Tiga susunan ajakan mengundang anggota baru.",
+    "items": [
+      "invite-member-01",
+      "invite-member-02",
+      "invite-member-03"
+    ]
+  },
+  {
+    "slug": "code-block",
+    "name": "Code Block",
+    "title": "Code Block",
+    "description": "Tiga susunan blok kode tersorot, dari satu blok polos sampai yang bertab.",
+    "items": [
+      "code-block-01",
+      "code-block-02",
+      "code-block-03"
+    ]
+  },
+  {
+    "slug": "ai-agents",
+    "name": "AI Agents",
+    "title": "AI Agents",
+    "description": "Antarmuka agen AI: chat yang mengalir, generator gambar, dan generator video.",
+    "items": [
+      "ai-agents-01",
+      "ai-agents-02",
+      "ai-agents-03"
+    ]
+  },
+  {
+    "slug": "web3",
+    "name": "Web3",
+    "title": "Web3",
+    "description": "Koleksi NFT, profil kreator, dan lelang kripto dengan hitung mundur.",
+    "items": [
+      "web3-01",
+      "web3-02",
+      "web3-03",
+      "web3-04",
+      "web3-05"
+    ]
+  },
+  {
+    "slug": "account",
+    "name": "Account",
+    "title": "Account",
+    "description": "Pengaturan akun: profil, Password, 2FA, notifikasi, sesi aktif, dan integrasi.",
+    "items": [
+      "account-01",
+      "account-02",
+      "account-03",
+      "account-04",
+      "account-05",
+      "account-06",
+      "account-07"
+    ]
+  },
+  {
+    "slug": "billing",
+    "name": "Billing",
+    "title": "Billing",
+    "description": "Kartu pembayaran, metode bayar, invoice, dan riwayat transaksi.",
+    "items": [
+      "billing-01",
+      "billing-02",
+      "billing-03",
+      "billing-04",
+      "billing-05",
+      "billing-06",
+      "billing-07",
+      "billing-08",
+      "billing-09",
+      "billing-10",
+      "billing-11",
+      "billing-12",
+      "billing-13",
+      "billing-14"
+    ]
+  },
+  {
+    "slug": "subscription",
+    "name": "Subscription",
+    "title": "Subscription",
+    "description": "Mengelola langganan: berhenti, ganti paket, masa trial, proration, dan tawaran terbatas.",
+    "items": [
+      "subscription-01",
+      "subscription-02",
+      "subscription-03",
+      "subscription-04",
+      "subscription-05",
+      "subscription-06",
+      "subscription-07",
+      "subscription-08"
+    ]
+  },
+  {
+    "slug": "usage",
+    "name": "Usage",
+    "title": "Usage",
+    "description": "Pemakaian terhadap batasnya: meteran, tabel pemakaian, kalkulator harga, tagihan mendatang, dan saldo kredit.",
+    "items": [
+      "usage-01",
+      "usage-02",
+      "usage-03",
+      "usage-04",
+      "usage-05",
+      "usage-06",
+      "usage-07"
+    ]
+  },
+  {
+    "slug": "cruds",
+    "name": "CRUDs",
+    "title": "CRUDs",
+    "description": "Formulir ubah data: produk, profil staf, dan pengaturan akun berfoto.",
+    "items": [
+      "cruds-01",
+      "cruds-02",
+      "cruds-03"
+    ]
+  },
+  {
+    "slug": "modals",
+    "name": "Modals",
+    "title": "Modals",
+    "description": "Dialog konfirmasi, formulir, dan pemberitahuan dalam satu jendela.",
+    "items": [
+      "modals-01",
+      "modals-02",
+      "modals-03",
+      "modals-04",
+      "modals-05",
+      "modals-06",
+      "modals-07",
+      "modals-08",
+      "modals-09",
+      "modals-10",
+      "modals-11"
+    ]
+  },
+  {
+    "slug": "ecommerce",
+    "name": "Ecommerce",
+    "title": "Ecommerce",
+    "description": "Detail produk, daftar dengan penyaring, keranjang, checkout, dan riwayat pesanan.",
+    "items": [
+      "ecommerce-01",
+      "ecommerce-02",
+      "ecommerce-03",
+      "ecommerce-04",
+      "ecommerce-05",
+      "ecommerce-06",
+      "ecommerce-07",
+      "ecommerce-08",
+      "ecommerce-09",
+      "ecommerce-10",
+      "ecommerce-11",
+      "ecommerce-12",
+      "ecommerce-13",
+      "ecommerce-14",
+      "ecommerce-15",
+      "ecommerce-16",
+      "ecommerce-17"
+    ]
+  },
+  {
+    "slug": "sidebar",
+    "name": "Sidebar",
+    "title": "Sidebar",
+    "description": "Tujuh belas ragam sidebar — dari yang paling sederhana sampai yang bisa dilipat, bersarang, dan berkolom dua.",
+    "items": [
+      "sidebar-01",
+      "sidebar-02",
+      "sidebar-03",
+      "sidebar-04",
+      "sidebar-05",
+      "sidebar-06",
+      "sidebar-07",
+      "sidebar-08",
+      "sidebar-09",
+      "sidebar-10",
+      "sidebar-11",
+      "sidebar-12",
+      "sidebar-13",
+      "sidebar-14",
+      "sidebar-15",
+      "sidebar-16"
+    ]
+  },
+  {
+    "slug": "login",
+    "name": "Login",
+    "title": "Login",
+    "description": "Tiga belas susunan halaman masuk, dari form polos sampai yang berdampingan dengan gambar.",
+    "items": [
+      "login-01",
+      "login-02",
+      "login-03",
+      "login-04",
+      "login-05",
+      "login-06",
+      "login-07",
+      "login-08",
+      "login-09",
+      "login-10",
+      "login-11",
+      "login-12",
+      "login-13"
+    ]
+  },
+  {
+    "slug": "signup",
+    "name": "Signup",
+    "title": "Signup",
+    "description": "Tiga belas susunan halaman pendaftaran, dari form polos sampai satu halaman utuh berbilah navigasi.",
+    "items": [
+      "signup-01",
+      "signup-02",
+      "signup-03",
+      "signup-04",
+      "signup-05",
+      "signup-06",
+      "signup-07",
+      "signup-08",
+      "signup-09",
+      "signup-10",
+      "signup-11",
+      "signup-12",
+      "signup-13"
+    ]
+  },
+  {
+    "slug": "otp",
+    "name": "OTP",
+    "title": "OTP",
+    "description": "Lima halaman verifikasi kode sekali pakai, memakai komponen input OTP.",
+    "items": [
+      "otp-01",
+      "otp-02",
+      "otp-03",
+      "otp-04",
+      "otp-05"
+    ]
+  },
+  {
+    "slug": "lainnya",
+    "name": "Other",
+    "title": "Other Blocks",
+    "description": "Halaman produk dengan tabel dan penyaring, card persetujuan pembelian software, plus contoh sidebar lengkap.",
+    "items": [
+      "products-01",
+      "sidebar-demo",
+      "software-purchase-01"
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+name: Bug report
+description: Something in a component, block, the CLI or the site does not work.
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Registry item (component, block, variant, chart, hook)
+        - kliping CLI
+        - MCP server
+        - Site (kliping.pro)
+    validations:
+      required: true
+  - type: input
+    id: item
+    attributes:
+      label: Item or command
+      placeholder: hero-01, or npx kliping@latest add hero-01
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Commands you ran and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output or error
+      render: shell
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: kliping 0.2.0, Node 22.12, npm 10, Windows 11, Vite / Nuxt
+    validations:
+      required: true

@@ -1,0 +1,76 @@
+MIT License
+
+Copyright (c) 2026 Kliping
+
+Registry komponen berbasis pada shadcn-vue (https://github.com/unovue/shadcn-vue)
+Copyright (c) 2023 unovue
+
+Awalnya berbasis pada shadcn/ui (https://ui.shadcn.com)
+Copyright (c) 2023 shadcn
+
+Registry block dan varian komponen ditulis ulang untuk Vue dari shadcn-ui-blocks
+(https://www.shadcnui-blocks.com)
+Copyright 2025 Shadcn UI Blocks
+
+Sebagian registry block (daftarnya di scripts/creative-tim-blocks.json) serta
+komponen Chip, List, Map, dan Software Purchase Card ditulis ulang untuk Vue
+dari Creative Tim UI (https://github.com/creativetimofficial/ui)
+Copyright (c) 2025 Creative Tim — MIT
+
+Satu template ditulis ulang untuk Vue dari
+https://github.com/akash3444/homeguardian-shadcn-landing-page
+Copyright (c) 2025 HomeGuardian — MIT
+
+Tiga template lain (shadcn-ui-landing-page, pure-landing-shadcnui-template,
+portfolio-template, semuanya milik https://github.com/akash3444) ditulis ulang
+dengan cara yang sama. Repo asalnya tidak menyebutkan lisensi apa pun, jadi hak
+ciptanya tetap dipegang penulisnya; asalnya disebut penuh di situs ini dan di
+scripts/template-sources.json. Kalau penulisnya keberatan, ketiganya dicabut atas
+permintaan — cukup buka issue di https://github.com/kliping-pro/kliping-ui.
+
+Registry komponen berperilaku (daftarnya di src/registry/component-catalog.json) ditulis
+ulang untuk Vue dari Dice UI
+(https://diceui.com/docs — https://github.com/sadmann7/diceui)
+Copyright (c) 2024 Sadman Sakib — MIT
+
+Komponen Animated Grid Pattern, Border Beam, Dot Pattern, Particles, dan Marquee
+(`marquee-basic`) ditulis ulang untuk Vue dari Magic UI (https://github.com/magicuidesign/magicui)
+Copyright (c) Magic UI — MIT
+
+Komponen AI Chat dan AI Thread List diangkut dari assistant-ui
+(https://github.com/assistant-ui/assistant-ui)
+Copyright (c) 2026 AgentbaseAI Inc. — MIT
+
+Registry composable ditulis ulang untuk Vue dari shadcn-hooks
+(https://github.com/Debbl/shadcn-hooks)
+Copyright (c) 2025 Brendan Dash <https://github.com/Debbl>
+
+Sebagian bentuk API-nya berasal lebih jauh ke hulu, dan ketiganya MIT:
+  ahooks       — https://github.com/alibaba/hooks
+  usehooks-ts  — https://github.com/juliencrn/usehooks-ts
+  react-use    — https://github.com/streamich/react-use
+
+Kodenya ditulis ulang, bukan disalin. Yang diturunkan dari karya-karya di atas
+adalah nama, susunan, bentuk opsi, dan tampilan yang dijanjikan tiap block,
+varian, komponen, dan composable — cukup untuk menjadikannya karya turunan, dan
+karena itu pemberitahuan hak ciptanya disertakan di sini.
+
+Rinciannya di https://kliping.pro/kredit
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

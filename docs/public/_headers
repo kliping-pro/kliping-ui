@@ -1,0 +1,36 @@
+# Header yang dipasang Cloudflare Pages. Berkas ini disalin apa adanya ke akar
+# situs, sama seperti gambar — tidak ada yang dijalankan untuk membacanya.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  # SAMEORIGIN, bukan DENY: pratinjau block digambar di dalam iframe dari
+  # origin yang sama. DENY akan mengosongkan semuanya tanpa pesan apa pun.
+  X-Frame-Options: SAMEORIGIN
+
+# Nama berkasnya sudah mengandung hash isinya, jadi berkas dengan nama yang
+# sama tidak akan pernah berubah isinya. Boleh disimpan selamanya.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML-nya sebaliknya: namanya tetap, isinya berubah tiap deploy. Peramban
+# harus bertanya dulu, kalau tidak pembaca akan melihat versi lama.
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/raw/*
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: text/markdown; charset=utf-8
+
+# Registry dan skemanya dibaca CLI (`kliping`, `shadcn-vue`) dan alat lain —
+# termasuk alat berbasis peramban di domain lain, jadi CORS dibuka. Isinya
+# berubah tiap deploy (perbaikan item), jadi selalu ditanyakan ulang.
+/r/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=0, must-revalidate
+
+/schema/*
+  Access-Control-Allow-Origin: *
+
+/schema.json
+  Access-Control-Allow-Origin: *

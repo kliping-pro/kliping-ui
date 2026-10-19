@@ -1,0 +1,108 @@
+{
+  "note": "Template yang diangkut, beserta asalnya. Berbeda dari block dan varian: keempatnya tidak tinggal di repo shadcn-ui-blocks, melainkan di repo masing-masing. Yang ada di sana cuma metadatanya. `scripts/ambil-template.mjs` mengambil sumbernya ke `.template-sumber/`, dan `scripts/angkut-template.mjs` mengubahnya jadi Vue.",
+  "categories": [
+    {
+      "slug": "landing-page",
+      "name": "Landing Page"
+    },
+    {
+      "slug": "portfolio",
+      "name": "Portfolio"
+    }
+  ],
+  "template": [
+    {
+      "slug": "homeguardian",
+      "name": "HomeGuardian",
+      "repo": "akash3444/homeguardian-shadcn-landing-page",
+      "url": "https://homeguardian-shadcn-landing-page.vercel.app/",
+      "category": "landing-page",
+      "description": "Halaman pendarat jasa keamanan rumah: perbandingan paket berbentuk tabel, daftar industri yang dilayani, dan deretan logo klien.",
+      "sections": [
+        "Navbar",
+        "Hero",
+        "Deretan Logo",
+        "Kenapa Kami",
+        "Perbandingan Fitur",
+        "Industri",
+        "Testimoni",
+        "Tanya Jawab",
+        "Ajakan Bertindak",
+        "Footer"
+      ],
+      "license": {
+        "type": "MIT",
+        "copyright": "Copyright (c) 2025 HomeGuardian",
+        "file": "LICENSE"
+      }
+    },
+    {
+      "slug": "minimalist-landing-page",
+      "name": "Minimalist Landing Page",
+      "repo": "akash3444/shadcn-ui-landing-page",
+      "url": "https://shadcn-ui-landing-page.vercel.app/",
+      "category": "landing-page",
+      "description": "Halaman pendarat paling polos di antara keempatnya: hero berdampingan gambar, empat fitur, tanya jawab, testimoni berkorsel, dan tabel harga.",
+      "sections": [
+        "Navbar",
+        "Hero",
+        "Fitur",
+        "Tanya Jawab",
+        "Testimoni",
+        "Harga",
+        "Footer"
+      ],
+      "license": {
+        "type": "not stated",
+        "copyright": "akash3444",
+        "file": null
+      }
+    },
+    {
+      "slug": "pure-landing",
+      "name": "PureLanding",
+      "repo": "akash3444/pure-landing-shadcnui-template",
+      "url": "https://pure-landing-shadcnui-template.vercel.app/",
+      "category": "landing-page",
+      "description": "Halaman pendarat berlatar petak beranimasi, dengan testimoni yang berjalan sendiri dan tabel harga bertab bulanan-tahunan.",
+      "sections": [
+        "Navbar",
+        "Hero",
+        "Deretan Logo",
+        "Fitur",
+        "Harga",
+        "Testimoni",
+        "Tanya Jawab",
+        "Ajakan Bertindak",
+        "Footer"
+      ],
+      "license": {
+        "type": "not stated",
+        "copyright": "akash3444",
+        "file": null
+      }
+    },
+    {
+      "slug": "minimal-portfolio",
+      "name": "Minimal Portfolio",
+      "repo": "akash3444/portfolio-template",
+      "url": "https://shadcn-portfolio-template.vercel.app/",
+      "category": "portfolio",
+      "description": "Portofolio pengembang satu halaman: perkenalan, riwayat kerja bergaris waktu, dan petak proyek berlencana teknologi.",
+      "sections": [
+        "Navbar",
+        "Hero",
+        "Tentang",
+        "Pengalaman",
+        "Proyek",
+        "Footer"
+      ],
+      "license": {
+        "type": "not stated",
+        "copyright": "akash3444",
+        "file": null
+      }
+    }
+  ],
+  "licenseNote": "Hanya `homeguardian` yang menyertakan berkas LICENSE (MIT). Tiga repo lainnya tidak menyebutkan lisensi sama sekali — tidak di berkas LICENSE, tidak di `package.json`, tidak di README. Keempatnya tetap diterbitkan atas keputusan pemilik repo ini, dengan asalnya disebut penuh di kartunya masing-masing dan di halaman /credits, dan dengan janji terbuka: kalau penulisnya keberatan, ketiganya dicabut atas permintaan. Status ini dicatat apa adanya supaya keputusannya bisa ditinjau ulang kapan saja, bukan supaya dilupakan."
+}

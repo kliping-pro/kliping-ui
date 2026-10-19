@@ -1,0 +1,16 @@
+# Semua berkas teks LF di semua OS. Tanpa ini Git untuk Windows (core.autocrlf)
+# memeriksa berkas dengan CRLF, lalu generator (registry, angka, docs) menulis
+# isi yang berbeda dari yang di-commit dan pagar `--check` gagal hanya di Windows.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.mp4 binary
+*.webm binary
+*.pdf binary

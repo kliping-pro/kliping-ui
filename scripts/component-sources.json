@@ -1,0 +1,507 @@
+{
+  "note": "Katalog komponen berperilaku, sumber `src/registry/component-catalog.json`. Berbeda dari block dan varian yang isinya susunan halaman, yang di sini primitif berperilaku: tiap komponen punya beberapa bagian yang saling bicara lewat context. Di React itu ditempuh `createContext` + store luar + `useSyncExternalStore`; di Vue seluruh lapisan itu runtuh jadi `provide`/`inject` di atas `ref`.",
+  "source": {
+    "license": {
+      "type": "MIT",
+      "copyright": "Copyright (c) 2024 Sadman Sakib",
+      "file": "LICENSE"
+    }
+  },
+  "categories": [
+    {
+      "slug": "masukan",
+      "name": "Masukan"
+    },
+    {
+      "slug": "tampilan",
+      "name": "Tampilan"
+    },
+    {
+      "slug": "tata-letak",
+      "name": "Tata Letak"
+    },
+    {
+      "slug": "navigasi",
+      "name": "Navigasi"
+    },
+    {
+      "slug": "data",
+      "name": "Data"
+    },
+    {
+      "slug": "umpan-balik",
+      "name": "Umpan Balik"
+    },
+    {
+      "slug": "media",
+      "name": "Media"
+    },
+    {
+      "slug": "utilitas",
+      "name": "Utilitas"
+    }
+  ],
+  "components": [
+    {
+      "slug": "action-bar",
+      "name": "Action Bar",
+      "category": "navigasi",
+      "weight": "berat",
+      "description": "Bilah aksi mengambang yang muncul di tepi layar begitu ada yang terpilih, membawa tombol-tombol yang berlaku untuk pilihan itu."
+    },
+    {
+      "slug": "angle-slider",
+      "name": "Angle Slider",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Penggeser melingkar untuk memilih sudut — satu nilai atau rentang — lengkap dengan gagang yang bisa ditarik dan dikemudikan papan ketik."
+    },
+    {
+      "slug": "avatar-group",
+      "name": "Avatar Group",
+      "category": "tampilan",
+      "weight": "ringan",
+      "description": "Deretan avatar yang saling menumpuk, dengan penghitung sisa di ujungnya saat jumlahnya melebihi batas."
+    },
+    {
+      "slug": "badge-overflow",
+      "name": "Badge Overflow",
+      "category": "tampilan",
+      "weight": "sedang",
+      "description": "Deretan lencana yang mengukur ruang yang tersedia lalu menampilkan sebanyak yang muat saja, sisanya diringkas jadi satu penanda."
+    },
+    {
+      "slug": "banner",
+      "name": "Banner",
+      "category": "umpan-balik",
+      "weight": "berat",
+      "description": "Pita pemberitahuan di tepi atas atau bawah layar, dengan antrean, prioritas, dan penutupan otomatis."
+    },
+    {
+      "slug": "checkbox-group",
+      "name": "Checkbox Group",
+      "category": "masukan",
+      "weight": "sedang",
+      "description": "Sekelompok kotak centang yang dikelola bersama: satu nilai jamak, satu pesan error, satu label."
+    },
+    {
+      "slug": "circular-progress",
+      "name": "Circular Progress",
+      "category": "tampilan",
+      "weight": "ringan",
+      "description": "Penunjuk kemajuan berbentuk cincin, termasuk keadaan tak tentu yang berputar terus."
+    },
+    {
+      "slug": "color-picker",
+      "name": "Color Picker",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Pemilih warna dengan bidang saturasi, penggeser rona dan alfa, serta masukan teks dalam beberapa format."
+    },
+    {
+      "slug": "color-swatch",
+      "name": "Color Swatch",
+      "category": "tampilan",
+      "weight": "ringan",
+      "description": "Petak warna yang menggambar papan catur di belakangnya supaya warna tembus pandang terbaca apa adanya."
+    },
+    {
+      "slug": "combobox-advanced",
+      "name": "Combobox Advanced",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Masukan teks bersandingan daftar pilihan yang menyaring sambil diketik."
+    },
+    {
+      "slug": "compare-slider",
+      "name": "Compare Slider",
+      "category": "tata-letak",
+      "weight": "sedang",
+      "description": "Penggeser pembanding sebelum-sesudah: dua lapisan bertumpuk, satu garis pemisah yang bisa ditarik."
+    },
+    {
+      "slug": "cropper",
+      "name": "Cropper",
+      "category": "media",
+      "weight": "berat",
+      "description": "Pemotong gambar dan video dengan zum, putar, dan bingkai potong yang bisa dibentuk."
+    },
+    {
+      "slug": "data-grid",
+      "name": "Data Grid",
+      "category": "data",
+      "weight": "berat",
+      "description": "Petak data yang bisa disunting langsung di selnya, dengan kemudi papan ketik, tempel dari papan klip, dan virtualisasi baris.",
+      "source": "docs/components/data-grid/data-grid.tsx",
+      "note": "Dibangun di atas TanStack Table."
+    },
+    {
+      "slug": "data-table-advanced",
+      "name": "Data Table Advanced",
+      "category": "data",
+      "weight": "berat",
+      "description": "Tabel data lengkap: penyaringan, pengurutan, penghalaman, dan pemilihan kolom.",
+      "source": "docs/components/data-table/data-table.tsx",
+      "note": "Dibangun di atas TanStack Table."
+    },
+    {
+      "slug": "editable",
+      "name": "Editable",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Teks yang disunting di tempat — sekali klik berubah jadi masukan, sekali Escape kembali seperti semula."
+    },
+    {
+      "slug": "file-upload",
+      "name": "File Upload",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Pengunggah berkas dengan seret-dan-lepas, pratinjau, dan bilah kemajuan per berkas."
+    },
+    {
+      "slug": "fps",
+      "name": "FPS",
+      "category": "tampilan",
+      "weight": "ringan",
+      "description": "Penghitung bingkai per detik yang berjalan langsung, untuk mengintip biaya render sambil mengembangkan."
+    },
+    {
+      "slug": "gauge",
+      "name": "Gauge",
+      "category": "tampilan",
+      "weight": "sedang",
+      "description": "Penunjuk nilai berbentuk busur — lingkaran penuh atau sepotong — untuk dashboard dan metrik."
+    },
+    {
+      "slug": "kanban",
+      "name": "Kanban",
+      "category": "data",
+      "weight": "berat",
+      "description": "Papan kanban seret-dan-lepas: kartu berpindah antar kolom, kolomnya sendiri bisa diurutkan ulang."
+    },
+    {
+      "slug": "kbd-advanced",
+      "name": "Kbd Advanced",
+      "category": "tampilan",
+      "weight": "ringan",
+      "description": "Penanda tombol papan ketik untuk menuliskan pintasan."
+    },
+    {
+      "slug": "key-value",
+      "name": "Key Value",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Masukan pasangan kunci-nilai yang tumbuh sendiri, mengerti tempelan berbaris banyak, dan memvalidasi kuncinya."
+    },
+    {
+      "slug": "listbox",
+      "name": "Listbox",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Daftar pilihan yang dikemudikan papan ketik, bisa berbentuk lajur maupun petak."
+    },
+    {
+      "slug": "marquee",
+      "name": "Marquee",
+      "category": "tata-letak",
+      "weight": "sedang",
+      "description": "Deretan isi yang berjalan sendiri tanpa henti, mendatar atau menegak."
+    },
+    {
+      "slug": "mask-input",
+      "name": "Mask Input",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Masukan berpola yang merapikan ketikan mengikuti bentuk yang ditentukan — nomor telepon, tanggal, kartu."
+    },
+    {
+      "slug": "masonry",
+      "name": "Masonry",
+      "category": "tata-letak",
+      "weight": "berat",
+      "description": "Tata letak batu bata: kolom-kolom yang tingginya tidak seragam, disusun rapat mengikuti lebar wadahnya."
+    },
+    {
+      "slug": "media-player",
+      "name": "Media Player",
+      "category": "media",
+      "weight": "berat",
+      "description": "Pemutar video dan audio dengan kendali sendiri: putar, gulir waktu, volume, kecepatan, teks, dan layar penuh."
+    },
+    {
+      "slug": "mention",
+      "name": "Mention",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Masukan yang membuka daftar saran begitu aksara pemicu diketik — pola @sebut."
+    },
+    {
+      "slug": "phone-input",
+      "name": "Phone Input",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Masukan nomor telepon internasional dengan pemilih negara dan perapian nomor mengikuti negaranya."
+    },
+    {
+      "slug": "qr-code",
+      "name": "QR Code",
+      "category": "tampilan",
+      "weight": "sedang",
+      "description": "Penggambar kode QR, dengan tingkat koreksi error, ukuran modul, dan sisipan logo di tengahnya."
+    },
+    {
+      "slug": "rating",
+      "name": "Rating",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Penilaian berbintang yang mengerti nilai separuh, bisa dikemudikan papan ketik, dan ikut terkirim dalam formulir."
+    },
+    {
+      "slug": "relative-time-card",
+      "name": "Relative Time Card",
+      "category": "tampilan",
+      "weight": "sedang",
+      "description": "Waktu relatif — “3 jam lalu” — yang saat di-hover membuka kartu berisi waktu persisnya di beberapa zona."
+    },
+    {
+      "slug": "responsive-dialog",
+      "name": "Responsive Dialog",
+      "category": "umpan-balik",
+      "weight": "sedang",
+      "description": "Dialog yang berubah bentuk mengikuti lebar layar: kotak di tengah pada desktop, laci dari bawah pada ponsel."
+    },
+    {
+      "slug": "scroll-spy",
+      "name": "Scroll Spy",
+      "category": "navigasi",
+      "weight": "berat",
+      "description": "Tautan navigasi yang menyorot bagian yang sedang terlihat, termasuk bagian bersarang."
+    },
+    {
+      "slug": "scroller",
+      "name": "Scroller",
+      "category": "tata-letak",
+      "weight": "sedang",
+      "description": "Wadah bergulir dengan bayangan di tepi yang muncul-hilang sendiri dan tombol gulir di kedua ujungnya."
+    },
+    {
+      "slug": "segmented-input",
+      "name": "Segmented Input",
+      "category": "masukan",
+      "weight": "ringan",
+      "description": "Beberapa kotak masukan yang tampak menyatu jadi satu — kode OTP, tanggal, nomor bersegmen."
+    },
+    {
+      "slug": "selection-toolbar",
+      "name": "Selection Toolbar",
+      "category": "navigasi",
+      "weight": "berat",
+      "description": "Bilah alat mengambang yang muncul di atas teks yang sedang disorot."
+    },
+    {
+      "slug": "sortable",
+      "name": "Sortable",
+      "category": "data",
+      "weight": "berat",
+      "description": "Daftar yang bisa diurutkan ulang dengan seret-dan-lepas, mendatar maupun menegak."
+    },
+    {
+      "slug": "speed-dial",
+      "name": "Speed Dial",
+      "category": "navigasi",
+      "weight": "berat",
+      "description": "Tombol aksi mengambang yang membuka kipas aksi saat disentuh."
+    },
+    {
+      "slug": "stack",
+      "name": "Stack",
+      "category": "tata-letak",
+      "weight": "sedang",
+      "description": "Tumpukan kartu yang merapat saat diam dan merenggang saat disinggahi, seperti tumpukan toast Sonner."
+    },
+    {
+      "slug": "stat",
+      "name": "Stat",
+      "category": "tampilan",
+      "weight": "ringan",
+      "description": "Angka utama beserta label, keterangan, dan penanda naik-turunnya."
+    },
+    {
+      "slug": "status",
+      "name": "Status",
+      "category": "tampilan",
+      "weight": "ringan",
+      "description": "Penanda keadaan bertitik berdenyut — online, error, menunggu — dengan ragam warna."
+    },
+    {
+      "slug": "stepper-advanced",
+      "name": "Stepper Advanced",
+      "category": "navigasi",
+      "weight": "berat",
+      "description": "Penuntun proses berlangkah dengan penanda kemajuan, langkah yang bisa dilompati, dan keadaan error per langkah."
+    },
+    {
+      "slug": "swap",
+      "name": "Swap",
+      "category": "tata-letak",
+      "weight": "sedang",
+      "description": "Dua isi yang bertukar tempat saat diklik atau disinggahi, dengan peralihan yang bisa dipilih."
+    },
+    {
+      "slug": "tags-input-advanced",
+      "name": "Tags Input Advanced",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Masukan tag: mengetik lalu Enter menambahkan, Backspace menghapus, dan tiap tag bisa disunting ulang."
+    },
+    {
+      "slug": "time-picker",
+      "name": "Time Picker",
+      "category": "masukan",
+      "weight": "berat",
+      "description": "Pemilih waktu yang bisa diketik langsung maupun dipilih dari daftar, dan mengikuti format 12 atau 24 jam sesuai lokal."
+    },
+    {
+      "slug": "timeline",
+      "name": "Timeline",
+      "category": "tampilan",
+      "weight": "berat",
+      "description": "Garis waktu peristiwa, mendatar maupun menegak, dengan keadaan per simpul."
+    },
+    {
+      "slug": "tour",
+      "name": "Tour",
+      "category": "navigasi",
+      "weight": "berat",
+      "description": "Tur berpandu yang menyorot elemen satu per satu sambil menerangkan kegunaannya."
+    },
+    {
+      "slug": "chip",
+      "name": "Chip",
+      "category": "tampilan",
+      "weight": "ringan",
+      "description": "Penanda bulat untuk tag, filter, atau pilihan, dalam tiga ukuran dan enam varian.",
+      "source": {
+        "name": "Creative Tim UI",
+        "url": "https://github.com/creativetimofficial/ui",
+        "license": {
+          "type": "MIT",
+          "copyright": "Copyright (c) 2025 Creative Tim"
+        }
+      }
+    },
+    {
+      "slug": "list",
+      "name": "List",
+      "category": "data",
+      "weight": "ringan",
+      "description": "Daftar baris dengan slot awal dan akhir, penanda terpilih, dan baris nonaktif.",
+      "source": {
+        "name": "Creative Tim UI",
+        "url": "https://github.com/creativetimofficial/ui",
+        "license": {
+          "type": "MIT",
+          "copyright": "Copyright (c) 2025 Creative Tim"
+        }
+      }
+    },
+    {
+      "slug": "map",
+      "name": "Map",
+      "category": "media",
+      "weight": "berat",
+      "description": "Peta interaktif MapLibre dengan marker, popup, tooltip, rute, cluster, dan kontrol zoom.",
+      "source": {
+        "name": "Creative Tim UI",
+        "url": "https://github.com/creativetimofficial/ui",
+        "license": {
+          "type": "MIT",
+          "copyright": "Copyright (c) 2025 Creative Tim"
+        }
+      }
+    },
+    {
+      "slug": "software-purchase-card",
+      "name": "Software Purchase Card",
+      "category": "tampilan",
+      "weight": "ringan",
+      "description": "Card persetujuan pembelian software: tanggal mulai, jumlah seat, harga, dan tombol Approve/Discard.",
+      "source": {
+        "name": "Creative Tim UI",
+        "url": "https://github.com/creativetimofficial/ui",
+        "license": {
+          "type": "MIT",
+          "copyright": "Copyright (c) 2025 Creative Tim"
+        }
+      }
+    }
+  ],
+  "utilities": [
+    {
+      "slug": "client-only",
+      "name": "Client Only",
+      "category": "utilitas",
+      "weight": "ringan",
+      "description": "Menahan isinya sampai hidrasi selesai, dengan cadangan yang digambar server."
+    },
+    {
+      "slug": "composition",
+      "name": "Composition",
+      "category": "utilitas",
+      "weight": "ringan",
+      "description": "Kumpulan pembantu untuk menggabungkan penangan peristiwa dan ref jadi satu.",
+      "source": "docs/registry/bases/radix/lib/compose-refs.ts",
+      "note": "Pembantu di lib, bukan sebuah komponen. Halamannya mendokumentasikan fungsinya."
+    },
+    {
+      "slug": "direction-provider",
+      "name": "Direction Provider",
+      "category": "utilitas",
+      "weight": "ringan",
+      "description": "Menyediakan arah baca — kiri-ke-kanan atau kanan-ke-kiri — untuk seluruh pohon di bawahnya."
+    },
+    {
+      "slug": "hitbox",
+      "name": "Hitbox",
+      "category": "utilitas",
+      "weight": "ringan",
+      "description": "Melebarkan daerah yang bisa disentuh sebuah elemen tanpa mengubah tampilannya."
+    },
+    {
+      "slug": "pending",
+      "name": "Pending",
+      "category": "utilitas",
+      "weight": "sedang",
+      "description": "Menahan interaksi selama sesuatu sedang berjalan, tanpa membuang fokus papan ketik dan tanpa menghilangkan elemennya dari pembaca layar."
+    },
+    {
+      "slug": "portal",
+      "name": "Portal",
+      "category": "utilitas",
+      "weight": "ringan",
+      "description": "Menggambar isinya di tempat lain dalam pohon DOM."
+    },
+    {
+      "slug": "presence",
+      "name": "Presence",
+      "category": "utilitas",
+      "weight": "sedang",
+      "description": "Menahan elemen tetap ada sampai animasi keluarnya selesai."
+    },
+    {
+      "slug": "visually-hidden",
+      "name": "Visually Hidden",
+      "category": "utilitas",
+      "weight": "ringan",
+      "description": "Menyembunyikan isi dari mata tapi tidak dari pembaca layar."
+    },
+    {
+      "slug": "visually-hidden-input",
+      "name": "Visually Hidden Input",
+      "category": "utilitas",
+      "weight": "sedang",
+      "description": "Masukan tersembunyi yang tetap terbaca teknologi bantu dan tetap ikut terkirim dalam formulir."
+    }
+  ],
+  "licenseNote": "Pustaka asalnya berlisensi MIT dan menyertakan berkas LICENSE-nya. Kewajibannya satu: pemberitahuan hak ciptanya ikut dibawa. Itu dipenuhi di berkas LICENSE repo ini dan di halaman /kredit."
+}

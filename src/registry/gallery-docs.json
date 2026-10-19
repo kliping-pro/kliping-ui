@@ -1,0 +1,3344 @@
+{
+  "block": {
+    "root": "/blocks",
+    "title": "Blocks",
+    "categories": [
+      {
+        "slug": "featured",
+        "name": "Featured",
+        "items": [
+          {
+            "text": "dashboard-01",
+            "link": "/blocks/docs/dashboard-01"
+          }
+        ]
+      },
+      {
+        "slug": "hero",
+        "name": "Hero",
+        "items": [
+          {
+            "text": "hero-01",
+            "link": "/blocks/docs/hero-01"
+          },
+          {
+            "text": "hero-02",
+            "link": "/blocks/docs/hero-02"
+          },
+          {
+            "text": "hero-03",
+            "link": "/blocks/docs/hero-03"
+          },
+          {
+            "text": "hero-04",
+            "link": "/blocks/docs/hero-04"
+          },
+          {
+            "text": "hero-05",
+            "link": "/blocks/docs/hero-05"
+          },
+          {
+            "text": "hero-06",
+            "link": "/blocks/docs/hero-06"
+          },
+          {
+            "text": "hero-07",
+            "link": "/blocks/docs/hero-07"
+          },
+          {
+            "text": "hero-08",
+            "link": "/blocks/docs/hero-08"
+          }
+        ]
+      },
+      {
+        "slug": "cta",
+        "name": "Call to Action",
+        "items": [
+          {
+            "text": "cta-01",
+            "link": "/blocks/docs/cta-01"
+          },
+          {
+            "text": "cta-02",
+            "link": "/blocks/docs/cta-02"
+          },
+          {
+            "text": "cta-03",
+            "link": "/blocks/docs/cta-03"
+          },
+          {
+            "text": "cta-04",
+            "link": "/blocks/docs/cta-04"
+          },
+          {
+            "text": "cta-05",
+            "link": "/blocks/docs/cta-05"
+          },
+          {
+            "text": "cta-07",
+            "link": "/blocks/docs/cta-07"
+          }
+        ]
+      },
+      {
+        "slug": "banner",
+        "name": "Banner",
+        "items": [
+          {
+            "text": "banner-01",
+            "link": "/blocks/docs/banner-01"
+          },
+          {
+            "text": "banner-02",
+            "link": "/blocks/docs/banner-02"
+          },
+          {
+            "text": "banner-03",
+            "link": "/blocks/docs/banner-03"
+          },
+          {
+            "text": "banner-04",
+            "link": "/blocks/docs/banner-04"
+          }
+        ]
+      },
+      {
+        "slug": "not-found",
+        "name": "404",
+        "items": [
+          {
+            "text": "not-found-01",
+            "link": "/blocks/docs/not-found-01"
+          },
+          {
+            "text": "not-found-02",
+            "link": "/blocks/docs/not-found-02"
+          },
+          {
+            "text": "not-found-03",
+            "link": "/blocks/docs/not-found-03"
+          },
+          {
+            "text": "not-found-04",
+            "link": "/blocks/docs/not-found-04"
+          },
+          {
+            "text": "not-found-05",
+            "link": "/blocks/docs/not-found-05"
+          },
+          {
+            "text": "not-found-06",
+            "link": "/blocks/docs/not-found-06"
+          },
+          {
+            "text": "not-found-07",
+            "link": "/blocks/docs/not-found-07"
+          },
+          {
+            "text": "not-found-08",
+            "link": "/blocks/docs/not-found-08"
+          }
+        ]
+      },
+      {
+        "slug": "stats",
+        "name": "Stats",
+        "items": [
+          {
+            "text": "stats-01",
+            "link": "/blocks/docs/stats-01"
+          },
+          {
+            "text": "stats-02",
+            "link": "/blocks/docs/stats-02"
+          },
+          {
+            "text": "stats-03",
+            "link": "/blocks/docs/stats-03"
+          },
+          {
+            "text": "stats-04",
+            "link": "/blocks/docs/stats-04"
+          },
+          {
+            "text": "stats-05",
+            "link": "/blocks/docs/stats-05"
+          },
+          {
+            "text": "stats-06",
+            "link": "/blocks/docs/stats-06"
+          },
+          {
+            "text": "stats-07",
+            "link": "/blocks/docs/stats-07"
+          },
+          {
+            "text": "stats-08",
+            "link": "/blocks/docs/stats-08"
+          },
+          {
+            "text": "stats-09",
+            "link": "/blocks/docs/stats-09"
+          },
+          {
+            "text": "stats-10",
+            "link": "/blocks/docs/stats-10"
+          },
+          {
+            "text": "stats-11",
+            "link": "/blocks/docs/stats-11"
+          }
+        ]
+      },
+      {
+        "slug": "features",
+        "name": "Features",
+        "items": [
+          {
+            "text": "features-01",
+            "link": "/blocks/docs/features-01"
+          },
+          {
+            "text": "features-02",
+            "link": "/blocks/docs/features-02"
+          },
+          {
+            "text": "features-03",
+            "link": "/blocks/docs/features-03"
+          },
+          {
+            "text": "features-04",
+            "link": "/blocks/docs/features-04"
+          },
+          {
+            "text": "features-05",
+            "link": "/blocks/docs/features-05"
+          },
+          {
+            "text": "features-06",
+            "link": "/blocks/docs/features-06"
+          },
+          {
+            "text": "features-07",
+            "link": "/blocks/docs/features-07"
+          },
+          {
+            "text": "features-08",
+            "link": "/blocks/docs/features-08"
+          },
+          {
+            "text": "features-09",
+            "link": "/blocks/docs/features-09"
+          },
+          {
+            "text": "features-10",
+            "link": "/blocks/docs/features-10"
+          },
+          {
+            "text": "features-11",
+            "link": "/blocks/docs/features-11"
+          },
+          {
+            "text": "features-12",
+            "link": "/blocks/docs/features-12"
+          },
+          {
+            "text": "features-13",
+            "link": "/blocks/docs/features-13"
+          },
+          {
+            "text": "features-14",
+            "link": "/blocks/docs/features-14"
+          },
+          {
+            "text": "features-15",
+            "link": "/blocks/docs/features-15"
+          },
+          {
+            "text": "features-16",
+            "link": "/blocks/docs/features-16"
+          },
+          {
+            "text": "features-17",
+            "link": "/blocks/docs/features-17"
+          },
+          {
+            "text": "features-18",
+            "link": "/blocks/docs/features-18"
+          }
+        ]
+      },
+      {
+        "slug": "faq",
+        "name": "FAQ",
+        "items": [
+          {
+            "text": "faq-01",
+            "link": "/blocks/docs/faq-01"
+          },
+          {
+            "text": "faq-02",
+            "link": "/blocks/docs/faq-02"
+          },
+          {
+            "text": "faq-03",
+            "link": "/blocks/docs/faq-03"
+          },
+          {
+            "text": "faq-04",
+            "link": "/blocks/docs/faq-04"
+          },
+          {
+            "text": "faq-05",
+            "link": "/blocks/docs/faq-05"
+          },
+          {
+            "text": "faq-06",
+            "link": "/blocks/docs/faq-06"
+          },
+          {
+            "text": "faq-07",
+            "link": "/blocks/docs/faq-07"
+          },
+          {
+            "text": "faq-08",
+            "link": "/blocks/docs/faq-08"
+          },
+          {
+            "text": "faq-09",
+            "link": "/blocks/docs/faq-09"
+          },
+          {
+            "text": "faq-10",
+            "link": "/blocks/docs/faq-10"
+          },
+          {
+            "text": "faq-11",
+            "link": "/blocks/docs/faq-11"
+          },
+          {
+            "text": "faq-12",
+            "link": "/blocks/docs/faq-12"
+          },
+          {
+            "text": "faq-13",
+            "link": "/blocks/docs/faq-13"
+          },
+          {
+            "text": "faq-14",
+            "link": "/blocks/docs/faq-14"
+          },
+          {
+            "text": "faq-15",
+            "link": "/blocks/docs/faq-15"
+          },
+          {
+            "text": "faq-16",
+            "link": "/blocks/docs/faq-16"
+          },
+          {
+            "text": "faq-17",
+            "link": "/blocks/docs/faq-17"
+          },
+          {
+            "text": "faq-18",
+            "link": "/blocks/docs/faq-18"
+          },
+          {
+            "text": "faq-19",
+            "link": "/blocks/docs/faq-19"
+          },
+          {
+            "text": "faq-20",
+            "link": "/blocks/docs/faq-20"
+          }
+        ]
+      },
+      {
+        "slug": "logo-cloud",
+        "name": "Logo Cloud",
+        "items": [
+          {
+            "text": "logo-cloud-01",
+            "link": "/blocks/docs/logo-cloud-01"
+          },
+          {
+            "text": "logo-cloud-02",
+            "link": "/blocks/docs/logo-cloud-02"
+          },
+          {
+            "text": "logo-cloud-03",
+            "link": "/blocks/docs/logo-cloud-03"
+          },
+          {
+            "text": "logo-cloud-04",
+            "link": "/blocks/docs/logo-cloud-04"
+          },
+          {
+            "text": "logo-cloud-05",
+            "link": "/blocks/docs/logo-cloud-05"
+          },
+          {
+            "text": "logo-cloud-06",
+            "link": "/blocks/docs/logo-cloud-06"
+          },
+          {
+            "text": "logo-cloud-07",
+            "link": "/blocks/docs/logo-cloud-07"
+          },
+          {
+            "text": "logo-cloud-08",
+            "link": "/blocks/docs/logo-cloud-08"
+          },
+          {
+            "text": "logo-cloud-09",
+            "link": "/blocks/docs/logo-cloud-09"
+          },
+          {
+            "text": "logo-cloud-10",
+            "link": "/blocks/docs/logo-cloud-10"
+          },
+          {
+            "text": "logo-cloud-11",
+            "link": "/blocks/docs/logo-cloud-11"
+          },
+          {
+            "text": "logo-cloud-12",
+            "link": "/blocks/docs/logo-cloud-12"
+          },
+          {
+            "text": "logo-cloud-13",
+            "link": "/blocks/docs/logo-cloud-13"
+          },
+          {
+            "text": "logo-cloud-14",
+            "link": "/blocks/docs/logo-cloud-14"
+          },
+          {
+            "text": "logo-cloud-15",
+            "link": "/blocks/docs/logo-cloud-15"
+          }
+        ]
+      },
+      {
+        "slug": "team",
+        "name": "Team",
+        "items": [
+          {
+            "text": "team-01",
+            "link": "/blocks/docs/team-01"
+          },
+          {
+            "text": "team-02",
+            "link": "/blocks/docs/team-02"
+          },
+          {
+            "text": "team-03",
+            "link": "/blocks/docs/team-03"
+          },
+          {
+            "text": "team-04",
+            "link": "/blocks/docs/team-04"
+          },
+          {
+            "text": "team-05",
+            "link": "/blocks/docs/team-05"
+          },
+          {
+            "text": "team-06",
+            "link": "/blocks/docs/team-06"
+          },
+          {
+            "text": "team-07",
+            "link": "/blocks/docs/team-07"
+          },
+          {
+            "text": "team-08",
+            "link": "/blocks/docs/team-08"
+          },
+          {
+            "text": "team-09",
+            "link": "/blocks/docs/team-09"
+          },
+          {
+            "text": "team-10",
+            "link": "/blocks/docs/team-10"
+          },
+          {
+            "text": "team-11",
+            "link": "/blocks/docs/team-11"
+          },
+          {
+            "text": "team-12",
+            "link": "/blocks/docs/team-12"
+          },
+          {
+            "text": "team-13",
+            "link": "/blocks/docs/team-13"
+          }
+        ]
+      },
+      {
+        "slug": "pricing",
+        "name": "Pricing",
+        "items": [
+          {
+            "text": "pricing-01",
+            "link": "/blocks/docs/pricing-01"
+          },
+          {
+            "text": "pricing-02",
+            "link": "/blocks/docs/pricing-02"
+          },
+          {
+            "text": "pricing-03",
+            "link": "/blocks/docs/pricing-03"
+          },
+          {
+            "text": "pricing-04",
+            "link": "/blocks/docs/pricing-04"
+          },
+          {
+            "text": "pricing-05",
+            "link": "/blocks/docs/pricing-05"
+          },
+          {
+            "text": "pricing-06",
+            "link": "/blocks/docs/pricing-06"
+          },
+          {
+            "text": "pricing-07",
+            "link": "/blocks/docs/pricing-07"
+          },
+          {
+            "text": "pricing-08",
+            "link": "/blocks/docs/pricing-08"
+          },
+          {
+            "text": "pricing-09",
+            "link": "/blocks/docs/pricing-09"
+          },
+          {
+            "text": "pricing-10",
+            "link": "/blocks/docs/pricing-10"
+          },
+          {
+            "text": "pricing-11",
+            "link": "/blocks/docs/pricing-11"
+          },
+          {
+            "text": "pricing-12",
+            "link": "/blocks/docs/pricing-12"
+          },
+          {
+            "text": "pricing-13",
+            "link": "/blocks/docs/pricing-13"
+          },
+          {
+            "text": "pricing-14",
+            "link": "/blocks/docs/pricing-14"
+          },
+          {
+            "text": "pricing-15",
+            "link": "/blocks/docs/pricing-15"
+          },
+          {
+            "text": "pricing-16",
+            "link": "/blocks/docs/pricing-16"
+          },
+          {
+            "text": "pricing-17",
+            "link": "/blocks/docs/pricing-17"
+          },
+          {
+            "text": "pricing-18",
+            "link": "/blocks/docs/pricing-18"
+          }
+        ]
+      },
+      {
+        "slug": "testimonials",
+        "name": "Testimonials",
+        "items": [
+          {
+            "text": "testimonials-01",
+            "link": "/blocks/docs/testimonials-01"
+          },
+          {
+            "text": "testimonials-02",
+            "link": "/blocks/docs/testimonials-02"
+          },
+          {
+            "text": "testimonials-03",
+            "link": "/blocks/docs/testimonials-03"
+          },
+          {
+            "text": "testimonials-04",
+            "link": "/blocks/docs/testimonials-04"
+          },
+          {
+            "text": "testimonials-05",
+            "link": "/blocks/docs/testimonials-05"
+          },
+          {
+            "text": "testimonials-06",
+            "link": "/blocks/docs/testimonials-06"
+          },
+          {
+            "text": "testimonials-07",
+            "link": "/blocks/docs/testimonials-07"
+          },
+          {
+            "text": "testimonials-08",
+            "link": "/blocks/docs/testimonials-08"
+          },
+          {
+            "text": "testimonials-09",
+            "link": "/blocks/docs/testimonials-09"
+          },
+          {
+            "text": "testimonials-10",
+            "link": "/blocks/docs/testimonials-10"
+          },
+          {
+            "text": "testimonials-11",
+            "link": "/blocks/docs/testimonials-11"
+          },
+          {
+            "text": "testimonials-12",
+            "link": "/blocks/docs/testimonials-12"
+          },
+          {
+            "text": "testimonials-13",
+            "link": "/blocks/docs/testimonials-13"
+          },
+          {
+            "text": "testimonials-14",
+            "link": "/blocks/docs/testimonials-14"
+          },
+          {
+            "text": "testimonials-15",
+            "link": "/blocks/docs/testimonials-15"
+          },
+          {
+            "text": "testimonials-16",
+            "link": "/blocks/docs/testimonials-16"
+          },
+          {
+            "text": "testimonials-17",
+            "link": "/blocks/docs/testimonials-17"
+          },
+          {
+            "text": "testimonials-18",
+            "link": "/blocks/docs/testimonials-18"
+          },
+          {
+            "text": "testimonials-19",
+            "link": "/blocks/docs/testimonials-19"
+          },
+          {
+            "text": "testimonials-20",
+            "link": "/blocks/docs/testimonials-20"
+          },
+          {
+            "text": "testimonials-21",
+            "link": "/blocks/docs/testimonials-21"
+          },
+          {
+            "text": "testimonials-22",
+            "link": "/blocks/docs/testimonials-22"
+          },
+          {
+            "text": "testimonials-23",
+            "link": "/blocks/docs/testimonials-23"
+          },
+          {
+            "text": "testimonials-24",
+            "link": "/blocks/docs/testimonials-24"
+          },
+          {
+            "text": "testimonials-25",
+            "link": "/blocks/docs/testimonials-25"
+          },
+          {
+            "text": "testimonials-26",
+            "link": "/blocks/docs/testimonials-26"
+          },
+          {
+            "text": "testimonials-27",
+            "link": "/blocks/docs/testimonials-27"
+          },
+          {
+            "text": "testimonials-28",
+            "link": "/blocks/docs/testimonials-28"
+          },
+          {
+            "text": "testimonials-29",
+            "link": "/blocks/docs/testimonials-29"
+          },
+          {
+            "text": "testimonials-30",
+            "link": "/blocks/docs/testimonials-30"
+          }
+        ]
+      },
+      {
+        "slug": "timeline",
+        "name": "Timeline",
+        "items": [
+          {
+            "text": "timeline-01",
+            "link": "/blocks/docs/timeline-01"
+          },
+          {
+            "text": "timeline-02",
+            "link": "/blocks/docs/timeline-02"
+          },
+          {
+            "text": "timeline-03",
+            "link": "/blocks/docs/timeline-03"
+          },
+          {
+            "text": "timeline-04",
+            "link": "/blocks/docs/timeline-04"
+          },
+          {
+            "text": "timeline-05",
+            "link": "/blocks/docs/timeline-05"
+          },
+          {
+            "text": "timeline-06",
+            "link": "/blocks/docs/timeline-06"
+          },
+          {
+            "text": "timeline-07",
+            "link": "/blocks/docs/timeline-07"
+          }
+        ]
+      },
+      {
+        "slug": "footer",
+        "name": "Footer",
+        "items": [
+          {
+            "text": "footer-01",
+            "link": "/blocks/docs/footer-01"
+          },
+          {
+            "text": "footer-02",
+            "link": "/blocks/docs/footer-02"
+          },
+          {
+            "text": "footer-03",
+            "link": "/blocks/docs/footer-03"
+          },
+          {
+            "text": "footer-04",
+            "link": "/blocks/docs/footer-04"
+          },
+          {
+            "text": "footer-05",
+            "link": "/blocks/docs/footer-05"
+          },
+          {
+            "text": "footer-06",
+            "link": "/blocks/docs/footer-06"
+          },
+          {
+            "text": "footer-07",
+            "link": "/blocks/docs/footer-07"
+          },
+          {
+            "text": "footer-08",
+            "link": "/blocks/docs/footer-08"
+          },
+          {
+            "text": "footer-09",
+            "link": "/blocks/docs/footer-09"
+          },
+          {
+            "text": "footer-10",
+            "link": "/blocks/docs/footer-10"
+          },
+          {
+            "text": "footer-11",
+            "link": "/blocks/docs/footer-11"
+          },
+          {
+            "text": "footer-12",
+            "link": "/blocks/docs/footer-12"
+          },
+          {
+            "text": "footer-13",
+            "link": "/blocks/docs/footer-13"
+          },
+          {
+            "text": "footer-14",
+            "link": "/blocks/docs/footer-14"
+          },
+          {
+            "text": "footer-15",
+            "link": "/blocks/docs/footer-15"
+          },
+          {
+            "text": "footer-16",
+            "link": "/blocks/docs/footer-16"
+          },
+          {
+            "text": "footer-17",
+            "link": "/blocks/docs/footer-17"
+          },
+          {
+            "text": "footer-18",
+            "link": "/blocks/docs/footer-18"
+          },
+          {
+            "text": "footer-19",
+            "link": "/blocks/docs/footer-19"
+          },
+          {
+            "text": "footer-20",
+            "link": "/blocks/docs/footer-20"
+          },
+          {
+            "text": "footer-21",
+            "link": "/blocks/docs/footer-21"
+          },
+          {
+            "text": "footer-22",
+            "link": "/blocks/docs/footer-22"
+          }
+        ]
+      },
+      {
+        "slug": "blog",
+        "name": "Blog",
+        "items": [
+          {
+            "text": "blog-01",
+            "link": "/blocks/docs/blog-01"
+          },
+          {
+            "text": "blog-02",
+            "link": "/blocks/docs/blog-02"
+          },
+          {
+            "text": "blog-03",
+            "link": "/blocks/docs/blog-03"
+          },
+          {
+            "text": "blog-04",
+            "link": "/blocks/docs/blog-04"
+          },
+          {
+            "text": "blog-05",
+            "link": "/blocks/docs/blog-05"
+          },
+          {
+            "text": "blog-06",
+            "link": "/blocks/docs/blog-06"
+          },
+          {
+            "text": "blog-07",
+            "link": "/blocks/docs/blog-07"
+          },
+          {
+            "text": "blog-08",
+            "link": "/blocks/docs/blog-08"
+          },
+          {
+            "text": "blog-09",
+            "link": "/blocks/docs/blog-09"
+          },
+          {
+            "text": "blog-10",
+            "link": "/blocks/docs/blog-10"
+          },
+          {
+            "text": "blog-11",
+            "link": "/blocks/docs/blog-11"
+          },
+          {
+            "text": "blog-12",
+            "link": "/blocks/docs/blog-12"
+          }
+        ]
+      },
+      {
+        "slug": "navbar",
+        "name": "Navbar",
+        "items": [
+          {
+            "text": "navbar-01",
+            "link": "/blocks/docs/navbar-01"
+          },
+          {
+            "text": "navbar-02",
+            "link": "/blocks/docs/navbar-02"
+          },
+          {
+            "text": "navbar-03",
+            "link": "/blocks/docs/navbar-03"
+          },
+          {
+            "text": "navbar-04",
+            "link": "/blocks/docs/navbar-04"
+          },
+          {
+            "text": "navbar-05",
+            "link": "/blocks/docs/navbar-05"
+          }
+        ]
+      },
+      {
+        "slug": "integrations",
+        "name": "Integrations",
+        "items": [
+          {
+            "text": "integrations-01",
+            "link": "/blocks/docs/integrations-01"
+          },
+          {
+            "text": "integrations-02",
+            "link": "/blocks/docs/integrations-02"
+          },
+          {
+            "text": "integrations-03",
+            "link": "/blocks/docs/integrations-03"
+          },
+          {
+            "text": "integrations-04",
+            "link": "/blocks/docs/integrations-04"
+          },
+          {
+            "text": "integrations-05",
+            "link": "/blocks/docs/integrations-05"
+          }
+        ]
+      },
+      {
+        "slug": "setup-guide",
+        "name": "Setup Guide",
+        "items": [
+          {
+            "text": "setup-guide-01",
+            "link": "/blocks/docs/setup-guide-01"
+          },
+          {
+            "text": "setup-guide-02",
+            "link": "/blocks/docs/setup-guide-02"
+          },
+          {
+            "text": "setup-guide-03",
+            "link": "/blocks/docs/setup-guide-03"
+          },
+          {
+            "text": "setup-guide-04",
+            "link": "/blocks/docs/setup-guide-04"
+          }
+        ]
+      },
+      {
+        "slug": "profile",
+        "name": "Profile",
+        "items": [
+          {
+            "text": "profile-01",
+            "link": "/blocks/docs/profile-01"
+          },
+          {
+            "text": "profile-02",
+            "link": "/blocks/docs/profile-02"
+          },
+          {
+            "text": "profile-03",
+            "link": "/blocks/docs/profile-03"
+          },
+          {
+            "text": "profile-04",
+            "link": "/blocks/docs/profile-04"
+          }
+        ]
+      },
+      {
+        "slug": "keyboard-shortcuts",
+        "name": "Keyboard Shortcuts",
+        "items": [
+          {
+            "text": "keyboard-shortcuts-01",
+            "link": "/blocks/docs/keyboard-shortcuts-01"
+          },
+          {
+            "text": "keyboard-shortcuts-02",
+            "link": "/blocks/docs/keyboard-shortcuts-02"
+          },
+          {
+            "text": "keyboard-shortcuts-03",
+            "link": "/blocks/docs/keyboard-shortcuts-03"
+          },
+          {
+            "text": "keyboard-shortcuts-04",
+            "link": "/blocks/docs/keyboard-shortcuts-04"
+          }
+        ]
+      },
+      {
+        "slug": "empty-state",
+        "name": "Empty State",
+        "items": [
+          {
+            "text": "empty-state-01",
+            "link": "/blocks/docs/empty-state-01"
+          },
+          {
+            "text": "empty-state-02",
+            "link": "/blocks/docs/empty-state-02"
+          },
+          {
+            "text": "empty-state-03",
+            "link": "/blocks/docs/empty-state-03"
+          },
+          {
+            "text": "empty-state-04",
+            "link": "/blocks/docs/empty-state-04"
+          }
+        ]
+      },
+      {
+        "slug": "members",
+        "name": "Members",
+        "items": [
+          {
+            "text": "members-01",
+            "link": "/blocks/docs/members-01"
+          },
+          {
+            "text": "members-02",
+            "link": "/blocks/docs/members-02"
+          },
+          {
+            "text": "members-03",
+            "link": "/blocks/docs/members-03"
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "name": "Contact",
+        "items": [
+          {
+            "text": "contact-01",
+            "link": "/blocks/docs/contact-01"
+          },
+          {
+            "text": "contact-02",
+            "link": "/blocks/docs/contact-02"
+          },
+          {
+            "text": "contact-03",
+            "link": "/blocks/docs/contact-03"
+          },
+          {
+            "text": "contact-04",
+            "link": "/blocks/docs/contact-04"
+          },
+          {
+            "text": "contact-05",
+            "link": "/blocks/docs/contact-05"
+          },
+          {
+            "text": "contact-06",
+            "link": "/blocks/docs/contact-06"
+          },
+          {
+            "text": "contact-07",
+            "link": "/blocks/docs/contact-07"
+          },
+          {
+            "text": "contact-08",
+            "link": "/blocks/docs/contact-08"
+          },
+          {
+            "text": "contact-09",
+            "link": "/blocks/docs/contact-09"
+          },
+          {
+            "text": "contact-10",
+            "link": "/blocks/docs/contact-10"
+          },
+          {
+            "text": "contact-11",
+            "link": "/blocks/docs/contact-11"
+          },
+          {
+            "text": "contact-12",
+            "link": "/blocks/docs/contact-12"
+          },
+          {
+            "text": "contact-13",
+            "link": "/blocks/docs/contact-13"
+          },
+          {
+            "text": "contact-14",
+            "link": "/blocks/docs/contact-14"
+          },
+          {
+            "text": "contact-15",
+            "link": "/blocks/docs/contact-15"
+          },
+          {
+            "text": "contact-16",
+            "link": "/blocks/docs/contact-16"
+          },
+          {
+            "text": "contact-17",
+            "link": "/blocks/docs/contact-17"
+          },
+          {
+            "text": "contact-18",
+            "link": "/blocks/docs/contact-18"
+          }
+        ]
+      },
+      {
+        "slug": "changelog",
+        "name": "Changelog",
+        "items": [
+          {
+            "text": "changelog-01",
+            "link": "/blocks/docs/changelog-01"
+          },
+          {
+            "text": "changelog-02",
+            "link": "/blocks/docs/changelog-02"
+          },
+          {
+            "text": "changelog-03",
+            "link": "/blocks/docs/changelog-03"
+          }
+        ]
+      },
+      {
+        "slug": "order-confirmation",
+        "name": "Order Confirmation",
+        "items": [
+          {
+            "text": "order-confirmation-01",
+            "link": "/blocks/docs/order-confirmation-01"
+          },
+          {
+            "text": "order-confirmation-02",
+            "link": "/blocks/docs/order-confirmation-02"
+          }
+        ]
+      },
+      {
+        "slug": "carousel-block",
+        "name": "Carousel",
+        "items": [
+          {
+            "text": "carousel-block-01",
+            "link": "/blocks/docs/carousel-block-01"
+          },
+          {
+            "text": "carousel-block-02",
+            "link": "/blocks/docs/carousel-block-02"
+          }
+        ]
+      },
+      {
+        "slug": "verification",
+        "name": "Verification",
+        "items": [
+          {
+            "text": "verification-01",
+            "link": "/blocks/docs/verification-01"
+          }
+        ]
+      },
+      {
+        "slug": "invite-member",
+        "name": "Invite Member",
+        "items": [
+          {
+            "text": "invite-member-01",
+            "link": "/blocks/docs/invite-member-01"
+          },
+          {
+            "text": "invite-member-02",
+            "link": "/blocks/docs/invite-member-02"
+          },
+          {
+            "text": "invite-member-03",
+            "link": "/blocks/docs/invite-member-03"
+          }
+        ]
+      },
+      {
+        "slug": "code-block",
+        "name": "Code Block",
+        "items": [
+          {
+            "text": "code-block-01",
+            "link": "/blocks/docs/code-block-01"
+          },
+          {
+            "text": "code-block-02",
+            "link": "/blocks/docs/code-block-02"
+          },
+          {
+            "text": "code-block-03",
+            "link": "/blocks/docs/code-block-03"
+          }
+        ]
+      },
+      {
+        "slug": "ai-agents",
+        "name": "AI Agents",
+        "items": [
+          {
+            "text": "ai-agents-01",
+            "link": "/blocks/docs/ai-agents-01"
+          },
+          {
+            "text": "ai-agents-02",
+            "link": "/blocks/docs/ai-agents-02"
+          },
+          {
+            "text": "ai-agents-03",
+            "link": "/blocks/docs/ai-agents-03"
+          }
+        ]
+      },
+      {
+        "slug": "web3",
+        "name": "Web3",
+        "items": [
+          {
+            "text": "web3-01",
+            "link": "/blocks/docs/web3-01"
+          },
+          {
+            "text": "web3-02",
+            "link": "/blocks/docs/web3-02"
+          },
+          {
+            "text": "web3-03",
+            "link": "/blocks/docs/web3-03"
+          },
+          {
+            "text": "web3-04",
+            "link": "/blocks/docs/web3-04"
+          },
+          {
+            "text": "web3-05",
+            "link": "/blocks/docs/web3-05"
+          }
+        ]
+      },
+      {
+        "slug": "account",
+        "name": "Account",
+        "items": [
+          {
+            "text": "account-01",
+            "link": "/blocks/docs/account-01"
+          },
+          {
+            "text": "account-02",
+            "link": "/blocks/docs/account-02"
+          },
+          {
+            "text": "account-03",
+            "link": "/blocks/docs/account-03"
+          },
+          {
+            "text": "account-04",
+            "link": "/blocks/docs/account-04"
+          },
+          {
+            "text": "account-05",
+            "link": "/blocks/docs/account-05"
+          },
+          {
+            "text": "account-06",
+            "link": "/blocks/docs/account-06"
+          },
+          {
+            "text": "account-07",
+            "link": "/blocks/docs/account-07"
+          }
+        ]
+      },
+      {
+        "slug": "billing",
+        "name": "Billing",
+        "items": [
+          {
+            "text": "billing-01",
+            "link": "/blocks/docs/billing-01"
+          },
+          {
+            "text": "billing-02",
+            "link": "/blocks/docs/billing-02"
+          },
+          {
+            "text": "billing-03",
+            "link": "/blocks/docs/billing-03"
+          },
+          {
+            "text": "billing-04",
+            "link": "/blocks/docs/billing-04"
+          },
+          {
+            "text": "billing-05",
+            "link": "/blocks/docs/billing-05"
+          },
+          {
+            "text": "billing-06",
+            "link": "/blocks/docs/billing-06"
+          },
+          {
+            "text": "billing-07",
+            "link": "/blocks/docs/billing-07"
+          },
+          {
+            "text": "billing-08",
+            "link": "/blocks/docs/billing-08"
+          },
+          {
+            "text": "billing-09",
+            "link": "/blocks/docs/billing-09"
+          },
+          {
+            "text": "billing-10",
+            "link": "/blocks/docs/billing-10"
+          },
+          {
+            "text": "billing-11",
+            "link": "/blocks/docs/billing-11"
+          },
+          {
+            "text": "billing-12",
+            "link": "/blocks/docs/billing-12"
+          },
+          {
+            "text": "billing-13",
+            "link": "/blocks/docs/billing-13"
+          },
+          {
+            "text": "billing-14",
+            "link": "/blocks/docs/billing-14"
+          }
+        ]
+      },
+      {
+        "slug": "subscription",
+        "name": "Subscription",
+        "items": [
+          {
+            "text": "subscription-01",
+            "link": "/blocks/docs/subscription-01"
+          },
+          {
+            "text": "subscription-02",
+            "link": "/blocks/docs/subscription-02"
+          },
+          {
+            "text": "subscription-03",
+            "link": "/blocks/docs/subscription-03"
+          },
+          {
+            "text": "subscription-04",
+            "link": "/blocks/docs/subscription-04"
+          },
+          {
+            "text": "subscription-05",
+            "link": "/blocks/docs/subscription-05"
+          },
+          {
+            "text": "subscription-06",
+            "link": "/blocks/docs/subscription-06"
+          },
+          {
+            "text": "subscription-07",
+            "link": "/blocks/docs/subscription-07"
+          },
+          {
+            "text": "subscription-08",
+            "link": "/blocks/docs/subscription-08"
+          }
+        ]
+      },
+      {
+        "slug": "usage",
+        "name": "Usage",
+        "items": [
+          {
+            "text": "usage-01",
+            "link": "/blocks/docs/usage-01"
+          },
+          {
+            "text": "usage-02",
+            "link": "/blocks/docs/usage-02"
+          },
+          {
+            "text": "usage-03",
+            "link": "/blocks/docs/usage-03"
+          },
+          {
+            "text": "usage-04",
+            "link": "/blocks/docs/usage-04"
+          },
+          {
+            "text": "usage-05",
+            "link": "/blocks/docs/usage-05"
+          },
+          {
+            "text": "usage-06",
+            "link": "/blocks/docs/usage-06"
+          },
+          {
+            "text": "usage-07",
+            "link": "/blocks/docs/usage-07"
+          }
+        ]
+      },
+      {
+        "slug": "cruds",
+        "name": "CRUDs",
+        "items": [
+          {
+            "text": "cruds-01",
+            "link": "/blocks/docs/cruds-01"
+          },
+          {
+            "text": "cruds-02",
+            "link": "/blocks/docs/cruds-02"
+          },
+          {
+            "text": "cruds-03",
+            "link": "/blocks/docs/cruds-03"
+          }
+        ]
+      },
+      {
+        "slug": "modals",
+        "name": "Modals",
+        "items": [
+          {
+            "text": "modals-01",
+            "link": "/blocks/docs/modals-01"
+          },
+          {
+            "text": "modals-02",
+            "link": "/blocks/docs/modals-02"
+          },
+          {
+            "text": "modals-03",
+            "link": "/blocks/docs/modals-03"
+          },
+          {
+            "text": "modals-04",
+            "link": "/blocks/docs/modals-04"
+          },
+          {
+            "text": "modals-05",
+            "link": "/blocks/docs/modals-05"
+          },
+          {
+            "text": "modals-06",
+            "link": "/blocks/docs/modals-06"
+          },
+          {
+            "text": "modals-07",
+            "link": "/blocks/docs/modals-07"
+          },
+          {
+            "text": "modals-08",
+            "link": "/blocks/docs/modals-08"
+          },
+          {
+            "text": "modals-09",
+            "link": "/blocks/docs/modals-09"
+          },
+          {
+            "text": "modals-10",
+            "link": "/blocks/docs/modals-10"
+          },
+          {
+            "text": "modals-11",
+            "link": "/blocks/docs/modals-11"
+          }
+        ]
+      },
+      {
+        "slug": "ecommerce",
+        "name": "Ecommerce",
+        "items": [
+          {
+            "text": "ecommerce-01",
+            "link": "/blocks/docs/ecommerce-01"
+          },
+          {
+            "text": "ecommerce-02",
+            "link": "/blocks/docs/ecommerce-02"
+          },
+          {
+            "text": "ecommerce-03",
+            "link": "/blocks/docs/ecommerce-03"
+          },
+          {
+            "text": "ecommerce-04",
+            "link": "/blocks/docs/ecommerce-04"
+          },
+          {
+            "text": "ecommerce-05",
+            "link": "/blocks/docs/ecommerce-05"
+          },
+          {
+            "text": "ecommerce-06",
+            "link": "/blocks/docs/ecommerce-06"
+          },
+          {
+            "text": "ecommerce-07",
+            "link": "/blocks/docs/ecommerce-07"
+          },
+          {
+            "text": "ecommerce-08",
+            "link": "/blocks/docs/ecommerce-08"
+          },
+          {
+            "text": "ecommerce-09",
+            "link": "/blocks/docs/ecommerce-09"
+          },
+          {
+            "text": "ecommerce-10",
+            "link": "/blocks/docs/ecommerce-10"
+          },
+          {
+            "text": "ecommerce-11",
+            "link": "/blocks/docs/ecommerce-11"
+          },
+          {
+            "text": "ecommerce-12",
+            "link": "/blocks/docs/ecommerce-12"
+          },
+          {
+            "text": "ecommerce-13",
+            "link": "/blocks/docs/ecommerce-13"
+          },
+          {
+            "text": "ecommerce-14",
+            "link": "/blocks/docs/ecommerce-14"
+          },
+          {
+            "text": "ecommerce-15",
+            "link": "/blocks/docs/ecommerce-15"
+          },
+          {
+            "text": "ecommerce-16",
+            "link": "/blocks/docs/ecommerce-16"
+          },
+          {
+            "text": "ecommerce-17",
+            "link": "/blocks/docs/ecommerce-17"
+          }
+        ]
+      },
+      {
+        "slug": "sidebar",
+        "name": "Sidebar",
+        "items": [
+          {
+            "text": "sidebar-01",
+            "link": "/blocks/docs/sidebar-01"
+          },
+          {
+            "text": "sidebar-02",
+            "link": "/blocks/docs/sidebar-02"
+          },
+          {
+            "text": "sidebar-03",
+            "link": "/blocks/docs/sidebar-03"
+          },
+          {
+            "text": "sidebar-04",
+            "link": "/blocks/docs/sidebar-04"
+          },
+          {
+            "text": "sidebar-05",
+            "link": "/blocks/docs/sidebar-05"
+          },
+          {
+            "text": "sidebar-06",
+            "link": "/blocks/docs/sidebar-06"
+          },
+          {
+            "text": "sidebar-07",
+            "link": "/blocks/docs/sidebar-07"
+          },
+          {
+            "text": "sidebar-08",
+            "link": "/blocks/docs/sidebar-08"
+          },
+          {
+            "text": "sidebar-09",
+            "link": "/blocks/docs/sidebar-09"
+          },
+          {
+            "text": "sidebar-10",
+            "link": "/blocks/docs/sidebar-10"
+          },
+          {
+            "text": "sidebar-11",
+            "link": "/blocks/docs/sidebar-11"
+          },
+          {
+            "text": "sidebar-12",
+            "link": "/blocks/docs/sidebar-12"
+          },
+          {
+            "text": "sidebar-13",
+            "link": "/blocks/docs/sidebar-13"
+          },
+          {
+            "text": "sidebar-14",
+            "link": "/blocks/docs/sidebar-14"
+          },
+          {
+            "text": "sidebar-15",
+            "link": "/blocks/docs/sidebar-15"
+          },
+          {
+            "text": "sidebar-16",
+            "link": "/blocks/docs/sidebar-16"
+          }
+        ]
+      },
+      {
+        "slug": "login",
+        "name": "Login",
+        "items": [
+          {
+            "text": "login-01",
+            "link": "/blocks/docs/login-01"
+          },
+          {
+            "text": "login-02",
+            "link": "/blocks/docs/login-02"
+          },
+          {
+            "text": "login-03",
+            "link": "/blocks/docs/login-03"
+          },
+          {
+            "text": "login-04",
+            "link": "/blocks/docs/login-04"
+          },
+          {
+            "text": "login-05",
+            "link": "/blocks/docs/login-05"
+          },
+          {
+            "text": "login-06",
+            "link": "/blocks/docs/login-06"
+          },
+          {
+            "text": "login-07",
+            "link": "/blocks/docs/login-07"
+          },
+          {
+            "text": "login-08",
+            "link": "/blocks/docs/login-08"
+          },
+          {
+            "text": "login-09",
+            "link": "/blocks/docs/login-09"
+          },
+          {
+            "text": "login-10",
+            "link": "/blocks/docs/login-10"
+          },
+          {
+            "text": "login-11",
+            "link": "/blocks/docs/login-11"
+          },
+          {
+            "text": "login-12",
+            "link": "/blocks/docs/login-12"
+          },
+          {
+            "text": "login-13",
+            "link": "/blocks/docs/login-13"
+          }
+        ]
+      },
+      {
+        "slug": "signup",
+        "name": "Signup",
+        "items": [
+          {
+            "text": "signup-01",
+            "link": "/blocks/docs/signup-01"
+          },
+          {
+            "text": "signup-02",
+            "link": "/blocks/docs/signup-02"
+          },
+          {
+            "text": "signup-03",
+            "link": "/blocks/docs/signup-03"
+          },
+          {
+            "text": "signup-04",
+            "link": "/blocks/docs/signup-04"
+          },
+          {
+            "text": "signup-05",
+            "link": "/blocks/docs/signup-05"
+          },
+          {
+            "text": "signup-06",
+            "link": "/blocks/docs/signup-06"
+          },
+          {
+            "text": "signup-07",
+            "link": "/blocks/docs/signup-07"
+          },
+          {
+            "text": "signup-08",
+            "link": "/blocks/docs/signup-08"
+          },
+          {
+            "text": "signup-09",
+            "link": "/blocks/docs/signup-09"
+          },
+          {
+            "text": "signup-10",
+            "link": "/blocks/docs/signup-10"
+          },
+          {
+            "text": "signup-11",
+            "link": "/blocks/docs/signup-11"
+          },
+          {
+            "text": "signup-12",
+            "link": "/blocks/docs/signup-12"
+          },
+          {
+            "text": "signup-13",
+            "link": "/blocks/docs/signup-13"
+          }
+        ]
+      },
+      {
+        "slug": "otp",
+        "name": "OTP",
+        "items": [
+          {
+            "text": "otp-01",
+            "link": "/blocks/docs/otp-01"
+          },
+          {
+            "text": "otp-02",
+            "link": "/blocks/docs/otp-02"
+          },
+          {
+            "text": "otp-03",
+            "link": "/blocks/docs/otp-03"
+          },
+          {
+            "text": "otp-04",
+            "link": "/blocks/docs/otp-04"
+          },
+          {
+            "text": "otp-05",
+            "link": "/blocks/docs/otp-05"
+          }
+        ]
+      },
+      {
+        "slug": "lainnya",
+        "name": "Other",
+        "items": [
+          {
+            "text": "products-01",
+            "link": "/blocks/docs/products-01"
+          },
+          {
+            "text": "sidebar-demo",
+            "link": "/blocks/docs/sidebar-demo"
+          },
+          {
+            "text": "software-purchase-01",
+            "link": "/blocks/docs/software-purchase-01"
+          }
+        ]
+      }
+    ]
+  },
+  "variant": {
+    "root": "/variants",
+    "title": "Variants",
+    "categories": [
+      {
+        "slug": "accordion",
+        "name": "Accordion",
+        "items": [
+          {
+            "text": "accordion-01",
+            "link": "/variants/docs/accordion-01"
+          },
+          {
+            "text": "accordion-02",
+            "link": "/variants/docs/accordion-02"
+          },
+          {
+            "text": "accordion-03",
+            "link": "/variants/docs/accordion-03"
+          },
+          {
+            "text": "accordion-04",
+            "link": "/variants/docs/accordion-04"
+          },
+          {
+            "text": "accordion-05",
+            "link": "/variants/docs/accordion-05"
+          },
+          {
+            "text": "accordion-06",
+            "link": "/variants/docs/accordion-06"
+          },
+          {
+            "text": "accordion-07",
+            "link": "/variants/docs/accordion-07"
+          },
+          {
+            "text": "accordion-08",
+            "link": "/variants/docs/accordion-08"
+          },
+          {
+            "text": "accordion-09",
+            "link": "/variants/docs/accordion-09"
+          },
+          {
+            "text": "accordion-10",
+            "link": "/variants/docs/accordion-10"
+          },
+          {
+            "text": "accordion-11",
+            "link": "/variants/docs/accordion-11"
+          },
+          {
+            "text": "accordion-12",
+            "link": "/variants/docs/accordion-12"
+          }
+        ]
+      },
+      {
+        "slug": "alert",
+        "name": "Alert",
+        "items": [
+          {
+            "text": "alert-01",
+            "link": "/variants/docs/alert-01"
+          },
+          {
+            "text": "alert-02",
+            "link": "/variants/docs/alert-02"
+          },
+          {
+            "text": "alert-03",
+            "link": "/variants/docs/alert-03"
+          },
+          {
+            "text": "alert-04",
+            "link": "/variants/docs/alert-04"
+          },
+          {
+            "text": "alert-05",
+            "link": "/variants/docs/alert-05"
+          },
+          {
+            "text": "alert-06",
+            "link": "/variants/docs/alert-06"
+          },
+          {
+            "text": "alert-07",
+            "link": "/variants/docs/alert-07"
+          },
+          {
+            "text": "alert-08",
+            "link": "/variants/docs/alert-08"
+          },
+          {
+            "text": "alert-09",
+            "link": "/variants/docs/alert-09"
+          },
+          {
+            "text": "alert-10",
+            "link": "/variants/docs/alert-10"
+          }
+        ]
+      },
+      {
+        "slug": "alert-dialog",
+        "name": "Alert Dialog",
+        "items": [
+          {
+            "text": "alert-dialog-01",
+            "link": "/variants/docs/alert-dialog-01"
+          },
+          {
+            "text": "alert-dialog-02",
+            "link": "/variants/docs/alert-dialog-02"
+          },
+          {
+            "text": "alert-dialog-03",
+            "link": "/variants/docs/alert-dialog-03"
+          },
+          {
+            "text": "alert-dialog-04",
+            "link": "/variants/docs/alert-dialog-04"
+          },
+          {
+            "text": "alert-dialog-05",
+            "link": "/variants/docs/alert-dialog-05"
+          },
+          {
+            "text": "alert-dialog-06",
+            "link": "/variants/docs/alert-dialog-06"
+          }
+        ]
+      },
+      {
+        "slug": "avatar",
+        "name": "Avatar",
+        "items": [
+          {
+            "text": "avatar-01",
+            "link": "/variants/docs/avatar-01"
+          },
+          {
+            "text": "avatar-02",
+            "link": "/variants/docs/avatar-02"
+          },
+          {
+            "text": "avatar-03",
+            "link": "/variants/docs/avatar-03"
+          },
+          {
+            "text": "avatar-04",
+            "link": "/variants/docs/avatar-04"
+          },
+          {
+            "text": "avatar-05",
+            "link": "/variants/docs/avatar-05"
+          },
+          {
+            "text": "avatar-06",
+            "link": "/variants/docs/avatar-06"
+          },
+          {
+            "text": "avatar-07",
+            "link": "/variants/docs/avatar-07"
+          },
+          {
+            "text": "avatar-08",
+            "link": "/variants/docs/avatar-08"
+          },
+          {
+            "text": "avatar-09",
+            "link": "/variants/docs/avatar-09"
+          },
+          {
+            "text": "avatar-10",
+            "link": "/variants/docs/avatar-10"
+          },
+          {
+            "text": "avatar-11",
+            "link": "/variants/docs/avatar-11"
+          },
+          {
+            "text": "avatar-12",
+            "link": "/variants/docs/avatar-12"
+          },
+          {
+            "text": "avatar-13",
+            "link": "/variants/docs/avatar-13"
+          },
+          {
+            "text": "avatar-14",
+            "link": "/variants/docs/avatar-14"
+          },
+          {
+            "text": "avatar-15",
+            "link": "/variants/docs/avatar-15"
+          },
+          {
+            "text": "avatar-16",
+            "link": "/variants/docs/avatar-16"
+          }
+        ]
+      },
+      {
+        "slug": "badge",
+        "name": "Badge",
+        "items": [
+          {
+            "text": "badge-01",
+            "link": "/variants/docs/badge-01"
+          },
+          {
+            "text": "badge-02",
+            "link": "/variants/docs/badge-02"
+          },
+          {
+            "text": "badge-03",
+            "link": "/variants/docs/badge-03"
+          },
+          {
+            "text": "badge-04",
+            "link": "/variants/docs/badge-04"
+          },
+          {
+            "text": "badge-05",
+            "link": "/variants/docs/badge-05"
+          },
+          {
+            "text": "badge-06",
+            "link": "/variants/docs/badge-06"
+          },
+          {
+            "text": "badge-07",
+            "link": "/variants/docs/badge-07"
+          },
+          {
+            "text": "badge-08",
+            "link": "/variants/docs/badge-08"
+          },
+          {
+            "text": "badge-09",
+            "link": "/variants/docs/badge-09"
+          },
+          {
+            "text": "badge-10",
+            "link": "/variants/docs/badge-10"
+          },
+          {
+            "text": "badge-11",
+            "link": "/variants/docs/badge-11"
+          },
+          {
+            "text": "badge-12",
+            "link": "/variants/docs/badge-12"
+          },
+          {
+            "text": "badge-13",
+            "link": "/variants/docs/badge-13"
+          },
+          {
+            "text": "badge-14",
+            "link": "/variants/docs/badge-14"
+          },
+          {
+            "text": "badge-15",
+            "link": "/variants/docs/badge-15"
+          },
+          {
+            "text": "badge-16",
+            "link": "/variants/docs/badge-16"
+          },
+          {
+            "text": "badge-17",
+            "link": "/variants/docs/badge-17"
+          }
+        ]
+      },
+      {
+        "slug": "breadcrumb",
+        "name": "Breadcrumb",
+        "items": [
+          {
+            "text": "breadcrumb-01",
+            "link": "/variants/docs/breadcrumb-01"
+          },
+          {
+            "text": "breadcrumb-02",
+            "link": "/variants/docs/breadcrumb-02"
+          },
+          {
+            "text": "breadcrumb-03",
+            "link": "/variants/docs/breadcrumb-03"
+          },
+          {
+            "text": "breadcrumb-04",
+            "link": "/variants/docs/breadcrumb-04"
+          },
+          {
+            "text": "breadcrumb-05",
+            "link": "/variants/docs/breadcrumb-05"
+          },
+          {
+            "text": "breadcrumb-06",
+            "link": "/variants/docs/breadcrumb-06"
+          },
+          {
+            "text": "breadcrumb-07",
+            "link": "/variants/docs/breadcrumb-07"
+          },
+          {
+            "text": "breadcrumb-08",
+            "link": "/variants/docs/breadcrumb-08"
+          },
+          {
+            "text": "breadcrumb-09",
+            "link": "/variants/docs/breadcrumb-09"
+          },
+          {
+            "text": "breadcrumb-10",
+            "link": "/variants/docs/breadcrumb-10"
+          },
+          {
+            "text": "breadcrumb-11",
+            "link": "/variants/docs/breadcrumb-11"
+          },
+          {
+            "text": "breadcrumb-12",
+            "link": "/variants/docs/breadcrumb-12"
+          },
+          {
+            "text": "breadcrumb-13",
+            "link": "/variants/docs/breadcrumb-13"
+          },
+          {
+            "text": "breadcrumb-14",
+            "link": "/variants/docs/breadcrumb-14"
+          },
+          {
+            "text": "breadcrumb-15",
+            "link": "/variants/docs/breadcrumb-15"
+          }
+        ]
+      },
+      {
+        "slug": "button",
+        "name": "Button",
+        "items": [
+          {
+            "text": "button-01",
+            "link": "/variants/docs/button-01"
+          },
+          {
+            "text": "button-02",
+            "link": "/variants/docs/button-02"
+          },
+          {
+            "text": "button-03",
+            "link": "/variants/docs/button-03"
+          },
+          {
+            "text": "button-04",
+            "link": "/variants/docs/button-04"
+          },
+          {
+            "text": "button-05",
+            "link": "/variants/docs/button-05"
+          },
+          {
+            "text": "button-06",
+            "link": "/variants/docs/button-06"
+          },
+          {
+            "text": "button-07",
+            "link": "/variants/docs/button-07"
+          },
+          {
+            "text": "button-08",
+            "link": "/variants/docs/button-08"
+          },
+          {
+            "text": "button-09",
+            "link": "/variants/docs/button-09"
+          },
+          {
+            "text": "button-10",
+            "link": "/variants/docs/button-10"
+          },
+          {
+            "text": "button-11",
+            "link": "/variants/docs/button-11"
+          },
+          {
+            "text": "button-12",
+            "link": "/variants/docs/button-12"
+          },
+          {
+            "text": "button-13",
+            "link": "/variants/docs/button-13"
+          },
+          {
+            "text": "button-14",
+            "link": "/variants/docs/button-14"
+          },
+          {
+            "text": "button-15",
+            "link": "/variants/docs/button-15"
+          },
+          {
+            "text": "button-16",
+            "link": "/variants/docs/button-16"
+          },
+          {
+            "text": "button-17",
+            "link": "/variants/docs/button-17"
+          },
+          {
+            "text": "button-18",
+            "link": "/variants/docs/button-18"
+          },
+          {
+            "text": "button-19",
+            "link": "/variants/docs/button-19"
+          },
+          {
+            "text": "button-20",
+            "link": "/variants/docs/button-20"
+          },
+          {
+            "text": "button-21",
+            "link": "/variants/docs/button-21"
+          },
+          {
+            "text": "button-22",
+            "link": "/variants/docs/button-22"
+          },
+          {
+            "text": "button-23",
+            "link": "/variants/docs/button-23"
+          }
+        ]
+      },
+      {
+        "slug": "card",
+        "name": "Card",
+        "items": [
+          {
+            "text": "card-01",
+            "link": "/variants/docs/card-01"
+          },
+          {
+            "text": "card-02",
+            "link": "/variants/docs/card-02"
+          },
+          {
+            "text": "card-03",
+            "link": "/variants/docs/card-03"
+          },
+          {
+            "text": "card-04",
+            "link": "/variants/docs/card-04"
+          },
+          {
+            "text": "card-05",
+            "link": "/variants/docs/card-05"
+          },
+          {
+            "text": "card-06",
+            "link": "/variants/docs/card-06"
+          },
+          {
+            "text": "card-07",
+            "link": "/variants/docs/card-07"
+          },
+          {
+            "text": "card-08",
+            "link": "/variants/docs/card-08"
+          },
+          {
+            "text": "card-09",
+            "link": "/variants/docs/card-09"
+          },
+          {
+            "text": "card-10",
+            "link": "/variants/docs/card-10"
+          },
+          {
+            "text": "card-11",
+            "link": "/variants/docs/card-11"
+          },
+          {
+            "text": "card-12",
+            "link": "/variants/docs/card-12"
+          },
+          {
+            "text": "card-13",
+            "link": "/variants/docs/card-13"
+          }
+        ]
+      },
+      {
+        "slug": "carousel",
+        "name": "Carousel",
+        "items": [
+          {
+            "text": "carousel-01",
+            "link": "/variants/docs/carousel-01"
+          },
+          {
+            "text": "carousel-02",
+            "link": "/variants/docs/carousel-02"
+          },
+          {
+            "text": "carousel-03",
+            "link": "/variants/docs/carousel-03"
+          },
+          {
+            "text": "carousel-04",
+            "link": "/variants/docs/carousel-04"
+          },
+          {
+            "text": "carousel-05",
+            "link": "/variants/docs/carousel-05"
+          },
+          {
+            "text": "carousel-06",
+            "link": "/variants/docs/carousel-06"
+          },
+          {
+            "text": "carousel-07",
+            "link": "/variants/docs/carousel-07"
+          },
+          {
+            "text": "carousel-08",
+            "link": "/variants/docs/carousel-08"
+          },
+          {
+            "text": "carousel-09",
+            "link": "/variants/docs/carousel-09"
+          },
+          {
+            "text": "carousel-10",
+            "link": "/variants/docs/carousel-10"
+          },
+          {
+            "text": "carousel-11",
+            "link": "/variants/docs/carousel-11"
+          }
+        ]
+      },
+      {
+        "slug": "checkbox",
+        "name": "Checkbox",
+        "items": [
+          {
+            "text": "checkbox-01",
+            "link": "/variants/docs/checkbox-01"
+          },
+          {
+            "text": "checkbox-02",
+            "link": "/variants/docs/checkbox-02"
+          },
+          {
+            "text": "checkbox-03",
+            "link": "/variants/docs/checkbox-03"
+          },
+          {
+            "text": "checkbox-04",
+            "link": "/variants/docs/checkbox-04"
+          },
+          {
+            "text": "checkbox-05",
+            "link": "/variants/docs/checkbox-05"
+          },
+          {
+            "text": "checkbox-06",
+            "link": "/variants/docs/checkbox-06"
+          },
+          {
+            "text": "checkbox-07",
+            "link": "/variants/docs/checkbox-07"
+          },
+          {
+            "text": "checkbox-08",
+            "link": "/variants/docs/checkbox-08"
+          },
+          {
+            "text": "checkbox-09",
+            "link": "/variants/docs/checkbox-09"
+          },
+          {
+            "text": "checkbox-10",
+            "link": "/variants/docs/checkbox-10"
+          },
+          {
+            "text": "checkbox-11",
+            "link": "/variants/docs/checkbox-11"
+          },
+          {
+            "text": "checkbox-12",
+            "link": "/variants/docs/checkbox-12"
+          },
+          {
+            "text": "checkbox-13",
+            "link": "/variants/docs/checkbox-13"
+          },
+          {
+            "text": "checkbox-14",
+            "link": "/variants/docs/checkbox-14"
+          },
+          {
+            "text": "checkbox-15",
+            "link": "/variants/docs/checkbox-15"
+          },
+          {
+            "text": "checkbox-16",
+            "link": "/variants/docs/checkbox-16"
+          }
+        ]
+      },
+      {
+        "slug": "collapsible",
+        "name": "Collapsible",
+        "items": [
+          {
+            "text": "collapsible-01",
+            "link": "/variants/docs/collapsible-01"
+          },
+          {
+            "text": "collapsible-02",
+            "link": "/variants/docs/collapsible-02"
+          },
+          {
+            "text": "collapsible-03",
+            "link": "/variants/docs/collapsible-03"
+          },
+          {
+            "text": "collapsible-04",
+            "link": "/variants/docs/collapsible-04"
+          }
+        ]
+      },
+      {
+        "slug": "dropdown-menu",
+        "name": "Dropdown Menu",
+        "items": [
+          {
+            "text": "dropdown-menu-01",
+            "link": "/variants/docs/dropdown-menu-01"
+          },
+          {
+            "text": "dropdown-menu-02",
+            "link": "/variants/docs/dropdown-menu-02"
+          },
+          {
+            "text": "dropdown-menu-03",
+            "link": "/variants/docs/dropdown-menu-03"
+          },
+          {
+            "text": "dropdown-menu-04",
+            "link": "/variants/docs/dropdown-menu-04"
+          },
+          {
+            "text": "dropdown-menu-05",
+            "link": "/variants/docs/dropdown-menu-05"
+          },
+          {
+            "text": "dropdown-menu-06",
+            "link": "/variants/docs/dropdown-menu-06"
+          },
+          {
+            "text": "dropdown-menu-07",
+            "link": "/variants/docs/dropdown-menu-07"
+          },
+          {
+            "text": "dropdown-menu-08",
+            "link": "/variants/docs/dropdown-menu-08"
+          }
+        ]
+      },
+      {
+        "slug": "input",
+        "name": "Input",
+        "items": [
+          {
+            "text": "input-01",
+            "link": "/variants/docs/input-01"
+          },
+          {
+            "text": "input-02",
+            "link": "/variants/docs/input-02"
+          },
+          {
+            "text": "input-03",
+            "link": "/variants/docs/input-03"
+          },
+          {
+            "text": "input-04",
+            "link": "/variants/docs/input-04"
+          },
+          {
+            "text": "input-05",
+            "link": "/variants/docs/input-05"
+          },
+          {
+            "text": "input-06",
+            "link": "/variants/docs/input-06"
+          },
+          {
+            "text": "input-07",
+            "link": "/variants/docs/input-07"
+          },
+          {
+            "text": "input-08",
+            "link": "/variants/docs/input-08"
+          },
+          {
+            "text": "input-09",
+            "link": "/variants/docs/input-09"
+          },
+          {
+            "text": "input-10",
+            "link": "/variants/docs/input-10"
+          },
+          {
+            "text": "input-11",
+            "link": "/variants/docs/input-11"
+          },
+          {
+            "text": "input-12",
+            "link": "/variants/docs/input-12"
+          }
+        ]
+      },
+      {
+        "slug": "input-otp",
+        "name": "Input OTP",
+        "items": [
+          {
+            "text": "input-otp-01",
+            "link": "/variants/docs/input-otp-01"
+          },
+          {
+            "text": "input-otp-02",
+            "link": "/variants/docs/input-otp-02"
+          },
+          {
+            "text": "input-otp-03",
+            "link": "/variants/docs/input-otp-03"
+          },
+          {
+            "text": "input-otp-04",
+            "link": "/variants/docs/input-otp-04"
+          },
+          {
+            "text": "input-otp-05",
+            "link": "/variants/docs/input-otp-05"
+          },
+          {
+            "text": "input-otp-06",
+            "link": "/variants/docs/input-otp-06"
+          },
+          {
+            "text": "input-otp-07",
+            "link": "/variants/docs/input-otp-07"
+          }
+        ]
+      },
+      {
+        "slug": "navigation-menu",
+        "name": "Navigation Menu",
+        "items": [
+          {
+            "text": "navigation-menu-01",
+            "link": "/variants/docs/navigation-menu-01"
+          },
+          {
+            "text": "navigation-menu-02",
+            "link": "/variants/docs/navigation-menu-02"
+          },
+          {
+            "text": "navigation-menu-03",
+            "link": "/variants/docs/navigation-menu-03"
+          },
+          {
+            "text": "navigation-menu-04",
+            "link": "/variants/docs/navigation-menu-04"
+          },
+          {
+            "text": "navigation-menu-05",
+            "link": "/variants/docs/navigation-menu-05"
+          },
+          {
+            "text": "navigation-menu-06",
+            "link": "/variants/docs/navigation-menu-06"
+          },
+          {
+            "text": "navigation-menu-07",
+            "link": "/variants/docs/navigation-menu-07"
+          },
+          {
+            "text": "navigation-menu-08",
+            "link": "/variants/docs/navigation-menu-08"
+          }
+        ]
+      },
+      {
+        "slug": "pagination",
+        "name": "Pagination",
+        "items": [
+          {
+            "text": "pagination-01",
+            "link": "/variants/docs/pagination-01"
+          },
+          {
+            "text": "pagination-02",
+            "link": "/variants/docs/pagination-02"
+          },
+          {
+            "text": "pagination-03",
+            "link": "/variants/docs/pagination-03"
+          },
+          {
+            "text": "pagination-04",
+            "link": "/variants/docs/pagination-04"
+          },
+          {
+            "text": "pagination-05",
+            "link": "/variants/docs/pagination-05"
+          },
+          {
+            "text": "pagination-06",
+            "link": "/variants/docs/pagination-06"
+          },
+          {
+            "text": "pagination-07",
+            "link": "/variants/docs/pagination-07"
+          },
+          {
+            "text": "pagination-08",
+            "link": "/variants/docs/pagination-08"
+          },
+          {
+            "text": "pagination-09",
+            "link": "/variants/docs/pagination-09"
+          },
+          {
+            "text": "pagination-10",
+            "link": "/variants/docs/pagination-10"
+          },
+          {
+            "text": "pagination-11",
+            "link": "/variants/docs/pagination-11"
+          },
+          {
+            "text": "pagination-12",
+            "link": "/variants/docs/pagination-12"
+          },
+          {
+            "text": "pagination-13",
+            "link": "/variants/docs/pagination-13"
+          },
+          {
+            "text": "pagination-14",
+            "link": "/variants/docs/pagination-14"
+          },
+          {
+            "text": "pagination-15",
+            "link": "/variants/docs/pagination-15"
+          }
+        ]
+      },
+      {
+        "slug": "progress",
+        "name": "Progress",
+        "items": [
+          {
+            "text": "progress-01",
+            "link": "/variants/docs/progress-01"
+          },
+          {
+            "text": "progress-02",
+            "link": "/variants/docs/progress-02"
+          },
+          {
+            "text": "progress-03",
+            "link": "/variants/docs/progress-03"
+          },
+          {
+            "text": "progress-04",
+            "link": "/variants/docs/progress-04"
+          },
+          {
+            "text": "progress-05",
+            "link": "/variants/docs/progress-05"
+          },
+          {
+            "text": "progress-06",
+            "link": "/variants/docs/progress-06"
+          },
+          {
+            "text": "progress-07",
+            "link": "/variants/docs/progress-07"
+          },
+          {
+            "text": "progress-08",
+            "link": "/variants/docs/progress-08"
+          },
+          {
+            "text": "progress-09",
+            "link": "/variants/docs/progress-09"
+          },
+          {
+            "text": "progress-10",
+            "link": "/variants/docs/progress-10"
+          },
+          {
+            "text": "progress-11",
+            "link": "/variants/docs/progress-11"
+          },
+          {
+            "text": "progress-12",
+            "link": "/variants/docs/progress-12"
+          }
+        ]
+      },
+      {
+        "slug": "radio-group",
+        "name": "Radio Group",
+        "items": [
+          {
+            "text": "radio-group-01",
+            "link": "/variants/docs/radio-group-01"
+          },
+          {
+            "text": "radio-group-02",
+            "link": "/variants/docs/radio-group-02"
+          },
+          {
+            "text": "radio-group-03",
+            "link": "/variants/docs/radio-group-03"
+          },
+          {
+            "text": "radio-group-04",
+            "link": "/variants/docs/radio-group-04"
+          },
+          {
+            "text": "radio-group-05",
+            "link": "/variants/docs/radio-group-05"
+          },
+          {
+            "text": "radio-group-06",
+            "link": "/variants/docs/radio-group-06"
+          },
+          {
+            "text": "radio-group-07",
+            "link": "/variants/docs/radio-group-07"
+          },
+          {
+            "text": "radio-group-08",
+            "link": "/variants/docs/radio-group-08"
+          },
+          {
+            "text": "radio-group-09",
+            "link": "/variants/docs/radio-group-09"
+          }
+        ]
+      },
+      {
+        "slug": "select",
+        "name": "Select",
+        "items": [
+          {
+            "text": "select-01",
+            "link": "/variants/docs/select-01"
+          },
+          {
+            "text": "select-02",
+            "link": "/variants/docs/select-02"
+          },
+          {
+            "text": "select-03",
+            "link": "/variants/docs/select-03"
+          },
+          {
+            "text": "select-04",
+            "link": "/variants/docs/select-04"
+          },
+          {
+            "text": "select-05",
+            "link": "/variants/docs/select-05"
+          },
+          {
+            "text": "select-06",
+            "link": "/variants/docs/select-06"
+          },
+          {
+            "text": "select-07",
+            "link": "/variants/docs/select-07"
+          },
+          {
+            "text": "select-08",
+            "link": "/variants/docs/select-08"
+          },
+          {
+            "text": "select-09",
+            "link": "/variants/docs/select-09"
+          },
+          {
+            "text": "select-10",
+            "link": "/variants/docs/select-10"
+          },
+          {
+            "text": "select-11",
+            "link": "/variants/docs/select-11"
+          }
+        ]
+      },
+      {
+        "slug": "separator",
+        "name": "Separator",
+        "items": [
+          {
+            "text": "separator-01",
+            "link": "/variants/docs/separator-01"
+          },
+          {
+            "text": "separator-02",
+            "link": "/variants/docs/separator-02"
+          },
+          {
+            "text": "separator-03",
+            "link": "/variants/docs/separator-03"
+          },
+          {
+            "text": "separator-04",
+            "link": "/variants/docs/separator-04"
+          },
+          {
+            "text": "separator-05",
+            "link": "/variants/docs/separator-05"
+          },
+          {
+            "text": "separator-06",
+            "link": "/variants/docs/separator-06"
+          },
+          {
+            "text": "with-label-vertical",
+            "link": "/variants/docs/with-label-vertical"
+          }
+        ]
+      },
+      {
+        "slug": "slider",
+        "name": "Slider",
+        "items": [
+          {
+            "text": "slider-01",
+            "link": "/variants/docs/slider-01"
+          },
+          {
+            "text": "slider-02",
+            "link": "/variants/docs/slider-02"
+          },
+          {
+            "text": "slider-03",
+            "link": "/variants/docs/slider-03"
+          },
+          {
+            "text": "slider-04",
+            "link": "/variants/docs/slider-04"
+          },
+          {
+            "text": "slider-05",
+            "link": "/variants/docs/slider-05"
+          },
+          {
+            "text": "slider-06",
+            "link": "/variants/docs/slider-06"
+          },
+          {
+            "text": "slider-07",
+            "link": "/variants/docs/slider-07"
+          },
+          {
+            "text": "slider-08",
+            "link": "/variants/docs/slider-08"
+          },
+          {
+            "text": "slider-09",
+            "link": "/variants/docs/slider-09"
+          },
+          {
+            "text": "slider-10",
+            "link": "/variants/docs/slider-10"
+          },
+          {
+            "text": "slider-11",
+            "link": "/variants/docs/slider-11"
+          },
+          {
+            "text": "slider-12",
+            "link": "/variants/docs/slider-12"
+          },
+          {
+            "text": "slider-13",
+            "link": "/variants/docs/slider-13"
+          },
+          {
+            "text": "slider-14",
+            "link": "/variants/docs/slider-14"
+          },
+          {
+            "text": "slider-15",
+            "link": "/variants/docs/slider-15"
+          }
+        ]
+      },
+      {
+        "slug": "spinner",
+        "name": "Spinner",
+        "items": [
+          {
+            "text": "spinner-01",
+            "link": "/variants/docs/spinner-01"
+          },
+          {
+            "text": "spinner-02",
+            "link": "/variants/docs/spinner-02"
+          },
+          {
+            "text": "spinner-03",
+            "link": "/variants/docs/spinner-03"
+          },
+          {
+            "text": "spinner-04",
+            "link": "/variants/docs/spinner-04"
+          },
+          {
+            "text": "spinner-05",
+            "link": "/variants/docs/spinner-05"
+          },
+          {
+            "text": "spinner-06",
+            "link": "/variants/docs/spinner-06"
+          },
+          {
+            "text": "spinner-07",
+            "link": "/variants/docs/spinner-07"
+          },
+          {
+            "text": "spinner-08",
+            "link": "/variants/docs/spinner-08"
+          },
+          {
+            "text": "spinner-09",
+            "link": "/variants/docs/spinner-09"
+          },
+          {
+            "text": "spinner-10",
+            "link": "/variants/docs/spinner-10"
+          },
+          {
+            "text": "spinner-11",
+            "link": "/variants/docs/spinner-11"
+          }
+        ]
+      },
+      {
+        "slug": "switch",
+        "name": "Switch",
+        "items": [
+          {
+            "text": "switch-01",
+            "link": "/variants/docs/switch-01"
+          },
+          {
+            "text": "switch-02",
+            "link": "/variants/docs/switch-02"
+          },
+          {
+            "text": "switch-03",
+            "link": "/variants/docs/switch-03"
+          },
+          {
+            "text": "switch-04",
+            "link": "/variants/docs/switch-04"
+          },
+          {
+            "text": "switch-05",
+            "link": "/variants/docs/switch-05"
+          },
+          {
+            "text": "switch-06",
+            "link": "/variants/docs/switch-06"
+          },
+          {
+            "text": "switch-07",
+            "link": "/variants/docs/switch-07"
+          }
+        ]
+      },
+      {
+        "slug": "table",
+        "name": "Table",
+        "items": [
+          {
+            "text": "table-01",
+            "link": "/variants/docs/table-01"
+          },
+          {
+            "text": "table-02",
+            "link": "/variants/docs/table-02"
+          },
+          {
+            "text": "table-03",
+            "link": "/variants/docs/table-03"
+          },
+          {
+            "text": "table-04",
+            "link": "/variants/docs/table-04"
+          },
+          {
+            "text": "table-05",
+            "link": "/variants/docs/table-05"
+          },
+          {
+            "text": "table-06",
+            "link": "/variants/docs/table-06"
+          },
+          {
+            "text": "table-07",
+            "link": "/variants/docs/table-07"
+          },
+          {
+            "text": "table-08",
+            "link": "/variants/docs/table-08"
+          },
+          {
+            "text": "table-09",
+            "link": "/variants/docs/table-09"
+          },
+          {
+            "text": "table-10",
+            "link": "/variants/docs/table-10"
+          },
+          {
+            "text": "table-11",
+            "link": "/variants/docs/table-11"
+          }
+        ]
+      },
+      {
+        "slug": "tabs",
+        "name": "Tabs",
+        "items": [
+          {
+            "text": "tabs-01",
+            "link": "/variants/docs/tabs-01"
+          },
+          {
+            "text": "tabs-02",
+            "link": "/variants/docs/tabs-02"
+          },
+          {
+            "text": "tabs-03",
+            "link": "/variants/docs/tabs-03"
+          },
+          {
+            "text": "tabs-04",
+            "link": "/variants/docs/tabs-04"
+          },
+          {
+            "text": "tabs-05",
+            "link": "/variants/docs/tabs-05"
+          },
+          {
+            "text": "tabs-06",
+            "link": "/variants/docs/tabs-06"
+          },
+          {
+            "text": "tabs-07",
+            "link": "/variants/docs/tabs-07"
+          },
+          {
+            "text": "tabs-08",
+            "link": "/variants/docs/tabs-08"
+          },
+          {
+            "text": "tabs-09",
+            "link": "/variants/docs/tabs-09"
+          },
+          {
+            "text": "tabs-10",
+            "link": "/variants/docs/tabs-10"
+          },
+          {
+            "text": "tabs-11",
+            "link": "/variants/docs/tabs-11"
+          },
+          {
+            "text": "tabs-12",
+            "link": "/variants/docs/tabs-12"
+          },
+          {
+            "text": "tabs-13",
+            "link": "/variants/docs/tabs-13"
+          },
+          {
+            "text": "tabs-14",
+            "link": "/variants/docs/tabs-14"
+          },
+          {
+            "text": "tabs-15",
+            "link": "/variants/docs/tabs-15"
+          },
+          {
+            "text": "tabs-16",
+            "link": "/variants/docs/tabs-16"
+          },
+          {
+            "text": "tabs-17",
+            "link": "/variants/docs/tabs-17"
+          },
+          {
+            "text": "tabs-18",
+            "link": "/variants/docs/tabs-18"
+          }
+        ]
+      },
+      {
+        "slug": "textarea",
+        "name": "Textarea",
+        "items": [
+          {
+            "text": "textarea-01",
+            "link": "/variants/docs/textarea-01"
+          },
+          {
+            "text": "textarea-02",
+            "link": "/variants/docs/textarea-02"
+          },
+          {
+            "text": "textarea-03",
+            "link": "/variants/docs/textarea-03"
+          },
+          {
+            "text": "textarea-04",
+            "link": "/variants/docs/textarea-04"
+          },
+          {
+            "text": "textarea-05",
+            "link": "/variants/docs/textarea-05"
+          },
+          {
+            "text": "textarea-06",
+            "link": "/variants/docs/textarea-06"
+          },
+          {
+            "text": "textarea-07",
+            "link": "/variants/docs/textarea-07"
+          }
+        ]
+      },
+      {
+        "slug": "tooltip",
+        "name": "Tooltip",
+        "items": [
+          {
+            "text": "tooltip-01",
+            "link": "/variants/docs/tooltip-01"
+          },
+          {
+            "text": "tooltip-02",
+            "link": "/variants/docs/tooltip-02"
+          },
+          {
+            "text": "tooltip-03",
+            "link": "/variants/docs/tooltip-03"
+          },
+          {
+            "text": "tooltip-04",
+            "link": "/variants/docs/tooltip-04"
+          },
+          {
+            "text": "tooltip-05",
+            "link": "/variants/docs/tooltip-05"
+          },
+          {
+            "text": "tooltip-06",
+            "link": "/variants/docs/tooltip-06"
+          },
+          {
+            "text": "tooltip-07",
+            "link": "/variants/docs/tooltip-07"
+          }
+        ]
+      }
+    ]
+  },
+  "chart": {
+    "root": "/charts",
+    "title": "Charts",
+    "categories": [
+      {
+        "slug": "area",
+        "name": "Area",
+        "items": [
+          {
+            "text": "chart-area-axes",
+            "link": "/charts/docs/chart-area-axes"
+          },
+          {
+            "text": "chart-area-gradient",
+            "link": "/charts/docs/chart-area-gradient"
+          },
+          {
+            "text": "chart-area-icons",
+            "link": "/charts/docs/chart-area-icons"
+          },
+          {
+            "text": "chart-area-interactive",
+            "link": "/charts/docs/chart-area-interactive"
+          }
+        ]
+      },
+      {
+        "slug": "bar",
+        "name": "Bar",
+        "items": [
+          {
+            "text": "chart-bar-default",
+            "link": "/charts/docs/chart-bar-default"
+          },
+          {
+            "text": "chart-bar-horizontal",
+            "link": "/charts/docs/chart-bar-horizontal"
+          },
+          {
+            "text": "chart-bar-interactive",
+            "link": "/charts/docs/chart-bar-interactive"
+          },
+          {
+            "text": "chart-bar-multiple",
+            "link": "/charts/docs/chart-bar-multiple"
+          }
+        ]
+      },
+      {
+        "slug": "line",
+        "name": "Line",
+        "items": [
+          {
+            "text": "chart-line-default",
+            "link": "/charts/docs/chart-line-default"
+          },
+          {
+            "text": "chart-line-interactive",
+            "link": "/charts/docs/chart-line-interactive"
+          },
+          {
+            "text": "chart-line-linear",
+            "link": "/charts/docs/chart-line-linear"
+          },
+          {
+            "text": "chart-line-step",
+            "link": "/charts/docs/chart-line-step"
+          }
+        ]
+      },
+      {
+        "slug": "pie",
+        "name": "Pie",
+        "items": [
+          {
+            "text": "chart-pie-donut",
+            "link": "/charts/docs/chart-pie-donut"
+          },
+          {
+            "text": "chart-pie-donut-text",
+            "link": "/charts/docs/chart-pie-donut-text"
+          },
+          {
+            "text": "chart-pie-simple",
+            "link": "/charts/docs/chart-pie-simple"
+          },
+          {
+            "text": "chart-pie-stacked",
+            "link": "/charts/docs/chart-pie-stacked"
+          }
+        ]
+      },
+      {
+        "slug": "tooltip",
+        "name": "Tooltip",
+        "items": [
+          {
+            "text": "chart-tooltip-default",
+            "link": "/charts/docs/chart-tooltip-default"
+          },
+          {
+            "text": "chart-tooltip-icons",
+            "link": "/charts/docs/chart-tooltip-icons"
+          },
+          {
+            "text": "chart-tooltip-indicator-line",
+            "link": "/charts/docs/chart-tooltip-indicator-line"
+          },
+          {
+            "text": "chart-tooltip-indicator-none",
+            "link": "/charts/docs/chart-tooltip-indicator-none"
+          },
+          {
+            "text": "chart-tooltip-label-custom",
+            "link": "/charts/docs/chart-tooltip-label-custom"
+          },
+          {
+            "text": "chart-tooltip-label-formatter",
+            "link": "/charts/docs/chart-tooltip-label-formatter"
+          },
+          {
+            "text": "chart-tooltip-label-none",
+            "link": "/charts/docs/chart-tooltip-label-none"
+          }
+        ]
+      }
+    ]
+  },
+  "template": {
+    "root": "/templates",
+    "title": "Templates",
+    "categories": [
+      {
+        "slug": "landing-page",
+        "name": "Landing Page",
+        "items": [
+          {
+            "text": "HomeGuardian",
+            "link": "/templates/docs/homeguardian"
+          },
+          {
+            "text": "Minimalist Landing Page",
+            "link": "/templates/docs/minimalist-landing-page"
+          },
+          {
+            "text": "PureLanding",
+            "link": "/templates/docs/pure-landing"
+          }
+        ]
+      },
+      {
+        "slug": "portfolio",
+        "name": "Portfolio",
+        "items": [
+          {
+            "text": "Minimal Portfolio",
+            "link": "/templates/docs/minimal-portfolio"
+          }
+        ]
+      }
+    ]
+  }
+}
