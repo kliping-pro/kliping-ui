@@ -141,7 +141,7 @@ jobs:
           npx playwright install --with-deps chromium
           npm run check:a11y
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: site
           path: docs/.vitepress/dist
@@ -236,7 +236,7 @@ jobs:
         working-directory: pr
         run: npm run check:visual
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: visual-diff
