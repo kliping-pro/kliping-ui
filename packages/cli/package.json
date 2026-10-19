@@ -110,7 +110,7 @@
     "postcss": "^8.5.19",
     "postcss-selector-parser": "^7.1.4",
     "prompts": "^2.4.2",
-    "reka-ui": "^2.10.1",
+    "reka-ui": "^2.11.0",
     "semver": "^7.8.5",
     "stringify-object": "^7.0.0",
     "tailwindcss": "^4.3.2",
