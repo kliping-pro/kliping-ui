@@ -58,7 +58,7 @@
   "dependencies": {
     "@assistant-ui/core": "^0.3.29",
     "@assistant-ui/vue": "^0.0.4",
-    "@dnd-kit/abstract": "^0.1.21",
+    "@dnd-kit/abstract": "^0.5.1",
     "@formisch/vue": "^1.0.0-rc.0",
     "@hugeicons/core-free-icons": "^4.2.3",
     "@hugeicons/vue": "^1.0.7",
